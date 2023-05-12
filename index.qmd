@@ -1,0 +1,60 @@
+---
+about:
+  template: jolla
+  id: about-block
+  image: "img/my_image.jpg"
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/hheddeh
+    - icon: github
+      text: Github
+      href: https://github.com/hhadah
+    - icon: envelope
+      text: Email
+      href: "mailto:hussainhadah@gmail.com"  
+---
+
+::: {#about-block}
+:::
+
+# Welcome to my website!
+
+I am a Ph.D. candidate in Economics at the University of Houston. My research interest is in Applied Microeconomics primarily in labor economics. I research topics on discrimination, race, identity, mental health, and immigration.
+
+In my free time, I enjoy running with my two dogs, watching college and professional sports, and trying new restaurants in the Houston area.
+
+Please feel free to [contact me](mailto:hussainhadah@gmail.com) on my email.
+
+:::: {.columns}
+
+::: {.column width="45%"}
+### Interests
+
+- Applied Microeconomics
+- Labor Economics
+:::
+
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+### Education
+
+🎓 **Ph.D. in Economics, 2023** -- University of Houston, Houston, TX
+
+🎓 **M.A. in Economics, 2020** -- University of Houston, Houston, TX
+
+🎓 **B.S. in Economics (Summa Cum Laude), 2017** -- Arizona State University, Tempe, AZ
+
+:::
+
+::::
+
+```{=html}
+<div  style="margin: 30px; text-align: center;">
+<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">Download my curriculum vitae</a>
+</div>
+```
+

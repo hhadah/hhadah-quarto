@@ -1,0 +1,151 @@
+---
+title: "About"
+---
+
+I am a Ph.D. candidate in Economics at the University of Houston. My research interest is in Applied Microeconomics primarily in labor economics. I research topics on discrimination, race, identity, mental health, and immigration.
+
+In my free time, I enjoy running with my two dogs, watching college and professional sports, and trying new restaurants in the Houston area.
+
+### Research Interests
+
+- Applied Microeconomics
+- Labor Economics
+
+### Education
+
+::: {.d-flex .justify-content-between}
+::: {}
+**University of Houston**  
+Ph.D. in Economics
+
+Advisors: Chinhui Juhn (co-chair), Vikram Maheshri (co-chair), Willa Friedmand, Yona Rubinstein 
+:::
+::: {.text-end}
+Houston, TX 
+Granted May 2023
+:::
+:::
+- Dissertation: *Essays on Hispanic Identity*
+
+::: {.d-flex .justify-content-between}
+::: {}
+**University of Houston**  
+M.A. in Economics
+:::
+::: {.text-end}
+Houston, TX 
+Granted May 2020
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Arizona State University**  
+B.S. in Economics
+:::
+::: {.text-end}
+Tempe, AZ 
+Granted May 2017
+:::
+:::
+
+
+### Experience
+
+::: {.d-flex .justify-content-between}
+::: {}
+**University of Houston**  
+:::
+::: {.text-end}
+May 2021 - August 2021
+:::
+:::
+*Research Assistant*
+
+- Supervisor: Vikram Maheshri
+
+::: {.d-flex .justify-content-between}
+::: {}
+**University of Houston**  
+:::
+::: {.text-end}
+June 2020 - May 2022
+:::
+:::
+*Research Assistant*
+
+- Supervisor: Steve Craig
+
+::: {.d-flex .justify-content-between}
+::: {}
+**University of Houston**  
+:::
+::: {.text-end}
+August 2019–August 2020
+:::
+:::
+*Research Assistant*
+
+- Supervisor: Vegard Mokleiv Nygaard
+
+
+### Teaching
+
+#### University of Houston
+
+##### Instructor
+
+::: {.d-flex .justify-content-between}
+::: {}
+Principles of Microeconomics and Principles of Macroeconomics
+
+:::
+::: {.text-end}
+May 2021 – present
+:::
+:::
+
+
+##### Teaching Assistant, Gergely Ujhelyi
+::: {.d-flex .justify-content-between}
+::: {}
+Assisted with an undergraduate Political Economy class
+:::
+::: {.text-end}
+August 2022– Jan 2023
+:::
+:::
+
+##### Teaching Assistant, Piruz Saboury
+::: {.d-flex .justify-content-between}
+::: {}
+
+Assisted with Intermediate Macroeconomics class
+:::
+::: {.text-end}
+August 2021– Jan 2022
+:::
+:::
+
+##### Teaching Assistant, Joel Melendez Lugo
+::: {.d-flex .justify-content-between}
+::: {}
+
+Assisted with an undergraduate Principles of Microeconomics class
+:::
+::: {.text-end}
+August 2020– May 2021
+:::
+:::
+
+##### Teaching Assistant, Islam Rizvanoghlu
+::: {.d-flex .justify-content-between}
+::: {}
+
+Assisted with Intermediate Macroeconomics and Capital Market Economics classes
+:::
+::: {.text-end}
+August 2018– Jan 2019
+:::
+:::
+
