@@ -1,0 +1,14 @@
+{
+  "hash": "17d7b60204c2c26a6f04a7822903f1cb",
+  "result": {
+    "markdown": "---\nabout:\n  template: jolla\n  id: about-block\n  image: \"img/my_image.jpg\"\n  links:\n    - icon: twitter\n      text: Twitter\n      href: https://twitter.com/hheddeh\n    - icon: github\n      text: Github\n      href: https://github.com/hhadah\n    - icon: envelope\n      text: Email\n      href: \"mailto:hussainhadah@gmail.com\"  \n---\n\n\n::: {#about-block}\n:::\n\n# Welcome to my website!\n\nI am a Ph.D. candidate in Economics at the University of Houston. My research interest is in Applied Microeconomics primarily in labor economics. I research topics on discrimination, race, identity, mental health, and immigration.\n\nIn my free time, I enjoy running with my two dogs, watching college and professional sports, and trying new restaurants in the Houston area.\n\nPlease feel free to [contact me](mailto:hussainhadah@gmail.com) on my email.\n\n:::: {.columns}\n\n::: {.column width=\"45%\"}\n### Interests\n\n- Applied Microeconomics\n- Labor Economics\n:::\n\n::: {.column width=\"5%\"}\n<!-- empty column to create gap -->\n:::\n\n::: {.column width=\"45%\"}\n### Education\n\n🎓 **Ph.D. in Economics, 2023** -- University of Houston, Houston, TX\n\n🎓 **M.A. in Economics, 2020** -- University of Houston, Houston, TX\n\n🎓 **B.S. in Economics (Summa Cum Laude), 2017** -- Arizona State University, Tempe, AZ\n\n:::\n\n::::\n\n\n```{=html}\n<p class=\"text-center\">\n  <a class=\"btn btn-primary btn-lg cv-download\" href=\"\" target=\"_blank\">\n    <i class=\"fa-solid fa-file-arrow-down\"></i>&ensp;Download current CV\n  </a>\n</p>\n<div class=\"embed-container\">\n  <iframe src=\"\" style=\"border: 0.5px\"></iframe>\n</div>\n```\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

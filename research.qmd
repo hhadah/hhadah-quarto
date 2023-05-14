@@ -59,6 +59,7 @@ for _, data in yaml_data.items():
             "<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>"
         )
     elif paper_type == "works_prog":
+        pub_str = f'{author_str}. "{title_str}."'
         if year_str not in pub_strs["worksinprogress"]:
             pub_strs["worksinprogress"][year_str] = []
         pub_strs["worksinprogress"][year_str].append(
@@ -106,7 +107,7 @@ for year in sorted(pub_strs["wps"].keys(), reverse=True):
 #| id: "not-published-year-works"
 #| output: asis
 for year in sorted(pub_strs["worksinprogress"].keys(), reverse=True):
-    display(Markdown(f"### {year}" + "{#" + f"not-published-{year}" + "}"))
+    # display(Markdown(f"### {year}" + "{#" + f"not-published-{year}" + "}"))
     display(HTML(
         "<ul class='list-group list-group-flush'>" + '\n'.join(pub_strs["worksinprogress"][year]) + "</ul>"
     ))
