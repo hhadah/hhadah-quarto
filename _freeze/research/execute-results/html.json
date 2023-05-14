@@ -1,0 +1,15 @@
+{
+  "hash": "6486bd5301eb4618c8306bb8e9d87456",
+  "result": {
+    "markdown": "---\ntitle: Research\necho: false\nsection-divs: false\nkeep-md: true\n---\n\n\n\n## Published\n\n\n\n## Working Papers\n\n### 2023{#not-published-2023}\n```{=html}\n<ul class='list-group list-group-flush'><li class='list-group-item'>Hussain Hadah. (2023) \"The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.\"<br><a class=\"btn btn-outline-dark btn-sm\", href=\"https://hhadah.github.io/Attitudes-and-Identity/my_paper/Hadah_JMP.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">\n        <i class=\"bi bi-file-earmark-pdf\" role='img' aria-label='Preprint'></i>\n        Preprint\n    </a></li></ul>\n```\n\n\n## Works in Progress\n\n### 2024{#not-published-2024}\n```{=html}\n<ul class='list-group list-group-flush'><li class='list-group-item'>Hussain Hadah. (2024) \"The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.\"<br><a class=\"btn btn-outline-dark btn-sm\", href=\"https://hhadah.github.io/Attitudes-and-Identity/my_paper/Hadah_JMP.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">\n        <i class=\"bi bi-file-earmark-pdf\" role='img' aria-label='Preprint'></i>\n        Preprint\n    </a></li></ul>\n```\n\n\n",
+    "supporting": [
+      "research_files"
+    ],
+    "filters": [],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js\" integrity=\"sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==\" crossorigin=\"anonymous\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js\" integrity=\"sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==\" crossorigin=\"anonymous\"></script>\n<script type=\"application/javascript\">define('jquery', [],function() {return window.jQuery;})</script>\n"
+      ]
+    }
+  }
+}

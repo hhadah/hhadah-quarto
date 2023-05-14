@@ -8,11 +8,11 @@ jmp2023:
     venue: 
     github:
     paper_type: working_paper
-jmp2023:
+jmp2024:
     title: "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S"
     authors:
         - Hussain Hadah
-    year: 2023
+    year: 2024
     preprint: https://hhadah.github.io/Attitudes-and-Identity/my_paper/Hadah_JMP.pdf
     published_url:
     venue: 

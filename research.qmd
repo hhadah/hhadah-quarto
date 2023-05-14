@@ -52,14 +52,13 @@ for _, data in yaml_data.items():
     if venue is not None:
         pub_str += f" <em>{venue}</em>"
 
-    if paper_type = "working_paper":
+    if paper_type == "working_paper":
         if year_str not in pub_strs["wps"]:
             pub_strs["wps"][year_str] = []
         pub_strs["wps"][year_str].append(
             "<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>"
         )
-    elif paper_type = "works_prog":
-        if paper_type = "working_paper":
+    elif paper_type == "works_prog":
         if year_str not in pub_strs["worksinprogress"]:
             pub_strs["worksinprogress"][year_str] = []
         pub_strs["worksinprogress"][year_str].append(
