@@ -7,7 +7,7 @@ website:
 
                 In my free time, I enjoy running with my two dogs, watching college and professional sports, and trying new restaurants in the Houston area."   # A brief slogan (optional)
   image: img/my_image.jpg
-  
+  google-analytics: "G-Y1VGD6H14M"
   favicon: img/favicon.png
   
   # start of the navigation bar at the top of the website
@@ -22,6 +22,8 @@ website:
         text: Home
       - href: about.qmd
       - href: research.qmd
+      # - text: "Research"
+      #   file: research/index.qmd
       - href: cv/index.qmd
         text: CV
         
@@ -31,6 +33,13 @@ website:
       - icon: envelope
         aria-label: email
         href: "mailto:hussainhadah@gmail.com"  
+      - icon: twitter
+        aria-label: twitter
+        href: https://twitter.com/hheddeh
+      - icon: github
+        aria-label: github
+        href: https://github.com/hhadah
+
   
   
 
@@ -51,7 +60,7 @@ project:
   output-dir: docs
 
   preview: 
-    port: 22222
+    port: 5555
     browser: true
     watch-inputs: true
     navigate: true
@@ -61,12 +70,18 @@ execute:
 
 format:
   html:
-    theme: journal
-    css: styles.css
+    theme: 
+      - html/ath.scss
     toc: true
     toc-depth: 4
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
+    highlight-style: monokai
+
     toc-title: "Contents"
     html-math-method: katex
     include-in-header:
       - includes.html
-    highlight-style: tango

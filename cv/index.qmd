@@ -1,12 +1,10 @@
 ---
-layout: page
-title: Curriculum vitae
-excerpt: My current CV
-execute:
-  freeze: true  # never re-render during project render
+title: Curriculum vitæ
+description-meta: "Hussain Hadah's CV"
+date: 2023-02-28
+title-block-banner: "#771C6D"
+published-title: CV last updated
 engine: knitr 
-resources:
-  - "cv.pdf"
 cv:
   pdf: "cv.pdf"
 ---
@@ -19,6 +17,7 @@ cv:
     overflow: hidden;
     max-width: 100%;
 }
+
 .embed-container iframe,
 .embed-container object,
 .embed-container embed {
@@ -36,6 +35,7 @@ cv:
     <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download current CV
   </a>
 </p>
+
 <div class="embed-container">
   <iframe src="`r rmarkdown::metadata$cv$pdf`" style="border: 0.5px"></iframe>
 </div>
