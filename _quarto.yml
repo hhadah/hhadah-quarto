@@ -21,7 +21,7 @@ website:
       - href: index.qmd
         text: Home
       - href: about.qmd
-      - href: research.qmd
+      # - href: research.qmd
       - text: "Research"
         file: research/index.qmd
       - href: cv/index.qmd

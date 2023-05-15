@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "research/works-in-progress/arel-bundock-greifer-heiss-mfxplainer/index.html",
-    "href": "research/works-in-progress/arel-bundock-greifer-heiss-mfxplainer/index.html",
-    "title": "The Marginal Effects Zoo: A Guide to Interpretation Using marginaleffects for R",
-    "section": "",
-    "text": "GitHub repository"
-  },
-  {
-    "objectID": "research/works-in-progress/arel-bundock-greifer-heiss-mfxplainer/index.html#abstract",
-    "href": "research/works-in-progress/arel-bundock-greifer-heiss-mfxplainer/index.html#abstract",
-    "title": "The Marginal Effects Zoo: A Guide to Interpretation Using marginaleffects for R",
-    "section": "Abstract",
-    "text": "Abstract\nAnalysts often transform their models’ parameter estimates to report more meaningful and interpretable quantities of interest. This article presents a simple conceptual framework to describe a vast array of estimands which are reported under imprecise and inconsistent terminology across disciplines: predictions, marginal predictions, marginal means, marginal effects, conditional effects, slopes, contrasts, risk ratios, etc. We introduce marginaleffects, an R package which offers a simple and powerful interface to compute all of those quantites, and to conduct hypothesis tests on them. marginaleffects is lightweight; extensible; it works well in combination with other R packages; and it supports over 70 classes of models, including Generalized Linear, Generalized Additive, Mixed Effects, and Bayesian models."
-  },
-  {
     "objectID": "research/articles/chaudhry-dotson-heiss-2021/index.html#important-links",
     "href": "research/articles/chaudhry-dotson-heiss-2021/index.html#important-links",
     "title": "Who Cares About Crackdowns? Exploring the Role of Trust in Individual Philanthropy",
@@ -74,49 +60,56 @@
     "href": "research/index.html#working-papers",
     "title": "Research",
     "section": "Working papers",
-    "text": "Working papers\n\n\n\n\n        \n            \n                Hussain Hadah, “The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.,” Working Paper\n            \n            \n                    \n                            Ethnicity\n                        \n                    \n                            Bias\n                        \n                    \n                            Discrimination\n                        \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Preprint\n                        \n                    \n                    \n                        \n                             Code\n                        \n                    \n                    \n                        \n                             Data\n                        \n                    \n                \n            \n        \n\n\n\nNo matching items"
+    "text": "Working papers\n\n\n\n\n        \n            \n                Hussain Hadah, “The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.,” Working Paper\n            \n            \n                    \n                            Ethnicity\n                        \n                    \n                            Bias\n                        \n                    \n                            Discrimination\n                        \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Preprint\n                        \n                    \n                \n            \n        \n        \n            \n                Hussain Hadah, “The Impact of Hispanic Last Names and Identity on Labor Market Outcomes,” Working Paper\n            \n            \n                    \n                            Ethnicity\n                        \n                    \n                            Bias\n                        \n                    \n                            Discrimination\n                        \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Preprint\n                        \n                    \n                \n            \n        \n        \n            \n                Hussain Hadah, “Democracy and Ethnic Favoritism: Evidence from Africa,” Working Paper\n            \n            \n                    \n                            Ethnic favoritism\n                        \n                    \n                            Dictatorships\n                        \n                    \n                            Democracy\n                        \n                    \n                            institutions\n                        \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Preprint\n                        \n                    \n                    \n                        \n                             Code\n                        \n                    \n                    \n                        \n                             Data\n                        \n                    \n                \n            \n        \n\n\n\nNo matching items"
   },
   {
     "objectID": "research/index.html#works-in-progress",
     "href": "research/index.html#works-in-progress",
     "title": "Research",
     "section": "Works in Progress",
-    "text": "Works in Progress\n\n\n\n        \n            \n                Vincent Arel-Bundock, Noah Greifer, and Andrew Heiss, “The Marginal Effects Zoo: A Guide to Interpretation Using marginaleffects for R”\n            \n            \n                    \n                            Human rights\n                        \n                    \n                            Civil society\n                        \n                    \n                            NGO regulations\n                        \n                    \n                            COVID-19\n                        \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                             Code\n                        \n                    \n                \n            \n        \n\n\n\nNo matching items"
+    "text": "Works in Progress\n\n\n\nHussain Hadah. \"Endogenous Hispanic Identity and Ethnic Gaps in the U.S.\"\nHussain Hadah and Vikram Maheshri. \"Discrimination and the Black-White Arrests Gap.\"\nHussain Hadah and Gael Compta. \"Effects of Gun Control Laws on Suicide.\"\nHussain Hadah. \"The Spillover Effect of Mental Illness on Risk, Academic Achievement and Labor Market Outcomes: Evidence from a Longitudinal Dataset.\""
   },
   {
-    "objectID": "research/working-papers/hadah-jmp-2022/index.html#important-links",
-    "href": "research/working-papers/hadah-jmp-2022/index.html#important-links",
+    "objectID": "research/working-papers/hadah-jmp-2022/index.html",
+    "href": "research/working-papers/hadah-jmp-2022/index.html",
     "title": "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.",
-    "section": "Important links",
-    "text": "Important links\n\nPaper (preprint)\nAppendix (preprint)\nStatistical analysis notebook\nGitHub repository\nExperiment preregistration (research question #2)"
+    "section": "",
+    "text": "Paper (preprint)"
   },
   {
     "objectID": "research/working-papers/hadah-jmp-2022/index.html#abstract",
     "href": "research/working-papers/hadah-jmp-2022/index.html#abstract",
     "title": "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.",
     "section": "Abstract",
-    "text": "Abstract\nThe phenomenon of closing civic space has adversely impacted INGO funding. We argue that individual private donors can be important in sustaining the operations of INGOs working in repressive contexts. Individual donors do not use the same performance-based metrics as official aid donors. Rather, trust can be an important component of individual donor support for nonprofits working towards difficult goals. How does trust in charitable organizations influence individuals’ preferences to donate, especially when these groups face crackdown? Using a simulated market for philanthropic donations based on data from a nationally representative sample of individuals in the United States who regularly donate to charity, we find that trust in INGOs matters substantially in shaping donor preferences. Donor profiles with high levels of social trust are likely to donate to INGOs with friendly relationships with host governments. This support holds steady if INGOs face criticism or crackdown. In contrast, donor profiles with lower levels of social trust prefer to donate to organizations that do not face criticism or crackdown abroad. The global crackdown on NGOs may thus possibly sour NGOs’ least trusting individual donors. Our findings have practical implications for INGOs raising funds from individuals amid closing civic space."
+    "text": "Abstract\nIn this paper, I study the determinants of the choice to identify as Hispanic among those who could—those whose parents, grandparents, or selves were born in a Spanishspeaking country. I find that individuals with Hispanic ancestry are significantly less likely to self-identify as Hispanic if they live in states with high levels of implicit ethnic bias. A one standard deviation increase in bias decreases self-reported Hispanic identity by 7-13 percentage points for first and second-generation Hispanics, respectively. These effects are more prominent among second-generation immigrants whose mothers and fathers were born in a Spanish-speaking country than among children of inter-ethnic parents. These findings have implications for the interpretation of economic research on racial and ethnic gaps in a variety of contexts, including labor market outcomes, redistributive policies, and political representation."
   },
   {
-    "objectID": "research/working-papers/hadah-jmp-2022/index.html#important-figure",
-    "href": "research/working-papers/hadah-jmp-2022/index.html#important-figure",
-    "title": "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.",
-    "section": "Important figure",
-    "text": "Important figure\nFigure 4: Average predicted donation market shares across all personas, segmented by persona public affairs knowledge, political ideology, and social trust across different NGO–host government relationships\n\n\n\nFigure 4: Average predicted donation market shares across all personas, segmented by persona public affairs knowledge, political ideology, and social trust across different NGO–host government relationships"
+    "objectID": "research/working-papers/hadah-lastnames-2022/index.html",
+    "href": "research/working-papers/hadah-lastnames-2022/index.html",
+    "title": "The Impact of Hispanic Last Names and Identity on Labor Market Outcomes",
+    "section": "",
+    "text": "Paper (preprint)"
   },
   {
-    "objectID": "research/working-papers/hadah-jmp-2022/index.html#data-and-code",
-    "href": "research/working-papers/hadah-jmp-2022/index.html#data-and-code",
-    "title": "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.",
-    "section": "Data and code",
-    "text": "Data and code\nThe project is reproducible with R code available at GitHub. Follow the instructions there to install all supporting files and R packages.\nThis project includes the following data files:\n\ndata/raw_data/final_data.rds: Original results from the Qualtrics survey. This is hosted at OSF because of its size. Running targets::tar_make(survey_results_file) will download the .rds file from OSF and place it in data/raw_data. The code for cleaning and processing this data is part of a separate project, “Why Donors Donate”.\ndata/derived_data/survey_results.csv: CSV version of the survey data.\ndata/derived_data/survey_results.yaml: YAML metadata describing the syntax of the survey data.\ndata/raw_data/posterior_draws/public_political_social_charity_demo.rds: Gamma (Γ) coefficients from our multilevel Bayesian model. This is hosted at OSF because of its size. Running targets::tar_make(gamma_draws_file) will download the .rds file from OSF and place it in data/raw_data/posterior_draws. The code for running this model is part of a separate project, “Why Donors Donate”.\ndata/raw_data/Market Simulator Version 01.xlsx: An interactive Excel version of the market simulator to help demonstrate the intuition behind all the moving parts of the simulation."
+    "objectID": "research/working-papers/hadah-lastnames-2022/index.html#abstract",
+    "href": "research/working-papers/hadah-lastnames-2022/index.html#abstract",
+    "title": "The Impact of Hispanic Last Names and Identity on Labor Market Outcomes",
+    "section": "Abstract",
+    "text": "Abstract\nIn this paper, I study discrimination against Hispanics in the labor market. I compare the children of inter-ethnic marriages to study the impact of having a Hispanic last name. While males born to Hispanic father-White mothers earn 6 percentage points less than those born to White father-Hispanic mothers, the gap could be completely explained by educational differences. I also study the effect of identifying as Hispanic on earnings. I find that men with a Spanish-sounding last name who identify as Hispanic earn significantly less than those who do not identify as Hispanic, but the gap could also be explained by educational differences."
   },
   {
-    "objectID": "research/working-papers/hadah-jmp-2022/index.html#citation",
-    "href": "research/working-papers/hadah-jmp-2022/index.html#citation",
-    "title": "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.",
-    "section": "Citation",
-    "text": "Citation\n\n Add to Zotero \n\n@article{ChaudhryDotsonHeiss:2021,\n    Author = {Suparna Chaudhry and Marc Dotson and Andrew Heiss},\n    Doi = {10.1111/1758-5899.12984},\n    Journal = {Global Policy},\n    Month = {7},\n    Number = {S5},\n    Pages = {45--58},\n    Title = {Who Cares About Crackdowns? Exploring the Role of Trust in Individual Philanthropy},\n    Volume = {12},\n    Year = {2021}}"
+    "objectID": "research/working-papers/hadah-ethnic-fav-2020/index.html",
+    "href": "research/working-papers/hadah-ethnic-fav-2020/index.html",
+    "title": "Democracy and Ethnic Favoritism: Evidence from Africa",
+    "section": "",
+    "text": "Paper (preprint)"
+  },
+  {
+    "objectID": "research/working-papers/hadah-ethnic-fav-2020/index.html#abstract",
+    "href": "research/working-papers/hadah-ethnic-fav-2020/index.html#abstract",
+    "title": "Democracy and Ethnic Favoritism: Evidence from Africa",
+    "section": "Abstract",
+    "text": "Abstract\nWhat is the effect of democracy on ethnic favoritism? I estimate the relationship between co-ethnicity and five outcomes of public good provision – education, infant health, wealth, access to clean drinking water and access to electricity – using data from twentyone African countries. Following previous research, I use variation in co-ethnicity across ethnic groups and over time. I first estimate the relationship between these five outcomes and co-ethnicity in the full sample and then split the analysis between anocracies and democracies. I find mixed evidence of ethnic favoritism in the full sample. I find more evidence of co-ethnic targeting when comparing within democracies only and within anocracies only."
   },
   {
     "objectID": "research.html",

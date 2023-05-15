@@ -1,0 +1,47 @@
+---
+title: "Democracy and Ethnic Favoritism: Evidence from Africa"
+date: 2020-05-01
+author:
+  - name: Hussain Hadah
+    url: http://www.hussainhadah.com/
+    affiliation: University of Houston
+categories: 
+  - Ethnic favoritism
+  - Dictatorships
+  - Democracy
+  - institutions
+pub-info:
+  reference: >-
+    <a><strong>Hussain Hadah</strong>, “Democracy and Ethnic Favoritism: Evidence from Africa,” <em>Working Paper</em></a>
+  links:
+    - name: Preprint
+      url: HussainHadahEthFa.pdf
+      icon: fa-solid fa-file-pdf
+      local: true
+    - name: Code
+      url: https://github.com/hhadah/ethnicfavoritism.git
+      icon: fa-brands fa-github
+    - name: Data
+      url: https://github.com/hhadah/ethnicfavoritism/tree/main/data/raw
+      icon: fa-solid fa-table
+  # extra: >-
+  #   Presented at a workshop for a special issue of *Global Policy* entitled “Restricting NGOs: From Pushback to Accommodation,” University of Amsterdam, The Netherlands, June 2020 (held online due to COVID-19)
+# doi: 10.1111/1758-5899.12984
+# haiku:
+#   - When seeing crackdown,
+#   - people with low social trust
+#   - are fairweather friends.
+---
+
+<!-- ![Preregistered](preregistered_large_color.png) &emsp; ![Open data](data_large_color.png) &emsp; ![Open](materials_large_color.png) -->
+
+## Important links
+
+- [Paper (preprint)](https://hhadah.github.io/ethnicfavoritism/my_paper/HussainHadahEthFav.pdf)
+
+## Abstract
+
+What is the effect of democracy on ethnic favoritism? I estimate the relationship between co-ethnicity and five outcomes of public good provision – education, infant health,
+wealth, access to clean drinking water and access to electricity – using data from twentyone African countries. Following previous research, I use variation in co-ethnicity across
+ethnic groups and over time. I first estimate the relationship between these five outcomes and co-ethnicity in the full sample and then split the analysis between anocracies and democracies. I find mixed evidence of ethnic favoritism in the full sample. I find more evidence of co-ethnic targeting when comparing within democracies only and
+within anocracies only.

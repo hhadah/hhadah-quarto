@@ -1,0 +1,50 @@
+---
+title: "The Impact of Hispanic Last Names and Identity on Labor Market Outcomes"
+date: 2022-05-01
+author:
+  - name: Hussain Hadah
+    url: http://www.hussainhadah.com/
+    affiliation: University of Houston
+categories: 
+  - Ethnicity
+  - Bias
+  - Discrimination
+pub-info:
+  reference: >-
+    <a><strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names and Identity on Labor Market Outcomes,” <em>Working Paper</em></a>
+  links:
+    - name: Preprint
+      url: Hadah-last-names.pdf
+      icon: fa-solid fa-file-pdf
+      local: true
+    # - name: Code
+    #   url: https://github.com/andrewheiss/who-cares-about-crackdown
+    #   icon: fa-brands fa-github
+    # - name: Data
+    #   url: "#data-and-code"
+    #   icon: fa-solid fa-table
+  # extra: >-
+  #   Presented at a workshop for a special issue of *Global Policy* entitled “Restricting NGOs: From Pushback to Accommodation,” University of Amsterdam, The Netherlands, June 2020 (held online due to COVID-19)
+# doi: 10.1111/1758-5899.12984
+# haiku:
+#   - When seeing crackdown,
+#   - people with low social trust
+#   - are fairweather friends.
+---
+
+<!-- ![Preregistered](preregistered_large_color.png) &emsp; ![Open data](data_large_color.png) &emsp; ![Open](materials_large_color.png) -->
+
+## Important links
+
+- [Paper (preprint)](https://hhadah.github.io/hispanic-last-names/my_paper/Hadah-last-names.pdf)
+
+## Abstract
+
+In this paper, I study discrimination against Hispanics in the labor market. I compare
+the children of inter-ethnic marriages to study the impact of having a Hispanic last
+name. While males born to Hispanic father-White mothers earn 6 percentage points
+less than those born to White father-Hispanic mothers, the gap could be completely
+explained by educational differences. I also study the effect of identifying as Hispanic on
+earnings. I find that men with a Spanish-sounding last name who identify as Hispanic
+earn significantly less than those who do not identify as Hispanic, but the gap could also
+be explained by educational differences.

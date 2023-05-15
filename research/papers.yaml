@@ -1,0 +1,82 @@
+jmp2023:
+    title: "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S"
+    authors:
+        - Hussain Hadah
+    year: 2023
+    preprint: https://hhadah.github.io/Attitudes-and-Identity/my_paper/Hadah_JMP.pdf
+    published_url:
+    venue: 
+    github:
+    paper_type: working_paper
+
+hispaniclastnames2020:
+    title: "The Impact of Hispanic Last Names and Identity on Labor Market Outcomes"
+    authors:
+        - Hussain Hadah
+    year: 2020
+    preprint: https://hhadah.github.io/hispanic-last-names/my_paper/Hadah-last-names.pdf
+    published_url:
+    venue: 
+    github:
+    paper_type: working_paper
+
+ethnicfavdem2019:
+    title: "Democracy and Ethnic Favoritism: Evidence from Africa"
+    authors:
+        - Hussain Hadah
+    year: 2019
+    preprint: https://hussainhadah.com/pdf/HussainHadahEthFav.pdf
+    published_url:
+    venue: 
+    github:
+    paper_type: working_paper
+
+endogidentat2018:
+    title: "Endogenous Hispanic Identity and Ethnic Gaps in the U.S"
+    authors:
+        - Hussain Hadah
+    year: 
+    preprint: 
+    published_url:
+    venue: 
+    github:
+    paper_type: works_prog
+
+crime2020:
+    title: "Discrimination and the Black-White Arrests Gap"
+    authors:
+        - Hussain Hadah
+        - Vikram Maheshri
+    year: 
+    preprint: 
+    published_url:
+    venue: 
+    github:
+    paper_type: works_prog
+
+gunssuicide2020:
+    title: "Effects of Gun Control Laws on Suicide"
+    authors:
+        - Hussain Hadah
+        - Gael Compta
+    year: 
+    preprint: 
+    published_url:
+    venue: 
+    github:
+    paper_type: works_prog
+
+spillovermental2022:
+    title: "The Spillover Effect of Mental Illness on Risk, Academic Achievement and Labor Market Outcomes: Evidence from a Longitudinal Dataset"
+    authors:
+        - Hussain Hadah
+    year: 
+    preprint: 
+    published_url:
+    venue: 
+    github:
+    paper_type: works_prog
+
+
+
+

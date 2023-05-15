@@ -89,34 +89,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-works-in-progress .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-format','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-pub-status','listing-path','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
-      
-      searchColumns: ["listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-format","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-pub-status","listing-path","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-works-in-progress'] = new List('listing-works-in-progress', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Y1VGD6H14M"></script>
 
@@ -133,6 +105,9 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
     }
     </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
@@ -179,10 +154,6 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
   <li class="nav-item">
     <a class="nav-link" href="../about.html">
  <span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../research.html">
- <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../research/index.html" aria-current="page">
@@ -267,7 +238,7 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 
 <div class="research project-list">
 <ul class="list">
-        <li class="project" data-index="0" data-categories="Ethnicity,Bias,Discrimination" data-listing-date-sort="1668492000000" data-listing-file-modified-sort="1684173803577" data-listing-reading-time-sort="2.62">
+        <li class="project" data-index="0" data-categories="Ethnicity,Bias,Discrimination" data-listing-date-sort="1668492000000" data-listing-file-modified-sort="1684191988185" data-listing-reading-time-sort="0.67">
             <div class="project-content listing-pub-info">
                 <p><a><strong>Hussain Hadah</strong>, “The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.,” <em>Working Paper</em></a></p>
             </div>
@@ -290,17 +261,80 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
                         </a>
                     </li>
                     <li class="project-link">
-                        <a href="../research/working-papers/hadah-jmp-2022/https://hhadah.github.io/Attitudes-and-Identity/my_paper/Hadah_JMP.pdf">
+                        <a href="../research/working-papers/hadah-jmp-2022/Hadah_JMP.pdf">
+                            <i class="fa-solid fa-file-pdf"></i> Preprint
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="project" data-index="1" data-categories="Ethnicity,Bias,Discrimination" data-listing-date-sort="1651381200000" data-listing-file-modified-sort="1684192164731" data-listing-reading-time-sort="0.525">
+            <div class="project-content listing-pub-info">
+                <p><a><strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names and Identity on Labor Market Outcomes,” <em>Working Paper</em></a></p>
+            </div>
+            <div class="project-categories">
+                    <div class="project-category"><a href="#category=Ethnicity">
+                            Ethnicity
+                        </a></div>
+                    <div class="project-category"><a href="#category=Bias">
+                            Bias
+                        </a></div>
+                    <div class="project-category"><a href="#category=Discrimination">
+                            Discrimination
+                        </a></div>
+            </div>
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/working-papers/hadah-lastnames-2022/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    <li class="project-link">
+                        <a href="../research/working-papers/hadah-lastnames-2022/Hadah-last-names.pdf">
+                            <i class="fa-solid fa-file-pdf"></i> Preprint
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="project" data-index="2" data-categories="Ethnic favoritism,Dictatorships,Democracy,institutions" data-listing-date-sort="1588309200000" data-listing-file-modified-sort="1684192423309" data-listing-reading-time-sort="0.575">
+            <div class="project-content listing-pub-info">
+                <p><a><strong>Hussain Hadah</strong>, “Democracy and Ethnic Favoritism: Evidence from Africa,” <em>Working Paper</em></a></p>
+            </div>
+            <div class="project-categories">
+                    <div class="project-category"><a href="#category=Ethnic favoritism">
+                            Ethnic favoritism
+                        </a></div>
+                    <div class="project-category"><a href="#category=Dictatorships">
+                            Dictatorships
+                        </a></div>
+                    <div class="project-category"><a href="#category=Democracy">
+                            Democracy
+                        </a></div>
+                    <div class="project-category"><a href="#category=institutions">
+                            institutions
+                        </a></div>
+            </div>
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/working-papers/hadah-ethnic-fav-2020/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    <li class="project-link">
+                        <a href="../research/working-papers/hadah-ethnic-fav-2020/HussainHadahEthFa.pdf">
                             <i class="fa-solid fa-file-pdf"></i> Preprint
                         </a>
                     </li>
                     <li class="project-link">
-                        <a href="https://github.com/andrewheiss/who-cares-about-crackdown">
+                        <a href="https://github.com/hhadah/ethnicfavoritism.git">
                             <i class="fa-brands fa-github"></i> Code
                         </a>
                     </li>
                     <li class="project-link">
-                        <a href="#data-and-code">
+                        <a href="https://github.com/hhadah/ethnicfavoritism/tree/main/data/raw">
                             <i class="fa-solid fa-table"></i> Data
                         </a>
                     </li>
@@ -316,48 +350,13 @@ No matching items
 </section>
 <section id="works-in-progress" class="level2">
 <h2 class="anchored" data-anchor-id="works-in-progress">Works in Progress</h2>
-<div id="listing-works-in-progress" class="quarto-listing quarto-listing-container-custom">
-<div class="research project-list">
-<ul class="list">
-        <li class="project" data-index="0" data-categories="Human rights,Civil society,NGO regulations,COVID-19" data-listing-date-sort="1677132000000" data-listing-file-modified-sort="1683206807000" data-listing-reading-time-sort="0.57">
-            <div class="project-content listing-pub-info">
-                <p><a href="https://arelbundock.com/">Vincent Arel-Bundock</a>, <a href="https://ngreifer.github.io/">Noah Greifer</a>, and <strong>Andrew Heiss</strong>, “The Marginal Effects Zoo: A Guide to Interpretation Using <code>marginaleffects</code> for R”</p>
-            </div>
-            <div class="project-categories">
-                    <div class="project-category"><a href="#category=Human rights">
-                            Human rights
-                        </a></div>
-                    <div class="project-category"><a href="#category=Civil society">
-                            Civil society
-                        </a></div>
-                    <div class="project-category"><a href="#category=NGO regulations">
-                            NGO regulations
-                        </a></div>
-                    <div class="project-category"><a href="#category=COVID-19">
-                            COVID-19
-                        </a></div>
-            </div>
-            <div class="project-details-listing">
-                <ul class="project-links">
-                    <li class="project-link details">
-                        <a href="../research/works-in-progress/arel-bundock-greifer-heiss-mfxplainer/index.html" class="listing-name">
-                            <i class="fa-solid fa-circle-info"></i> Full details »
-                        </a>
-                    </li>
-                    <li class="project-link">
-                        <a href="https://github.com/vincentarelbundock/mfxplainer">
-                            <i class="fa-brands fa-github"></i> Code
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </li>
-</ul>
+<div id="works-in-progress">
+
 </div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
+<ul class="list-group list-group-flush"><li class="list-group-item">Hussain Hadah. "Endogenous Hispanic Identity and Ethnic Gaps in the U.S."<br></li>
+<li class="list-group-item">Hussain Hadah and Vikram Maheshri. "Discrimination and the Black-White Arrests Gap."<br></li>
+<li class="list-group-item">Hussain Hadah and Gael Compta. "Effects of Gun Control Laws on Suicide."<br></li>
+<li class="list-group-item">Hussain Hadah. "The Spillover Effect of Mental Illness on Risk, Academic Achievement and Labor Market Outcomes: Evidence from a Longitudinal Dataset."<br></li></ul>
 <!-- ## Book chapters
 
 :::{#book-chapters}
