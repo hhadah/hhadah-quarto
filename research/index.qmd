@@ -128,9 +128,6 @@ My research in applied microeconomics and labor economics spans topics on discri
 
 ## Works in Progress
 
-:::{#works-in-progress}
-:::
-
 ```{python}
 #| label: "not-published-year-works"
 #| id: "not-published-year-works"
