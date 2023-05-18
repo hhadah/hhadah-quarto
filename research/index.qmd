@@ -11,10 +11,10 @@ listing:
     sort: "date desc"
     template: ../html/research/listing.ejs
     
-  # - id: works-in-progress
-  #   contents: "works-in-progress/*/index.qmd"
-  #   sort: "date desc"
-  #   template: ../html/research/listing.ejs
+#   - id: works-in-progress
+#     contents: "works-in-progress/*/index.qmd"
+#     sort: "date desc"
+#     template: ../html/research/listing.ejs
 
   # - id: book-chapters
   #   contents: "chapters/*/index.qmd"
@@ -127,6 +127,9 @@ My research in applied microeconomics and labor economics spans topics on discri
 :::
 
 ## Works in Progress
+
+<!-- :::{#works-in-progress}
+::: -->
 
 ```{python}
 #| label: "not-published-year-works"

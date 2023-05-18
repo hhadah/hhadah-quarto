@@ -30,12 +30,12 @@ $green:   #118230 !default;
 $teal:    #20c997 !default;
 $cyan:    #3093CF !default;
 
-$primary:   $pink !default;
+$primary:   $green !default;
 $secondary: $gray-700 !default;
 $success:   $green !default;
 $info:      $cyan !default;
 $warning:   $orange !default;
-$danger:    $red !default;
+$danger:    $green !default;
 $light:     $gray-400 !default;
 $dark:      $black !default;
 
@@ -61,7 +61,7 @@ $footer-font-family: "Jost" !default;
 $body-color: $gray-900 !default;
 
 // Links
-$link-color: $orange !default;
+$link-color: $green !default;
 $link-decoration: none !default;
 $link-hover-color: $red !default;
 $link-hover-decoration: underline !default;
@@ -74,13 +74,13 @@ $code-color: $gray-900 !default;
 $btn-code-copy-color-active: $orange !default;
 
 // TOC
-$toc-color: $orange;
+$toc-color: $green;
 $toc-font-size: 1em;
 
 // Navbar
-$navbar-bg: $purple !default;
+$navbar-bg: $black !default;
 $navbar-fg: $white !default;
-$navbar-hl: $light-orange !default;
+$navbar-hl: $red !default;
 
 // Footer
 $footer-bg: $gray-900 !default;
@@ -253,6 +253,7 @@ pre.text, pre.sourceCode, .cell-output pre {
 #title-block-header {
     .quarto-title-banner {
         font-family: $headings-font-family;
+        background-color: green; /* Add this line */
         
         .description {
             font-size: 1.1em;
@@ -362,7 +363,7 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
 
     .project-details {
-        background-color: rgba($red, 0.1);
+        background-color: rgba($green, 0.1);
         padding: 0.75em;
         margin: 1em 0;
     }
@@ -391,12 +392,12 @@ pre.text, pre.sourceCode, .cell-output pre {
 
 .research {
     .back-nav a {
-        color: shift-color($red, -50%);
+        color: shift-color($green, -50%);
     }
     
     .quarto-title .quarto-categories .quarto-category {
-        background-color: shift-color($red, -75%);
-        color: $red;
+        background-color: shift-color($green, -75%);
+        color: $green;
         font-size: 0.65em;
         opacity: 1;
     }
@@ -428,7 +429,7 @@ pre.text, pre.sourceCode, .cell-output pre {
 
         li.project {
             margin-bottom: 2.5em;
-            border-left: 6px solid shift-color($red, -90%);
+            border-left: 6px solid shift-color($green, -90%);
 
             p {
                 margin: 0;
@@ -467,7 +468,7 @@ pre.text, pre.sourceCode, .cell-output pre {
 
     .project-details-listing {
         margin-top: 0.8em;
-        background-color: shift-color($red, -90%);
+        background-color: shift-color($green, -90%);
         font-size: 0.9rem;
 
         @media (max-width: map-get($grid-breakpoints, md)) {
@@ -481,7 +482,7 @@ pre.text, pre.sourceCode, .cell-output pre {
         }
 
         .details {
-            background-color: $red;
+            background-color: $green;
             padding-right: 1.5em;
 
             a {
@@ -617,13 +618,13 @@ pre.text, pre.sourceCode, .cell-output pre {
 
 .cv-download {
     font-family: $headings-font-family;
-    background-color: #771C6D;
-    border-color: #771C6D;
+    background-color: #190cc4;
+    border-color: #190cc4;
     color: $white;
 
     &:hover {
-        background-color: $red;
-        border-color: $red;
+        background-color: $blue;
+        border-color: $blue;
         color: $white;
     }
 }
