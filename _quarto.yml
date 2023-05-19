@@ -49,11 +49,14 @@ website:
     type: textbox
   page-footer: 
     left: |
-      <span class="faux-block">&#169; 2023 Hussain Hadah</span>
+      <span class="faux-block">{{< fa brands creative-commons >}} Hussain Hadah</span>
+      <span class="faux-block">All content licensed under<br>[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}} Creative Commons CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)</span> 
     # center: |
     #   <span class="faux-block"><a href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/">View the tutorial for this template!</a></span>
-    # right: |
-    #   <span class="faux-block"><a href="https://github.com/marvinschmitt/quarto-website-template/">View source on GitHub</a></span>
+    right: |
+      <span class="faux-block">Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)</span>
+      <span class="faux-block">[View the source at {{< fa brands github >}} GitHub](https://github.com/hhadah/hhadah-quarto)</span>
+
 extensions:
   - quarto-fontawesome
 
@@ -73,7 +76,7 @@ execute:
 format:
   html:
     theme: 
-      - html/ath.scss
+      - html/hh.scss
     toc: true
     toc-depth: 4
     code-link: true
