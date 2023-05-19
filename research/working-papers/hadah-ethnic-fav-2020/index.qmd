@@ -1,6 +1,6 @@
 ---
 title: "Democracy and Ethnic Favoritism: Evidence from Africa"
-date: 2020-05-01
+# date: 2020-05-01
 author:
   - name: Hussain Hadah
     url: http://www.hussainhadah.com/

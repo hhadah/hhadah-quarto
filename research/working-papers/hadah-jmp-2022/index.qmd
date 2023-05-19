@@ -1,6 +1,6 @@
 ---
 title: "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S."
-date: 2022-11-15
+# date: 2022-11-15
 author:
   - name: Hussain Hadah
     url: http://www.hussainhadah.com/
