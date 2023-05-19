@@ -35,20 +35,6 @@
     "text": "Citation\n\n Add to Zotero \n\n@article{ChaudhryDotsonHeiss:2021,\n    Author = {Suparna Chaudhry and Marc Dotson and Andrew Heiss},\n    Doi = {10.1111/1758-5899.12984},\n    Journal = {Global Policy},\n    Month = {7},\n    Number = {S5},\n    Pages = {45--58},\n    Title = {Who Cares About Crackdowns? Exploring the Role of Trust in Individual Philanthropy},\n    Volume = {12},\n    Year = {2021}}"
   },
   {
-    "objectID": "research/working-papers-1/arel-bundock-greifer-heiss-mfxplainer/index.html",
-    "href": "research/working-papers-1/arel-bundock-greifer-heiss-mfxplainer/index.html",
-    "title": "The Marginal Effects Zoo: A Guide to Interpretation Using marginaleffects for R",
-    "section": "",
-    "text": "GitHub repository"
-  },
-  {
-    "objectID": "research/working-papers-1/arel-bundock-greifer-heiss-mfxplainer/index.html#abstract",
-    "href": "research/working-papers-1/arel-bundock-greifer-heiss-mfxplainer/index.html#abstract",
-    "title": "The Marginal Effects Zoo: A Guide to Interpretation Using marginaleffects for R",
-    "section": "Abstract",
-    "text": "Abstract\nAnalysts often transform their models’ parameter estimates to report more meaningful and interpretable quantities of interest. This article presents a simple conceptual framework to describe a vast array of estimands which are reported under imprecise and inconsistent terminology across disciplines: predictions, marginal predictions, marginal means, marginal effects, conditional effects, slopes, contrasts, risk ratios, etc. We introduce marginaleffects, an R package which offers a simple and powerful interface to compute all of those quantites, and to conduct hypothesis tests on them. marginaleffects is lightweight; extensible; it works well in combination with other R packages; and it supports over 70 classes of models, including Generalized Linear, Generalized Additive, Mixed Effects, and Bayesian models."
-  },
-  {
     "objectID": "research/index.html",
     "href": "research/index.html",
     "title": "Research",
@@ -112,20 +98,6 @@
     "text": "Abstract\nWhat is the effect of democracy on ethnic favoritism? I estimate the relationship between co-ethnicity and five outcomes of public good provision – education, infant health, wealth, access to clean drinking water and access to electricity – using data from twentyone African countries. Following previous research, I use variation in co-ethnicity across ethnic groups and over time. I first estimate the relationship between these five outcomes and co-ethnicity in the full sample and then split the analysis between anocracies and democracies. I find mixed evidence of ethnic favoritism in the full sample. I find more evidence of co-ethnic targeting when comparing within democracies only and within anocracies only."
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "arXiv Preprint | Code\nOver the centuries, I have devoted countless hours to deciphering and translating the ancient scripts and dialects of the various peoples of Middle-earth. My goal is to gain a deeper understanding of the cultures and histories of these peoples by studying their languages. Currently, I am working on a monograph that explores the linguistic roots of the Elvish languages. Through extensive research and analysis, I hope to shed light on the connections between the different dialects of Elvish and their origins. This project has been particularly challenging, as Elvish is a complex and nuanced language, but I am determined to see it through to completion."
-  },
-  {
-    "objectID": "projects/index.html#the-history-of-the-war-of-the-ring",
-    "href": "projects/index.html#the-history-of-the-war-of-the-ring",
-    "title": "Projects",
-    "section": "The History of the War of the Ring",
-    "text": "The History of the War of the Ring\n\narXiv Preprint | Code\nI am creating a comprehensive and detailed history of the conflict that goes beyond the surface-level events. By gathering information from a variety of sources, including my own memories, written accounts, and oral histories, I hope to shed new light on this important period in Middle-earth’s history and provide valuable insights into the motivations and actions of the various players involved.\n\nView the tutorial for this template (+ download link)"
-  },
-  {
     "objectID": "photography/index.html",
     "href": "photography/index.html",
     "title": "Photography",
@@ -137,7 +109,7 @@
     "href": "index.html",
     "title": "Welcome to my website!",
     "section": "",
-    "text": "I am a Ph.D. candidate in Economics at the University of Houston. My research interest is in Applied Microeconomics primarily in labor economics. I research topics on discrimination, race, identity, mental health, and immigration.\nIn my free time, I enjoy running with my two dogs, watching college and professional sports, and trying new restaurants in the Houston area.\nPlease feel free to contact me on my email.\n\n\n\n\n\nInterests\n\nApplied Microeconomics\nLabor Economics\n\n\n\n\n\n\nEducation\n Ph.D. in Economics, 2023University of Houston, Houston, TX\n M.A. in Economics, 2020University of Houston, Houston, TX\n B.S. in Economics (Summa Cum Laude), 2017Arizona State University, Tempe, AZ"
+    "text": "I am a Ph.D. candidate in Economics at the University of Houston. My research interest is in Applied Microeconomics primarily in labor economics. I research topics on discrimination, race, identity, mental health, and immigration.\nIn my free time, I enjoy running with my two dogs, watching college and professional sports, and trying new restaurants in the Houston area.\nPlease feel free to contact me on my email.\n Download my curriculum vitae.\n\n\n\n\n\nInterests\n\nApplied Microeconomics\nLabor Economics\n\n\n\n\n\n\nEducation\n Ph.D. in Economics, 2023University of Houston, Houston, TX\n M.A. in Economics, 2020University of Houston, Houston, TX\n B.S. in Economics (Summa Cum Laude), 2017Arizona State University, Tempe, AZ"
   },
   {
     "objectID": "about.html",
