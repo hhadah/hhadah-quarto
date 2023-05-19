@@ -39,7 +39,7 @@ In July 2023, I will be joining Tulane University as a Postdoctoral Fellow.
 
 In my free time, I enjoy running with my two dogs, watching college and professional sports, and trying new restaurants in the Houston area.
 
-Please feel free to [contact me](mailto:hussainhadah@gmail.com) on my email.
+<i class="fa-solid fa-envelope"></i> Please feel free to [contact me](mailto:hussainhadah@gmail.com) on my email.
 
 <i class="fa-solid fa-download"></i> Download my [curriculum vitae](https://hussainhadah.com/cv/cv.pdf).
 
@@ -48,18 +48,18 @@ Please feel free to [contact me](mailto:hussainhadah@gmail.com) on my email.
 
 :::: {.columns}
 
-::: {.column width="45%"}
+::: {.column width="40%"}
 ### Interests
 
 - Applied Microeconomics
 - Labor Economics
 :::
 
-::: {.column width="5%"}
+::: {.column width="10%"}
 <!-- empty column to create gap -->
 :::
 
-::: {.column width="45%"}
+::: {.column width="50%"}
 ### Education
 
 <i class="fa-solid fa-graduation-cap"></i> <span style="color:black;">Ph.D. in Economics, 2023</span><br><span style="color:gray;font-size:small;">University of Houston, Houston, TX</span>
