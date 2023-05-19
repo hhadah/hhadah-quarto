@@ -1,13 +1,8 @@
-# Quarto Template for the Tutorial
+# Quarto Website
 
-This repository contains the template for the website tutorial at <https://www.marvinschmitt.com/blog/website-tutorial-quarto/>.
+The website uses codes from:
 
-<p align="center">
-  <img src="img/website_template_screenshot_1.png" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="img/website_template_screenshot_2.png" width="45%">
-<br/><br/>
-  <img src="img/website_template_screenshot_3.png" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img src="img/website_template_screenshot_4.png" width="45%">
-</p>
+1. The website tutorial at <https://www.marvinschmitt.com/blog/website-tutorial-quarto/>
+2. Drew Dimmery. 2022. “Quarto for an Academic Website.” May 11, 2022. https://ddimmery.com/posts/quarto-website
+3. Andrew Heiss's website at <https://www.andrewheiss.com/> and template at <https://github.com/andrewheiss/ath-quarto>
+

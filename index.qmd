@@ -1,30 +1,46 @@
 ---
-about:
-  template: jolla
-  id: about-block
-  image: "img/my_image.jpg"
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/hheddeh
-    - icon: github
-      text: Github
-      href: https://github.com/hhadah
-    - icon: envelope
-      text: Email
-      href: "mailto:hussainhadah@gmail.com"  
+title: "Welcome to my website!"
+pagetitle: "{{< meta website.title >}}"
+main-photo: /img/my_image.jpg
+main-photo-square: /img/my_image.jpg
+title-block-banner: "#CF4446"
+format:
+  html:
+    quarto-template-params:
+      banner-header-class: "home"
 ---
 
-::: {#about-block}
+::: {.grid}
+
+::: {.g-col-12 .g-col-sm-4}
+
+```{=html}
+<div class="grid" style="--bs-columns: 5; row-gap: 0;">
+  <div class="g-col-1 g-col-sm-0"></div>
+  <div class="g-col-3 g-col-sm-5">
+    <picture>
+      <source media="(max-width: 576px)" srcset="{{< meta main-photo-square >}}">
+      <source media="(min-width: 576px)" srcset="{{< meta main-photo >}}">
+      <img class="img-fluid" src="{{< meta main-photo >}}" alt="{{< meta author-meta >}}">
+    </picture>
+  </div>
+  <div class="g-col-1 g-col-sm-0"></div>
+</div>
+```
+
 :::
 
-# Welcome to my website!
+
+::: {.g-col-12 .g-col-sm-8}
 
 I am a Ph.D. candidate in Economics at the University of Houston. My research interest is in Applied Microeconomics primarily in labor economics. I research topics on discrimination, race, identity, mental health, and immigration.
 
 In my free time, I enjoy running with my two dogs, watching college and professional sports, and trying new restaurants in the Houston area.
 
 Please feel free to [contact me](mailto:hussainhadah@gmail.com) on my email.
+
+:::
+:::
 
 :::: {.columns}
 
@@ -42,11 +58,11 @@ Please feel free to [contact me](mailto:hussainhadah@gmail.com) on my email.
 ::: {.column width="45%"}
 ### Education
 
-<i class="fa-solid fa-graduation-cap"></i> **Ph.D. in Economics, 2023** -- University of Houston, Houston, TX
+<i class="fa-solid fa-graduation-cap"></i> <span style="color:black;">Ph.D. in Economics, 2023</span><br><span style="color:gray;font-size:small;">University of Houston, Houston, TX</span>
 
-<i class="fa-solid fa-graduation-cap"></i> **M.A. in Economics, 2020** -- University of Houston, Houston, TX
+<i class="fa-solid fa-graduation-cap"></i> <span style="color:black;">M.A. in Economics, 2020</span><br><span style="color:gray;font-size:small;">University of Houston, Houston, TX</span>
 
-<i class="fa-solid fa-graduation-cap"></i> **B.S. in Economics (Summa Cum Laude), 2017** -- Arizona State University, Tempe, AZ
+<i class="fa-solid fa-graduation-cap"></i> <span style="color:black;">B.S. in Economics (<em>Summa Cum Laude</em>), 2017</span><br><span style="color:gray;font-size:small;">Arizona State University, Tempe, AZ</span>
 
 :::
 
