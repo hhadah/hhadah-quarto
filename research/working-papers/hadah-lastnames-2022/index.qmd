@@ -11,7 +11,7 @@ categories:
   - Discrimination
 pub-info:
   reference: >-
-    <a><strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names and Identity on Labor Market Outcomes,” <em>Working Paper</em></a>
+    <strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names and Identity on Labor Market Outcomes,” <em>Working Paper</em>
   links:
     - name: Preprint
       url: Hadah-last-names.pdf

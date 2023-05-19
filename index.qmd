@@ -42,24 +42,13 @@ Please feel free to [contact me](mailto:hussainhadah@gmail.com) on my email.
 ::: {.column width="45%"}
 ### Education
 
-🎓 **Ph.D. in Economics, 2023** -- University of Houston, Houston, TX
+<i class="fa-solid fa-graduation-cap"></i> **Ph.D. in Economics, 2023** -- University of Houston, Houston, TX
 
-🎓 **M.A. in Economics, 2020** -- University of Houston, Houston, TX
+<i class="fa-solid fa-graduation-cap"></i> **M.A. in Economics, 2020** -- University of Houston, Houston, TX
 
-🎓 **B.S. in Economics (Summa Cum Laude), 2017** -- Arizona State University, Tempe, AZ
+<i class="fa-solid fa-graduation-cap"></i> **B.S. in Economics (Summa Cum Laude), 2017** -- Arizona State University, Tempe, AZ
 
 :::
 
 ::::
-
-```{=html}
-<p class="text-center">
-  <a class="btn btn-primary btn-lg cv-download" href="`r rmarkdown::metadata$cv$pdf`" target="_blank">
-    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download current CV
-  </a>
-</p>
-<div class="embed-container">
-  <iframe src="`r rmarkdown::metadata$cv$pdf`" style="border: 0.5px"></iframe>
-</div>
-```
 

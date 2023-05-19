@@ -12,18 +12,18 @@ categories:
   - institutions
 pub-info:
   reference: >-
-    <a><strong>Hussain Hadah</strong>, “Democracy and Ethnic Favoritism: Evidence from Africa,” <em>Working Paper</em></a>
+    <strong>Hussain Hadah</strong>, “Democracy and Ethnic Favoritism: Evidence from Africa,” <em>Working Paper</em>
   links:
     - name: Preprint
-      url: HussainHadahEthFa.pdf
-      icon: fa-solid fa-file-pdf
+      url: HussainHadahEthFav.pdf
+      icon: fas fa-file-pdf
       local: true
     - name: Code
       url: https://github.com/hhadah/ethnicfavoritism.git
-      icon: fa-brands fa-github
+      icon: fab fa-github
     - name: Data
       url: https://github.com/hhadah/ethnicfavoritism/tree/main/data/raw
-      icon: fa-solid fa-table
+      icon: fas fa-table
   # extra: >-
   #   Presented at a workshop for a special issue of *Global Policy* entitled “Restricting NGOs: From Pushback to Accommodation,” University of Amsterdam, The Netherlands, June 2020 (held online due to COVID-19)
 # doi: 10.1111/1758-5899.12984

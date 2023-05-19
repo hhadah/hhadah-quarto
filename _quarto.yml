@@ -54,6 +54,8 @@ website:
     #   <span class="faux-block"><a href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/">View the tutorial for this template!</a></span>
     # right: |
     #   <span class="faux-block"><a href="https://github.com/marvinschmitt/quarto-website-template/">View source on GitHub</a></span>
+extensions:
+  - quarto-fontawesome
 
 project:
   type: website

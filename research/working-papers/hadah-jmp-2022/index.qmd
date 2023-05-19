@@ -11,7 +11,7 @@ categories:
   - Discrimination
 pub-info:
   reference: >-
-    <a><strong>Hussain Hadah</strong>, “The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.,” <em>Working Paper</em></a>
+    <strong>Hussain Hadah</strong>, “The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.,” <em>Working Paper</em>
   links:
     - name: Preprint
       url: Hadah_JMP.pdf
