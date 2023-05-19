@@ -14,9 +14,9 @@ pub-info:
     <strong>Hussain Hadah</strong>, “The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.,” <em>Working Paper</em>
   links:
     - name: Preprint
-      url: Hadah_JMP.pdf
+      url: https://hhadah.github.io/Attitudes-and-Identity/my_paper/Hadah_JMP.pdf
       icon: fa-solid fa-file-pdf
-      local: true
+      local: false
     # - name: Code
     #   url: https://github.com/andrewheiss/who-cares-about-crackdown
     #   icon: fa-brands fa-github

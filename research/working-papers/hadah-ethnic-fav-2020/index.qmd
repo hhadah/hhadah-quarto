@@ -15,9 +15,9 @@ pub-info:
     <strong>Hussain Hadah</strong>, “Democracy and Ethnic Favoritism: Evidence from Africa,” <em>Working Paper</em>
   links:
     - name: Preprint
-      url: HussainHadahEthFav.pdf
+      url: "https://hhadah.github.io/ethnicfavoritism/my_paper/HussainHadahEthFav.pdf"
       icon: fas fa-file-pdf
-      local: true
+      local: false
     - name: Code
       url: https://github.com/hhadah/ethnicfavoritism.git
       icon: fab fa-github
