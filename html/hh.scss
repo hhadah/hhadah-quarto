@@ -26,7 +26,7 @@ $red:     #CF4446 !default;
 $orange:  #EE6A24 !default;
 $light-orange:  #FB9E07 !default;
 $yellow:  #F6D645 !default;
-$green:   #118230 !default;
+$green:   #336666 !default;
 $teal:    #20c997 !default;
 $cyan:    #3093CF !default;
 
@@ -254,7 +254,7 @@ pre.text, pre.sourceCode, .cell-output pre {
 #title-block-header {
     .quarto-title-banner {
         font-family: $headings-font-family;
-        background-color: green; /* Add this line */
+        background-color: $green; /* Add this line */
         
         .description {
             font-size: 1.1em;

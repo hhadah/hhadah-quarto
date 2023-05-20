@@ -2,7 +2,7 @@
 title: Curriculum vitæ
 description-meta: "Hussain Hadah's CV"
 # date: 2023-05-12
-title-block-banner: "green"
+title-block-banner: "#336666"
 published-title: CV last updated
 engine: knitr 
 cv:
