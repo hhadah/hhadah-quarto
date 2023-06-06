@@ -9,7 +9,7 @@ categories:
   - Ethnic favoritism
   - Dictatorships
   - Democracy
-  - institutions
+  - Institutions
 pub-info:
   reference: >-
     <strong>Hussain Hadah</strong>, “Democracy and Ethnic Favoritism: Evidence from Africa,” <em>Working Paper</em>
