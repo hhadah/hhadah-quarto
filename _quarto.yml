@@ -56,7 +56,7 @@ website:
     type: textbox
   page-footer: 
     left: |
-      <span class="faux-block">{{< fa brands creative-commons >}} Hussain Hadah</span>
+      <span class="faux-block">{{< fa brands creative-commons >}} 2023 Hussain Hadah</span>
       <span class="faux-block">All content licensed under<br>[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}} Creative Commons CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)</span> 
     # center: |
     #   <span class="faux-block"><a href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/">View the tutorial for this template!</a></span>
