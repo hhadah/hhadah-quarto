@@ -33,9 +33,7 @@ format:
 
 ::: {.g-col-12 .g-col-sm-8}
 
-I am an applied microeconomist with a strong focus on labor economics. My passion lies in the field of Applied Microeconomics, where I delve into various topics such as discrimination, race, identity, mental health, and immigration.
-
-Starting in July 2023, I will be joining Tulane University as a post-doctoral fellow.
+I am a post-doctoral fellow at Tulane University's Department of Economics and Murphy Institute. I research topics in applied microeconomics such as discrimination, race, identity, mental health, and immigration.
 
 In my free time, I enjoy running with my two dogs, watching college and professional sports, and trying new restaurants.
 
