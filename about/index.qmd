@@ -55,6 +55,17 @@ Granted May 2017
 :::
 :::
 
+### Employment 
+
+::: {.d-flex .justify-content-between}
+::: {}
+**Tulane University**  
+:::
+::: {.text-end}
+July 2023 - *present*
+:::
+:::
+*Post-doctoral Fellow*
 
 ### Experience
 
