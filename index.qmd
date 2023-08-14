@@ -44,7 +44,7 @@ Outside of economics, I enjoy running with my two dogs, watching college and pro
 Thank you for visiting my website, and I invite you to explore further to learn more about my research and interests.
 
 
-<i class="fa-solid fa-envelope"></i> Please feel free to [contact me](mailto:hussainhadah@gmail.com) on my email.
+<i class="fa-solid fa-envelope"></i> Please feel free to [contact me](mailto:hussainhadah@gmail.com) via email.
 
 <i class="fa-solid fa-download"></i> Download my [curriculum vitae](https://hussainhadah.com/cv/cv.pdf).
 
