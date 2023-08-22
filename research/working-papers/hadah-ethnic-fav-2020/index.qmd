@@ -4,7 +4,8 @@ title: "Democracy and Ethnic Favoritism: Evidence from Africa"
 author:
   - name: Hussain Hadah
     url: http://www.hussainhadah.com/
-    affiliation: University of Houston
+    orcid: 0000-0002-8705-6386
+    affiliation: Tulane University
 categories: 
   - Ethnic favoritism
   - Dictatorships
@@ -24,8 +25,8 @@ pub-info:
     - name: Data
       url: https://github.com/hhadah/ethnicfavoritism/tree/main/data/raw
       icon: fas fa-table
-  # extra: >-
-  #   Presented at a workshop for a special issue of *Global Policy* entitled “Restricting NGOs: From Pushback to Accommodation,” University of Amsterdam, The Netherlands, June 2020 (held online due to COVID-19)
+  extra: >-
+    Presented at the 2021 Southern Economic Association
 # doi: 10.1111/1758-5899.12984
 # haiku:
 #   - When seeing crackdown,

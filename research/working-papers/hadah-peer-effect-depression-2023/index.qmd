@@ -1,0 +1,55 @@
+---
+title: "Peer Effects in Adolescent Mental Health"
+# date: 2022-05-01
+author:
+  - name: Hussain Hadah
+    url: http://www.hussainhadah.com/
+    orcid: 0000-0002-8705-6386
+    affiliation: Tulane University
+categories: 
+  - Social network
+  - Peer effects
+  - Instrumental variable
+  - Add Health dataset
+pub-info:
+  reference: >-
+    <strong>Hussain Hadah</strong>, “Peer Effects in Adolescent Mental Health,” <em>Working Paper</em>
+  links:
+    - name: Preprint
+      url: https://hhadah.github.io/Depression_Idea/manuscripts/Hadah-Peer-Effect-Depression.pdf
+      icon: fa-solid fa-file-pdf
+      local: false
+    # - name: Code
+    #   url: https://github.com/andrewheiss/who-cares-about-crackdown
+    #   icon: fa-brands fa-github
+    # - name: Data
+    #   url: "#data-and-code"
+    #   icon: fa-solid fa-table
+  extra: >-
+    Presented at the 2023 Stata Texas Empirical Microeconomics Conference, and won the best graduate poster.
+# doi: 10.1111/1758-5899.12984
+# haiku:
+#   - When seeing crackdown,
+#   - people with low social trust
+#   - are fairweather friends.
+---
+
+<!-- ![Preregistered](preregistered_large_color.png) &emsp; ![Open data](data_large_color.png) &emsp; ![Open](materials_large_color.png) -->
+
+## Important links
+
+- [Paper (preprint)](https://hhadah.github.io/Depression_Idea/manuscripts/Hadah-Peer-Effect-Depression.pdf)
+
+## Abstract
+
+This paper investigates the impact of peer mental health on adolescents' mental health, academic achievement, physical health, and behavioral outcomes. Mental illness is prevalent among children and adolescents, and can have significant consequences on various outcomes. To estimate peer effects, the study uses the friends-of-friends method, finding that a one standard deviation increase in the mental health index of friends is associated with a 0.73 standard deviation increase in one's own mental health. Additionally, the study reveals significant negative effects of peer mental health on academic achievement, physical health, and risky behavior. Overall, this research highlights the importance of understanding peer effects in mental health and its implications for adolescent well-being.
+
+## Important figure
+
+<!-- Figure 1: Peer effects of friends' mental health on own mental health -->
+
+![Figure 1: Peer effects of friends' mental health on own mental health](own-depression.png)
+
+![Figure 2: Peer effects of friends' mental health on own Grade Point Average](gpa.png)
+
+![Figure 3: Peer effects of friends' mental health on probability of skipping school for no reason](skip-school.png)
