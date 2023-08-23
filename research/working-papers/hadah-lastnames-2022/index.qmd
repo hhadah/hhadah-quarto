@@ -15,7 +15,7 @@ pub-info:
     <strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names and Identity on Labor Market Outcomes,” <em>Under Review</em>
   links:
     - name: Preprint
-      url: https://hhadah.github.io/hispanic-last-names/my_paper/Hadah-last-name-draft.pdf
+      url: https://hhadah.github.io/hispanic-last-names/my_paper/Hadah-last-names-draft.pdf
       icon: fa-solid fa-file-pdf
       local: false
     # - name: Code

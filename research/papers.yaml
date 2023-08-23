@@ -67,16 +67,26 @@ gunssuicide2020:
     paper_type: works_prog
 
 spillovermental2022:
-    title: "The Spillover Effect of Mental Illness on Risk, Academic Achievement and Labor Market Outcomes: Evidence from a Longitudinal Dataset"
+    title: "Peer Effects in Adolescent Mental Health"
     authors:
         - Hussain Hadah
-    year: 
+    year: 2023
     preprint: 
     published_url:
     venue: 
     github:
     paper_type: working_paper
 
+jmp2023:
+    title: "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S"
+    authors:
+        - Hussain Hadah
+    year: 2023
+    preprint: https://hhadah.github.io/Depression_Idea/manuscripts/Hadah-Peer-Effect-Depression.pdf
+    published_url:
+    venue: 
+    github:
+    paper_type: working_paper
 
 
 
