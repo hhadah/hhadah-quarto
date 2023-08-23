@@ -18,7 +18,7 @@ pub-info:
       url: https://hhadah.github.io/hispanic-last-names/my_paper/Hadah-last-names-draft.pdf
       icon: fa-solid fa-file-pdf
       local: false
-     - name: Code
+    - name: Code
       url: https://github.com/hhadah/hispanic-last-names.git
       icon: fab fa-github
     - name: Data
