@@ -13,7 +13,7 @@ categories:
   - Institutions
 pub-info:
   reference: >-
-    <strong>Hussain Hadah</strong>, “Democracy and Ethnic Favoritism: Evidence from Africa,” <em>Working Paper</em>
+    <strong>Hussain Hadah</strong>, “Democracy and Ethnic Favoritism: Evidence from Africa,” <em>Under Review</em>
   links:
     - name: Preprint
       url: "https://hhadah.github.io/ethnicfavoritism/my_paper/HussainHadahEthFav.pdf"
