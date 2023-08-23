@@ -18,6 +18,13 @@ pub-info:
       url: https://hhadah.github.io/hispanic-last-names/my_paper/Hadah-last-names-draft.pdf
       icon: fa-solid fa-file-pdf
       local: false
+     - name: Code
+      url: https://github.com/hhadah/hispanic-last-names.git
+      icon: fab fa-github
+    - name: Data
+      url: https://github.com/hhadah/hispanic-last-names/tree/main/data
+      icon: fas fa-table
+  extra: >-
     # - name: Code
     #   url: https://github.com/andrewheiss/who-cares-about-crackdown
     #   icon: fa-brands fa-github
