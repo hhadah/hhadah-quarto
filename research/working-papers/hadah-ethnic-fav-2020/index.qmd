@@ -27,14 +27,8 @@ pub-info:
       icon: fas fa-table
   extra: >-
     Presented at the 2021 Southern Economic Association
-# doi: 10.1111/1758-5899.12984
-# haiku:
-#   - When seeing crackdown,
-#   - people with low social trust
-#   - are fairweather friends.
+# doi: 
 ---
-
-<!-- ![Preregistered](preregistered_large_color.png) &emsp; ![Open data](data_large_color.png) &emsp; ![Open](materials_large_color.png) -->
 
 ## Important links
 

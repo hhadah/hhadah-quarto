@@ -19,22 +19,11 @@ pub-info:
       url: https://hhadah.github.io/Depression_Idea/manuscripts/Hadah-Peer-Effect-Depression.pdf
       icon: fa-solid fa-file-pdf
       local: false
-    # - name: Code
-    #   url: https://github.com/andrewheiss/who-cares-about-crackdown
-    #   icon: fa-brands fa-github
-    # - name: Data
-    #   url: "#data-and-code"
-    #   icon: fa-solid fa-table
   extra: >-
-    Presented at the 2023 Stata Texas Empirical Microeconomics Conference, and won the best graduate poster.
-# doi: 10.1111/1758-5899.12984
-# haiku:
-#   - When seeing crackdown,
-#   - people with low social trust
-#   - are fairweather friends.
+    Presented at the 2023 Stata Texas Empirical Microeconomics Conference and won the best graduate poster.
+# doi: 
 ---
 
-<!-- ![Preregistered](preregistered_large_color.png) &emsp; ![Open data](data_large_color.png) &emsp; ![Open](materials_large_color.png) -->
 
 ## Important links
 
