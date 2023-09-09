@@ -27,7 +27,7 @@ pub-info:
 
 ## Important links
 
-- [Paper (preprint)](https://hhadah.github.io/Depression_Idea/my_paper/Hadah-Peer-Effect-Depression.pdf)
+- [Paper (pdf)](https://hhadah.github.io/Depression_Idea/my_paper/Hadah-Peer-Effect-Depression.pdf)
 
 ## Abstract
 
@@ -42,3 +42,22 @@ This paper examines how peer mental health influences adolescents' mental well-b
 ![Figure 2: Peer effects of friends' mental health on own Grade Point Average](gpa.png)
 
 ![Figure 3: Peer effects of friends' mental health on probability of skipping school for no reason](skip-school.png)
+
+<!-- ## Citation
+
+<p class="buttons" style="text-align:center;">
+<a class="btn btn-danger" target="_blank" href="https://www.zotero.org/save?type=doi&q=10.1111/1758-5899.12984">{{< ai zotero >}}&emsp;Add to Zotero {{< fa square-arrow-up-right >}}</a>
+</p>
+
+```bibtex
+@article{ChaudhryDotsonHeiss:2021,
+    Author = {Suparna Chaudhry and Marc Dotson and Andrew Heiss},
+    Doi = {10.1111/1758-5899.12984},
+    Journal = {Global Policy},
+    Month = {7},
+    Number = {S5},
+    Pages = {45--58},
+    Title = {Who Cares About Crackdowns? Exploring the Role of Trust in Individual Philanthropy},
+    Volume = {12},
+    Year = {2021}}
+``` -->
