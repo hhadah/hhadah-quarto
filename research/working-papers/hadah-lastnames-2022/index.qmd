@@ -15,7 +15,7 @@ pub-info:
     <strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names and Identity on Labor Market Outcomes,” <em>Under Review</em>
   links:
     - name: Preprint
-      url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4566234#:~:text=Hussain%20Hadah,-Tulane%20University%20%2D%20Department&text=I%20also%20study%20the%20effect,be%20explained%20by%20educational%20differences.
+      url: https://dx.doi.org/10.2139/ssrn.4566234
       icon: fa-solid fa-file-pdf
       local: false
     - name: Code
@@ -30,7 +30,7 @@ pub-info:
 
 ## Important links
 
-- [Paper (preprint)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4566234#:~:text=Hussain%20Hadah,-Tulane%20University%20%2D%20Department&text=I%20also%20study%20the%20effect,be%20explained%20by%20educational%20differences.)
+- [Paper (preprint)](https://dx.doi.org/10.2139/ssrn.4566234)
 
 ## Abstract
 
