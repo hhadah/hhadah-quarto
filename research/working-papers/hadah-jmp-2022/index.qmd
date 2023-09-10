@@ -36,3 +36,14 @@ fathers were born in a Spanish-speaking country than among children of inter-eth
 parents. These findings have implications for the interpretation of economic research
 on racial and ethnic gaps in a variety of contexts, including labor market outcomes,
 redistributive policies, and political representation.
+
+## Citation
+
+Hadah, Hussain, The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S. (August 22, 2023). Available at SSRN: https://ssrn.com/abstract=4566232 or http://dx.doi.org/10.2139/ssrn.4566232
+
+```bibtex
+@article{hadah2023hispanicidentity,
+    Author = {Hadah, Hussain},
+    Title = {The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.},
+    Year = {2023}}
+```

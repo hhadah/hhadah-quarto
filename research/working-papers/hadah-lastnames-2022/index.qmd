@@ -42,3 +42,14 @@ explained by educational differences. I also study the effect of identifying as 
 earnings. I find that men with a Spanish-sounding last name who identify as Hispanic
 earn significantly less than those who do not identify as Hispanic, but the gap could also
 be explained by educational differences.
+
+## Citation
+
+Hadah, Hussain, The Impact of Hispanic Last Names and Identity on Labor Market Outcomes (September 3, 2023). Available at SSRN: https://ssrn.com/abstract=4566234 or http://dx.doi.org/10.2139/ssrn.4566234
+
+```bibtex
+@article{hadah2022effect:2021,
+    Author = {Hadah, Hussain},
+    Title = {The Impact of Hispanic Last Names and Identity on Labor Market Outcomes},
+    Year = {2022}}
+```
