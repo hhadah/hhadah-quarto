@@ -53,7 +53,7 @@ Thank you for visiting my website, and I invite you to explore further to learn 
 
 :::: {.columns}
 
-::: {.column width="40%"}
+::: {.column width="45%"}
 ### Interests
 
 - Applied Microeconomics
@@ -64,7 +64,7 @@ Thank you for visiting my website, and I invite you to explore further to learn 
 <!-- empty column to create gap -->
 :::
 
-::: {.column width="50%"}
+::: {.column width="45%"}
 ### Education
 
 <i class="fa-solid fa-graduation-cap"></i> <span style="color:black;">Ph.D. in Economics, 2023</span><br><span style="color:gray;font-size:small;">University of Houston, Houston, TX</span>
