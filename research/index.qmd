@@ -65,7 +65,7 @@ def button(url, str, icon):
 
 yaml_data = yaml.safe_load(open("papers.yaml"))
 pub_strs = {"pubs": {}, "wps": {}, "worksinprogress": {}}
-for _, data in yaml_data.items():
+for key, data in yaml_data.items():
     title_str = data["title"]
     authors = data.get("authors", ["me"])
     authors = [aut if aut != "me" else "<strong>Drew Dimmery</strong>" for aut in authors]
@@ -96,13 +96,12 @@ for _, data in yaml_data.items():
         pub_strs["wps"][year_str].append(
             "<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>"
         )
-    elif paper_type == "works_prog":
+    if paper_type == "works_prog":
         pub_str = f'{author_str}. "{title_str}."'
         if year_str not in pub_strs["worksinprogress"]:
             pub_strs["worksinprogress"][year_str] = []
-        pub_strs["worksinprogress"][year_str].append(
-            "<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>"
-        )
+        # This line is changed to append a tuple of (key, pub_str)
+        pub_strs["worksinprogress"][year_str].append((key, "<li class='list-group-item'>" + pub_str + "<br>" + " ".join(buttons) + "</li>"))
     else:
         if year_str not in pub_strs["pubs"]:
             pub_strs["pubs"][year_str] = []
@@ -136,9 +135,18 @@ My research in applied microeconomics and labor economics spans topics on discri
 #| label: "not-published-year-works"
 #| id: "not-published-year-works"
 #| output: asis
+from markdown import markdown  # Import the markdown function
+
 for year in sorted(pub_strs["worksinprogress"].keys(), reverse=True):
-    # display(Markdown(f"### {year}" + "{#" + f"not-published-{year}" + "}"))
-    bolded_publications = [pub.replace('Hussain Hadah', '<b>Hussain Hadah</b>') for pub in pub_strs["worksinprogress"][year]]
+    bolded_publications = []
+    for key, pub in pub_strs["worksinprogress"][year]:
+        notes = yaml_data.get(key, {}).get("notes")
+        if notes:
+            # Use the markdown function to render the notes
+            notes_html = markdown(notes)
+            pub += f"<ul><li style='font-size: smaller;'>{notes_html}</li></ul>"
+        pub += "</li>"  # Move this line up here
+        bolded_publications.append(pub.replace('Hussain Hadah', '<b>Hussain Hadah</b>'))
     display(HTML(
         "<ul class='list-group list-group-flush'>" + '\n'.join(bolded_publications) + "</ul>"
     ))
