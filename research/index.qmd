@@ -138,8 +138,9 @@ My research in applied microeconomics and labor economics spans topics on discri
 #| output: asis
 for year in sorted(pub_strs["worksinprogress"].keys(), reverse=True):
     # display(Markdown(f"### {year}" + "{#" + f"not-published-{year}" + "}"))
+    bolded_publications = [pub.replace('Hussain Hadah', '<b>Hussain Hadah</b>') for pub in pub_strs["worksinprogress"][year]]
     display(HTML(
-        "<ul class='list-group list-group-flush'>" + '\n'.join(pub_strs["worksinprogress"][year]) + "</ul>"
+        "<ul class='list-group list-group-flush'>" + '\n'.join(bolded_publications) + "</ul>"
     ))
 ```
 

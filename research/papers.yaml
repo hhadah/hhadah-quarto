@@ -99,4 +99,19 @@ asian-identity:
     github:
     paper_type: works_prog
 
-
+mlo-project:
+    title: "Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment"
+    authors:
+        - Hussain Hadah
+        - Patrick Button
+        - David Schwegman
+        - Javiera Selman
+        - Tran Nguyen-Phuong
+        - Cathy Balfe
+    year: 
+    preprint: 
+    published_url:
+    venue: 
+    github:
+    paper_type: works_prog
+    
