@@ -142,14 +142,18 @@ for year in sorted(pub_strs["worksinprogress"].keys(), reverse=True):
     for key, pub in pub_strs["worksinprogress"][year]:
         notes = yaml_data.get(key, {}).get("notes")
         if notes:
-            # Use the markdown function to render the notes
             notes_html = markdown(notes)
-            pub += f"<ul><li style='font-size: smaller;'>{notes_html}</li></ul>"
-        pub += "</li>"  # Move this line up here
-        bolded_publications.append(pub.replace('Hussain Hadah', '<b>Hussain Hadah</b>'))
-    display(HTML(
-        "<ul class='list-group list-group-flush'>" + '\n'.join(bolded_publications) + "</ul>"
-    ))
+            notes_formatted = f"<li class='list-group-item' style='border-top: none; font-size: smaller; padding-top: 0;'>{notes_html}</li>"
+        else:
+            notes_formatted = ""
+        title_and_authors = pub.replace('Hussain Hadah', '<b>Hussain Hadah</b>')
+        bolded_publications.append(
+            "<ul class='list-group' style='margin-bottom: 15px;'>" +  # Adding margin between publications
+            f"<li class='list-group-item' style='border-bottom: none; padding-bottom: 0;'>{title_and_authors}</li>" +  # Removing bottom border & padding
+            notes_formatted +
+            "</ul>"
+        )
+    display(HTML('\n'.join(bolded_publications)))
 ```
 
 <!-- ## Book chapters
