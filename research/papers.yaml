@@ -1,0 +1,120 @@
+jmp2023:
+    title: "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S"
+    authors:
+        - Hussain Hadah
+    year: 2023
+    preprint: https://hhadah.github.io/Attitudes-and-Identity/my_paper/Hadah_JMP.pdf
+    published_url:
+    venue: 
+    github:
+    paper_type: working_paper
+
+hispaniclastnames2020:
+    title: "The Impact of Hispanic Last Names and Identity on Labor Market Outcomes"
+    authors:
+        - Hussain Hadah
+    year: 2020
+    preprint: https://hhadah.github.io/hispanic-last-names/my_paper/Hadah-last-names.pdf
+    published_url:
+    venue: 
+    github:
+    paper_type: working_paper
+
+ethnicfavdem2019:
+    title: "Democracy and Ethnic Favoritism: Evidence from Africa"
+    authors:
+        - Hussain Hadah
+    year: 2019
+    preprint: https://hussainhadah.com/pdf/HussainHadahEthFav.pdf
+    published_url:
+    venue: 
+    github:
+    paper_type: working_paper
+
+endogidentat2018:
+    title: "Endogenous Hispanic Identity and Ethnic Gaps in the U.S"
+    authors:
+        - Hussain Hadah
+    year: 
+    preprint: 
+    published_url:
+    venue: 
+    github:
+    paper_type: works_prog
+
+crime2020:
+    title: "Discrimination and the Black-White Arrests Gap"
+    authors:
+        - Hussain Hadah
+        - Vikram Maheshri
+    year: 
+    preprint: 
+    published_url:
+    venue: 
+    github:
+    paper_type: works_prog
+
+gunssuicide2020:
+    title: "Effects of Gun Control Laws on Suicide"
+    authors:
+        - Hussain Hadah
+        - Gael Compta
+    year: 
+    preprint: 
+    published_url:
+    venue: 
+    github:
+    paper_type: works_prog
+
+spillovermental2022:
+    title: "Peer Effects in Adolescent Mental Health"
+    authors:
+        - Hussain Hadah
+    year: 2023
+    preprint: 
+    published_url:
+    venue: 
+    github:
+    paper_type: working_paper
+
+jmp2023:
+    title: "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S"
+    authors:
+        - Hussain Hadah
+    year: 2023
+    preprint: https://hhadah.github.io/Depression_Idea/manuscripts/Hadah-Peer-Effect-Depression.pdf
+    published_url:
+    venue: 
+    github:
+    paper_type: working_paper
+
+asian-identity:
+    title: "The Effect of Anti-Asian Attitudes on Asian Identity in the U.S"
+    authors:
+        - Hussain Hadah
+    year: 
+    preprint: 
+    published_url:
+    venue: 
+    github:
+    paper_type: works_prog
+
+mlo-project:
+    title: "Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment"
+    authors:
+        - Patrick Button
+        - Hussain Hadah
+        - David Schwegman
+        - Javiera Selman
+        - Tran Nguyen-Phuong
+        - Cathy Balfe
+    year: 
+    preprint: 
+    published_url:
+    venue: 
+    github:
+    paper_type: works_prog
+    notes: | 
+        - _Related: See [Balfe et al. (2022)](https://journals.sagepub.com/doi/full/10.1177/1525822X211057623) for the pilot study._
+        - _Note: experiment planned to go into the field in Oct. 2023._
+    
