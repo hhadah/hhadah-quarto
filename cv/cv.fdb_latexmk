@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1698105022 "/Users/hhadah/Documents/GiT/hhadah-quarto/cv/cv.tex" "cv.pdf" "cv" 1698105022
-  "/Users/hhadah/Documents/GiT/hhadah-quarto/cv/cv.tex" 1698105021 20180 b4540a57b9dc5bbd4547d01426f004d6 ""
+["pdflatex"] 1698408290 "/Users/hhadah/Documents/GiT/hhadah-quarto/cv/cv.tex" "cv.pdf" "cv" 1698408290
+  "/Users/hhadah/Documents/GiT/hhadah-quarto/cv/cv.tex" 1698408227 20739 097d78dc7dff92d451edd97adfcb98fa ""
   "/Users/hhadah/Library/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1643922251 2796795 9b37e65f83922863af74fc947fc5804c ""
   "/Users/hhadah/Library/texmf/tex/latex/multicol.sty" 1084240224 25928 526edd03c609ff2cdc4805a41441008e ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -60,6 +60,8 @@
   "/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty" 1622581934 4946 461cc78f6f26901410d9f1d725079cc6 ""
   "/usr/local/texlive/2021/texmf-dist/tex/latex/base/size10.clo" 1636758526 8448 96f18c76bf608a36ee6fbf021ac1dd32 ""
   "/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd" 1622581934 2443 6dd9a5deeddddfcceb01d1932590ebad ""
+  "/usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty" 1561238569 51697 f8f08183cd2080d9d18a41432d651dfb ""
+  "/usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1612734021 17086 7ed8cbc4d361ec87392817e0dd4f65ec ""
   "/usr/local/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def" 1601931164 19103 48d29b6e2a64cb717117ef65f107b404 ""
@@ -85,13 +87,14 @@
   "/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/usr/local/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575674187 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "/usr/local/texlive/2021/texmf-dist/tex/latex/sectsty/sectsty.sty" 1137110779 22423 d476012cd03f82f9475ad54ba6cd3267 ""
+  "/usr/local/texlive/2021/texmf-dist/tex/latex/titlesec/titlesec.sty" 1625518490 48833 3b7b4cfab1a3d15596bfd3772a77ab65 ""
   "/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf" 1621028613 40042 fe981136cbb5f3715ab1b0e46e3d3892 ""
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1643922253 4379201 718a59215bccc89d4f89ee72c554b0e8 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "cv.aux" 1698105022 686 470fdebd29f279999e89f3533b8c7bc8 "pdflatex"
-  "cv.out" 1698105022 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "cv.tex" 1698105021 20180 b4540a57b9dc5bbd4547d01426f004d6 ""
+  "cv.aux" 1698408290 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "cv.out" 0 -1 0 "pdflatex"
+  "cv.tex" 1698408227 20739 097d78dc7dff92d451edd97adfcb98fa ""
   (generated)
   "cv.aux"
   "cv.log"

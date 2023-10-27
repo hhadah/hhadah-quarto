@@ -18,8 +18,25 @@
     colorlinks=true,
     linkcolor=blue,
     filecolor=blue,      
-    urlcolor=blue,
+    urlcolor=black,
+    pdfauthor={\name},
+    pdfkeywords={economics, econometrics, industrial organization, applied microeconomics},
+    pdftitle={\name: Curriculum Vitae},
+    pdfsubject={Curriculum Vitae},
+    pdfpagemode=UseNone
 }
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{\name}
+\fancyfoot[C]{\thepage}
+
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\usepackage{enumitem}
+\setlist{nosep, leftmargin=*}
 
 \newcommand{\MYhref}[3][black]{\href{#2}{\color{#1}{#3}}}%
 
@@ -121,6 +138,15 @@
   Citizenship: United States
 \end{minipage}
 
+\section*{Employment}
+
+\begin{itemize}
+  \item Tulane University, Department of Economics and Murphy Institute
+  \begin{itemize}
+    \item \textit{Post-doctoral Fellow,} July 2023--present
+  \end{itemize}
+\end{itemize}
+
 \section*{Education}
 
 \begin{itemize}
@@ -142,15 +168,6 @@
 %        Semesters in Mathematics}, Fall 2002.
     \end{itemize}
 
-\end{itemize}
-
-\section*{Employment}
-
-\begin{itemize}
-  \item Tulane University, Department of Economics and Murphy Institute
-  \begin{itemize}
-    \item \textit{Post-doctoral Fellow,} July 2023--present
-  \end{itemize}
 \end{itemize}
 
 
@@ -401,11 +418,11 @@ Topics: Discrimination, Race, Identity, Mental Health, Immigration
 %\item Vice President, Society of Undergraduate Mathematics, North
 %  Carolina State University, 2001--2003.
 %
-\item Conferences and workshops attended:
+\item Conferences and workshops attended and planned:
 %
 \begin{description}
 
-\item[2023:] Stata Texas Empirical Microeconomics Conference; European Society for Population Economics (ESPE) %  
+\item[2023:] Stata Texas Empirical Microeconomics Conference; European Society for Population Economics (ESPE); Southern Economic Association Conference, New Orleans (\textit{planned}) %  
 \item[2021:] \href{https://www.southerneconomic.org/session-details/?conferenceId=7&eventId=3353}%
 {Southern Economic Association}, Houston, Texas
   \item[2020:] \href{https://cega.berkeley.edu/initiative/working-group-in-african-political-economy/}%
@@ -472,6 +489,7 @@ Topics: Discrimination, Race, Identity, Mental Health, Immigration
 %
 %\newpage
 %
+\section*{References}
 
 \noindent
 \begin{minipage}[t]{0.45\textwidth}
