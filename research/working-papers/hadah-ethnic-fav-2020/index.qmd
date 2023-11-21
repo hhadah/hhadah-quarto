@@ -26,7 +26,7 @@ pub-info:
       url: https://github.com/hhadah/ethnicfavoritism/tree/main/data/raw
       icon: fas fa-table
   extra: >-
-    Presented at the 2021 Southern Economic Association
+    Presented at the 2021 Southern Economic Association.
 # doi: 
 ---
 
