@@ -1,0 +1,17 @@
+---
+title: "Urban Economics"
+description: "A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use."
+---
+
+# Tulane University
+
+## Spring 2024
+### Urban Economics
+A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use.
+
+You can find the syllabus [here](https://hhadah.github.io/urban-econ/syllabus/UrbanEcon3320SyllabusSpring2024HHadah.pdf).
+
+#### Slides
+
+1. Class 1: Introduction \[[**.html**](https://hhadah.github.io/urban-econ/slides/01-week1/01-tue/01-class1.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/01-week1/01-tue/01-class1.pdf)\]
+

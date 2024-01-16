@@ -1,0 +1,23 @@
+---
+title: "Teaching"
+listing:
+  - id: class-23-24
+    contents: class-23-24.qmd
+  - id: econ-101
+    contents: econ-101.qmd
+title-block-banner: "#EE6A24"
+page-layout: full
+toc: true
+toc-location: right
+toc-title: Semester
+---
+
+## Spring 2024
+
+:::{#class-23-24}
+:::
+
+## Spring 2020
+
+:::{#econ-101}
+:::
