@@ -4,8 +4,11 @@
     <div class="course-entry">
         <div class="body">
             <p class="course-title">
-                <!-- Always display the title as a link -->
-                <a href="<%= course.url ? course.url : '#' %>" target="_blank"><%= course.title %></a>
+                <% if (course.url) { %>
+                <a href="<%= course.url %>" target="_blank"><%= course.title %></a> 
+                <% } else { %>
+                <%= course.title %> 
+                <% } %>
             </p>
             <p class="course-details">
                 <span class="course-number"><%= course.number %></span> | 
