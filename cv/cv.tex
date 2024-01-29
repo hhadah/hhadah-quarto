@@ -8,95 +8,75 @@
 % required in any resulting documents. I do ask that you please leave
 % this notice and the above URL in the source code if you choose to
 % redistribute this file.
+%
+% Note that i've heavily modified this template (me being Patrick Button)
+% So it's no longer the exact one created by Jason Blevins.
 
-\documentclass[10pt,letterpaper]{article}
+\documentclass[letterpaper]{article}
 
+%\usepackage{fontspec}
 \usepackage{geometry}
-\usepackage[T1]{fontenc}
-\usepackage[hidelinks]{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=blue,      
-    urlcolor=blue,
-    pdfauthor={\name},
-    pdfkeywords={economics, econometrics, industrial organization, applied microeconomics},
-    pdftitle={\name: Curriculum Vitae},
-    pdfsubject={Curriculum Vitae},
-    pdfpagemode=UseNone
-}
-
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhead[L]{\name}
-\fancyfoot[C]{\thepage}
-
-\usepackage{titlesec}
-\titleformat{\section}
-  {\normalfont\Large\bfseries}{\thesection}{1em}{}
-
-\usepackage{enumitem}
-\setlist{nosep, leftmargin=*}
-
-\newcommand{\MYhref}[3][black]{\href{#2}{\color{#1}{#3}}}%
-
+\usepackage{alltt}
 \usepackage{multicol}
+%\usepackage[ocgcolorlinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue, ocgcolorlinks]{hyperref}
 
-% Comment the following line to use the default Computer Modern font
+\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+\definecolor{goldenyellow}{rgb}{1.0, 0.87, 0.0}
+\definecolor{darkpink}{rgb}{0.91, 0.33, 0.5}
+\usepackage[mdyy]{datetime}
+\usepackage{fontawesome}
+
+\usepackage{textcomp}
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\bfseries\scshape}{}{0em}{}[] % Text formatting of sections
+\titlespacing{\section}{0pt}{1pt}{1pt} % Spacing around sections
+
+% Comment the following lines to use the default Computer Modern font
 % instead of the Palatino font provided by the mathpazo package.
 % Remove the 'osf' bit if you don't like the old style figures.
-\usepackage[sc,osf]{mathpazo}
+\fontfamily{ppl}\selectfont 
+%\usepackage{palatino}
+\usepackage[T1]{fontenc}
 
-
-
-
-% In practice, I use the following font packages instead of mathpazo.
-% beramono provides a nice fixed-width font. xagaramon uses the
-% (commercial) Adobe Garamond font.
-%\usepackage[scaled=0.75]{beramono}
-%\usepackage[osf]{xagaramon}
-
+%\usepackage[sc,osf]{mathpazo}
+%\usepackage{pslatex}
 % Set your name here
 \def\name{Hussain Hadah}
 
 % Replace this with a link to your CV if you like, or set it empty
 % (as in \def\footerlink{}) to remove the link in the footer:
-\def\footerlink{https://hussainhadah.com/cv/cv.pdf}
+\def\footerlink{}
 
 % The following metadata will show up in the PDF properties
-%\hypersetup{
-%  colorlinks = true,
-%  urlcolor = blue,
-%  pdfauthor = {\name},
-%  pdfkeywords = {economics, econometrics, industrial organization,
-%    applied microeconomics},
-%  pdftitle = {\name: Curriculum Vitae},
-%  pdfsubject = {Curriculum Vitae},
-%  pdfpagemode = UseNone
-%}
+
+\hypersetup{
+  colorlinks = true,
+  urlcolor=blue!50!black,
+  pdfauthor = {\name},
+  pdfkeywords = {},
+  pdftitle = {\name: Curriculum Vitae of Hussain Hadah},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
 
 \geometry{
-  body={6.5in, 8.5in},
+  body={6.5in, 9.3in},
   left=1.0in,
-  top=1.25in
+  top=1.0in
 }
 
 % Customize page headers
-\pagestyle{myheadings}
-\markright{\name}
+%\pagestyle{myheadings}
+\markright{\today \rm}
 \thispagestyle{empty}
 
-% Custom section fonts
-\usepackage{sectsty}
-\sectionfont{\rmfamily\mdseries\Large}
-\subsectionfont{\rmfamily\mdseries\itshape\large}
-
-% Other possible font commands include:
-% \ttfamily for teletype,
-% \sffamily for sans serif,
-% \bfseries for bold,
-% \scshape for small caps,
-% \normalsize, \large, \Large, \LARGE sizes.
 
 % Don't indent paragraphs.
 \setlength\parindent{0em}
@@ -112,447 +92,220 @@
 
 \begin{document}
 
-% Place name at left
-{\Huge \name}
+% Print name centered and bold:
+\centerline{\huge \bf \name}
+%\titlerule
 
-% Alternatively, print name centered and bold:
-%\centerline{\huge \bf \name}
-
-\vspace{0.25in}
-
-\begin{minipage}[t]{0.5\textwidth}
-  \MYhref{https://tulane.edu/}{Tulane University} \\
-  % \MYhref{https://liberalarts.tulane.edu/departments/economics}{Department of Economics} \\
-  % \MYhref{https://murphy.tulane.edu/}{The Murphy Institute} \\
-  6823 St. Charles Avenue \\
-  Tilton Memorial Hall Room 103 \\
-  New Orleans, LA 70118 \\
-  %Date of Birth: July 17, 1994 \\
-  % Citizenship: United States
-\end{minipage}
-\begin{minipage}[t]{0.5\textwidth}
-  %Phone: (602) 393-8077 \\
-  %Fax: (919) 684-8974 \\
-  Email: \href{mailto:hussainhadah@gmail.com}{\tt hussainhadah@gmail.com} \\
-  Homepage: \href{http://hussainhadah.com/}{\tt http://hussainhadah.com/} \\
-  Citizenship: United States
-\end{minipage}
-
-\section*{Employment}
-
-\begin{itemize}
-  \item Tulane University, Department of Economics and Murphy Institute
-  \begin{itemize}
-    \item \textit{Post-doctoral Fellow,} July 2023--present
-  \end{itemize}
-\end{itemize}
-
-\section*{Education}
-
-\begin{itemize}
-  \item Ph.D. Economics, University of Houston, 2023
-  \begin{itemize}
-    \item \textit{Dissertation:} Essays on Hispanic Identity
-    \item \textit{Committee:} Chinhui Juhn \textit{(co-chair)}, Vikram Maheshri \textit{(co-chair)}, Willa Friedman, Yona Rubinstein
-  \end{itemize}
-
-  \item M.A. Economics, University of Houston, 2020
-
-  \item B.S. Economics, Arizona State University, 2017
-    \begin{itemize}
-    \item \textit{Minors:} Mathematics and International Relations
-    \item \textit{Honors:} \textit{Summa Cum Laude}, Phi Beta Kappa, Golden 
-    Key International Honour Society
-%    \item \textit{Advanced study:}
-%      \href{http://www.stolaf.edu/depts/math-old/budapest/}{Budapest
-%        Semesters in Mathematics}, Fall 2002.
-    \end{itemize}
-
-\end{itemize}
-
-
-% \begin{minipage}[t]{0.5\textwidth}
-%   \textbf{Professor Ruxandra Prodan - Boul} \\
-%   \textit{(Teaching reference)}  \\
-%                    Department of Economics \\
-%                    University of Houston  \\
-%                    \href{mailto:rprodan@uh.edu}{\tt rprodan@uh.edu} \\
-% \end{minipage}
-
-
-\section*{Fields of Interest}
-
-Primary: Applied Microeconomics, Labor Economics
-
-Topics: Discrimination, Race, Identity, Mental Health, Immigration
-
-\section*{Research}
-%
-\subsection*{Working Papers}
-\begin{itemize}
-
-\item "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S." \emph{Under Review} [\href{https://hhadah.github.io/Attitudes-and-Identity/my_paper/Hadah-Attitudes.pdf}{\tt link}]
-
-% \underline{\textit{Abstract:}} In this paper, I study the determinants of the choice to identify as Hispanic among those who could—those whose parents, grandparents, or selves were born in a Spanish-speaking country. I find that individuals with Hispanic ancestry are significantly less likely to self-identify as Hispanic if they live in states with high levels of implicit ethnic bias. A one standard deviation increase in bias decreases self-reported Hispanic identity by seven and 13 percentage points for first and second-generation Hispanics, respectively. These effects are more prominent among second-generation immigrants whose mothers and fathers were born in a Spanish-speaking country than among children of inter-ethnic parents. These findings have implications for the interpretation of economic research on racial and ethnic gaps in a variety of contexts, including labor market outcomes, redistributive policies, and political representation.
-
-% \bigskip
-
-\item "Democratic Institutions and Their Effect on Ethnic Favoritism: Evidence from Saharan Africa" \emph{Under Review} [\href{https://hhadah.github.io/ethnicfavoritism/my_paper/HussainHadahEthFav.pdf}{\tt link}]
-
-% \underline{\textit{Abstract:}} What is the effect of democracy on ethnic favoritism? I estimate the relationship between co-ethnicity and five outcomes of public good provision – education, infant health, wealth, access to clean drinking water and access to electricity – using data from twenty-one African countries. Following previous research, I use variation in co-ethnicity across ethnic groups and over time. I first estimate the relationship between these five outcomes and co-ethnicity in the full sample and then split the analysis between anocracies and democracies. I find mixed evidence of ethnic favoritism in the full sample. I find more evidence of co-ethnic targeting when comparing within democracies only and within anocracies only.
-
-
-\item "The Impact of Hispanic Last Names and Identity on Labor Market Outcomes" \emph{Under Review} [\href{https://hhadah.github.io/hispanic-last-names/my_paper/Hadah-last-names-draft.pdf}{\tt link}]
-
-\item "Peer Effects in Adolescent Mental Health" [\href{https://hhadah.github.io/Depression_Idea/manuscripts/Hadah-Peer-Effect-Depression.pdf}{\tt link}]
-
-% \bigskip
-
-% \underline{\textit{Abstract:}} In this paper, I compare the children of inter-ethnic marriages to study the impact of having a Hispanic last name. While males born to Hispanic father-White mothers earn less than those born to White father-Hispanic mothers, the gap could be completely explained by educational differences. I also study the effect of identifying as Hispanic on earnings. I find that men that identify as Hispanic earn significantly less than those that do not, even after controlling for educational differences.
-
-\end{itemize}
-\subsection*{Works in Progress}
-%
-\begin{itemize}
-
-% \item "The Spillover Effect of Mental Illness on Risk, Academic Achievement and Labor Market Outcomes: Evidence from a Longitudinal Dataset"
-\item "Endogenous Hispanic Identity and Ethnic Gaps in the U.S."
-\item "Discrimination and the Black-White Arrests Gap", with Vikram Maheshri
-\item "Effects of Gun Control Laws on Suicide", with Gael Compta
-\item "Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment", with Patrick Button, David Schwegman, Javiera Selman, Tran Nguyen-Phuong, and Cathy Balfe
-\item "The Effect of Anti-Asian Attitudes on Asian Identity in the U.S"
-
-%\section*{References}
-%
-%\begin{itemize}
-%\item Han Hong \\
-%  Professor of Economics \\
-%  Stanford University \\
-%  (650) 725-5702 \\
-%  \href{mailto:doubleh@stanford.edu}{\texttt{doubleh@stanford.edu}}
-%\item Shakeeb Khan \\
-%  Associate Professor of Economics \\
-%  Duke University \\
-%  (919) 660-1873 \\
-%  \href{mailto:shakeebk@econ.duke.edu}{\texttt{shakeebk@econ.duke.edu}}
-%\item Paul Ellickson \\
-%  Assistant Professor of Economics and Marketing \\
-%  Simon Graduate School of Business, University of Rochester \\
-%  (585) 273-1491 \\
-%  \href{mailto:paul.ellickson@paul.ellickson@simon.rochester.edu}{\texttt{paul.ellickson@simon.rochester.edu}}
-%\item Andrew Sweeting \\
-%  Assistant Professor of Economics \\
-%  Duke University \\
-%  (919) 660-1883 \\
-%  \href{mailto:atsweet@duke.edu}{\texttt{atsweet@duke.edu}}
-%\item Curtis Taylor (\emph{Teaching Reference}) \\
-%  Professor of Economics \\
-%  Duke University \\
-%  (919) 660-1827 \\
-%  \href{mailto:crtaylor@econ.duke.edu}{\texttt{crtaylor@econ.duke.edu}}
-%\end{itemize}
-
-%\section*{Academic Experience}
-
-\section*{Research Experience}
-
-\begin{itemize}
-  \item Research Assistant,
-  \href{https://vmaheshri.github.io/}{Vikram Maheshri},
-  May 2021--August 2021
-
-  \item Research Assistant,
-  \href{https://www.uh.edu/class/economics/people/current-faculty/steve/}{Steve Craig},
-  June 2020--May 2022
-  \item Research Assistant,
-  \href{https://sites.google.com/site/vegardmokleivnygaard/}{Vegard Mokleiv Nygaard},
-  August 2019--August 2020
-\end{itemize}
-
-\section*{Teaching Experience}
-
-\subsection*{Tulane University, Department of Economics}
-
-\subsection*{As Instructor}
-
-\begin{itemize}
-
-\item Instructor, Urban Economics, Spring 2024 %[\href{https://hussainhadah.com/courses/econ2304/}{Link to course website}]
-\end{itemize}
-
-
-\subsection*{University of Houston, Department of Economics}
-
-\subsection*{As Instructor}
-
-\begin{itemize}
-
-\item Instructor, Principles of Microeconomics, Summer 2021, Spring 2022, and Summer 2022 %[\href{https://hussainhadah.com/courses/econ2304/}{Link to course website}]
-\end{itemize}
-
-\subsection*{As Teaching Assistant}
-
-\begin{itemize}
-
-\item Teaching Assistant, Political Economy, Gergely Ujhelyi,
-  August 2022--January 2023
-\item Teaching Assistant, Intermediate Microeconomics, Piruz Saboury,
-  August 2021--January 2022
-\item Teaching Assistant, Principles of Microeconomics, Joel Melendez Lugo,
-  August 2020--May 2021
-%\item Research Assistant,
-%  \href{http://www.econ.duke.edu/~shakeebk/}{Shakeeb Khan},
-%  Fall 2009--Spring 2010.
-%\item Research Assistant,
-%  \href{http://www.econ.duke.edu/~psarcidi/}{Peter Arcidiacono},
-%  \href{http://www.econ.duke.edu/~pb29/}{Patrick Bayer}, and
-%  \href{http://www.econ.duke.edu/~paule/}{Paul Ellickson},
-%  Fall 2007--Spring 2009.
-\item Teaching Assistant, Intermediate Macroeconomics and  Capital Market Economics, Islam Rizvanoghlu, 
-
-\qquad August 2018--August 2019
-%\item Research Assistant,
-%  \href{http://www.econ.duke.edu/~shakeebk/}{Shakeeb Khan} and
-%  \href{http://www.econ.duke.edu/~timmins/}{Christopher Timmins},
-%  March--June 2007.
-%\item Research Assistant,
-%  \href{http://www.stanford.edu/~axl/}{Aprajit Mahajan} and
-%  \href{http://www.econ.duke.edu/~taroz/}{Alessandro Tarozzi},
-%  October--November 2006,
-%  March--June 2007.
-%\item Research Assistant,
-%  \href{http://www.stanford.edu/~doubleh/}{Han Hong},
-%  Fall 2006--Spring 2007.
-%\item Instructor,
-%  \href{http://jblevins.org/courses/qualcamp06}{Microeconomics Qualifier Camp},
-%  Summer 2006.
-%\item Teaching Assistant,
-%  \href{http://jblevins.org/courses/econ302s06}{Ph.D. Game Theory},
-%  \href{http://www.duke.edu/~crtaylor/}{Curtis Taylor},
-%  Spring 2006.
-%\item Teaching Assistant,
-%  \href{http://jblevins.org/courses/econ301f05}{Ph.D. Microeconomic Analysis},
-%  \href{http://www.econ.duke.edu/~nechyba/}{Thomas Nechyba},
-%  Fall 2005.
-%\item Research Assistant,
-%  \href{http://trinity.aas.duke.edu/~jvigdor/}{Jacob Vigdor},
-%  Summer 2005--Summer 2006.
-\end{itemize}
-
-%\subsection*{Colorado School of Mines,
-%  Department of Mathematical and Computer Sciences}
-%
-%\begin{itemize}
-%\item Research Assistant,
-%  \href{http://www.mines.edu/fs_home/whereman/}{Willy\ Hereman},
-%  Summer 2002.
-%\end{itemize}
-%
-%\subsection*{North Carolina State University,
-%  Department of Mathematics}
-%
-%\begin{itemize}
-%\item Research Assistant,
-%  \href{http://www4.ncsu.edu/~mtchu/}{Moody Chu} and
-%  \href{http://www4.ncsu.edu/~ref/}{Robert Funderlic},
-%  Spring 2003--Fall 2004.
-%\item Mathematics Tutor,
-%  \href{http://www.ncsu.edu/aspsa/}{Academic Support Program for Student Athletes},
-%  Summer 2001.
-%\end{itemize}
-
-
-%with
-%\href{http://www.econ.duke.edu/~psarcidi/}{Peter Arcidiacono},
-%\href{http://www.econ.duke.edu/~pb29/}{Patrick Bayer}, and
-%\href{http://www.econ.duke.edu/~paule/}{Paul Ellickson}
-%(\emph{Job market paper~1}).
-%\item \href{http://jblevins.org/research/panel}%
-%  {Partial Identification and Inference in Binary Choice and Duration Panel Data Models}
-%  (\emph{Job market paper~2}).
-%\item \href{http://jblevins.org/research/smcdmm}%
-%  {Sequential Monte Carlo Methods for Estimating Dynamic Microeconomic Models}.
-%\item Local NLLS Estimation of Semiparametric Binary Choice Models, with
-%  \href{http://www.econ.duke.edu/~shakeebk/}{Shakeeb Khan}.
-%\item \href{http://jblevins.org/research/dcident}%
-%  {Nonparametric Identification of Dynamic Games with Discrete and Continuous Choices and Latent States}.
-%\item \href{http://jblevins.org/research/dfbr}{Distribution-Free
-%    Estimation of Heteroskedastic Binary Response Models in Stata}, with
-%  \href{http://www.econ.duke.edu/~shakeebk/}{Shakeeb Khan}.
-\end{itemize}
-%
-%\subsection*{Publications}
-%
-%\begin{itemize}
-%\item Blevins, Jason~R. (forthcoming).
-%  \href{http://jblevins.org/research/generic-list}%
-%  {A Generic Linked List Implementation in Fortran 95}.
-%  \textit{ACM SIGPLAN Fortran Forum}.
-%\end{itemize}
-%
-%\subsection*{Scientific Software}
-%
-%\begin{itemize}
-%\item \href{http://libosl.org/}{Open Scientific Library}, An open-source
-%  library for scientific computing in Fortran (in progress).
-%\item \href{http://jblevins.org/research/dfbr}{DFBR}, A Stata program
-%  for distribution-free estimation of heteroskedastic binary response
-%  models, with
-%  \href{http://www.econ.duke.edu/~shakeebk/}{Shakeeb Khan} (2009).
-%\item \href{http://jblevins.org/research/pdest}{PDESolutionTester}, A
-%  Mathematica program for the symbolic verification of exact solutions
-%  of nonlinear partial differential equations, with
-%  \href{http://web.centre.edu/jeffrey.heath/}{Jeff\ Heath} and
-%  \href{http://www.mines.edu/fs_home/whereman/}{Willy\ Hereman} (2002).
-%\end{itemize}
-%
-%\section*{Conference Presentations}
-%
-%\begin{itemize}
-%\item Sequential Monte Carlo Methods for Estimating Dynamic
-%  Microeconomic Models
-%  \begin{itemize}
-%  \item ERID Conference on Identification Issues in Economics, Duke
-%    University, October 3, 2008.
-%  \end{itemize}
-%\end{itemize}
-%
-\section*{Professional Activities}
-%
-\begin{itemize}
-%
-\item Member, American Economic Association, 2017--Present.
-%
-%\item Vice President, Economics Graduate Student Council, Duke University,
-%  2006--2007.
-%
-%\item Vice President, Society of Undergraduate Mathematics, North
-%  Carolina State University, 2001--2003.
-%
-\item Conferences and workshops attended and planned:
-%
-\begin{description}
-
-\item[2023:] Stata Texas Empirical Microeconomics Conference; European Society for Population Economics (ESPE); Southern Economic Association Conference, New Orleans ($\times$ 2) %  
-\item[2021:] \href{https://www.southerneconomic.org/session-details/?conferenceId=7&eventId=3353}%
-{Southern Economic Association}, Houston, Texas
-  \item[2020:] \href{https://cega.berkeley.edu/initiative/working-group-in-african-political-economy/}%
-{Working Group in African Political Economy}, University of  California, Berkeley (\textit{workshop})
-\end{description}
-%
-%\item Referee for:
-%  \begin{itemize}
-%  \item \href{http://www.wiley.com/bw/journal.asp?ref=0095-2583}%
-%    {\textit{Economic Inquiry}}% (1)
-%  \item \href{http://pubs.amstat.org/loi/jbes}%
-%    {\textit{Journal of Business and Economic Statistics}}% (1)
-% \item \href{http://www.elsevier.com/locate/jeconom}%
-%   {\textit{Journal of Econometrics}}% (1)
-%  \item \href{http://www.wiley.com/bw/journal.asp?ref=0303-6898}%
-%    {\textit{Scandinavian Journal of Statistics}}% (1)
-%  \end{itemize}
-\end{itemize}
-%
-\section*{Professional Experience}
-\subsection*{Congressional Campaign for Alex Triantaphyllis for Congress}
-\begin{itemize}
-\item Data Analyst and Researcher, August 2017-- March 2018.
-\end{itemize}
-\section*{Honors, Awards, \& Fellowships}
-%
-\begin{itemize}
-\item Best Graduate Student Poster, 2023 Stata Texas Empirical Microeconomics Conference.
-\item Doctoral Student Tuition Fellowship, University of Houston, 2017--2023.
-\item The Phi Beta Kappa Society, 2017--Present
-\item Golden Key International Honor Society, 2012--Present
-\item Arizona State University Grant, Spring 2016--Spring 2017
-\item Dean's List, Arizona State University, 2016--2017
-\end{itemize}
-
-%\item Summer Research Fellowship, Duke University, 2008.
-%\item Summer Research Fellowship, Duke University, 2007.
-%\item \href{http://ice.uchicago.edu/}{Institute on Computational Economics}
-%  Fellow, University of Chicago, 2006.
-%\item Outstanding Teaching Assistant Award, Duke University, 2006.
-%\item Undergraduate Research Award, North Carolina State University, 2004.
-%% \item \href{http://www.cba.ua.edu/~ode/}{Omicron Delta Epsilon},
-%%   International Economics Honor Society,
-%%   2004.
-%\item \href{http://www.pbk.org/}{Phi Beta Kappa}, Zeta of North Carolina, 2003.
-%% \item \href{http://www.pme-math.org/}{Pi Mu Epsilon},
-%%   National Mathematics Honor Society,
-%%   2003.
-%\item \href{http://www.nsf.gov/crssprgm/reu/}{NSF Research Experiences
-%    for Undergraduates}, Colorado School of Mines, 2002.
-%% \item \href{http://www.phikappaphi.org/}{Phi Kappa Phi}, 2002.
-%% \item \href{http://www.goldenkey.org}{Golden Key International Honour Society},
-%%   2002.
-%% \item Dean's List, North Carolina State University, 2000--2004.
-
-\section*{Miscellaneous}
-%
-\begin{itemize}
-%  \item \textit{Security Clearance:} Special Sworn Status, U.S. Census Bureau.
-\item \textit{Computer Skills:} R, Stata, Python, QGIS, \LaTeX.
-\item \textit{Languages:} English (native), Arabic (native), French (beginner), Spanish (beginner)
-%    Ruby.
-\end{itemize}
-%
-%\newpage
-%
-\section*{References}
-
-\noindent
-\begin{minipage}[t]{0.45\textwidth}
-  \textbf{Patrick Button}  \\
-  Department of Economics \\
-  Tulane University \\
-  \href{mailto:pbutton@tulane.edu}{\tt pbutton@tulane.edu}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.45\textwidth}
-  \textbf{Willa Friedman}  \\
-  Department of Economics \\
-  University of Houston  \\
-  \href{mailto:willa.friedman@gmail.com}{\tt willa.friedman@gmail.com}
-\end{minipage}
-
-\vspace{1em}  % Adds some space between the two rows of references
-
-\noindent
-\begin{minipage}[t]{0.45\textwidth}
-  \textbf{Chinhui Juhn}  \\
-  Department of Economics \\
-  University of Houston  \\
-  \href{mailto:cjuhn@uh.edu}{\tt cjuhn@uh.edu}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.45\textwidth}
-  \textbf{Vikram Maheshri}  \\
-  Department of Economics \\
-  University of Houston  \\
-  \href{mailto:vmaheshri@gmail.com}{\tt vmaheshri@gmail.com}
-\end{minipage}
-
-\vspace{1em}  % Adds some space between the two rows of references
-
-\noindent
-\begin{minipage}[t]{0.45\textwidth}
-  \textbf{Yona Rubinstein}  \\
-  Department of Economics \\
-  University of Houston  \\
-  \href{mailto:yonarubinstein@gmail.com}{\tt yonarubinstein@gmail.com}
-\end{minipage}
-
-\bigskip
-
-% Footer
 \begin{center}
-  \begin{footnotesize}
-    Last updated: \today \\
-    \href{\footerlink}{\texttt{\footerlink}}
-  \end{footnotesize}
+   \hspace{0.5mm} Pronouns: He/Him \href{https://www.mypronouns.org/}{\faQuestionCircleO}  
+\\    
+\hspace{0.5mm} Citizenship: United States of America
+\\
+\faEnvelopeO \hspace{0.5mm} \href{mailto:hhadah@tulane.edu}{hhadah@tulane.edu} \rm  \hspace{0.5mm} \faGlobe \hspace{0.5mm} \href{https://www.hussainhadah.com/}{www.hussainhadah.com} 
+\href{https://www.linkedin.com/in/hussain-hadah/}{\faLinkedinSquare} \href{https://github.com/hhadah}{\faGithub} 
+\\ Tulane University, 6823 St. Charles Avenue, Tilton Memorial Hall Room 103, New Orleans, LA 70118.\\
+  
 \end{center}
 
+%\singlespacing
+
+\section*{Education}
+\vspace{2 mm}
+\begin{itemize}
+  \item {\makebox[1.8cm]{2023.\hfill}}Ph.D. Economics, University of Houston. \\{\makebox[1.8cm]{\hfill}}Dissertation \textit{“Essays on Hispanic Identity”}.
+  \item {\makebox[1.8cm]{2020.\hfill}}M.A. in Economics. University of Houston. 
+  \item {\makebox[1.8cm]{2006.\hfill}}B.S. in Economics.  Arizona State University. \\{\makebox[1.8cm]{\hfill}}\textit{Minors:} Mathematics and International Relations. \\{\makebox[1.8cm]{\hfill}}\textit{Honors:} Summa Cum Laude, Phi Beta Kappa, Golden Key International Honour Society.
+\end{itemize}
+\vspace{2 mm}
+
+\section*{Academic Positions}
+\vspace{2 mm}
+\begin{itemize}
+  \item {\makebox[1.8cm]{2023-present. \hfill}} Postdoctoral Fellow. Department of Economics and Murphy Institute, School of Liberal \\{\makebox[1.8cm]{\hfill}}Arts. Tulane University.
+\end{itemize}
+\vspace{2 mm}
+
+% \section*{Publications}
+% \vspace{2 mm}
+% \begin{itemize}
+% \item \href{https://onlinelibrary.wiley.com/doi/abs/10.1002/pam.22325}{``Skipping the Bag: Intended and Unintended Consequences of Disposable Bag Regulation''} with Tatiana Homonoff, Lee-Sien Kao, Christina Seybolt.\textit{Journal of Policy Analysis and Management, vol 41(1), 2022.} 
+% \item \href{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1564-913X.2015.00239.x}{``A multidimensional employment quality index for Brazil, 2002–11''} with Federico Huneeus, Oscar Landerretche and Esteban Puentes. \textit{Journal of International Labor Review, Volume 154, Issue 2, June 2015.}
+% \item \href{https://www.cepal.org/en/publications/37022-wage-differentials-between-public-and-private-sectors-chile-evidence-longitudinal}{``Wage differentials between the public and private sectors in Chile: Evidence from longitudinal data''} with Lucas Navarro. \textit{Journal CEPAL Review, Volume 112, April 2014.} 
+% \item \href{https://www.estudiospublicos.cl/index.php/cep/article/view/283}{``An Earned Income Tax Credit Proposal for Chile''} with Claudio Agostini and Marcela Perticará. \textit{Journal Estudios Publicos. Nº 129. Summer 2013.}
+% \end{itemize}
+% \vspace{2 mm}
+
+\section*{Working Papers}
+\vspace{2 mm}
+\begin{itemize}
+\item ``The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S'' [\href{https://dx.doi.org/10.2139/ssrn.4566232}{Link}] .
+\item ``Democratic Institutions and Their Effect on Ethnic Favoritism: Evidence from Saharan Africa'' [\href{https://dx.doi.org/10.2139/ssrn.4566225}{Link}].
+\item ``The Impact of Hispanic Last Names and Identity on Labor Market Outcomes'' [\href{https://dx.doi.org/10.2139/ssrn.4566234}{Link}]. 
+\item ``Peer Effects in Adolescent Mental Health'' [\href{https://hhadah.github.io/Depression_Idea/my_paper/Hadah-Peer-Effect-Depression.pdf}{Link}].  
+
+\end{itemize}
+\vspace{2 mm}
+
+
+\section*{Work in Progress}
+\vspace{2 mm}
+\begin{itemize}
+\item ``Sexual orientation discrimination in mortgage lending: an audit field experiment'' with Patrick Button, David Schwegman, Javiera Selman, Cathy Balfe and Tran Nguyen-Phuong.  
+\item ``Endogenous Hispanic Identity and Ethnic Gaps in the U.S''.
+\item ``Discrimination and the Black-White Arrests Gap'', with Vikram Maheshri.
+\item ``Effects of Gun Control Laws on Suicide'', with Gael Compta.
+\item ``The Effect of Anti-Asian Attitudes on Asian Identity in the U.S''.
+\end{itemize}
+
+
+\section*{Grants}
+\vspace{2 mm}
+% \textit{External Funding
+% }\begin{itemize}
+%   \item {\makebox[1.8cm]{2022-2023.\hfill}}Chilean Ministry of Housing and Urbanism. Principal Investigator. 
+%    \item {\makebox[1.8cm]{2020-2022.\hfill}}Impact Evaluation Fund, Chilean Budget Office. Co-Principal Investigator.
+% \end{itemize}
+\textit{Internal Funding
+}\begin{itemize}
+  \item {\makebox[1.8cm]{2023.\hfill}}Seed Grant. Murphy Institute. Tulane University.
+\end{itemize}
+\vspace{2 mm}
+
+\section*{Academic Honors}
+\vspace{2 mm}
+\begin{itemize}
+\item {\makebox[2.1cm]{2023.\hfill}} Best Graduate Student Poster, Stata Texas Empirical Microeconomics Conference
+\item {\makebox[2.1cm]{2017--2023.\hfill}} Doctoral Student Tuition Fellowship, University of Houston. 
+\item {\makebox[2.1cm]{2017-present.\hfill}} The Phi Beta Kappa Society. 
+\item {\makebox[2.1cm]{2017.\hfill}} Arizona State University Grant. 
+\item {\makebox[2.1cm]{2016--present.\hfill}} Golden Key International Honor Society. 
+\item {\makebox[2.1cm]{2016--2017.\hfill}} Graduated Summa Cum Laude, 4.00 GPA. BS in Economics. Arizona State University. 
+\item {\makebox[2.1cm]{2016--2017.\hfill}} Dean's List, Arizona State University. 
+\end{itemize}
+\vspace{2 mm}
+
+
+\section*{Conferences and Seminar Presentations}
+\vspace{2 mm}
+\begin{itemize}
+% \item (Scheduled) Universidad Adolfo Ibáñez (10/13); 28th Annual LACEA Meeting 2023 (11/16)
+\item {\makebox[1.8cm]{2023.\hfill}}Stata Texas Empirical Microeconomics Conference; European Society for \\{\makebox[1.8cm]{\hfill}}Population Economics (ESPE); Southern Economic Association \\{\makebox[1.8cm]{\hfill}}Conference, New Orleans ($\times$ 2).
+\item {\makebox[1.8cm]{2021.\hfill}}\href{https://www.southerneconomic.org/session-details/?conferenceId=7&eventId=3353}%
+{Southern Economic Association}, Houston, Texas
+\item {\makebox[1.8cm]{2020.\hfill}}\href{https://cega.berkeley.edu/initiative/working-group-in-african-political-economy/}%
+{Working Group in African Political Economy}, University of  California, Berkeley (\textit{workshop}).
+
+\end{itemize}
+
+\vspace{2 mm}
+
+\section*{Research Experience}
+\vspace{2 mm}
+\textit{Research Assistant}
+\begin{itemize}
+\item {\makebox[5.0cm]{May 2021--August2021.\hfill}}\href{https://vmaheshri.github.io/}{Vikram Maheshri}.
+\item {\makebox[5.0cm]{June 2020--May 2022.\hfill}}\href{https://www.uh.edu/class/economics/people/current-faculty/steve/}{Steve Craig}.
+\item {\makebox[5.0cm]{August 2019--August 2020.\hfill}}\href{https://sites.google.com/site/vegardmokleivnygaard/}{Vegard Mokleiv Nygaard}.
+
+
+\end{itemize}
+
+\vspace{2 mm}
+
+\section*{Teaching}
+\vspace{2 mm}
+\textit{Instructor}
+\begin{itemize}
+\item {\makebox[3.0cm]{Spring 2024.\hfill}}Urban Economics, Undergraduate. Economics Department Tulane University.
+\item {\makebox[3.0cm]{Summer 2022.\hfill}}Principles of Microeconomics. Economics Department University of Houston.
+\item {\makebox[3.0cm]{Spring 2022.\hfill}}Principles of Microeconomics. Economics Department University of Houston.
+\item {\makebox[3.0cm]{Summer 2021.\hfill}}Principles of Microeconomics. Economics Department University of Houston.
+
+\end{itemize}
+\textit{Teaching Assistant}
+\begin{itemize}
+\item {\makebox[1.8cm]{2022-2023.\hfill}}Political Economy, Gergely Ujhelyi. University of Houston.
+\item {\makebox[1.8cm]{2021--2022.\hfill}}Intermediate Microeconomics, Piruz Saboury. University of Houston.
+\item {\makebox[1.8cm]{2020--2021.\hfill}}Principles of Microeconomics, Joel Melendez Lugo.
+
+\end{itemize}
+\vspace{2 mm}
+
+
+\section*{Previous Employment}
+\vspace{2 mm}
+\begin{itemize}
+\item {\makebox[1.8cm]{2017-2018.\hfill}}Data Analyst and Researcher. Congressional Campaign for Alex Triantaphyllis for Congress.
+\end{itemize}
+\vspace{2 mm}
+
+\section*{Languages}
+\vspace{2 mm}
+{\makebox[2.3cm]{\hfill}}English (native), Arabic (native), French (beginner), Spanish (beginner).
+\vspace{2 mm}
+
+
+\section*{Programming}
+\vspace{2 mm}
+{\makebox[2.3cm]{\hfill}}R, Stata, Python, QGIS, \LaTeX.
+\vspace{2 mm}
+
+% \section*{Services}
+% \vspace{2 mm}
+% \begin{itemize}
+% \item {\makebox[1.8cm]{2023.\hfill}}Scientific Committee. 2nd LAUrban Meeting (LACEA).
+% \item {\makebox[1.8cm]{2023.\hfill}}Thesis advisor. Master in Economic Analysis. University of Chile.
+% \item {\makebox[1.8cm]{2020;2023.\hfill}}External thesis advisor. Master in Urban Planning; Master in Public Policy. \\{\makebox[1.8cm]{\hfill}}Pontifical Catholic University of Chile.
+% %\item {\makebox[1.8cm]{2019-2021.\hfill}}Advisor Rental Policy Team. Chilean Ministry of Housing and Urban Planning.
+% \item {\makebox[1.8cm]{2020-2021.\hfill}}Internship supervisor; Undergraduate student of Computer Science. Pontifical Catholic {\makebox[1.8cm]{\hfill}} University of Chile; Undergraduate student of Economics. University of Chile. 
+% \end{itemize}
+% \vspace{2 mm}
+
+
+\section*{References}
+
+\parbox{0.5\textwidth}{
+\begin{tabbing}
+\hspace{2.75cm} \= \hspace{4cm} \= \kill
+{\textit{Patrick Button }}  \\\\
+{Tulane University}\\ 
+{\href{mailto:pbutton@tulane.edu}{pbutton@tulane.edu}}
+\end{tabbing}}
+\hfill
+\parbox{0.5\textwidth}{
+\begin{tabbing}
+\hspace{2.75cm} \= \hspace{4cm} \= \kill
+{\textit{Willa Friedman }} \\\\
+%{Paulette Goddard Professor of Urban \\Policy and Planning\\ Director for Furman Center for Real Estate \\and Urban Policy.}  \\ 
+{University of Houston}\\ 
+{\href{mailto:willa.friedman@gmail.com}{willa.friedman@gmail.com}}
+\end{tabbing}}
+\hfill
+\parbox{0.5\textwidth}{ 
+\begin{tabbing}
+\hspace{2.75cm} \= \hspace{4cm} \= \kill
+{\textit{Chinhui Juhn }} \\\\
+%{Professor of Economics and Public Service}  \\ 
+{University of Houston}\\ 
+{\href{mailto:cjuhn@uh.edu}{cjuhn@uh.edu}}
+\end{tabbing}}
+\hfill
+\parbox{0.5\textwidth}{ 
+\begin{tabbing}
+\hspace{2.75cm} \= \hspace{4cm} \= \kill
+{\textit{Vikram Maheshri} } \\\\
+%{Associate Professor of Economics {\makebox[1.5cm]{\hfill}}}  \\ 
+{University of Houston}\\ 
+{\href{mailto:vmaheshri@gmail.com}{vmaheshri@gmail.com}}
+\end{tabbing}}
+\hfill
+\parbox{0.5\textwidth}{ 
+\begin{tabbing}
+\hspace{2.75cm} \= \hspace{4cm} \= \kill
+{\textit{Yona Rubinstein} } \\\\
+%{Associate Professor of Economics {\makebox[1.5cm]{\hfill}}}  \\ 
+{University of Houston}\\ 
+{\href{mailto:yonarubinstein@gmail.com}{yonarubinstein@gmail.com}}
+\end{tabbing}}
 
 \end{document}
