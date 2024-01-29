@@ -1,0 +1,103 @@
+# This file controls the settings for your Quarto template from www.marvinschmitt.com
+
+# Metadata stuff
+pagetitle: "{{< meta title >}} | Hussain Hadah (he/him)"
+description-meta: "I am a Ph.D. candidate in Economics at the University of Houston. My research interest is in Applied Microeconomics primarily in labor economics. I research topics on discrimination, race, identity, mental health, and immigration.
+
+                In my free time, I enjoy running with my two dogs, watching college and professional sports, and trying new restaurants in the Houston area."
+author-meta: "Hussain Hadah"
+
+# website settings
+website:
+  title: "Hussain Hadah (he/him)"                                # Your name
+  description: "I am a Ph.D. candidate in Economics at the University of Houston. My research interest is in Applied Microeconomics primarily in labor economics. I research topics on discrimination, race, identity, mental health, and immigration.
+
+                In my free time, I enjoy running with my two dogs, watching college and professional sports, and trying new restaurants in the Houston area."   # A brief slogan (optional)
+  image: img/my_image.jpg
+  google-analytics: "G-Y1VGD6H14M"
+  favicon: img/favicon.png
+  
+  # start of the navigation bar at the top of the website
+  navbar:
+    background: dark
+    foreground: light
+    logo: /img/logo.png
+    
+    # your sub-pages
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about/index.qmd
+        text: "About"
+      # - href: about.qmd
+      # - href: research.qmd
+      - text: "Research"
+        file: research/index.qmd
+      - text: "Teaching"
+        file: teaching/index.qmd
+      - href: cv/index.qmd
+        text: CV
+        
+    
+    # your social media handles
+    right:
+      - icon: envelope
+        aria-label: email
+        href: "mailto:hussainhadah@gmail.com"  
+      - icon: twitter
+        aria-label: twitter
+        href: https://twitter.com/hheddeh
+      - icon: github
+        aria-label: github
+        href: https://github.com/hhadah
+
+  
+  
+
+# Don't touch unless you know what you are doing :) ------------
+  search: 
+    location: navbar
+    type: textbox
+  page-footer: 
+    left: |
+      <span class="faux-block">{{< fa brands creative-commons >}} 2023 Hussain Hadah</span>
+      <span class="faux-block">All content licensed under<br>[{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}} Creative Commons CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)</span> 
+    center: |
+      <span class="faux-block">{{< fa brands orcid >}} <strong>ORCID</strong> [0000-0002-8705-6386](https://orcid.org/0000-0002-8705-6386)</span>
+    right: |
+      <span class="faux-block">Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)</span>
+      <span class="faux-block">[View the source at {{< fa brands github >}} GitHub](https://github.com/hhadah/hhadah-quarto)</span>
+
+extensions:
+  - quarto-fontawesome
+
+project:
+  type: website
+  output-dir: docs
+
+  preview: 
+    port: 5555
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+execute:
+  freeze: auto
+
+format:
+  html:
+    theme: 
+      - html/hh.scss
+    toc: true
+    toc-depth: 4
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
+    highlight-style: monokai
+
+    toc-title: "Contents"
+    html-math-method: katex
+    include-in-header:
+      - includes.html
