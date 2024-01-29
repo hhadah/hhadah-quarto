@@ -1,0 +1,46 @@
+---
+title: "Principles of Microeconomics Slides"
+description: "This course is an introduction to microeconomics: individual consumer and
+firm behavior, supply and demand, and the market determination of prices, production and income.
+We will analyze government policies of price controls, taxation, monopoly and antitrust laws, market
+failures and environmental policy."
+---
+
+## Spring 2022
+### Principles of Microeconomics Slides
+
+The syllabus can be found here \[[**.pdf**](https://hhadah.github.io/MicroSlides/Syllabus/ECON2304_Summer2022_Syllabus.pdf)\]
+
+#### Slides
+
+1. Introduction \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/intro/intro.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/intro/intro.pdf)\]
+
+2. The Ten Principles of Economics \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch1/Ch1.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch1/Ch1.pdf)\]
+
+3. Thinking Like an Economist \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch2/Ch2.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch2/Ch2.pdf)\]
+
+4. Interdependence and the Gains from Trade
+ \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch3/Ch3.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch3/Ch3.pdf)\]
+
+5. Market Forces of Supply & Demand
+ \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch4/Ch4.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch4/Ch4.pdf)\]
+ 
+6. Elasticity and Its Application \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch5/Ch5.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch5/Ch5.pdf)\]
+
+7. Supply, Demand and Government Policies \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch6/Ch6.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch6/Ch6.pdf)\]
+
+8. Consumers, Producers, and the Efficiency of Markets \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch7/Ch7.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch7/Ch7.pdf)\]
+
+9. The Costs of Taxation \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch8/Ch8.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch8/Ch8.pdf)\]
+
+1. International Trade \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch9/Ch9.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch9/Ch9.pdf)\]
+
+1. Externalities \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch10/Ch10.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch10/Ch10.pdf)\]
+
+1. Public Goods and Common Resources \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch11/Ch11.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch11/Ch11.pdf)\]
+
+1. The Costs of Production \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch13/Ch13.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch13/Ch13.pdf)\]
+
+1. Monopoly \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch15/Ch15.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch15/Ch15.pdf)\]
+
+1. Monopolistic Competition \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch16/Ch16.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch16/Ch16.pdf)\]
