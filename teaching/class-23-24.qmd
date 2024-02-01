@@ -20,3 +20,7 @@ You can find the syllabus [here](https://hhadah.github.io/urban-econ/syllabus/Ur
 3. Class 3: Agglomeration, Clusters, and Cities \[[**.html**](https://hhadah.github.io/urban-econ/slides/02-week2/01-tue/01-class1.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/02-week2/01-tue/01-class1.pdf)\]
 
 4. Class 4: Practice Jigsaw Activity \[[**.html**](https://hhadah.github.io/urban-econ/slides/02-week2/02-thur/02-class2.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/02-week2/02-thur/02-class2.pdf)\]
+
+5. Class 5: Overview of Greenstone, Hornbeck, and Moretti (2010) \[[**.html**](https://hhadah.github.io/urban-econ/slides/03-week3/01-tue/01-class1.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/03-week3/01-tue/01-class1.pdf)\]
+
+6. Class 6: Reading Results Tables \[[**.html**](https://hhadah.github.io/urban-econ/slides/03-week3/02-thur/02-class2.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/03-week3/02-thur/02-class2.pdf)\]
