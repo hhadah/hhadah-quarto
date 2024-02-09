@@ -117,4 +117,17 @@ mlo-project:
     notes: | 
         - _Related: See [Balfe et al. (2022)](https://journals.sagepub.com/doi/full/10.1177/1525822X211057623) for the pilot study._
         - _Note: experiment planned to go into the field in Jan. 2024._
-    
+
+school-audit:
+    title: "Parent’s Choice or School’s Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools"
+    authors:
+        - Hussain Hadah
+        - Patrick Button
+        - Douglas Harris
+        - Barbara Lundebjerg
+    year: 
+    preprint: 
+    published_url:
+    venue: 
+    github:
+    paper_type: works_prog
