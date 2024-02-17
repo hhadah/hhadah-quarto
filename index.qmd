@@ -1,0 +1,79 @@
+---
+title: "Welcome to my website!"
+pagetitle: "{{< meta website.title >}}"
+main-photo: /img/my_image.jpg
+main-photo-square: /img/my_image.jpg
+title-block-banner: "#CF4446"
+format:
+  html:
+    quarto-template-params:
+      banner-header-class: "home"
+---
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-sm-4}
+
+```{=html}
+<div class="grid" style="--bs-columns: 5; row-gap: 0;">
+  <div class="g-col-1 g-col-sm-0"></div>
+  <div class="g-col-3 g-col-sm-5">
+    <picture>
+      <source media="(max-width: 576px)" srcset="{{< meta main-photo-square >}}">
+      <source media="(min-width: 576px)" srcset="{{< meta main-photo >}}">
+      <img class="img-fluid" src="{{< meta main-photo >}}" alt="{{< meta author-meta >}}">
+    </picture>
+  </div>
+  <div class="g-col-1 g-col-sm-0"></div>
+</div>
+```
+
+:::
+
+
+::: {.g-col-12 .g-col-sm-8}
+
+I am a post-doctoral fellow at Tulane University's [Department of Economics](https://liberalarts.tulane.edu/departments/economics) and [Murphy Institute](https://murphy.tulane.edu/). 
+
+As a labor economist, my research encompasses areas including discrimination, racial and ethnic identities, mental health, and immigration. My recent work has explored the impact of Hispanic surnames on labor market prospects, the influence of ethnic perceptions on self-identification among Hispanics, and the role of peer influence on mental well-being.
+
+I received my PhD in Economics from the University of Houston in 2023. I recieved my BS in Economics from Arizona State University.
+
+Outside of economics, I enjoy running with my two dogs, watching college and professional sports, and trying new restaurants.
+
+Thank you for visiting my website, and I invite you to explore further to learn more about my research and interests.
+
+
+<i class="fa-solid fa-envelope"></i> Please feel free to [contact me](mailto:hussainhadah@gmail.com) via email.
+
+<i class="fa-solid fa-download"></i> Download my [curriculum vitae](https://hussainhadah.com/cv/cv.pdf).
+
+:::
+:::
+
+:::: {.columns}
+
+::: {.column width="45%"}
+### Interests
+
+- Applied Microeconomics
+- Labor Economics
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="45%"}
+### Education
+
+<i class="fa-solid fa-graduation-cap"></i> <span style="color:black;">Ph.D. in Economics, 2023</span><br><span style="color:gray;font-size:small;">University of Houston, Houston, TX</span>
+
+<i class="fa-solid fa-graduation-cap"></i> <span style="color:black;">M.A. in Economics, 2020</span><br><span style="color:gray;font-size:small;">University of Houston, Houston, TX</span>
+
+<i class="fa-solid fa-graduation-cap"></i> <span style="color:black;">B.S. in Economics (<em>Summa Cum Laude</em>), 2017</span><br><span style="color:gray;font-size:small;">Arizona State University, Tempe, AZ</span>
+
+:::
+
+::::
+

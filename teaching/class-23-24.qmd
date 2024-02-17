@@ -1,0 +1,30 @@
+---
+title: "Urban Economics"
+description: "A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use."
+---
+
+# Tulane University
+
+## Spring 2024
+### Urban Economics
+A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use.
+
+You can find the syllabus [here](https://hhadah.github.io/urban-econ/syllabus/UrbanEcon3320SyllabusSpring2024HHadah.pdf).
+
+#### Slides
+
+1. Class 1: Introduction \[[**.html**](https://hhadah.github.io/urban-econ/slides/01-week1/01-tue/01-class1.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/01-week1/01-tue/01-class1.pdf)\]
+
+2. Class 2: Geographical Definitions and Data \[[**.html**](https://hhadah.github.io/urban-econ/slides/01-week1/02-thur/02-class2.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/01-week1/02-thur/02-class2.pdf)\]
+
+3. Class 3: Agglomeration, Clusters, and Cities \[[**.html**](https://hhadah.github.io/urban-econ/slides/02-week2/01-tue/01-class1.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/02-week2/01-tue/01-class1.pdf)\]
+
+4. Class 4: Practice Jigsaw Activity \[[**.html**](https://hhadah.github.io/urban-econ/slides/02-week2/02-thur/02-class2.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/02-week2/02-thur/02-class2.pdf)\]
+
+5. Class 5: Overview of Greenstone, Hornbeck, and Moretti (2010) \[[**.html**](https://hhadah.github.io/urban-econ/slides/03-week3/01-tue/01-class1.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/03-week3/01-tue/01-class1.pdf)\]
+
+6. Class 6: Reading Results Tables \[[**.html**](https://hhadah.github.io/urban-econ/slides/03-week3/02-thur/02-class2.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/03-week3/02-thur/02-class2.pdf)\]
+
+7. Class 7: Economic Development Incentives  \[[**.html**](https://hhadah.github.io/urban-econ/slides/04-week4/01-tue/01-class01.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/04-week4/01-tue/01-class01.pdf)\]
+
+8. Class 8: Introduction to Economics of Crime  \[[**.html**](https://hhadah.github.io/urban-econ/slides/05-week5/02-thur/crime-intro.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/05-week5/02-thur/crime-intro.pdf)\]
