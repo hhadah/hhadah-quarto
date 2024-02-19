@@ -28,3 +28,6 @@ You can find the syllabus [here](https://hhadah.github.io/urban-econ/syllabus/Ur
 7. Class 7: Economic Development Incentives  \[[**.html**](https://hhadah.github.io/urban-econ/slides/04-week4/01-tue/01-class01.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/04-week4/01-tue/01-class01.pdf)\]
 
 8. Class 8: Introduction to Economics of Crime  \[[**.html**](https://hhadah.github.io/urban-econ/slides/05-week5/02-thur/crime-intro.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/05-week5/02-thur/crime-intro.pdf)\]
+
+9. Class 9: Explanation of Common Terminology in Causal Studies in
+(Urban) Economics  \[[**.html**](https://hhadah.github.io/urban-econ/slides/06-week6/01-tue/causal-term.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/06-week6/01-tue/causal-term.pdf)\]
