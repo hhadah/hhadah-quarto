@@ -29,7 +29,7 @@ pub-info:
 
 - [Paper (pdf)](https://hhadah.github.io/Depression_Idea/my_paper/Hadah-Peer-Effect-Depression.pdf)
 
-- [Slides (pdf)](https://hhadah.github.io/Depression_Idea/presentations/feb-20-2024-lunch/hadah-sea-nov-20.pdf)
+- [Slides (pdf)](https://hhadah.github.io/Depression_Idea/presentations/feb-20-2024-lunch/hadah-feb-20.pdf)
 
 ## Abstract
 
