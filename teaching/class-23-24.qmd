@@ -33,3 +33,6 @@ You can find the syllabus [here](https://hhadah.github.io/urban-econ/syllabus/Ur
 (Urban) Economics  \[[**.html**](https://hhadah.github.io/urban-econ/slides/06-week6/01-tue/causal-term.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/06-week6/01-tue/causal-term.pdf)\]
 
 10. Class 10: Effect of Police on Crime & Economic Circumstances on Crime \[[**.html**](https://hhadah.github.io/urban-econ/slides/06-week6/02-thur/police-econ-and-crime.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/06-week6/02-thur/police-econ-and-crime.pdf)\]
+
+
+11. Class 11: Crime and Gender-Based Violence \[[**.html**](https://hhadah.github.io/urban-econ/slides/07-week7/02-thur/gender-based-violence.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/07-week7/02-thur/gender-based-violence.pdf)\]
