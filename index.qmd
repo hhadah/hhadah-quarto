@@ -1,8 +1,8 @@
 ---
 title: "Welcome to my website!"
 pagetitle: "{{< meta website.title >}}"
-main-photo: /img/my_image.jpg
-main-photo-square: /img/my_image.jpg
+main-photo: /img/3V8A5465.jpg
+main-photo-square: /img/3V8A5465.jpg
 title-block-banner: "#CF4446"
 format:
   html:
