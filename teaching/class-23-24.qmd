@@ -38,3 +38,5 @@ You can find the syllabus [here](https://hhadah.github.io/urban-econ/syllabus/Ur
 11. Class 11: Crime and Gender-Based Violence \[[**.html**](https://hhadah.github.io/urban-econ/slides/07-week7/02-thur/gender-based-violence.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/07-week7/02-thur/gender-based-violence.pdf)\]
 
 12. Class 12:  Racial Bias and Criminal Justice in Policing \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/08-week8/02-thur/MLODiscrimination21Oct2021.pdf)\]
+
+13. Class 13:  Racial Bias in Policing \[[**.html**](https://hhadah.github.io/urban-econ/slides/09-week9/01-tue/racial-bias.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/09-week9/01-tue/racial-bias.pdf)\]
