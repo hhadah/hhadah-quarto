@@ -1,0 +1,312 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+%
+% Note that i've heavily modified this template (me being Patrick Button)
+% So it's no longer the exact one created by Jason Blevins.
+
+\documentclass[letterpaper]{article}
+
+%\usepackage{fontspec}
+\usepackage{geometry}
+\usepackage{alltt}
+\usepackage{multicol}
+%\usepackage[ocgcolorlinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue, ocgcolorlinks]{hyperref}
+
+\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+\definecolor{goldenyellow}{rgb}{1.0, 0.87, 0.0}
+\definecolor{darkpink}{rgb}{0.91, 0.33, 0.5}
+\usepackage[mdyy]{datetime}
+\usepackage{fontawesome}
+
+\usepackage{textcomp}
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\bfseries\scshape}{}{0em}{}[] % Text formatting of sections
+\titlespacing{\section}{0pt}{1pt}{1pt} % Spacing around sections
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\fontfamily{ppl}\selectfont 
+%\usepackage{palatino}
+\usepackage[T1]{fontenc}
+
+%\usepackage[sc,osf]{mathpazo}
+%\usepackage{pslatex}
+% Set your name here
+\def\name{Hussain Hadah}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+
+\hypersetup{
+  colorlinks = true,
+  urlcolor=blue!50!black,
+  pdfauthor = {\name},
+  pdfkeywords = {},
+  pdftitle = {\name: Curriculum Vitae of Hussain Hadah},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 9.3in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+%\pagestyle{myheadings}
+\markright{\today \rm}
+\thispagestyle{empty}
+
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Print name centered and bold:
+\centerline{\huge \bf \name}
+%\titlerule
+
+\begin{center}
+   \hspace{0.5mm} Pronouns: He/Him \href{https://www.mypronouns.org/}{\faQuestionCircleO}  
+\\    
+\hspace{0.5mm} Citizenship: United States of America
+\\
+\faEnvelopeO \hspace{0.5mm} \href{mailto:hhadah@tulane.edu}{hhadah@tulane.edu} \rm  \hspace{0.5mm} \faGlobe \hspace{0.5mm} \href{https://www.hussainhadah.com/}{www.hussainhadah.com} 
+\href{https://www.linkedin.com/in/hussain-hadah/}{\faLinkedinSquare} \href{https://github.com/hhadah}{\faGithub} 
+\\ Tulane University, 6823 St. Charles Avenue, Tilton Memorial Hall Room 103, New Orleans, LA 70118.\\
+  
+\end{center}
+
+%\singlespacing
+
+\section*{Education}
+\vspace{2 mm}
+\begin{itemize}
+  \item {\makebox[1.8cm]{2023.\hfill}}Ph.D. Economics, University of Houston. \\{\makebox[1.8cm]{\hfill}}Dissertation \textit{“Essays on Hispanic Identity”}.
+  \item {\makebox[1.8cm]{2020.\hfill}}M.A. in Economics. University of Houston. 
+  \item {\makebox[1.8cm]{2017.\hfill}}B.S. in Economics.  Arizona State University. \\{\makebox[1.8cm]{\hfill}}\textit{Minors:} Mathematics and International Relations. \\{\makebox[1.8cm]{\hfill}}\textit{Honors:} Summa Cum Laude, Phi Beta Kappa, Golden Key International Honour Society.
+\end{itemize}
+\vspace{2 mm}
+
+\section*{Academic Positions}
+\vspace{2 mm}
+\begin{itemize}
+  \item {\makebox[1.8cm]{2023-present. \hfill}} Postdoctoral Fellow. Department of Economics and Murphy Institute, School of Liberal \\{\makebox[1.8cm]{\hfill}}Arts. Tulane University.
+\end{itemize}
+\vspace{2 mm}
+
+% \section*{Publications}
+% \vspace{2 mm}
+% \begin{itemize}
+% \item \href{https://onlinelibrary.wiley.com/doi/abs/10.1002/pam.22325}{``Skipping the Bag: Intended and Unintended Consequences of Disposable Bag Regulation''} with Tatiana Homonoff, Lee-Sien Kao, Christina Seybolt.\textit{Journal of Policy Analysis and Management, vol 41(1), 2022.} 
+% \item \href{https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1564-913X.2015.00239.x}{``A multidimensional employment quality index for Brazil, 2002–11''} with Federico Huneeus, Oscar Landerretche and Esteban Puentes. \textit{Journal of International Labor Review, Volume 154, Issue 2, June 2015.}
+% \item \href{https://www.cepal.org/en/publications/37022-wage-differentials-between-public-and-private-sectors-chile-evidence-longitudinal}{``Wage differentials between the public and private sectors in Chile: Evidence from longitudinal data''} with Lucas Navarro. \textit{Journal CEPAL Review, Volume 112, April 2014.} 
+% \item \href{https://www.estudiospublicos.cl/index.php/cep/article/view/283}{``An Earned Income Tax Credit Proposal for Chile''} with Claudio Agostini and Marcela Perticará. \textit{Journal Estudios Publicos. Nº 129. Summer 2013.}
+% \end{itemize}
+% \vspace{2 mm}
+
+\section*{Working Papers}
+\vspace{2 mm}
+\begin{itemize}
+\item ``The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S'' [\href{https://dx.doi.org/10.2139/ssrn.4566232}{Link}] .
+\item ``Democratic Institutions and Their Effect on Ethnic Favoritism: Evidence from Saharan Africa'' [\href{https://dx.doi.org/10.2139/ssrn.4566225}{Link}].
+\item ``The Impact of Hispanic Last Names and Identity on Labor Market Outcomes'' [\href{https://dx.doi.org/10.2139/ssrn.4566234}{Link}]. 
+\item ``Peer Effects in Adolescent Mental Health'' [\href{https://hhadah.github.io/Depression_Idea/my_paper/Hadah-Peer-Effect-Depression.pdf}{Link}].  
+
+\end{itemize}
+\vspace{2 mm}
+
+
+\section*{Work in Progress}
+\vspace{2 mm}
+\begin{itemize}
+\item ``Sexual orientation discrimination in mortgage lending: an audit field experiment'' with Patrick Button, David Schwegman, Javiera Selman, Cathy Balfe and Tran Nguyen-Phuong. 
+\item ``Parent’s Choice or School’s Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools'', with with Patrick Button, Douglas Harris, and Barbara Lundebjerg.
+\item ``Endogenous Hispanic Identity and Ethnic Gaps in the U.S''.
+\item ``Discrimination and the Black-White Arrests Gap'', with Vikram Maheshri.
+\item ``Effects of Gun Control Laws on Suicide'', with Gael Compta.
+\item ``The Effect of Anti-Asian Attitudes on Asian Identity in the U.S''.
+\end{itemize}
+
+
+\section*{Grants}
+\vspace{2 mm}
+% \textit{External Funding
+% }\begin{itemize}
+%   \item {\makebox[1.8cm]{2022-2023.\hfill}}Chilean Ministry of Housing and Urbanism. Principal Investigator. 
+%    \item {\makebox[1.8cm]{2020-2022.\hfill}}Impact Evaluation Fund, Chilean Budget Office. Co-Principal Investigator.
+% \end{itemize}
+\textit{Internal Funding
+}\begin{itemize}
+  \item {\makebox[1.8cm]{2023.\hfill}}Seed Grant. Murphy Institute. Tulane University.
+\end{itemize}
+\vspace{2 mm}
+
+\section*{Academic Honors}
+\vspace{2 mm}
+\begin{itemize}
+\item {\makebox[2.1cm]{2023.\hfill}} Best Graduate Student Poster, Stata Texas Empirical Microeconomics Conference
+\item {\makebox[2.1cm]{2017--2023.\hfill}} Doctoral Student Tuition Fellowship, University of Houston. 
+\item {\makebox[2.1cm]{2017-present.\hfill}} The Phi Beta Kappa Society. 
+\item {\makebox[2.1cm]{2017.\hfill}} Arizona State University Grant. 
+\item {\makebox[2.1cm]{2016--present.\hfill}} Golden Key International Honor Society. 
+\item {\makebox[2.1cm]{2016--2017.\hfill}} Graduated Summa Cum Laude, 4.00 GPA. BS in Economics. Arizona State University. 
+\item {\makebox[2.1cm]{2016--2017.\hfill}} Dean's List, Arizona State University. 
+\end{itemize}
+\vspace{2 mm}
+
+
+\section*{Conferences and Seminar Presentations}
+\vspace{2 mm}
+\begin{itemize}
+% \item (Scheduled) Universidad Adolfo Ibáñez (10/13); 28th Annual LACEA Meeting 2023 (11/16)
+\item {\makebox[1.8cm]{2023.\hfill}}Stata Texas Empirical Microeconomics Conference; European Society for \\{\makebox[1.8cm]{\hfill}}Population Economics (ESPE); Southern Economic Association \\{\makebox[1.8cm]{\hfill}}Conference, New Orleans ($\times$ 2).
+\item {\makebox[1.8cm]{2021.\hfill}}\href{https://www.southerneconomic.org/session-details/?conferenceId=7&eventId=3353}%
+{Southern Economic Association}, Houston, Texas
+\item {\makebox[1.8cm]{2020.\hfill}}\href{https://cega.berkeley.edu/initiative/working-group-in-african-political-economy/}%
+{Working Group in African Political Economy}, University of  California, Berkeley (\textit{workshop}).
+
+\end{itemize}
+
+\vspace{2 mm}
+
+\section*{Research Experience}
+\vspace{2 mm}
+\textit{Research Assistant}
+\begin{itemize}
+\item {\makebox[5.0cm]{May 2021--August2021.\hfill}}\href{https://vmaheshri.github.io/}{Vikram Maheshri}.
+\item {\makebox[5.0cm]{June 2020--May 2022.\hfill}}\href{https://www.uh.edu/class/economics/people/current-faculty/steve/}{Steve Craig}.
+\item {\makebox[5.0cm]{August 2019--August 2020.\hfill}}\href{https://sites.google.com/site/vegardmokleivnygaard/}{Vegard Mokleiv Nygaard}.
+
+
+\end{itemize}
+
+\vspace{2 mm}
+
+\section*{Teaching}
+\vspace{2 mm}
+\textit{Instructor}
+\begin{itemize}
+\item {\makebox[3.0cm]{Spring 2024.\hfill}}Urban Economics, Undergraduate. Economics Department Tulane University.
+\item {\makebox[3.0cm]{Summer 2022.\hfill}}Principles of Microeconomics. Economics Department University of Houston.
+\item {\makebox[3.0cm]{Spring 2022.\hfill}}Principles of Microeconomics. Economics Department University of Houston.
+\item {\makebox[3.0cm]{Summer 2021.\hfill}}Principles of Microeconomics. Economics Department University of Houston.
+
+\end{itemize}
+\textit{Teaching Assistant}
+\begin{itemize}
+\item {\makebox[1.8cm]{2022-2023.\hfill}}Political Economy, Gergely Ujhelyi. University of Houston.
+\item {\makebox[1.8cm]{2021--2022.\hfill}}Intermediate Microeconomics, Piruz Saboury. University of Houston.
+\item {\makebox[1.8cm]{2020--2021.\hfill}}Principles of Microeconomics, Joel Melendez Lugo.
+
+\end{itemize}
+\vspace{2 mm}
+
+
+\section*{Previous Employment}
+\vspace{2 mm}
+\begin{itemize}
+\item {\makebox[1.8cm]{2017-2018.\hfill}}Data Analyst and Researcher. Congressional Campaign for Alex Triantaphyllis for Congress.
+\end{itemize}
+\vspace{2 mm}
+
+\section*{Languages}
+\vspace{2 mm}
+{\makebox[2.3cm]{\hfill}}English (native), Arabic (native), French (beginner), Spanish (beginner).
+\vspace{2 mm}
+
+
+\section*{Programming}
+\vspace{2 mm}
+{\makebox[2.3cm]{\hfill}}R, Stata, Python, QGIS, \LaTeX.
+\vspace{2 mm}
+
+% \section*{Services}
+% \vspace{2 mm}
+% \begin{itemize}
+% \item {\makebox[1.8cm]{2023.\hfill}}Scientific Committee. 2nd LAUrban Meeting (LACEA).
+% \item {\makebox[1.8cm]{2023.\hfill}}Thesis advisor. Master in Economic Analysis. University of Chile.
+% \item {\makebox[1.8cm]{2020;2023.\hfill}}External thesis advisor. Master in Urban Planning; Master in Public Policy. \\{\makebox[1.8cm]{\hfill}}Pontifical Catholic University of Chile.
+% %\item {\makebox[1.8cm]{2019-2021.\hfill}}Advisor Rental Policy Team. Chilean Ministry of Housing and Urban Planning.
+% \item {\makebox[1.8cm]{2020-2021.\hfill}}Internship supervisor; Undergraduate student of Computer Science. Pontifical Catholic {\makebox[1.8cm]{\hfill}} University of Chile; Undergraduate student of Economics. University of Chile. 
+% \end{itemize}
+% \vspace{2 mm}
+
+
+\section*{References}
+
+\parbox{0.5\textwidth}{
+\begin{tabbing}
+\hspace{2.75cm} \= \hspace{4cm} \= \kill
+{\textit{Patrick Button }}  \\\\
+{Tulane University}\\ 
+{\href{mailto:pbutton@tulane.edu}{pbutton@tulane.edu}}
+\end{tabbing}}
+\hfill
+\parbox{0.5\textwidth}{
+\begin{tabbing}
+\hspace{2.75cm} \= \hspace{4cm} \= \kill
+{\textit{Willa Friedman }} \\\\
+%{Paulette Goddard Professor of Urban \\Policy and Planning\\ Director for Furman Center for Real Estate \\and Urban Policy.}  \\ 
+{University of Houston}\\ 
+{\href{mailto:willa.friedman@gmail.com}{willa.friedman@gmail.com}}
+\end{tabbing}}
+\hfill
+\parbox{0.5\textwidth}{ 
+\begin{tabbing}
+\hspace{2.75cm} \= \hspace{4cm} \= \kill
+{\textit{Chinhui Juhn }} \\\\
+%{Professor of Economics and Public Service}  \\ 
+{University of Houston}\\ 
+{\href{mailto:cjuhn@uh.edu}{cjuhn@uh.edu}}
+\end{tabbing}}
+\hfill
+\parbox{0.5\textwidth}{ 
+\begin{tabbing}
+\hspace{2.75cm} \= \hspace{4cm} \= \kill
+{\textit{Vikram Maheshri} } \\\\
+%{Associate Professor of Economics {\makebox[1.5cm]{\hfill}}}  \\ 
+{University of Houston}\\ 
+{\href{mailto:vmaheshri@gmail.com}{vmaheshri@gmail.com}}
+\end{tabbing}}
+\hfill
+\parbox{0.5\textwidth}{ 
+\begin{tabbing}
+\hspace{2.75cm} \= \hspace{4cm} \= \kill
+{\textit{Yona Rubinstein} } \\\\
+%{Associate Professor of Economics {\makebox[1.5cm]{\hfill}}}  \\ 
+{University of Houston}\\ 
+{\href{mailto:yonarubinstein@gmail.com}{yonarubinstein@gmail.com}}
+\end{tabbing}}
+
+\end{document}
