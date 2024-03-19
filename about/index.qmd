@@ -1,0 +1,24 @@
+---
+title: "About Me"
+title-block-banner: "#006747"
+page-layout: full
+---
+
+I am a post-doctoral fellow at Tulane University's [Department of Economics](https://liberalarts.tulane.edu/departments/economics) and [Murphy Institute](https://murphy.tulane.edu/). I received my Ph.D. in economics from the University of Houston in 2023. My labor economics research focuses on discrimination, identity, immigration, and mental health. My primary topics of interest are:
+
+1. **Discrimination against minorities and ethnic identity**
+
+    - I compared the children of inter-ethnic couples to quantify labor market discrimination against people with Hispanic-sounding last names.
+
+    - I examined how state-level variation in bias influences Hispanics' decisions to identify with, or not identify, their ethnic minority status.
+
+2. **Quantify discrimination using audit field experiments.**
+
+    - In two working papers, I study discrimination using audit field experiments
+
+    - In one audit, we quantify discrimination in access to the mortgage market against same-sex couples and racial minorities
+
+    - In another audit, we study discrimination in access to education with an emphasis on differences between traditional charter, private, and charter schools against children that are LGBTQI+, racial minorities, with behavioral issues, with IEP status
+
+3. **Mental Health** 
+    - In other research, I explore the impact of peer mental health on individual mental health outcomes, both short-term and long-term, as well as the influence of gun control policy variations on suicide rates.
