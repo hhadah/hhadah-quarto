@@ -47,4 +47,8 @@ You can find the syllabus [here](https://hhadah.github.io/urban-econ/syllabus/Ur
 
 16. Class 16:  Housing Subsidies \[[**.html**](https://hhadah.github.io/urban-econ/slides/11-housing/01-lecture1/01-housing.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/01-lecture1/01-housing.pdf)\]
 
-17. Class 17:  Housing Policies \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/02-lecture2/19-HousingPoliciesMetcalfSlides.pdf)\]
+17. Class 17:  Housing Policies I \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/02-lecture2/19-HousingPoliciesMetcalfSlides.pdf)\]
+
+18. Class 18:  Housing Policies II \[[**.html**](https://hhadah.github.io/urban-econ/slides/11-housing/03-lecture3/03-housing.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/03-lecture3/03-housing.pdf)\]
+
+19. Class 19:  Neighborhood Effects \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/04-lecture4/21-NeighborhoodEffectsMovingtoOpportunity.pdf)\]
