@@ -42,18 +42,6 @@ endogidentat2018:
     github:
     paper_type: works_prog
 
-crime2020:
-    title: "Discrimination and the Black-White Arrests Gap"
-    authors:
-        - Hussain Hadah
-        - Vikram Maheshri
-    year: 
-    preprint: 
-    published_url:
-    venue: 
-    github:
-    paper_type: works_prog
-
 gunssuicide2020:
     title: "Effects of Gun Control Laws on Suicide"
     authors:
@@ -116,7 +104,7 @@ mlo-project:
     paper_type: works_prog
     notes: | 
         - _Related: See [Balfe et al. (2022)](https://journals.sagepub.com/doi/full/10.1177/1525822X211057623) for the pilot study._
-        - _Note: experiment planned to go into the field in Jan. 2024._
+        - _Note: The experiment is in the field._
 
 school-audit:
     title: "Parent’s Choice or School’s Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools"
