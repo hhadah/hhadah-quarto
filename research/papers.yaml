@@ -119,3 +119,18 @@ school-audit:
     venue: 
     github:
     paper_type: works_prog
+cpc-project:
+    title: "Auditing Crisis Pregnancy Centers: Racial biases, misinformation, and the misallocation government resources"
+    authors:
+        - Patrick Button
+        - Clare Daniel
+        - Julie Hernandez
+        - Mirya Holman
+        - Anna Mahoney
+        - Hussain Hadah
+    year:
+    preprint:
+    published_url:
+    venue:
+    github:
+    paper_type: works_prog
