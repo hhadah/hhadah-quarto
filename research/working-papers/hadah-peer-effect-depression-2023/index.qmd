@@ -16,7 +16,7 @@ pub-info:
     <strong>Hussain Hadah</strong>, “Peer Effects in Adolescent Mental Health,” <em>Working Paper</em>
   links:
     - name: Preprint
-      url: https://hhadah.github.io/Depression_Idea/my_paper/Hadah-Peer-Effect-Depression.pdf
+      url: https://hhadah.github.io/Depression_Idea/manuscripts/Hadah-Peer-Effect-Depression.pdf
       icon: fa-solid fa-file-pdf
       local: false
   extra: >-
@@ -27,7 +27,7 @@ pub-info:
 
 ## Important links
 
-- [Paper (pdf)](https://hhadah.github.io/Depression_Idea/my_paper/Hadah-Peer-Effect-Depression.pdf)
+- [Paper (pdf)](https://hhadah.github.io/Depression_Idea/manuscripts/Hadah-Peer-Effect-Depression.pdf)
 
 - [Slides (pdf)](https://hhadah.github.io/Depression_Idea/presentations/feb-20-2024-lunch/hadah-feb-20.pdf)
 
