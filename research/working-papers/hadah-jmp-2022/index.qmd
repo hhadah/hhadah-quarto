@@ -29,13 +29,7 @@ pub-info:
 
 ## Abstract
 
-In this paper, I study the determinants of the choice to identify as Hispanic among
-those who could—those whose parents, grandparents, or selves were born in a Spanishspeaking country. I find that individuals with Hispanic ancestry are significantly less
-likely to self-identify as Hispanic if they live in states with high levels of implicit ethnic bias. A one standard deviation increase in bias decreases self-reported Hispanic identity by 7-13 percentage points for first and second-generation Hispanics, respectively. These effects are more prominent among second-generation immigrants whose mothers and
-fathers were born in a Spanish-speaking country than among children of inter-ethnic
-parents. These findings have implications for the interpretation of economic research
-on racial and ethnic gaps in a variety of contexts, including labor market outcomes,
-redistributive policies, and political representation.
+I study the determinants of the choice to identify as Hispanic among those who could—those whose parents, grandparents, or selves were born in a Spanish-speaking country. I find that individuals with Hispanic ancestry are significantly less likely to self-identify as Hispanic if they live in states with high levels of bias. A one standard deviation increase in bias decreases self-reported Hispanic identity by 4 percentage points among all Hispanics. These effects are more prominent among second-generation immigrants with both parents born in a Spanish-speaking country than among children of inter-ethnic parents. These findings have implications for the interpretation of research on ethnic gaps in economic outcomes and the correct counting of the population.
 
 ## Citation
 

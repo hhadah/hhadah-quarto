@@ -1,5 +1,5 @@
 ---
-title: "The Impact of Hispanic Last Names and Identity on Labor Market Outcomes"
+title: "The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes"
 # date: 2022-05-01
 author:
   - name: Hussain Hadah
@@ -12,7 +12,7 @@ categories:
   - Discrimination
 pub-info:
   reference: >-
-    <strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names and Identity on Labor Market Outcomes,” <em>Under Review</em>
+    <strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes,” <em>Under Review</em>
   links:
     - name: Preprint
       url: https://dx.doi.org/10.2139/ssrn.4566234
@@ -34,22 +34,15 @@ pub-info:
 
 ## Abstract
 
-In this paper, I study discrimination against Hispanics in the labor market. I compare
-the children of inter-ethnic marriages to study the impact of having a Hispanic last
-name. While males born to Hispanic father-White mothers earn 6 percentage points
-less than those born to White father-Hispanic mothers, the gap could be completely
-explained by educational differences. I also study the effect of identifying as Hispanic on
-earnings. I find that men with a Spanish-sounding last name who identify as Hispanic
-earn significantly less than those who do not identify as Hispanic, but the gap could also
-be explained by educational differences.
+Do individuals with Hispanic names face labor market discrimination? This study analyzes the impact of Hispanic-sounding surnames on wages among inter-ethnic children with one White and one Hispanic parent. I find that individuals with Hispanic surnames often earn less, with a notable wage gap favoring those with White surnames. People born to Hispanic fathers and White mothers receive 0.3 years of education less than those born to White fathers and Hispanic mothers. Males born to Hispanic fathers and White mothers earn 5 percentage points less than those born to White fathers and Hispanic mothers, largely due to educational differences. Additionally, men with Spanish-sounding last names who identify as Hispanic earn significantly less, again due to educational disparities.
 
 ## Citation
 
-Hadah, Hussain, The Impact of Hispanic Last Names and Identity on Labor Market Outcomes (September 3, 2023). Available at SSRN: https://ssrn.com/abstract=4566234 or http://dx.doi.org/10.2139/ssrn.4566234
+Hadah, Hussain, The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes (September 3, 2023). Available at SSRN: https://ssrn.com/abstract=4566234 or http://dx.doi.org/10.2139/ssrn.4566234
 
 ```bibtex
 @article{hadah2022effect:2021,
     Author = {Hadah, Hussain},
-    Title = {The Impact of Hispanic Last Names and Identity on Labor Market Outcomes},
+    Title = {The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes},
     Year = {2022}}
 ```
