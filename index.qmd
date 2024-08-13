@@ -35,7 +35,7 @@ format:
 
 I am a post-doctoral fellow at Tulane University's [Department of Economics](https://liberalarts.tulane.edu/departments/economics) and [Murphy Institute](https://murphy.tulane.edu/). 
 
-I use labor and applied microeconomics techniques to study economic outcomes. As an applied economist, my research encompasses areas including discrimination, racial and ethnic identities, health, education and immigration. My recent work has explored the impact of Hispanic surnames on labor and education market prospects, the influence of ethnic perceptions on self-identification among Hispanics, and the role of peer influence on mental well-being.
+As an applied economist, I use labor and applied microeconomics techniques to study economic outcomes. My research encompasses areas including discrimination, racial and ethnic identities, health, education and immigration. My recent work has explored the impact of Hispanic surnames on labor and education market prospects, the influence of ethnic perceptions on self-identification among Hispanics, and the role of peer influence on mental well-being.
 
 I received my PhD in Economics from the University of Houston in 2023. I recieved my BS in Economics from Arizona State University.
 
