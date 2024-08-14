@@ -45,11 +45,15 @@ This paper examines how peer mental health influences adolescents' mental well-b
 
 <!-- Figure 1: Peer effects of friends' mental health on own mental health -->
 
-![Figure 1: Peer effects of friends' mental health on own mental health](own-depression.png)
+![Figure 1: Peer effects of friends' mental health on own mental health, educational, and behavioral outcomes ](all-in-one-I.png)
 
-![Figure 2: Peer effects of friends' mental health on own Grade Point Average](gpa.png)
+![Figure 2: Peer effects of friends' mental health on health, risky behavior, socialization, and alcohol and drug take up](all-in-one-II.png)
 
-![Figure 3: Peer effects of friends' mental health on probability of skipping school for no reason](skip-school.png)
+![Figure 3: Peer effects of friends' mental health on own mental health](own-depression.png)
+
+![Figure 4: Peer effects of friends' mental health on own Grade Point Average](gpa.png)
+
+![Figure 5: Peer effects of friends' mental health on probability of skipping school for no reason](skip-school.png)
 
 <!-- ## Citation
 
