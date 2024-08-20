@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1724185456.5069 "/Users/hhadah/Documents/GiT/hhadah-quarto/cv/cv.tex" "cv.pdf" "cv" 1724185457.07103 0
-  "/Users/hhadah/Documents/GiT/hhadah-quarto/cv/cv.tex" 1724185456.25841 14707 701c349ac1fe42b60f0290d311515f71 ""
+["pdflatex"] 1724186320.63144 "/Users/hhadah/Documents/GiT/hhadah-quarto/cv/cv.tex" "cv.pdf" "cv" 1724186321.19591 0
+  "/Users/hhadah/Documents/GiT/hhadah-quarto/cv/cv.tex" 1724186320.37416 14731 8ffefc6dd74c397cd7f63c38d60d8029 ""
   "/Users/hhadah/Library/texmf/tex/latex/multicol.sty" 1084240224 25928 526edd03c609ff2cdc4805a41441008e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
@@ -91,9 +91,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1723744972.31662 5473732 21589bc7d1bbb8fe26b8fcb33c5fdcfa ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1723779287 8239407 89284fef0c87384afe4403acdae0a2f8 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "cv.aux" 1724185457.00358 162 fa61bf9ecf9314f94d51aa32222a725c "pdflatex"
-  "cv.out" 1724185456.85057 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "cv.tex" 1724185456.25841 14707 701c349ac1fe42b60f0290d311515f71 ""
+  "cv.aux" 1724186321.12929 162 fa61bf9ecf9314f94d51aa32222a725c "pdflatex"
+  "cv.out" 1724186320.97693 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cv.tex" 1724186320.37416 14731 8ffefc6dd74c397cd7f63c38d60d8029 ""
   (generated)
   "cv.aux"
   "cv.log"

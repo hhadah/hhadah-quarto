@@ -12,7 +12,7 @@ toc-location: right
 toc-title: Semester
 ---
 ## Teaching Statement
-You can find my teaching statement [here](https://hussainhadah.com/cv/Hadah_Teaching.pdf)
+You can find my teaching statement [here](https://hhadah.github.io/statements/Hadah_Teaching.pdf)
 
 ## Spring 2024
 

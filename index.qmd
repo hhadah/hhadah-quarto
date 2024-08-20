@@ -46,7 +46,7 @@ Thank you for visiting my website, and I invite you to explore further to learn 
 
 <i class="fa-solid fa-envelope"></i> Please feel free to [contact me](mailto:hussainhadah@gmail.com) via email.
 
-<i class="fa-solid fa-download"></i> Download my [curriculum vitae](https://hussainhadah.com/cv/cv.pdf), [research statement](https://hussainhadah.com/cv/Hadah_Research.pdf), [diversity statement](https://hussainhadah.com/cv/Hadah_Diversity.pdf), and [teaching statement](https://hussainhadah.com/cv/Hadah_Teaching.pdf).
+<i class="fa-solid fa-download"></i> Download my [curriculum vitae](https://hussainhadah.com/cv/cv.pdf), [research statement](https://hhadah.github.io/statements/Hadah_Research.pdf), [diversity statement](https://hhadah.github.io/statements/Hadah_Diversity.pdf), and [teaching statement](https://hhadah.github.io/statements/Hadah_Teaching.pdf).
 
 
 :::
