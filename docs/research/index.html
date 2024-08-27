@@ -75,6 +75,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-articles .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-pagetitle','listing-description-meta','listing-author-meta','listing-website','listing-extensions','listing-project','listing-execute','listing-format','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-include-back-link','listing-title','listing-author','listing-categories','listing-pub-info','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-pagetitle","listing-description-meta","listing-author-meta","listing-website","listing-extensions","listing-project","listing-execute","listing-format","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-include-back-link","listing-title","listing-author","listing-categories","listing-pub-info","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-articles'] = new List('listing-articles', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-working-papers .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -262,7 +290,8 @@ window.Quarto = {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#working-papers" id="toc-working-papers" class="nav-link active" data-scroll-target="#working-papers">Working papers</a></li>
+  <li><a href="#journal-articles" id="toc-journal-articles" class="nav-link active" data-scroll-target="#journal-articles">Journal articles</a></li>
+  <li><a href="#working-papers" id="toc-working-papers" class="nav-link" data-scroll-target="#working-papers">Working papers</a></li>
   <li><a href="#works-in-progress" id="toc-works-in-progress" class="nav-link" data-scroll-target="#works-in-progress">Works in Progress</a></li>
   </ul>
 </nav>
@@ -274,10 +303,67 @@ window.Quarto = {
 
 
 <p>My research in applied microeconomics and labor economics spans topics on discrimination, race, identity, mental health, immigration.</p>
-<!-- ## Journal articles
+<section id="journal-articles" class="level2">
+<h2 class="anchored" data-anchor-id="journal-articles">Journal articles</h2>
+<div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
+<div class="research project-list">
+<ul class="list">
+    
+        <li class="project" data-index="0" data-categories="Ethnicity,Bias,Discrimination" data-listing-file-modified-sort="1724785450719" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
+            <div class="project-content listing-pub-info">
+                <p><strong>Hussain Hadah</strong>, “The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S." <em>Southern Economic Journal</em>, conditionally accepted</p>
+            </div>
 
-:::{#articles}
-::: -->
+            
+            <div class="project-categories">
+                
+                    <div class="project-category"><a href="#category=Ethnicity">
+                            Ethnicity
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Bias">
+                            Bias
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Discrimination">
+                            Discrimination
+                        </a></div>
+                    
+            </div>
+            
+
+            
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/articles/hadah-jmp-2022/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://dx.doi.org/10.2139/ssrn.4566232">
+                        
+                            <i class="fa-solid fa-file-pdf"></i> Preprint
+                        </a>
+                    </li>
+                        
+                    
+                </ul>
+            </div>
+        </li>
+        
+</ul>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
 <section id="working-papers" class="level2">
 <h2 class="anchored" data-anchor-id="working-papers">Working papers</h2>
 <div id="listing-working-papers" class="quarto-listing quarto-listing-container-custom">
@@ -352,55 +438,7 @@ window.Quarto = {
             </div>
         </li>
         
-        <li class="project" data-index="1" data-categories="Ethnicity,Bias,Discrimination" data-listing-file-modified-sort="1723467786118" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
-            <div class="project-content listing-pub-info">
-                <p><strong>Hussain Hadah</strong>, “The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.,” R&amp;R <em>Southern Economic Journal</em></p>
-            </div>
-
-            
-            <div class="project-categories">
-                
-                    <div class="project-category"><a href="#category=Ethnicity">
-                            Ethnicity
-                        </a></div>
-                    
-                    <div class="project-category"><a href="#category=Bias">
-                            Bias
-                        </a></div>
-                    
-                    <div class="project-category"><a href="#category=Discrimination">
-                            Discrimination
-                        </a></div>
-                    
-            </div>
-            
-
-            
-            
-            
-            <div class="project-details-listing">
-                <ul class="project-links">
-                    <li class="project-link details">
-                        <a href="../research/working-papers/hadah-jmp-2022/index.html" class="listing-name">
-                            <i class="fa-solid fa-circle-info"></i> Full details »
-                        </a>
-                    </li>
-                    
-                        
-                    <li class="project-link">
-                        
-                        <a href="https://dx.doi.org/10.2139/ssrn.4566232">
-                        
-                            <i class="fa-solid fa-file-pdf"></i> Preprint
-                        </a>
-                    </li>
-                        
-                    
-                </ul>
-            </div>
-        </li>
-        
-        <li class="project" data-index="2" data-categories="Ethnicity,Bias,Discrimination" data-listing-file-modified-sort="1723467744057" data-listing-reading-time-sort="1" data-listing-word-count-sort="177">
+        <li class="project" data-index="1" data-categories="Ethnicity,Bias,Discrimination" data-listing-file-modified-sort="1723467744057" data-listing-reading-time-sort="1" data-listing-word-count-sort="177">
             <div class="project-content listing-pub-info">
                 <p><strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes,” <em>Under Review</em></p>
             </div>
@@ -464,7 +502,7 @@ window.Quarto = {
             </div>
         </li>
         
-        <li class="project" data-index="3" data-categories="Social network,Peer effects,Instrumental variable,Add Health dataset" data-listing-file-modified-sort="1723662346980" data-listing-reading-time-sort="2" data-listing-word-count-sort="294">
+        <li class="project" data-index="2" data-categories="Social network,Peer effects,Instrumental variable,Add Health dataset" data-listing-file-modified-sort="1723662346980" data-listing-reading-time-sort="2" data-listing-word-count-sort="294">
             <div class="project-content listing-pub-info">
                 <p><strong>Hussain Hadah</strong>, “Peer Effects in Adolescent Mental Health,” <em>Working Paper</em></p>
             </div>

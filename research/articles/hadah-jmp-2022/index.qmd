@@ -12,7 +12,7 @@ categories:
   - Discrimination
 pub-info:
   reference: >-
-    <strong>Hussain Hadah</strong>, “The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.,” R&R <em>Southern Economic Journal</em>
+    <strong>Hussain Hadah</strong>, “The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S." <em>Southern Economic Journal</em>, conditionally accepted
   links:
     - name: Preprint
       url: https://dx.doi.org/10.2139/ssrn.4566232

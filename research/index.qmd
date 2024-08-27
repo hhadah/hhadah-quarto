@@ -1,11 +1,11 @@
 ---
 title: "Research"
 listing:
-  # - id: articles
-  #   contents: "articles/*/index.qmd"
-  #   sort: "date desc"
-  #   template: ../html/research/listing.ejs
-  #   categories: true
+  - id: articles
+    contents: "articles/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+    categories: true
   - id: working-papers
     contents: "working-papers/*/index.qmd"
     sort: "date desc"
@@ -115,10 +115,10 @@ My research in applied microeconomics and labor economics spans topics on discri
 
 
 
-<!-- ## Journal articles
+## Journal articles
 
 :::{#articles}
-::: -->
+:::
 
 
 ## Working papers
