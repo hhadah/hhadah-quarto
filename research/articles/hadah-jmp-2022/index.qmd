@@ -33,11 +33,11 @@ I study the determinants of the choice to identify as Hispanic among those who c
 
 ## Citation
 
-Hadah, Hussain, The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S. (August 22, 2023). Available at SSRN: https://ssrn.com/abstract=4566232 or http://dx.doi.org/10.2139/ssrn.4566232
+Hadah, Hussain, The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S. (August 19, 2024). Available at SSRN: https://ssrn.com/abstract=4566232 or http://dx.doi.org/10.2139/ssrn.4566232
 
 ```bibtex
-@article{hadah2023hispanicidentity,
+@article{hadah2024hispanicidentity,
     Author = {Hadah, Hussain},
     Title = {The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.},
-    Year = {2023}}
+    Year = {2024}}
 ```
