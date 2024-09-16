@@ -139,3 +139,15 @@ cpc-project:
     paper_type: works_prog
     notes: |
         - _Note: We are currently working on the experimental design and expect to run a pilot in September 2024._
+secure-communities:
+    title: "Immigration Enforcement and Hispanic Children Outcomes"
+    authors:
+        - Augustine Denteh
+        - Hussain Hadah
+    year:
+    preprint:
+    published_url:
+    venue:
+    github:
+    paper_type: works_prog
+    notes: 
