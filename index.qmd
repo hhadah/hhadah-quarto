@@ -33,9 +33,13 @@ format:
 
 ::: {.g-col-12 .g-col-sm-8}
 
+# About Me
+
 I am a post-doctoral fellow at Tulane University's [Department of Economics](https://liberalarts.tulane.edu/departments/economics) and [Murphy Institute](https://murphy.tulane.edu/). 
 
 As an applied economist, I use labor and applied microeconomics techniques to study economic outcomes. My research encompasses areas including discrimination, racial and ethnic identities, health, education and immigration. My recent work has explored the impact of Hispanic surnames on labor and education market prospects, the influence of ethnic perceptions on self-identification among Hispanics, and the role of peer influence on mental well-being.
+
+I am on the 2024/2025 academic job market and am available for interviews. 
 
 I received my PhD in Economics from the University of Houston in 2023. I recieved my BS in Economics from Arizona State University.
 
@@ -80,31 +84,39 @@ Thank you for visiting my website, and I invite you to explore further to learn 
 
 ::::
 
-<!-- # Research
+# Job Market Paper
 
-  - [Research In Progress](#research)
-  - [Hispanic Discrimination](#sub-topic-1)
-  - [Mental Health](#sub-topic-2)
+In my job market paper---[<em>Peer Effects in Adolescent Mental Health</em>](https://hhadah.github.io/Depression_Idea/my_paper/hadah_peer_effects_preprint.pdf)---I explore the impact of peer mental health on adolescents' mental well-being, academic performance, physical health, and behavior. I address the reflection problem in peer effects by employing a friends-of-friends instrument to estimate the influence of peer mental health. I find that a one standard deviation increase in a friend’s mental unwellness leads to a 0.73 standard deviation increase in one’s own mental unwellness. Additionally, the paper highlights the broader negative effects of peer mental health on academic achievement, physical health, and engagement in risky behavior, establishing evidence of social contagion in mental health among adolescents.  
+
+# Research
+
+- [Published Work](#publish)
+- [Working Papers](#working)
+- [Research In Progress](#research)
+
+### Published Work {#publish}
+
+- Hadah, H. **The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.** _Southern Economic Journal_, conditionally accepted. [(preprint)](https://dx.doi.org/10.2139/ssrn.4566232)
+
+### Working Papers {#working}
+
+- Hadah, H. **Peer Effects in Adolescent Mental Health**. [(preprint)](https://hhadah.github.io/Depression_Idea/my_paper/hadah_peer_effects_preprint.pdf)
+- Hadah, H. **The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes**. [(preprint)](https://dx.doi.org/10.2139/ssrn.4566234)
 
 ### Research In Progress {#research}
 
-*   Hadah, H.  **Endogenous Hispanic Identity and Ethnic Gaps in the U.S.**
-*   Hadah, H., & Maheshri, V.  **Discrimination and the Black-White Arrests Gap.**
-*   Hadah, H., & Compta, G.  **Effects of Gun Control Laws on Suicide.**
-*   Hadah, H.  **The Effect of Anti-Asian Attitudes on Asian Identity in the U.S.**
-*   Button, P., Hadah, H., Schwegman, D., Selman, J., Nguyen-Phuong, T., & Balfe, C.  **Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment.**
-    *   Related: See Balfe et al. (2022) for the pilot study.
-    *   Note: Experiment planned to go into the field in Jan. 2024.
-*   Hadah, H., Button, P., Harris, D., & Lundebjerg, B.  **Parent’s Choice or School’s Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools.**
+- Button, P., Hadah, H., Schwegman, D., Selman, J., Nguyen-Phuong, T., & Balfe, C. **Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment**.
+  - Related: See Balfe et al. (2022) for the pilot study.
+  - Note: Experiment in the field.
+  
+- Button, P., Hadah, H., Harris, D., & Lundebjerg, B. **Parent’s Choice or School’s Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools**.
 
-Working Papers
---------------
+- Button, P., Daniel, C., Hadah, H., Hernandez, J., Holman, M., & Mahoney, A. **Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources**.
 
-### Hispanic Discrimination {#sub-topic-1}
+  - Note: Pilot planned to go into the field in Oct. 2024.
 
-*   Hadah, H.  **The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.**
-*   Hadah, H.  **The Impact of Hispanic Last Names and Identity on Labor Market Outcomes.**
+- Hadah, H. **Endogenous Hispanic Identity and Ethnic Gaps in the U.S.**.
 
-### Mental Health {#sub-topic-2}
+- Hadah, H., & Compta, G. **Effects of Gun Control Laws on Suicide**.
 
-*   Hadah, H.  **Peer Effects in Adolescent Mental Health.** -->
+- Denteh, A., & Hadah, H. **Immigration Enforcement and Hispanic Children Outcomes**.
