@@ -1,0 +1,44 @@
+---
+title: "The Effect of Anti-Asian Attitudes on Asian Identity in the U.S."
+# date: 2022-11-15
+author:
+  - name: Hussain Hadah
+    url: http://www.hussainhadah.com/
+    orcid: 0000-0002-8705-6386
+    affiliation: Tulane University
+categories: 
+  - Ethnicity
+  - Race
+  - Bias
+  - Discrimination
+pub-info:
+  reference: >-
+    <strong>Hussain Hadah</strong>, “The Effect of Anti-Asian Attitudes on Asian Identity in the U.S." <em>Working Paper</em>
+  links:
+    - name: Preprint
+      url: https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
+      icon: fa-solid fa-file-pdf
+      local: false
+  extra: >-
+    
+# doi: 
+---
+
+## Important links
+
+- [Paper (preprint)](https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf)
+
+## Abstract
+
+I study the determinants of the choice to identify as Asian among those who could—those whose parents, grandparents, or selves were born in an Asian country. I find that individuals with Asian ancestry are significantly less likely to self-identify as Asian if they live in states with high levels of implicit ethnic bias. A one standard deviation increase in bias decreases self-reported Asian identity by 9 percentage points for all immigrants. A one standard deviation increase in bias decreases self-reported Asian identity by 8 and 9 percentage points for second- and third-generation Asians respectively. These findings have implications for the interpretation of research on racial and ethnic gaps in economic outcomes and the correct counting of the population.
+
+## Citation
+
+Hadah, Hussain, The Effect of Anti-Asian Attitudes on Asian Identity in the U.S. (September 24, 2024). Available at https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
+
+```bibtex
+@article{hadah2024hispanicidentity,
+    Author = {Hadah, Hussain},
+    Title = {The Effect of Anti-Asian Attitudes on Asian Identity in the U.S.},
+    Year = {2024}}
+```
