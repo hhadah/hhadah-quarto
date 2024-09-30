@@ -39,5 +39,7 @@ Hadah, Hussain, The Effect of Racial and Ethnic Attitudes on Hispanic Identity i
 @article{hadah2024hispanicidentity,
     Author = {Hadah, Hussain},
     Title = {The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.},
-    Year = {2024}}
+    Journal = {Journal Name},
+    Year = {forthcoming},
+    Note = {Forthcoming}}
 ```
