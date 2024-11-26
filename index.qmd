@@ -86,12 +86,20 @@ Thank you for visiting my website, and I invite you to explore further to learn 
 
 # Job Market Paper
 
+::: {.grid}
+
+::: {.g-col-12}
+
+### Peer Effects in Adolescent Mental Health
+
+
 In my job market paper---[<em>Peer Effects in Adolescent Mental Health</em>](https://hhadah.github.io/Depression_Idea/my_paper/hadah_peer_effects_preprint.pdf)---I explore the impact of peer mental health on adolescents' mental well-being, academic performance, physical health, and behavior. I address the reflection problem in peer effects by employing a friends-of-friends instrument to estimate the influence of peer mental health. I find that a one standard deviation increase in a friend’s mental unwellness leads to a 0.73 standard deviation increase in one’s own mental unwellness. Additionally, the paper highlights the broader negative effects of peer mental health on academic achievement, physical health, and engagement in risky behavior, establishing evidence of social contagion in mental health among adolescents.  
 
-::: {layout-ncol=2}
-![Figure 1: Peer effects of friends' mental health on own mental health, educational, and behavioral outcomes ](research/working-papers/hadah-peer-effect-depression-2023/all-in-one-I.png)
 
-![Figure 2: Peer effects of friends' mental health on health, risky behavior, socialization, and alcohol and drug take up](research/working-papers/hadah-peer-effect-depression-2023/all-in-one-II.png)
+![Figure 1: Peer effects of friends' mental health on own mental health, educational, and behavioral outcomes](research/working-papers/hadah-peer-effect-depression-2023/all-in-one-I.png){width=100%}
+
+![Figure 2: Peer effects of friends' mental health on health, risky behavior, socialization, and alcohol and drug take up](research/working-papers/hadah-peer-effect-depression-2023/all-in-one-II.png){width=100%}
+
 :::
 
 # Research
