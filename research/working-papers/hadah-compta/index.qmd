@@ -1,0 +1,59 @@
+---
+title: "The Effects of Waiting Periods on Firearm Suicides in the U.S."
+# date: 2022-11-15
+author:
+  - name: Hussain Hadah
+    url: http://www.hussainhadah.com/
+    orcid: 0000-0002-8705-6386
+    affiliation: Tulane University
+  - name: Gael Compta
+    # orcid: 0000-0002-8705-6386
+    affiliation: Tulane University
+categories: 
+  - Waiting Periods
+  - Firearm Suicides
+  - Policy Evaluation
+  - Mental Health
+pub-info:
+  reference: >-
+    <strong>Hussain Hadah</strong> and <strong>Gael Compta</strong>, The Effects of Waiting Periods on Firearm Suicides in the U.S.</em>
+  # links:
+  #   - name: Preprint
+  #     url: https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
+  #     icon: fa-solid fa-file-pdf
+  #     local: false
+  extra: >-
+    
+# doi: 
+---
+
+## Important links
+
+- [Slides](https://www.dropbox.com/scl/fi/ckbsqze3c6tqq0o6qp0r7/dec-4.pdf?rlkey=desk5lhcg265zlrbc49ni5894&st=678ul1kt&dl=0)
+
+## Abstract
+
+This paper examines the causal impact of state-level waiting periods for firearm purchases on firearm-related suicide rates. Using variation in waiting period policies across states, we find that these regulations lead to a modest but meaningful reduction in overall firearm suicides, amounting to an average decrease of 0.6 deaths per 100,000 people—an 8\% decline, or roughly 2,000 lives saved annually. Notably, the effect is more pronounced among specific demographic groups. Waiting periods reduce firearm suicides by approximately 1.5 per 100,000 among men, 19.3 per 100,000 among individuals aged 55 and older, and 14.7 per 100,000 among White individuals. Our estimates suggest that these life-saving benefits could translate into as much as \$37.9 billion in the value of lives preserved. Overall, this analysis provides robust causal evidence that waiting periods for firearm purchases can significantly mitigate suicide risk and generate substantial societal and economic benefits. As a result, policymakers may consider implementing or strengthening waiting period laws as a strategic measure to reduce firearm suicides and improve public health outcomes.
+
+## Important Figures
+
+![Figure 1: State-level variation in waiting period policies](193-staggarred_sample_panel_view.png)
+
+![Figure 2: The causal effects of waiting periods on firearms suicides](1000-csid-all-fire.png)
+
+![Figure 3: The causal effects of waiting periods on firearms suicides among men](1001-csid-men-fire.png)
+
+![Figure 4: The causal effects of waiting periods on firearms suicides among individuals aged 55+](1002-csid-age_55p-fire.png)
+
+![Figure 5: The causal effects of waiting periods on firearms suicides among white individuals](1003-csid-white-fire.png)
+
+<!-- ## Citation
+
+Hadah, Hussain, The Effect of Anti-Asian Attitudes on Asian Identity in the U.S. (September 24, 2024). Available at https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
+
+```bibtex
+@article{hadah2024hispanicidentity,
+    Author = {Hadah, Hussain},
+    Title = {The Effect of Anti-Asian Attitudes on Asian Identity in the U.S.},
+    Year = {2024}}
+``` -->

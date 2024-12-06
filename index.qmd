@@ -117,6 +117,7 @@ In my job market paper---[<em>Peer Effects in Adolescent Mental Health</em>](htt
 - Hadah, H. **Peer Effects in Adolescent Mental Health**. [(preprint)](https://hhadah.github.io/Depression_Idea/my_paper/hadah_peer_effects_preprint.pdf)
 - Hadah, H. **The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes**. [(preprint)](https://dx.doi.org/10.2139/ssrn.4566234)
 - Hadah, H. **The Effect of Anti-Asian Attitudes on Asian Identity in the U.S.**. [(preprint)](https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf)
+- Hadah, H., & Compta, G. **Effects of Gun Control Laws on Suicide**.
 
 ### Research In Progress {#research}
 
@@ -131,7 +132,5 @@ In my job market paper---[<em>Peer Effects in Adolescent Mental Health</em>](htt
   - Note: Pilot planned to go into the field in Oct. 2024.
 
 - Hadah, H. **Endogenous Hispanic Identity and Ethnic Gaps in the U.S.**.
-
-- Hadah, H., & Compta, G. **Effects of Gun Control Laws on Suicide**.
 
 - Denteh, A., & Hadah, H. **Immigration Enforcement and Hispanic Children Outcomes**.
