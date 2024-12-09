@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-pagetitle','listing-description-meta','listing-author-meta','listing-website','listing-extensions','listing-project','listing-execute','listing-format','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-include-back-link','listing-title','listing-author','listing-categories','listing-pub-info','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-pagetitle','listing-description-meta','listing-author-meta','listing-website','listing-extensions','listing-project','listing-execute','listing-format','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-doi','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-pagetitle","listing-description-meta","listing-author-meta","listing-website","listing-extensions","listing-project","listing-execute","listing-format","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-include-back-link","listing-title","listing-author","listing-categories","listing-pub-info","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-pagetitle","listing-description-meta","listing-author-meta","listing-website","listing-extensions","listing-project","listing-execute","listing-format","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-doi","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -304,9 +304,9 @@ window.Quarto = {
 <div class="research project-list">
 <ul class="list">
     
-        <li class="project" data-index="0" data-categories="Ethnicity,Bias,Discrimination" data-listing-file-modified-sort="1729200011994" data-listing-reading-time-sort="1" data-listing-word-count-sort="184">
+        <li class="project" data-index="0" data-categories="Ethnicity,Bias,Discrimination" data-listing-date-sort="1733724000000" data-listing-file-modified-sort="1733769316744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="320">
             <div class="project-content listing-pub-info">
-                <p><strong>Hussain Hadah</strong>, “The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S." <em>Southern Economic Journal</em>, forthcoming</p>
+                <p><strong>Hussain Hadah</strong>, “The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S." <em>Southern Economic Journal</em>, (2024), doi: <a href="https://doi.org/10.1002/soej.12749"><code>https://doi.org/10.1002/soej.12749</code></a></p>
             </div>
 
             
@@ -344,6 +344,14 @@ window.Quarto = {
                         <a href="https://dx.doi.org/10.2139/ssrn.4566232">
                         
                             <i class="fa-solid fa-file-pdf"></i> Preprint
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://doi.org/10.1002/soej.12749">
+                        
+                            <i class="fa-solid fa-scroll"></i> Final version
                         </a>
                     </li>
                         
