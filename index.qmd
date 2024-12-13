@@ -115,7 +115,7 @@ In my job market paper---[<em>Peer Effects in Adolescent Mental Health</em>](htt
 ### Working Papers {#working}
 
 - Hadah, H. **Peer Effects in Adolescent Mental Health**. [(preprint)](https://hhadah.github.io/Depression_Idea/my_paper/hadah_peer_effects_preprint.pdf)
-- Hadah, H. **The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes**. [(preprint)](https://dx.doi.org/10.2139/ssrn.4566234)
+- Hadah, H. **The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes**. _Revise and resubmit at Journal of Economics, Race, and Policy_[(preprint)](https://dx.doi.org/10.2139/ssrn.4566234)
 - Hadah, H. **The Effect of Anti-Asian Attitudes on Asian Identity in the U.S**. [(preprint)](https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf)
 - Hadah, H., & Compta, G. **The Effects of Waiting Periods on Firearm Suicides in the U.S**.
 
