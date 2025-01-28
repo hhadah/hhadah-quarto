@@ -29,7 +29,7 @@ pub-info:
 
 ## Important links
 
-- [Slides](https://www.dropbox.com/scl/fi/ckbsqze3c6tqq0o6qp0r7/dec-4.pdf?rlkey=desk5lhcg265zlrbc49ni5894&st=678ul1kt&dl=0)
+- [Slides](https://hhadah.github.io/presentations/2024-dec-4/dec-4.pdf)
 
 ## Abstract
 
