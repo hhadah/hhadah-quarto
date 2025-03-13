@@ -131,6 +131,11 @@ In my job market paper---[<em>Peer Effects in Adolescent Mental Health</em>](htt
 
   - Note: We are currently working on the experimental design and expect to run the experiment in February 2025
 
-- Hadah, H. **Endogenous Hispanic Identity and Ethnic Gaps in the U.S.**.
+- Hadah, H. **Endogenous Hispanic Identity and Ethnic Gaps in the U.S.**. (Using census administrative data with the RDC).
 
 - Denteh, A., & Hadah, H. **Immigration Enforcement and Hispanic Children Outcomes**.
+
+- Hadah, H. **Immigration Enforcement and Children Suicides**.
+
+- Denteh, A., & Hadah, H. **Assimilation of Hispanics and Arabs in America**. (Using census administrative data with the RDC).
+

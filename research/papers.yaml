@@ -151,3 +151,28 @@ secure-communities:
     github:
     paper_type: works_prog
     notes: 
+
+secure-communities-suicides:
+    title: "Immigration Enforcement and Children Suicides"
+    authors:
+        - Hussain Hadah
+    year:
+    preprint:
+    published_url:
+    venue:
+    github:
+    paper_type: works_prog
+    notes: 
+
+arabs-hispanics:
+    title: "Assimilation of Hispanics and Arabs in America"
+    authors:
+        - Augustine Denteh
+        - Hussain Hadah
+    year:
+    preprint:
+    published_url:
+    venue:
+    github:
+    paper_type: works_prog
+    notes: 

@@ -5,6 +5,7 @@ listing:
     contents: "articles/*/index.qmd"
     sort: "date desc"
     template: ../html/research/listing.ejs
+    
     categories: true
   - id: working-papers
     contents: "working-papers/*/index.qmd"
