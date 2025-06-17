@@ -1,0 +1,59 @@
+---
+title: "Fear and Loathing: Immigration Enforcement and Rising Suicide Rates Among Hispanic Youth"
+# date: 2022-11-15
+author:
+  - name: Hussain Hadah
+    url: http://www.hussainhadah.com/
+    orcid: 0000-0002-8705-6386
+    affiliation: Tulane University
+categories: 
+  - Immigration enforcement
+  - Secure Communities
+  - Suicide
+  - Difference-in-differences
+  - Policy Evaluation
+  - Mental Health
+pub-info:
+  reference: >-
+    <strong>Hussain Hadah</strong>, "Fear and Loathing: Immigration Enforcement and Rising Suicide Rates Among Hispanic Youth"</em>
+  # links:
+  #   - name: Preprint
+  #     url: https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
+  #     icon: fa-solid fa-file-pdf
+  #     local: false
+  extra: >-
+    
+# doi: 
+---
+
+## Important links
+
+- Draft available soon
+
+
+## Abstract
+
+This paper examines the causal relationship between immigration enforcement and suicide rates among Hispanic youth, focusing on one of the most significant federal immigration programs of the 21st century: Secure Communities (SC). Using comprehensive mortality data from the National Vital Statistics System, combined with detailed records of SC implementation across counties, I use a difference-in-differences approach that exploits the staggered adoption of SC to identify causal effects. I find a pattern of increased county-level suicide after the implementation of SC, with effects that vary substantially between age groups and sex. The results also highlight the critical importance of considering mental health infrastructure and support systems when implementing immigration policies.
+
+## Important Figures
+
+![Figure 1: County-level variation in waiting period policies](04-staggarred_sample_panel_view.png)
+
+![Figure 2: The causal effects of Secure Communities (SC) on Suicide Rates Among Hispanic Children Aged 5–14](19-CS_nytotsuic5to14hisp.png)
+
+![Figure 3: The causal effects of Secure Communities (SC) on Suicide Rates Among Hispanic Youth Aged 5–24](26-CS_nytotsuic5to24hisp.png)
+
+![Figure 4: The causal effects of Secure Communities (SC) on Suicide Rates Among Hispanic Adults Aged 35 and Older](33-CS_nytotsuicover34hisp.png)
+
+![Figure 5: The causal effects of Secure Communities (SC) on Suicide Rates Among Among All Hispanic Individuals](40-CS_nytotsuichisp.png)
+
+<!-- ## Citation
+
+Hadah, Hussain, The Effect of Anti-Asian Attitudes on Asian Identity in the U.S. (September 24, 2024). Available at https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
+
+```bibtex
+@article{hadah2024hispanicidentity,
+    Author = {Hadah, Hussain},
+    Title = {The Effect of Anti-Asian Attitudes on Asian Identity in the U.S.},
+    Year = {2024}}
+``` -->

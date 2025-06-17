@@ -120,7 +120,7 @@ school-audit:
     github:
     paper_type: works_prog
     notes: | 
-        - _Note: we will be estimating discrimination based on race and ethnicity (White, Black, Hispanic), sexual orientation, gender identity, disability (student has an IEP), and religion (Christian, Jewish, Muslim). We are finalizing the experimental design and will be running a pilot study in Fall 2024._
+        - _Note: we will be estimating discrimination based on race and ethnicity (White, Black, Hispanic), sexual orientation, gender identity, disability (student has an IEP), and religion (Christian, Jewish, Muslim). We are finalizing the experimental design and will be running a pilot study in Fall 2025._
         - _You can find a link to a Russell Sage Foundation letter of interest using this [link](https://hhadah.github.io/statements/EducationAudit-LOI-RST-Final.pdf)._
 cpc-project:
     title: "Auditing Crisis Pregnancy Centers: Racial biases, misinformation, and the misallocation government resources"
@@ -138,7 +138,7 @@ cpc-project:
     github:
     paper_type: works_prog
     notes: |
-        - _Note: We are currently working on the experimental design and expect to run the experiment in February 2025._
+        - _Note: We are currently working on the experimental design and expect to run the experiment in 2025._
 secure-communities:
     title: "Immigration Enforcement and Hispanic Children Outcomes"
     authors:
@@ -150,10 +150,11 @@ secure-communities:
     venue:
     github:
     paper_type: works_prog
-    notes: 
+    notes: |
+        - _Note: Draft will be available soon._
 
 secure-communities-suicides:
-    title: "Immigration Enforcement and Children Suicides"
+    title: "Fear and Loathing: Immigration Enforcement and Rising Suicide Rates Among Hispanic Youth"
     authors:
         - Hussain Hadah
     year:
@@ -161,7 +162,7 @@ secure-communities-suicides:
     published_url:
     venue:
     github:
-    paper_type: works_prog
+    paper_type: working_paper
     notes: 
 
 arabs-hispanics:
