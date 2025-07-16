@@ -12,7 +12,7 @@ categories:
   - Discrimination
 pub-info:
   reference: >-
-    <strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes,” <em>Revise and resubmit at Journal of Economics, Race, and Policy</em>
+    <strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes,” <em>forthcoming Journal of Economics, Race, and Policy</em>
   links:
     - name: Preprint
       url: https://dx.doi.org/10.2139/ssrn.4566234
