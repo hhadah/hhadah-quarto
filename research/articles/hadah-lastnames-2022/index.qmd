@@ -1,5 +1,5 @@
 ---
-title: "The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes"
+title: "The Impact of Hispanic Last Names on Educational and Labor Market Outcomes"
 # date: 2022-05-01
 author:
   - name: Hussain Hadah
@@ -12,7 +12,7 @@ categories:
   - Discrimination
 pub-info:
   reference: >-
-    <strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes,” <em>forthcoming Journal of Economics, Race, and Policy</em>
+    <strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names on Educational and Labor Market Outcomes,” <em>forthcoming Journal of Economics, Race, and Policy</em>
   links:
     - name: Preprint
       url: https://dx.doi.org/10.2139/ssrn.4566234
@@ -34,7 +34,7 @@ pub-info:
 
 ## Abstract
 
-Do individuals with Hispanic names face labor market discrimination? This study analyzes the impact of Hispanic-sounding surnames on wages among inter-ethnic children with one White and one Hispanic parent. I find that individuals with Hispanic surnames often earn less, with a notable wage gap favoring those with White surnames. People born to Hispanic fathers and White mothers receive 0.3 years of education less than those born to White fathers and Hispanic mothers. Males born to Hispanic fathers and White mothers earn 5 percentage points less than those born to White fathers and Hispanic mothers, largely due to educational differences. Additionally, men with Spanish-sounding last names who identify as Hispanic earn significantly less, again due to educational disparities.
+Do individuals with Hispanic surnames face discrimination in access to education and the labor market? This study analyzes the impact of likely Hispanic surnames on wages among Americans with one White and one Hispanic parent. Individuals who likely have Hispanic surnames (i.e. those with a Hispanic father) often complete less education and earn less, with a notable wage gap favoring those with white-sounding surnames. People born to Hispanic fathers and White mothers receive 0.39 fewer years of education than those born to White fathers and Hispanic mothers. Men born to Hispanic fathers and White mothers earn 5 percentage points less than those born to White fathers and Hispanic mothers, and they are 1 percentage point more likely to be unemployed. I also show that this gap can be largely explained by educational differences.
 
 ## Citation
 
@@ -43,6 +43,6 @@ Hadah, Hussain, The Impact of Hispanic Last Names and Identity on Educational an
 ```bibtex
 @article{hadah2022effect:2021,
     Author = {Hadah, Hussain},
-    Title = {The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes},
+    Title = {The Impact of Hispanic Last Names on Educational and Labor Market Outcomes},
     Year = {2022}}
 ```
