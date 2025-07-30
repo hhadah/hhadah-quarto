@@ -38,11 +38,13 @@ Do individuals with Hispanic surnames face discrimination in access to education
 
 ## Citation
 
-Hadah, Hussain, The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes (September 3, 2023). Available at SSRN: https://ssrn.com/abstract=4566234 or http://dx.doi.org/10.2139/ssrn.4566234
+Hadah, Hussain. The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes. Forthcoming, Journal of Economics, Race, and Policy, 2025. Available at SSRN: https://ssrn.com/abstract=4566234 or http://dx.doi.org/10.2139/ssrn.4566234
 
 ```bibtex
-@article{hadah2022effect:2021,
-    Author = {Hadah, Hussain},
-    Title = {The Impact of Hispanic Last Names on Educational and Labor Market Outcomes},
-    Year = {2022}}
+@article{hadah2025effect,
+    author = {Hadah, Hussain},
+    title = {The Impact of Hispanic Last Names on Educational and Labor Market Outcomes},
+    journal = {Journal of Economics, Race, and Policy},
+    year = {2025}
+}
 ```

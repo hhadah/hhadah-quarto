@@ -36,13 +36,14 @@ I study the determinants of the choice to identify as Hispanic among those who c
 
 ## Citation
 
-Hadah, Hussain, The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S. (December 09, 2024). Available at https://doi.org/10.1002/soej.12749
+Hadah, Hussain. "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the United States." Southern Economic Journal (Forthcoming, 2024). Wiley Online Library. https://doi.org/10.1002/soej.12749.
 
 ```bibtex
 @article{hadah2024hispanicidentity,
 author = {Hadah, Hussain},
 title = {The effect of racial and ethnic attitudes on Hispanic identity in the United States},
 journal = {Southern Economic Journal},
+year={2024},
 volume = {n/a},
 number = {n/a},
 pages = {},
@@ -50,6 +51,7 @@ keywords = {Economics of Minorities, Race, and Immigrants, Discrimination and Pr
 doi = {https://doi.org/10.1002/soej.12749},
 url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/soej.12749},
 eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/soej.12749},
-abstract = {Abstract I study the determinants of choosing to identify as Hispanic among individuals who are eligible—those whose parents, grandparents, or themselves were born in a Spanish-speaking country. Using a multiple proxy regression approach, I construct a bias measure based on the Implicit Association Test (IAT) and the American National Election Studies (ANES). I find that individuals with Hispanic ancestry are significantly less likely to self-identify as Hispanic if they reside in states with high levels of bias. A one standard deviation increase in bias reduces self-reported Hispanic identity by 4 percentage points among all Hispanics. These effects are more pronounced among second-generation immigrants with both parents born in a Spanish-speaking country compared to children of inter-ethnic parents. These findings have implications for interpreting research on ethnic gaps in economic outcomes and for accurately counting the population.}
+abstract = {Abstract I study the determinants of choosing to identify as Hispanic among individuals who are eligible—those whose parents, grandparents, or themselves were born in a Spanish-speaking country. Using a multiple proxy regression approach, I construct a bias measure based on the Implicit Association Test (IAT) and the American National Election Studies (ANES). I find that individuals with Hispanic ancestry are significantly less likely to self-identify as Hispanic if they reside in states with high levels of bias. A one standard deviation increase in bias reduces self-reported Hispanic identity by 4 percentage points among all Hispanics. These effects are more pronounced among second-generation immigrants with both parents born in a Spanish-speaking country compared to children of inter-ethnic parents. These findings have implications for interpreting research on ethnic gaps in economic outcomes and for accurately counting the population.},
+publisher={Wiley Online Library}
 }
 ```
