@@ -1,5 +1,5 @@
 ---
-title: "Fear and Loathing: Immigration Enforcement and Rising Suicide Rates Among Hispanic Youth"
+title: "The Effect of Immigration Enforcement on Suicide Rates Among Hispanic Youth"
 # date: 2022-11-15
 author:
   - name: Hussain Hadah
@@ -15,7 +15,7 @@ categories:
   - Mental Health
 pub-info:
   reference: >-
-    <strong>Hussain Hadah</strong>, "Fear and Loathing: Immigration Enforcement and Rising Suicide Rates Among Hispanic Youth"</em>
+    <strong>Hussain Hadah</strong>, "The Effect of Immigration Enforcement on Suicide Rates Among Hispanic Youth"</em>
   # links:
   #   - name: Preprint
   #     url: https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
