@@ -19,12 +19,14 @@ pub-info:
     <strong>Hussain Hadah</strong> and Gael Compta, "The Effects of Waiting Periods on Firearm Suicides in the U.S."</em>
   links:
     - name: Preprint
-      url: https://hhadah.github.io/compta-hadah/compta_hadah_2025.pdf
+      url: https://dx.doi.org/10.2139/ssrn.5383500
       icon: fa-solid fa-file-pdf
       local: false
+
   extra: >-
+      Presented at the Defense Resources Management Institute (DRMI) in 2025, the American Society of Health Economists Annual Conference in Nashville in 2025, the Southern Economic Association Conference in Washington, D.C. in 2024, the University of Houston's Applied Micro Lunch Seminar, the Murphy Institute Health Seminar in 2023, and the Southern Economic Association Annual Meeting in 2021.
     
-# doi: 
+# doi: https://dx.doi.org/10.2139/ssrn.5383500
 ---
 
 ## Important links

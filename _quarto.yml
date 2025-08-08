@@ -37,6 +37,8 @@ website:
         file: teaching/index.qmd
       - href: cv/index.qmd
         text: CV
+      - href: "personal/index.qmd"
+        text: "Personal"
         
     
     # your social media handles

@@ -1,0 +1,64 @@
+---
+title: "Beyond the Research"
+title-block-banner: "#006747"
+page-layout: full
+lightbox: auto
+---
+
+::: {.grid}
+
+::: {.g-col-12}
+
+# Adventures, Achievements, and Life Balance
+
+When I'm not diving deep into economic data or teaching, you'll find me on the soccer field, snowboarding Colorado's slopes, or hiking trails with my adventure buddies. Here's a peek into the fun stuff that keeps me sane and smiling.
+
+:::
+:::
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+
+# Sunday Soccer
+
+Our Sunday league team has won three consecutive seasonal championships through consistent teamwork, strategic play, and dedication to improvement each season.
+
+![Championship team celebrating another successful season](soccer-team.png){group="sports" width=50%}
+
+:::
+
+::: {.g-col-12}
+
+# Mountain Adventures
+
+:::
+
+::: {#mountain-adventures layout-ncol=2}
+
+![](snowboarding.png){#snowboarding width="100%"}
+
+![](hiking-lake.png){#hiking width="100%"}
+
+:::
+:::
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+
+# Canine Companions
+
+![Bill and Shams by the creek](dogs-creek.png){group="dogs" width=50%}
+
+:::
+
+::: {.g-col-12 .g-col-md-6}
+
+# Trail Exploration
+
+![Trail rest with both dogs](hiking-stream.png){group="hiking" width=50%}
+
+:::
+
+:::

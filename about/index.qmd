@@ -4,7 +4,7 @@ title-block-banner: "#006747"
 page-layout: full
 ---
 
-I am a post-doctoral fellow at Tulane University's [Department of Economics](https://liberalarts.tulane.edu/departments/economics) and [Murphy Institute](https://murphy.tulane.edu/). I received my Ph.D. in economics from the University of Houston in 2023. I use labor and applied microeconomics techniques to study the intersection of social identities and economic outcomes. My research focuses on discrimination, identity, immigration, education, and health. My primary topics of interest are:
+I am a postdoctoral fellow at Tulane University's [Department of Economics](https://liberalarts.tulane.edu/departments/economics) and [Murphy Institute](https://murphy.tulane.edu/). I received my Ph.D. in economics from the University of Houston in 2023. I use labor and applied microeconomics techniques to study the intersection of social identities and economic outcomes. My research focuses on discrimination, identity, immigration, education, and health. My primary topics of interest are:
 
 1. **Discrimination against Minorities and Ethnic Identity**
 
