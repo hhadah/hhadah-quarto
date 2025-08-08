@@ -6,59 +6,53 @@ lightbox: auto
 ---
 
 ::: {.grid}
-
 ::: {.g-col-12}
-
 # Adventures, Achievements, and Life Balance
 
 When I'm not diving deep into economic data or teaching, you'll find me on the soccer field, snowboarding Colorado's slopes, or hiking trails with my adventure buddies. Here's a peek into the fun stuff that keeps me sane and smiling.
-
-:::
 :::
 
-::: {.grid}
-
+<!-- Sunday Soccer -->
+::: {.g-col-12 .grid}
 ::: {.g-col-12 .g-col-md-6}
-
-# Sunday Soccer
+## Sunday Soccer
 
 Our Sunday league team has won three consecutive seasonal championships through consistent teamwork, strategic play, and dedication to improvement each season.
-
-![Championship team celebrating another successful season](soccer-team.png){group="sports" width=50%}
-
 :::
-
-::: {.g-col-12}
-
-# Mountain Adventures
-
-:::
-
-::: {#mountain-adventures layout-ncol=2}
-
-![](snowboarding.png){#snowboarding width="100%"}
-
-![](hiking-lake.png){#hiking width="100%"}
-
-:::
-:::
-
-::: {.grid}
-
 ::: {.g-col-12 .g-col-md-6}
-
-# Canine Companions
-
-![Bill and Shams by the creek](dogs-creek.png){group="dogs" width=50%}
-
+![Championship team celebrating another successful season](soccer-team.png){width="80%" group="sports"}
+:::
 :::
 
+<!-- Mountain Adventures -->
+::: {.g-col-12 .grid}
 ::: {.g-col-12 .g-col-md-6}
-
-# Trail Exploration
-
-![Trail rest with both dogs](hiking-stream.png){group="hiking" width=50%}
-
+## Mountain Adventures
+:::
+::: {.g-col-12 .g-col-md-6}
+::: {style="display: inline-block; width: 48%; margin-right: 2%;"}
+![](snowboarding.png){width="100%" lightbox="false"}
+Keystone, CO
+:::
+::: {style="display: inline-block; width: 48%;"}
+![](hiking-lake.png){width="100%" lightbox="false"}  
+Lake Isabelle, CO
+:::
+:::
 :::
 
+
+<!-- Combined: Canine Companions + Trail Exploration -->
+::: {.g-col-12 .grid}
+::: {.g-col-12 .g-col-md-6}
+## Trail Dogs & Exploration
+
+Meet Bill and Shams, my loyal trail buddies who never say no to a creek break or forest sprint.  
+
+:::
+::: {.g-col-12 .g-col-md-6}
+![](dogs-creek.png){width="48%" group="dogs"}
+![](hiking-stream.png){width="48%" group="dogs"}
+:::
+:::
 :::
