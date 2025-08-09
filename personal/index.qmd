@@ -9,7 +9,7 @@ lightbox: auto
 ::: {.g-col-12}
 # Adventures, Achievements, and Life Balance
 
-When I'm not diving deep into economic data or teaching, you'll find me on the soccer field, snowboarding Colorado's slopes, or hiking trails with my adventure buddies. Here's a peek into the fun stuff that keeps me sane and smiling.
+When I'm not diving deep into data, writing, or teaching, you'll find me on the soccer field, snowboarding Colorado's slopes, or hiking trails with my adventure buddies. Here's a peek into the fun stuff that keeps me sane and smiling.
 :::
 
 <!-- Sunday Soccer -->
@@ -17,7 +17,7 @@ When I'm not diving deep into economic data or teaching, you'll find me on the s
 ::: {.g-col-12 .g-col-md-6}
 ## Sunday Soccer
 
-Our Sunday league team has won three consecutive seasonal championships through consistent teamwork, strategic play, and dedication to improvement each season.
+Our Sunday league team has won three consecutive championships.
 :::
 ::: {.g-col-12 .g-col-md-6}
 ![Championship team celebrating another successful season](soccer-team.png){width="80%" group="sports"}
