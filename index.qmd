@@ -35,13 +35,13 @@ format:
 
 # About Me
 
-I am an applied economist specializing in discrimination research and racial/ethnic identity studies, currently serving as a postdoctoral fellow at Tulane University's [Department of Economics](https://liberalarts.tulane.edu/departments/economics) and [Murphy Institute](https://murphy.tulane.edu/). My research uses cutting-edge audit field experiments and labor economics techniques to investigate how discrimination affects economic outcomes across education, housing, and employment markets.
+I am an applied economist specializing in discrimination research and racial/ethnic identity studies, currently serving as a postdoctoral fellow at Tulane University's [Department of Economics](https://liberalarts.tulane.edu/departments/economics) and [Murphy Institute](https://murphy.tulane.edu/). My research uses audit field experiments and labor economics techniques to investigate how discrimination affects economic outcomes across education, housing, and employment markets.
 
-My work addresses critical policy questions with real-world impact. I have published research in the *Journal of Economics, Race, and Policy* examining the effect of Hispanic surnames on educational and labor market prospects, while my ongoing projects investigate discrimination in mortgage lending, school admissions, and the influence of ethnic perceptions on Hispanic self-identification. Through collaborative research with multiple institutions, I study how peer networks affect mental well-being and analyze the economic impacts of immigration enforcement policies.
+My work addresses critical policy questions with real-world impact. I have published research in the *Journal of Economics, Race, and Policy* examining the effect of Hispanic surnames on educational and labor market prospects, while my ongoing projects investigate discrimination in mortgage lending, school admissions, and the influence of ethnic perceptions on Hispanic self-identification. 
 
-I earned my PhD in Economics from the University of Houston in 2023, where I also completed my M.A., and graduated summa cum laude with a B.S. in Economics from Arizona State University. My commitment to excellence extends to the classroom, where I consistently receive high ratings from students for clear communication and engaging instruction across microeconomics and econometrics courses.
+My research on school choice and discrimination has been supported by grant funding from the Abdul Latif Jameel Poverty Action Lab (J-PAL) Social Policy Research Initiative.
 
-Beyond research, I am passionate about translating economic findings into accessible insights for policymakers and the public. My expertise in experimental methodology and discrimination research positions me to contribute meaningfully to discussions about economic equity and evidence-based policy solutions.
+I earned my PhD in Economics from the University of Houston in 2023, where I also completed my M.A., and graduated summa cum laude with a B.S. in Economics from Arizona State University. 
 
 [Outside](https://hussainhadah.com/personal/) of economics, I enjoy running with my two dogs through New Orleans, following college and professional sports, and exploring the city's incredible culinary scene. 
 
