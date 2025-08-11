@@ -27,8 +27,8 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: about/index.qmd
-        text: "About Me"
+      # - href: about/index.qmd
+      #   text: "About Me"
       # - href: about.qmd
       # - href: research.qmd
       - text: "Research"

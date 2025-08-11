@@ -35,15 +35,15 @@ format:
 
 # About Me
 
-I am an applied economist specializing in discrimination research and racial/ethnic identity studies, currently serving as a postdoctoral fellow at Tulane University's [Department of Economics](https://liberalarts.tulane.edu/departments/economics) and [Murphy Institute](https://murphy.tulane.edu/). My research uses audit field experiments and labor economics techniques to investigate how discrimination affects economic outcomes across education, housing, and employment markets.
+I am a labor, health, and education economist and a postdoctoral fellow at Tulane University's [Department of Economics](https://liberalarts.tulane.edu/departments/economics) and [Murphy Institute](https://murphy.tulane.edu/). My research uses causal inference methods, field experiments, and administrative data to evaluate policies and understand economic behavior in contexts such as discrimination, identity formation, peer effects, institutional effectiveness, and public health interventions.
 
-My work addresses critical policy questions with real-world impact. I have published research in the *Journal of Economics, Race, and Policy* examining the effect of Hispanic surnames on educational and labor market prospects, while my ongoing projects investigate discrimination in mortgage lending, school admissions, and the influence of ethnic perceptions on Hispanic self-identification. 
+My work addresses critical policy questions with real-world impact. I have published in the *Journal of Economics, Race, and Policy* on how Hispanic surnames affect educational and labor market outcomes, and my ongoing projects examine discrimination in mortgage lending, school admissions, and the role of ethnic perceptions in Hispanic self-identification.
 
-My research on school choice and discrimination has been supported by grant funding from the Abdul Latif Jameel Poverty Action Lab (J-PAL) Social Policy Research Initiative.
+My research on school choice and discrimination, supported by the Abdul Latif Jameel Poverty Action Lab (J-PAL) Social Policy Research Initiative, investigates discrimination in admissions across private, charter, and traditional public schools.
 
-I earned my PhD in Economics from the University of Houston in 2023, where I also completed my M.A., and graduated summa cum laude with a B.S. in Economics from Arizona State University. 
+I earned my PhD in Economics from the University of Houston in 2023, and graduated with a B.S. in Economics from Arizona State University. 
 
-[Outside](https://hussainhadah.com/personal/) of economics, I enjoy running with my two dogs through New Orleans, following college and professional sports, and exploring the city's incredible culinary scene. 
+[Outside](https://hussainhadah.com/personal/) of economics, I enjoy running with my two dogs through New Orleans, following college and professional sports, and exploring the city’s incredible culinary scene.
 
 Please feel free to contact me if you have questions about my work or would like to discuss economic research.
 
