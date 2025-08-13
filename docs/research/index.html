@@ -297,7 +297,6 @@ window.Quarto = {
 
 
 
-<p>My research in applied microeconomics and labor economics spans topics on discrimination, race, identity, mental health, immigration.</p>
 <section id="journal-articles" class="level2">
 <h2 class="anchored" data-anchor-id="journal-articles">Journal articles</h2>
 <div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
@@ -737,6 +736,7 @@ No matching items
 </ul></li></ul>
 <ul class="list-group" style="margin-bottom: 15px;"><li class="list-group-item" style="border-bottom: none; padding-bottom: 0;"></li><li class="list-group-item">Patrick Button, <b>Hussain Hadah</b>, Douglas Harris, and Barbara Lundebjerg. "Parent’s Choice or School’s Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools."<br></li><li class="list-group-item" style="border-top: none; font-size: smaller; padding-top: 0;"><ul>
 <li><em>Note: we will be estimating discrimination based on race and ethnicity (White, Black, Hispanic), sexual orientation, gender identity, disability (student has an IEP), and religion (Christian, Jewish, Muslim). We are finalizing the experimental design and will be running a pilot study in Fall 2025.</em></li>
+<li><em>Grant: We received a $140,746.6 grant from  J-PAL Social Policy Research Initiative / Racial Equity Special Topic RFP.</em> </li>
 <li><em>You can find a link to a Russell Sage Foundation letter of interest using this <a href="https://hhadah.github.io/statements/EducationAudit-LOI-RST-Final.pdf">link</a>.</em></li>
 <li><em>You can find a link to the slides presented at J-PAL <a href="https://hhadah.github.io/jpal-presentation/hadah-jpal-presentation.html">here</a>.</em></li>
 </ul></li></ul>
@@ -873,7 +873,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/hussainhadah\.com");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

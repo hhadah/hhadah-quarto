@@ -112,9 +112,6 @@ for key, data in yaml_data.items():
         )
 ```
 
-My research in applied microeconomics and labor economics spans topics on discrimination, race, identity, mental health, immigration. 
-
-
 
 ## Journal articles
 

@@ -263,6 +263,7 @@ In my job market paper---[<em>Peer Effects in Adolescent Mental Health</em>](htt
 <li><a href="#working">Working Papers</a></li>
 <li><a href="#research">Research In Progress</a></li>
 </ul>
+<p>Notes: * = Student co-author at time of writing/research.</p>
 <section id="publish" class="level3">
 <h3 class="anchored" data-anchor-id="publish">Publications</h3>
 <ul>
@@ -275,19 +276,19 @@ In my job market paper---[<em>Peer Effects in Adolescent Mental Health</em>](htt
 <ul>
 <li>Hadah, H. <strong>Peer Effects in Adolescent Mental Health</strong>. <a href="https://dx.doi.org/10.2139/ssrn.5159123">(preprint)</a></li>
 <li>Hadah, H. <strong>The Effect of Anti-Asian Attitudes on Asian Identity in the U.S</strong>. <a href="https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf">(preprint)</a></li>
-<li>Hadah, H., &amp; Compta, G. <strong>The Effects of Waiting Periods on Firearm Suicides in the U.S.</strong> <a href="https://hhadah.github.io/compta-hadah/compta_hadah_2025.pdf">(preprint)</a></li>
+<li>Hadah, H., &amp; Compta, G.* <strong>The Effects of Waiting Periods on Firearm Suicides in the U.S.</strong> <a href="https://hhadah.github.io/compta-hadah/compta_hadah_2025.pdf">(preprint)</a></li>
 <li>Hadah, H. <strong>The Effect of Immigration Enforcement on Suicide Rates Among Hispanic Youth</strong> (Draft available soon.)</li>
 </ul>
 </section>
 <section id="research" class="level3">
 <h3 class="anchored" data-anchor-id="research">Research In Progress</h3>
 <ul>
-<li><p>Button, P., Hadah, H., Schwegman, D., Selman, J., Nguyen-Phuong, T., &amp; Balfe, C. <strong>Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment</strong>.</p>
+<li><p>Button, P., Hadah, H., Schwegman, D., Selman, J., Nguyen-Phuong, T.*, &amp; Balfe, C.* <strong>Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment</strong>.</p>
 <ul>
 <li>Related: See Balfe et al.&nbsp;(2022) for the pilot study.</li>
 <li>Note: Experiment in the field.</li>
 </ul></li>
-<li><p>Button, P., Hadah, H., Harris, D., &amp; Lundebjerg, B. <strong>Parent’s Choice or School’s Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools</strong>.</p></li>
+<li><p>Button, P., Hadah, H., Harris, D., &amp; Lundebjerg, B.* <strong>Parent’s Choice or School’s Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools</strong>.</p></li>
 <li><p>Button, P., Daniel, C., Hadah, H., Hernandez, J., Holman, M., &amp; Mahoney, A. <strong>Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources</strong>.</p>
 <ul>
 <li>Note: We are currently working on the experimental design and expect to run the experiment in 2025</li>
@@ -394,7 +395,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/hussainhadah\.com");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

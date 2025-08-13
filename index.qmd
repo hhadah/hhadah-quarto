@@ -108,6 +108,9 @@ In my job market paper---[<em>Peer Effects in Adolescent Mental Health</em>](htt
 - [Working Papers](#working)
 - [Research In Progress](#research)
 
+Notes:
+ * = Student co-author at time of writing/research.
+
 ### Publications {#publish}
 
 - Hadah, H. **The Impact of Hispanic Last Names on Educational and Labor Market Outcomes**. _forthcoming at Journal of Economics, Race, and Policy_[(preprint)](https://dx.doi.org/10.2139/ssrn.4566234)
@@ -118,16 +121,16 @@ In my job market paper---[<em>Peer Effects in Adolescent Mental Health</em>](htt
 
 - Hadah, H. **Peer Effects in Adolescent Mental Health**. [(preprint)](https://dx.doi.org/10.2139/ssrn.5159123)
 - Hadah, H. **The Effect of Anti-Asian Attitudes on Asian Identity in the U.S**. [(preprint)](https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf)
-- Hadah, H., & Compta, G. **The Effects of Waiting Periods on Firearm Suicides in the U.S.** [(preprint)](https://hhadah.github.io/compta-hadah/compta_hadah_2025.pdf)
+- Hadah, H., & Compta, G.\* **The Effects of Waiting Periods on Firearm Suicides in the U.S.** [(preprint)](https://hhadah.github.io/compta-hadah/compta_hadah_2025.pdf)
 - Hadah, H. **The Effect of Immigration Enforcement on Suicide Rates Among Hispanic Youth** (Draft available soon.)
 
 ### Research In Progress {#research}
 
-- Button, P., Hadah, H., Schwegman, D., Selman, J., Nguyen-Phuong, T., & Balfe, C. **Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment**.
+- Button, P., Hadah, H., Schwegman, D., Selman, J., Nguyen-Phuong, T.\*, & Balfe, C.\* **Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment**.
   - Related: See Balfe et al. (2022) for the pilot study.
   - Note: Experiment in the field.
   
-- Button, P., Hadah, H., Harris, D., & Lundebjerg, B. **Parent’s Choice or School’s Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools**.
+- Button, P., Hadah, H., Harris, D., & Lundebjerg, B.\* **Parent’s Choice or School’s Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools**.
 
 - Button, P., Daniel, C., Hadah, H., Hernandez, J., Holman, M., & Mahoney, A. **Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources**.
 
