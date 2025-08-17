@@ -15,6 +15,7 @@ You can find the syllabus [here](https://hhadah.github.io/urban-econ/syllabus/Ur
 
 1. Class 1: Introduction \[[**.html**](https://hhadah.github.io/urban-econ/slides/01-week1/01-tue/01-class1.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/01-week1/01-tue/01-class1.pdf)\]
 
+<!--
 2. Class 2: Geographical Definitions and Data \[[**.html**](https://hhadah.github.io/urban-econ/slides/01-week1/02-thur/02-class2.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/01-week1/02-thur/02-class2.pdf)\]
 
 3. Class 3: Agglomeration, Clusters, and Cities \[[**.html**](https://hhadah.github.io/urban-econ/slides/02-week2/01-tue/01-class1.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/02-week2/01-tue/01-class1.pdf)\]
@@ -57,3 +58,4 @@ You can find the syllabus [here](https://hhadah.github.io/urban-econ/syllabus/Ur
 20. Class 20:  Neighborhood Effects \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/04-lecture4/21-NeighborhoodEffectsMovingtoOpportunity.pdf)\]
 
 21. Class 21:  Rent Control \[[**.html**](https://hhadah.github.io/urban-econ/slides/11-housing/05-rent-control/rent-control.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/05-rent-control/rent-control.pdf)\]
+-->
