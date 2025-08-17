@@ -13,7 +13,7 @@ You can find the syllabus [here](https://hhadah.github.io/urban-econ/syllabus/Ur
 
 #### Slides
 
-1. Class 1: Introduction \[[**.html**](https://hhadah.github.io/urban-econ/slides/01-week1/01-tue/01-class1.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/01-week1/01-tue/01-class1.pdf)\]
+1. Class 1: Introduction \[[**.html**](https://hhadah.github.io/urban-econ/slides/01-week1/01-class01/01-class1.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/01-week1/01-class01/01-class1.pdf)\]
 
 <!--
 2. Class 2: Geographical Definitions and Data \[[**.html**](https://hhadah.github.io/urban-econ/slides/01-week1/02-thur/02-class2.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/01-week1/02-thur/02-class2.pdf)\]
