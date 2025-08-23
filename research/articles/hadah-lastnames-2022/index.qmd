@@ -18,6 +18,9 @@ pub-info:
       url: https://dx.doi.org/10.2139/ssrn.4566234
       icon: fa-solid fa-file-pdf
       local: false
+    - name: Final version
+      url: https://doi.org/10.1007/s41996-025-00177-3
+      icon: fa-solid fa-scroll
     - name: Code
       url: https://github.com/hhadah/hispanic-last-names.git
       icon: fab fa-github
