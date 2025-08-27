@@ -51,8 +51,20 @@ Meet Bill and Shams, my loyal trail buddies who never say no to a creek break or
 
 :::
 ::: {.g-col-12 .g-col-md-6}
-![](dogs-creek.png){width="48%" group="dogs"}
-![](hiking-stream.png){width="48%" group="dogs"}
+![](dogs-creek.png){width="60%" group="dogs"}
+:::
+:::
+:::
+
+::: {.g-col-12 .grid}
+::: {.g-col-12 .g-col-md-6}
+## Sports
+
+I'm a passionate sports fan who loves watching games. You'll find me cheering for Houston teams across all sports, and when it comes to soccer, I'm a devoted FC Barcelona supporter.
+
+:::
+::: {.g-col-12 .g-col-md-6}
+![](astros.png){width="60%" group="baseball"}
 :::
 :::
 :::
