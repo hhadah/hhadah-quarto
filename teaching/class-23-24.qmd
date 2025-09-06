@@ -29,15 +29,14 @@ You can find the syllabus [here](https://hhadah.github.io/urban-econ/syllabus/Ur
 
 7. Class 7: Economic Development Incentives  \[[**.html**](https://hhadah.github.io/urban-econ/slides/03-week3/02-class/01-class01.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/03-week3/02-class/01-class01.pdf)\]
 
-<!--
-8. Class 8: Introduction to Economics of Crime  \[[**.html**](https://hhadah.github.io/urban-econ/slides/05-week5/02-thur/crime-intro.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/05-week5/02-thur/crime-intro.pdf)\]
+
+8. Class 8: Introduction to Economics of Crime  \[[**.html**](https://hhadah.github.io/urban-econ/slides/04-week4/02-class/crime-intro.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/04-week4/02-class/crime-intro.pdf)\]
 
 9. Class 9: Explanation of Common Terminology in Causal Studies in
-(Urban) Economics  \[[**.html**](https://hhadah.github.io/urban-econ/slides/06-week6/01-tue/causal-term.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/06-week6/01-tue/causal-term.pdf)\]
-
-10. Class 10: Jigsaw Activity \[[**.html**](https://hhadah.github.io/urban-econ/slides/06-week6/03-jigsaw/jigsaw.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/06-week6/03-jigsaw/jigsaw.pdf)\]
+(Urban) Economics  \[[**.html**](https://hhadah.github.io/urban-econ/slides/04-week4/03-class/causal-term.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/04-week4/03-class/causal-term.pdf)\]
 
 
+<!--
 11. Class 11: Effect of Police on Crime & Economic Circumstances on Crime \[[**.html**](https://hhadah.github.io/urban-econ/slides/06-week6/02-thur/police-econ-and-crime.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/06-week6/02-thur/police-econ-and-crime.pdf)\]
 
 
