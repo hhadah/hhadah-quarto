@@ -122,7 +122,7 @@ Notes:
 - Hadah, H. **Peer Effects in Adolescent Mental Health**. [(preprint)](https://dx.doi.org/10.2139/ssrn.5159123)
 - Hadah, H. **The Effect of Anti-Asian Attitudes on Asian Identity in the U.S**, _Revise and Resubmit at the Journal of Policy Analysis and Management_ [(preprint)](https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf)
 - Hadah, H., & Compta, G.\* **The Effects of Waiting Periods on Firearm Suicides in the U.S.** [(preprint)](https://hhadah.github.io/compta-hadah/compta_hadah_2025.pdf)
-- Hadah, H. **The Effect of Immigration Enforcement on Suicide Rates Among Hispanic Youth** (Draft available soon.)
+- Hadah, H. **Immigration Enforcement, Sanctuary Cities, and Rising Suicide Rates Among Hispanic Youth** (Draft available soon.)
 
 ### Research In Progress {#research}
 
