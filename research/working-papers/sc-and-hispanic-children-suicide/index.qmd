@@ -16,11 +16,11 @@ categories:
 pub-info:
   reference: >-
     <strong>Hussain Hadah</strong>, "Immigration Enforcement, Sanctuary Cities, and Rising Suicide Rates Among Hispanic Youth"</em>
-  # links:
-  #   - name: Preprint
-  #     url: https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
-  #     icon: fa-solid fa-file-pdf
-  #     local: false
+  links:
+    - name: Preprint
+      url: https://hhadah.github.io/sc-and-hispanic-children-suicide/my_paper/sc_and_hispanic_children_suicide.pdf
+      icon: fa-solid fa-file-pdf
+      local: false
   extra: >-
     
 # doi: 
