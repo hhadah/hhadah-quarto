@@ -13,7 +13,7 @@ categories:
   - Institutions
 pub-info:
   reference: >-
-    <strong>Hussain Hadah</strong>, “Democracy and Ethnic Favoritism: Evidence from Africa,” <em>Under Review</em>
+    <strong>Hussain Hadah</strong> and Bariş Alan, “Democracy and Ethnic Favoritism: Evidence from Africa,” <em>Under Review</em>
   links:
     - name: Preprint
       url: "https://dx.doi.org/10.2139/ssrn.4566225"
@@ -47,7 +47,7 @@ Hadah, Hussain, Democracy and Ethnic Favoritism: Evidence from Africa (September
 
 ```bibtex
 @article{hadah2023ethnicfav,
-    Author = {Hadah, Hussain},
+    Author = {Hadah, Hussain AND Alan, Bariş},
     Title = {Democracy and Ethnic Favoritism: Evidence from Africa},
     Year = {2023}}
 ```
