@@ -1,25 +1,48 @@
 ---
 title: "Teaching"
-listing:
-  - id: class-23-24
-    contents: class-23-24.qmd
-  - id: econ-101
-    contents: econ-101.qmd
 title-block-banner: "#EE6A24"
 page-layout: full
 toc: true
 toc-location: right
 toc-title: Semester
 ---
+
 ## Teaching Statement
 You can find my teaching statement [here](https://hhadah.github.io/statements/Hadah_Teaching.pdf)
 
+---
+
 ## Spring 2024
 
-:::{#class-23-24}
-:::
+### ![Urban Economics](logos/urban_economics_class.png){style="height: 20px; width: auto; vertical-align: middle; margin-right: 8px;"} Urban Economics
+
+**Tulane University | Spring 2024**
+
+A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use.
+
+[**📄 View Syllabus**](https://hhadah.github.io/urban-econ/syllabus/UrbanEcon3320SyllabusSpring2024HHadah.pdf) | [**🎯 View Course Materials**](class-23-24.qmd)
+
+---
 
 ## Spring 2020
 
-:::{#econ-101}
+### ![Principles of Microeconomics](logos/principles_of_microeconomics.png){style="height: 20px; width: auto; vertical-align: middle; margin-right: 8px;"} Principles of Microeconomics
+
+**University of Houston | Spring 2020**
+
+This course is an introduction to microeconomics: individual consumer and firm behavior, supply and demand, and the market determination of prices, production and income. We analyze government policies of price controls, taxation, monopoly and antitrust laws, market failures and environmental policy.
+
+[**📄 View Syllabus**](https://hhadah.github.io/MicroSlides/Syllabus/ECON2304_Summer2022_Syllabus.pdf) | [**🎯 View Course Materials**](econ-101.qmd)
+
+---
+
+::: {.callout-note icon=false}
+## Course Philosophy
+
+My teaching philosophy centers on making economics accessible and relevant to students' lives. I emphasize:
+
+- **Active Learning**: Interactive exercises and real-world applications
+- **Data Literacy**: Teaching students to interpret economic research and statistics
+- **Policy Relevance**: Connecting economic theory to current policy debates
+- **Inclusive Environment**: Creating welcoming spaces for all students to engage with economic concepts
 :::

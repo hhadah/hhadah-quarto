@@ -3,13 +3,21 @@ title: "Urban Economics"
 description: "A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use."
 ---
 
-# Tulane University
+# ![Urban Economics](logos/urban_economics_class.png){style="height: 24px; width: auto; vertical-align: middle; margin-right: 10px;"} Course Overview
 
-## Spring 2024
-### Urban Economics
+**Course Information**
+- **Institution**: Tulane University
+- **Semester**: Spring 2024
+- **Course Code**: ECON 3320
+
 A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use.
 
-You can find the syllabus [here](https://hhadah.github.io/urban-econ/syllabus/UrbanEcon3320SyllabusSpring2024HHadah.pdf).
+::: {.callout-important icon=false}
+## 📋 Course Resources
+[**📄 Download Syllabus**](https://hhadah.github.io/urban-econ/syllabus/UrbanEcon3320SyllabusSpring2024HHadah.pdf)
+:::
+
+---
 
 #### Slides
 

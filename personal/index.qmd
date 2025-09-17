@@ -3,68 +3,99 @@ title: "Beyond the Research"
 title-block-banner: "#006747"
 page-layout: full
 lightbox: auto
+toc: true
+toc-location: right
+toc-title: "Activities"
 ---
 
-::: {.grid}
-::: {.g-col-12}
+::: {.hero-banner style="background: linear-gradient(135deg, #006747 0%, #20c997 100%); color: white; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;"}
 # Adventures, Achievements, and Life Balance
 
-When I'm not diving deep into data, writing, or teaching, you'll find me on the soccer field, snowboarding Colorado's slopes, or hiking trails with my adventure buddies. Here's a peek into the fun stuff that keeps me sane and smiling.
+When I'm not working, you'll find me on the soccer field, in the mountains, or on trails with my dogs.
 :::
 
-<!-- Sunday Soccer -->
-::: {.g-col-12 .grid}
-::: {.g-col-12 .g-col-md-6}
-## Sunday Soccer
+---
 
+## 🏆 Championship Soccer
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-8}
 Our Sunday league team has won three consecutive championships.
 :::
-::: {.g-col-12 .g-col-md-6}
-![Championship team celebrating another successful season](soccer-team.png){width="80%" group="sports"}
-:::
-:::
 
-<!-- Mountain Adventures -->
-::: {.g-col-12 .grid}
-::: {.g-col-12 .g-col-md-6}
-## Mountain Adventures
-:::
-::: {.g-col-12 .g-col-md-6}
-::: {style="display: inline-block; width: 48%; margin-right: 2%;"}
-![](snowboarding.png){width="100%" lightbox="false"}
-Keystone, CO
-:::
-::: {style="display: inline-block; width: 48%;"}
-![](hiking-lake.png){width="100%" lightbox="false"}  
-Lake Isabelle, CO
+::: {.g-col-12 .g-col-md-4}
+![Championship team celebrating](soccer-team.png){.img-fluid style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" group="sports"}
+
+::: {.text-center style="margin-top: 0.5rem; font-size: 0.9em; color: #666;"}
+*Three-time champions*
 :::
 :::
 :::
 
+---
 
-<!-- Combined: Canine Companions + Trail Exploration -->
-::: {.g-col-12 .grid}
-::: {.g-col-12 .g-col-md-6}
-## Trail Dogs & Exploration
+## 🏔️ Mountain Adventures
 
-Meet Bill and Shams, my loyal trail buddies who never say no to a creek break or forest sprint.  
-
-:::
-::: {.g-col-12 .g-col-md-6}
-![](dogs-creek.png){width="60%" group="dogs"}
-:::
-:::
+::: {.grid}
+::: {.g-col-12 .g-col-md-8}
+I enjoy snowboarding and hiking in Colorado.
 :::
 
-::: {.g-col-12 .grid}
-::: {.g-col-12 .g-col-md-6}
-## Sports
+::: {.g-col-12 .g-col-md-4}
+![Snowboarding at Keystone, CO](snowboarding.png){.img-fluid style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" lightbox="mountain"}
 
-I'm a passionate sports fan who loves watching games. You'll find me cheering for Houston teams across all sports, and when it comes to soccer, I'm a devoted FC Barcelona supporter.
+::: {.text-center style="font-size: 0.8em; color: #666; margin-top: 0.3rem;"}
+*Keystone, CO*
+:::
 
+![Hiking at Lake Isabelle, CO](hiking-lake.png){.img-fluid style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" lightbox="mountain"}
+
+::: {.text-center style="font-size: 0.8em; color: #666; margin-top: 0.3rem;"}
+*Lake Isabelle, CO*
 :::
-::: {.g-col-12 .g-col-md-6}
-![](astros.png){width="60%" group="baseball"}
 :::
 :::
+
+---
+
+## 🐕 Trail Dogs
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-8}
+Meet Bill and Shams - my hiking companions.
+:::
+
+::: {.g-col-12 .g-col-md-4}
+![Bill and Shams on the trail](dogs-creek.png){.img-fluid style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" group="dogs"}
+
+::: {.text-center style="font-size: 0.8em; color: #666; margin-top: 0.3rem;"}
+*Bill & Shams*
+:::
+:::
+:::
+
+---
+
+## 🏟️ Sports Fan
+
+::: {.grid}
+::: {.g-col-12 .g-col-md-8}
+Houston sports fan and FC Barcelona supporter.
+
+**Teams:** Astros ⚾ | Rockets 🏀 | Barcelona ⚽ | Texans 🏈
+:::
+
+::: {.g-col-12 .g-col-md-4}
+![Houston Astros](astros.png){.img-fluid style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" group="sports"}
+
+::: {.text-center style="font-size: 0.8em; color: #666; margin-top: 0.3rem;"}
+*World Series Champions*
+:::
+:::
+:::
+
+---
+
+::: {.callout-note icon=false style="background: #f8f9fa; border-left: 4px solid #006747; text-align: center;"}
+*Want to chat about any of these activities? Always happy to share recommendations or discuss experiences.*
 :::

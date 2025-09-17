@@ -1,15 +1,23 @@
 ---
-title: "Principles of Microeconomics Slides"
-description: "This course is an introduction to microeconomics: individual consumer and
-firm behavior, supply and demand, and the market determination of prices, production and income.
-We will analyze government policies of price controls, taxation, monopoly and antitrust laws, market
-failures and environmental policy."
+title: "Principles of Microeconomics"
+description: "This course is an introduction to microeconomics: individual consumer and firm behavior, supply and demand, and the market determination of prices, production and income. We will analyze government policies of price controls, taxation, monopoly and antitrust laws, market failures and environmental policy."
 ---
 
-## Spring 2022
-### Principles of Microeconomics Slides
+# ![Principles of Microeconomics](logos/principles_of_microeconomics.png){style="height: 24px; width: auto; vertical-align: middle; margin-right: 10px;"} Course Overview
 
-The syllabus can be found here \[[**.pdf**](https://hhadah.github.io/MicroSlides/Syllabus/ECON2304_Summer2022_Syllabus.pdf)\]
+**Course Information**
+- **Institution**: University of Houston
+- **Semester**: Spring 2020
+- **Course Code**: ECON 2304
+
+This course is an introduction to microeconomics: individual consumer and firm behavior, supply and demand, and the market determination of prices, production and income. We will analyze government policies of price controls, taxation, monopoly and antitrust laws, market failures and environmental policy.
+
+::: {.callout-important icon=false}
+## 📋 Course Resources
+[**📄 Download Syllabus**](https://hhadah.github.io/MicroSlides/Syllabus/ECON2304_Summer2022_Syllabus.pdf)
+:::
+
+---
 
 #### Slides
 

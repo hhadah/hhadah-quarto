@@ -33,8 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../img/favicon.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -72,63 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-class-23-24 .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-class-23-24'] = new List('listing-class-23-24', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-econ-101 .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-econ-101'] = new List('listing-econ-101', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Y1VGD6H14M"></script>
 
 <script type="text/javascript">
@@ -146,49 +87,6 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -277,8 +175,14 @@ window.Quarto = {
    
   <ul>
   <li><a href="#teaching-statement" id="toc-teaching-statement" class="nav-link active" data-scroll-target="#teaching-statement">Teaching Statement</a></li>
-  <li><a href="#spring-2024" id="toc-spring-2024" class="nav-link" data-scroll-target="#spring-2024">Spring 2024</a></li>
-  <li><a href="#spring-2020" id="toc-spring-2020" class="nav-link" data-scroll-target="#spring-2020">Spring 2020</a></li>
+  <li><a href="#spring-2024" id="toc-spring-2024" class="nav-link" data-scroll-target="#spring-2024">Spring 2024</a>
+  <ul>
+  <li><a href="#urban-economics-urban-economics" id="toc-urban-economics-urban-economics" class="nav-link" data-scroll-target="#urban-economics-urban-economics"><img src="logos/urban_economics_class.png" class="img-fluid" style="height: 20px; width: auto; vertical-align: middle; margin-right: 8px;" alt="Urban Economics"> Urban Economics</a></li>
+  </ul></li>
+  <li><a href="#spring-2020" id="toc-spring-2020" class="nav-link" data-scroll-target="#spring-2020">Spring 2020</a>
+  <ul>
+  <li><a href="#principles-of-microeconomics-principles-of-microeconomics" id="toc-principles-of-microeconomics-principles-of-microeconomics" class="nav-link" data-scroll-target="#principles-of-microeconomics-principles-of-microeconomics"><img src="logos/principles_of_microeconomics.png" class="img-fluid" style="height: 20px; width: auto; vertical-align: middle; margin-right: 8px;" alt="Principles of Microeconomics"> Principles of Microeconomics</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -292,73 +196,48 @@ window.Quarto = {
 <section id="teaching-statement" class="level2">
 <h2 class="anchored" data-anchor-id="teaching-statement">Teaching Statement</h2>
 <p>You can find my teaching statement <a href="https://hhadah.github.io/statements/Hadah_Teaching.pdf">here</a></p>
+<hr>
 </section>
 <section id="spring-2024" class="level2">
 <h2 class="anchored" data-anchor-id="spring-2024">Spring 2024</h2>
-<div id="listing-class-23-24" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1758056290400" data-listing-reading-time-sort="2" data-listing-word-count-sort="244">
-<div class="thumbnail">
-<p><a href="../teaching/class-23-24.html" class="no-external"></a></p><a href="../teaching/class-23-24.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../teaching/class-23-24.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../teaching/class-23-24.html" class="no-external">Urban Economics</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../teaching/class-23-24.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../teaching/class-23-24.html" class="no-external">A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="../teaching/class-23-24.html" class="no-external"></a></p><a href="../teaching/class-23-24.html" class="no-external">
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
+<section id="urban-economics-urban-economics" class="level3">
+<h3 class="anchored" data-anchor-id="urban-economics-urban-economics"><img src="logos/urban_economics_class.png" class="img-fluid" style="height: 20px; width: auto; vertical-align: middle; margin-right: 8px;" alt="Urban Economics"> Urban Economics</h3>
+<p><strong>Tulane University | Spring 2024</strong></p>
+<p>A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use.</p>
+<p><a href="https://hhadah.github.io/urban-econ/syllabus/UrbanEcon3320SyllabusSpring2024HHadah.pdf"><strong>📄 View Syllabus</strong></a> | <a href="../teaching/class-23-24.html"><strong>🎯 View Course Materials</strong></a></p>
+<hr>
+</section>
 </section>
 <section id="spring-2020" class="level2">
 <h2 class="anchored" data-anchor-id="spring-2020">Spring 2020</h2>
-<div id="listing-econ-101" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1724211887713" data-listing-reading-time-sort="1" data-listing-word-count-sort="115">
-<div class="thumbnail">
-<p><a href="../teaching/econ-101.html" class="no-external"></a></p><a href="../teaching/econ-101.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../teaching/econ-101.html" class="no-external"></a></p>
+<section id="principles-of-microeconomics-principles-of-microeconomics" class="level3">
+<h3 class="anchored" data-anchor-id="principles-of-microeconomics-principles-of-microeconomics"><img src="logos/principles_of_microeconomics.png" class="img-fluid" style="height: 20px; width: auto; vertical-align: middle; margin-right: 8px;" alt="Principles of Microeconomics"> Principles of Microeconomics</h3>
+<p><strong>University of Houston | Spring 2020</strong></p>
+<p>This course is an introduction to microeconomics: individual consumer and firm behavior, supply and demand, and the market determination of prices, production and income. We analyze government policies of price controls, taxation, monopoly and antitrust laws, market failures and environmental policy.</p>
+<p><a href="https://hhadah.github.io/MicroSlides/Syllabus/ECON2304_Summer2022_Syllabus.pdf"><strong>📄 View Syllabus</strong></a> | <a href="../teaching/econ-101.html"><strong>🎯 View Course Materials</strong></a></p>
+<hr>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../teaching/econ-101.html" class="no-external">Principles of Microeconomics Slides</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../teaching/econ-101.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../teaching/econ-101.html" class="no-external">This course is an introduction to microeconomics: individual consumer and firm behavior, supply and demand, and the market determination of prices, production and income. We will analyze government policies of price controls, taxation, monopoly and antitrust laws, market failures and environmental policy.</a>
+<div class="callout-title-container flex-fill">
+Course Philosophy
 </div>
 </div>
-<div class="metadata">
-<p><a href="../teaching/econ-101.html" class="no-external"></a></p><a href="../teaching/econ-101.html" class="no-external">
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
+<div class="callout-body-container callout-body">
+<p>My teaching philosophy centers on making economics accessible and relevant to students’ lives. I emphasize:</p>
+<ul>
+<li><strong>Active Learning</strong>: Interactive exercises and real-world applications</li>
+<li><strong>Data Literacy</strong>: Teaching students to interpret economic research and statistics</li>
+<li><strong>Policy Relevance</strong>: Connecting economic theory to current policy debates</li>
+<li><strong>Inclusive Environment</strong>: Creating welcoming spaces for all students to engage with economic concepts</li>
+</ul>
 </div>
 </div>
 
 
-
+</section>
 </section>
 
 </main> <!-- /main -->

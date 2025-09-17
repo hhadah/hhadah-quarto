@@ -1,8 +1,13 @@
 ---
 title: "Welcome to my website!"
+toc: true
+toc-location: right
+toc-float: true
+toc-title: Content
+toc-depth: 3
 pagetitle: "{{< meta website.title >}}"
-main-photo: /img/3V8A5465.jpg
-main-photo-square: /img/3V8A5465.jpg
+main-photo: /img/Hussain_Hadah-2025-09-04-07945pp.jpg
+main-photo-square: /img/Hussain_Hadah-2025-09-04-07945pp.jpg
 title-block-banner: "#CF4446"
 format:
   html:
@@ -17,19 +22,20 @@ format:
 ```{=html}
 <div class="grid" style="--bs-columns: 5; row-gap: 0;">
   <div class="g-col-1 g-col-sm-0"></div>
-  <div class="g-col-3 g-col-sm-5">
+  <div class="g-col-4 g-col-sm-6">
     <picture>
       <source media="(max-width: 576px)" srcset="{{< meta main-photo-square >}}">
       <source media="(min-width: 576px)" srcset="{{< meta main-photo >}}">
-      <img class="img-fluid" src="{{< meta main-photo >}}" alt="{{< meta author-meta >}}">
+      <img class="img-fluid" src="{{< meta main-photo >}}" alt="{{< meta author-meta >}}"
+     style="width: 100%; aspect-ratio: 2/3; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
     </picture>
   </div>
-  <div class="g-col-1 g-col-sm-0"></div>
+  <div class="g-col-0 g-col-sm-0"></div>
 </div>
+
 ```
 
 :::
-
 
 ::: {.g-col-12 .g-col-sm-8}
 
@@ -43,7 +49,7 @@ My research on school choice and discrimination, supported by the Abdul Latif Ja
 
 I earned my PhD in Economics from the University of Houston in 2023, and graduated with a B.S. in Economics from Arizona State University. 
 
-[Outside](https://hussainhadah.com/personal/) of economics, I enjoy running with my two dogs through New Orleans, following college and professional sports, and exploring the city’s incredible culinary scene.
+[Outside](https://hussainhadah.com/personal/) of economics, I enjoy running with my two dogs through New Orleans, following college and professional sports, and exploring the city's incredible culinary scene.
 
 Please feel free to contact me if you have questions about my work or would like to discuss economic research.
 
@@ -51,9 +57,22 @@ Please feel free to contact me if you have questions about my work or would like
 
 <i class="fa-solid fa-download"></i> Download my [curriculum vitae](https://hussainhadah.com/cv/cv.pdf), [research statement](https://hhadah.github.io/statements/Hadah_Research.pdf), [diversity statement](https://hhadah.github.io/statements/Hadah_Diversity.pdf), and [teaching statement](https://hhadah.github.io/statements/Hadah_Teaching.pdf).
 
+:::
 
 :::
+
+# Recent Highlights
+
+::: {.callout-tip icon=false}
+### Latest Publications & Achievements
+
+- **Published** in *Journal of Economics, Race, and Policy* (2025): "The Impact of Hispanic Last Names on Educational and Labor Market Outcomes"
+- **Published** in *Southern Economic Journal* (2024): "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S."
+- **Revise & Resubmit** at *Journal of Policy Analysis and Management*: "The Effect of Anti-Asian Attitudes on Asian Identity in the U.S."
+- **$140,746 Grant** from J-PAL Social Policy Research Initiative for school choice discrimination research
 :::
+
+# Interests & Education
 
 :::: {.columns}
 
@@ -83,54 +102,35 @@ Please feel free to contact me if you have questions about my work or would like
 
 ::::
 
-<!-- # Job Market Paper
-
-::: {.grid}
-
-::: {.g-col-12}
-
-### Peer Effects in Adolescent Mental Health
-
-
-In my job market paper---[<em>Peer Effects in Adolescent Mental Health</em>](https://hhadah.github.io/Depression_Idea/my_paper/hadah_peer_effects_preprint.pdf)---I explore the impact of peer mental health on adolescents' mental well-being, academic performance, physical health, and behavior. I address the reflection problem in peer effects by employing a friends-of-friends instrument to estimate the influence of peer mental health. I find that a one standard deviation increase in a friend’s mental unwellness leads to a 0.73 standard deviation increase in one’s own mental unwellness. Additionally, the paper highlights the broader negative effects of peer mental health on academic achievement, physical health, and engagement in risky behavior, establishing evidence of social contagion in mental health among adolescents.  
-
-
-![Figure 1: Peer effects of friends' mental health on own mental health, educational, and behavioral outcomes](research/working-papers/hadah-peer-effect-depression-2023/all-in-one-I.png){width=100%}
-
-![Figure 2: Peer effects of friends' mental health on health, risky behavior, socialization, and alcohol and drug take up](research/working-papers/hadah-peer-effect-depression-2023/all-in-one-II.png){width=100%}
- 
-:::
--->
-
 # Research
 
-- [Published Work](#publish)
-- [Working Papers](#working)
-- [Research In Progress](#research)
+::: {.callout-note icon=false}
+## Quick Links
+- [Published Work](#publications) | [Working Papers](#working-papers) | [Research In Progress](#research-in-progress)
 
-Notes:
- * = Student co-author at time of writing/research.
+**Note**: * = Student co-author at time of writing/research
+:::
 
-### Publications {#publish}
+## Publications {#publications}
 
 - Hadah, H. **The Impact of Hispanic Last Names on Educational and Labor Market Outcomes**. _Journal of Economics, Race, and Policy_, (2025). [https://doi.org/10.1007/s41996-025-00177-3](https://doi.org/10.1007/s41996-025-00177-3)
 
 - Hadah, H. **The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.** _Southern Economic Journal_, (2024). Available at [https://doi.org/10.1002/soej.12749](https://doi.org/10.1002/soej.12749)
 
-### Working Papers {#working}
+## Working Papers {#working-papers}
 
 - Hadah, H. **Peer Effects in Adolescent Mental Health**. [(preprint)](https://dx.doi.org/10.2139/ssrn.5159123)
 - Hadah, H. **The Effect of Anti-Asian Attitudes on Asian Identity in the U.S**, _Revise and Resubmit at the Journal of Policy Analysis and Management_ [(preprint)](https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf)
 - Hadah, H., & Compta, G.\* **The Effects of Waiting Periods on Firearm Suicides in the U.S.** [(preprint)](https://hhadah.github.io/compta-hadah/compta_hadah_2025.pdf)
 - Hadah, H. **Immigration Enforcement, Sanctuary Cities, and Rising Suicide Rates Among Hispanic Youth** (Draft available soon.)
 
-### Research In Progress {#research}
+## Research In Progress {#research-in-progress}
 
 - Button, P., Hadah, H., Schwegman, D., Selman, J., Nguyen-Phuong, T.\*, & Balfe, C.\* **Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment**.
   - Related: See Balfe et al. (2022) for the pilot study.
   - Note: Experiment in the field.
   
-- Button, P., Hadah, H., Harris, D., & Lundebjerg, B.\* **Parent’s Choice or School’s Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools**.
+- Button, P., Hadah, H., Harris, D., & Lundebjerg, B.\* **Parent's Choice or School's Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools**.
 
   - _Note: we will be estimating discrimination based on race and ethnicity (White, Black, Hispanic), sexual orientation, gender identity, disability (student has an IEP), and religion (Christian, Jewish, Muslim). We are finalizing the experimental design and will be running a pilot study in Fall 2025._
   - _Grant: We received a $140,746.6 grant from  J-PAL Social Policy Research Initiative / Racial Equity Special Topic RFP._ 
@@ -146,4 +146,3 @@ Notes:
 - Denteh, A., & Hadah, H. **Immigration Enforcement and Hispanic Children Outcomes**.
 
 - Denteh, A., & Hadah, H. **Assimilation of Hispanics and Arabs in America**. (Using census administrative data with the RDC).
-
