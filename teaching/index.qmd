@@ -14,25 +14,41 @@ You can find my teaching statement [here](https://hhadah.github.io/statements/Ha
 
 ## Spring 2024
 
-### ![Urban Economics](logos/urban_economics_class.png){style="height: 20px; width: auto; vertical-align: middle; margin-right: 8px;"} Urban Economics
+::: {.grid}
+::: {.g-col-12 .g-col-md-2 .d-flex .align-items-center .justify-content-center}
+![](logos/urban_economics_class.png){.img-fluid style="max-width: 150px; height: auto;"}
+:::
+
+::: {.g-col-12 .g-col-md-10}
+### [Urban Economics](class-23-24.qmd)
 
 **Tulane University | Spring 2024**
 
 A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use.
 
 [**📄 View Syllabus**](https://hhadah.github.io/urban-econ/syllabus/UrbanEcon3320SyllabusSpring2024HHadah.pdf) | [**🎯 View Course Materials**](class-23-24.qmd)
+:::
+:::
 
 ---
 
 ## Spring 2020
 
-### ![Principles of Microeconomics](logos/principles_of_microeconomics.png){style="height: 20px; width: auto; vertical-align: middle; margin-right: 8px;"} Principles of Microeconomics
+::: {.grid}
+::: {.g-col-12 .g-col-md-2 .d-flex .align-items-center .justify-content-center}
+![](logos/principles_of_microeconomics.png){.img-fluid style="max-width: 150px; height: auto;"}
+:::
+
+::: {.g-col-12 .g-col-md-10}
+### [Principles of Microeconomics](econ-101.qmd)
 
 **University of Houston | Spring 2020**
 
 This course is an introduction to microeconomics: individual consumer and firm behavior, supply and demand, and the market determination of prices, production and income. We analyze government policies of price controls, taxation, monopoly and antitrust laws, market failures and environmental policy.
 
 [**📄 View Syllabus**](https://hhadah.github.io/MicroSlides/Syllabus/ECON2304_Summer2022_Syllabus.pdf) | [**🎯 View Course Materials**](econ-101.qmd)
+:::
+:::
 
 ---
 
