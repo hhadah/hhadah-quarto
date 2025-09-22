@@ -48,12 +48,13 @@ A review of the determinants of the location, size, growth, and form of urban ar
 
 12. Class 12: Effect of Economic Circumstances on Crime \[[**.html**](https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.pdf)\]
 
+12. Class 12: Crime and Gender-Based Violence \[[**.html**](https://hhadah.github.io/urban-econ/slides/06-week6/01-class//gender-based-violence.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/06-week6/01-class//gender-based-violence.pdf)\]
+
+13. Class 13:  Introduction to the Economics of Discrimination \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/06-week6/02-class/UrbanEconomicsIntrotoDiscrimination.pdf)\]
+
+14. Class 14:  Racial Bias in the Criminal Justice System \[[**.html**](https://hhadah.github.io/urban-econ/slides/06-week6/03-class/racial-bias.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/06-week6/03-class/racial-bias.pdf)\]
+
 <!--
-12. Class 12: Crime and Gender-Based Violence \[[**.html**](https://hhadah.github.io/urban-econ/slides/07-week7/02-thur/gender-based-violence.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/07-week7/02-thur/gender-based-violence.pdf)\]
-
-13. Class 13:  Introduction to the Economics of Discrimination \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/08-week8/02-thur/UrbanEconomicsIntrotoDiscrimination.pdf)\]
-
-14. Class 14:  Racial Bias in Policing I \[[**.html**](https://hhadah.github.io/urban-econ/slides/09-week9/01-tue/racial-bias.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/09-week9/01-tue/racial-bias.pdf)\]
 
 15. Class 15:  Racial Bias in Policing II \[[**.html**](https://hhadah.github.io/urban-econ/slides/09-week9/02-thur/racial-bias-w.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/09-week9/02-thur/racial-bias-w.pdf)\]
 
