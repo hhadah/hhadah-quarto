@@ -40,7 +40,7 @@ format:
 ::: {.g-col-12 .g-col-sm-8}
 
 # About Me
-
+TESTTESTTEST
 I am a labor, health, and education economist and a postdoctoral fellow at Tulane University's [Department of Economics](https://liberalarts.tulane.edu/departments/economics) and [Murphy Institute](https://murphy.tulane.edu/). My research uses causal inference methods, field experiments, and administrative data to evaluate policies and understand economic behavior in contexts such as discrimination, identity formation, peer effects, institutional effectiveness, and public health interventions.
 
 My work addresses critical policy questions with real-world impact. I have published in the *Journal of Economics, Race, and Policy* on how Hispanic surnames affect educational and labor market outcomes, and my ongoing projects examine discrimination in mortgage lending, school admissions, and the role of ethnic perceptions in Hispanic self-identification.
