@@ -1,5 +1,5 @@
 ---
-title: "Immigration Enforcement, Sanctuary Cities, and Rising Suicide Rates Among Hispanic Youth"
+title: "Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates"
 # date: 2022-11-15
 author:
   - name: Hussain Hadah
@@ -15,7 +15,7 @@ categories:
   - Mental Health
 pub-info:
   reference: >-
-    <strong>Hussain Hadah</strong>, "Immigration Enforcement, Sanctuary Cities, and Rising Suicide Rates Among Hispanic Youth"</em>
+    <strong>Hussain Hadah</strong>, "Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates"</em>
   links:
     - name: Preprint
       url: https://hhadah.github.io/sc-and-hispanic-children-suicide/my_paper/sc_and_hispanic_children_suicide.pdf
@@ -28,24 +28,48 @@ pub-info:
 
 ## Important links
 
-- Draft available soon
+- [Paper (pdf)](https://hhadah.github.io/sc-and-hispanic-children-suicide/my_paper/sc_and_hispanic_children_suicide.pdf)
 
 
 ## Abstract
 
-This paper examines the causal relationship between immigration enforcement and suicide rates among Hispanic youth, focusing on one of the most significant federal immigration programs of the 21st century: Secure Communities (SC). Using comprehensive mortality data from the National Vital Statistics System, combined with detailed records of SC implementation across counties, I use a difference-in-differences approach that exploits the staggered adoption of SC to identify causal effects. I find a pattern of increased county-level suicide after the implementation of SC, with effects that vary substantially between age groups and sex. The results also highlight the critical importance of considering mental health infrastructure and support systems when implementing immigration policies.
+I estimate the causal effect of the US Secure Communities (SC)---a nationwide immigration enforcement program that greatly expanded deportation risk---on suicide rates among Hispanic populations. Using the program's staggered county-level roll-out from 2008 to 2013, I use the Borusyak, Jaravel, and Spiess (2024) method to identify causal impacts. The results reveal heterogeneous effects across age groups: SC led to a 6\% increase in suicide rates among Hispanic children aged 5-14, but an 18\% decrease among Hispanic youth aged 15-24, and a 10\% increase among Hispanic adults aged 34 and older (equivalent to approximately 300 additional deaths annually for this group). Triple difference-in-differences analysis comparing Hispanic to non-Hispanic White populations shows that Hispanic children and adolescents experienced significant decreases in suicide rates relative to their White counterparts, while Hispanic adults showed increases of up to 60\% relative to Whites. Due to likely underreporting of Hispanic ethnicity in vital statistics, my results probably underestimate the true influence of immigration enforcement on mental health outcomes. The analysis reveals significant variations depending on local policy contexts: sanctuary counties generally showed stronger protective effects for younger Hispanic populations but similar or greater adverse effects for older adults compared to non-sanctuary counties. The results reveal that aggressive immigration enforcement has complex, age-specific impacts on mental health, with particularly concerning effects on older Hispanic adults.
 
 ## Important Figures
 
 ![Figure 1: County-level variation in waiting period policies](04-staggarred_sample_panel_view.png)
 
-![Figure 2: The causal effects of Secure Communities (SC) on Suicide Rates Among Hispanic Children Aged 5–14](19-CS_nytotsuic5to14hisp.png)
+![Figure 2: Effect of Secure Communities on Suicide Rates Among Hispanic Children Aged 5–14](controlled_hisp_5to14_event.png)
 
-![Figure 3: The causal effects of Secure Communities (SC) on Suicide Rates Among Hispanic Youth Aged 5–24](26-CS_nytotsuic5to24hisp.png)
+![Figure 3: Effect of Secure Communities on Suicide Rates Among Hispanic Children Aged 15–24](controlled_hisp_15to24_event.png)
 
-![Figure 4: The causal effects of Secure Communities (SC) on Suicide Rates Among Hispanic Adults Aged 35 and Older](33-CS_nytotsuicover34hisp.png)
+![Figure 4: Effect of Secure Communities on Suicide Rates Among Hispanic Youth Aged 5–24](controlled_hisp_5to24_event.png)
 
-![Figure 5: The causal effects of Secure Communities (SC) on Suicide Rates Among Among All Hispanic Individuals](40-CS_nytotsuichisp.png)
+![Figure 5: Effect of Secure Communities on Suicide Rates Among Hispanic Adults Aged 34 and Older](controlled_hisp_34plus_event.png)
+
+![Figure 6: Effect of Secure Communities on Suicide Rates Among All Hispanic Individuals](controlled_hisp_all_event.png)
+
+![Figure 7: Effect of Secure Communities on Suicide Rates Among Hispanic Children Aged 5-14: By Sanctuary Status](hetby_hisp_5to14_full.png)
+
+![Figure 8: Effect of Secure Communities on Suicide Rates Among Hispanic Youth Aged 15-24: By Sanctuary Status](hetby_hisp_15to24_full.png)
+
+![Figure 9: Effect of Secure Communities on Suicide Rates Among Hispanics Aged 34+: By Sanctuary Status](hetby_hisp_34plus_full.png)
+
+![Figure 10: Triple DDD - Hispanic vs White Suicide Rates Among Children Aged 5–14](ddd_ddd_5to14_event.png)
+
+![Figure 11: Triple DDD - Hispanic vs White Suicide Rates Among Youth Aged 15–24](ddd_ddd_15to24_event.png)
+
+![Figure 12: Triple DDD - Hispanic vs White Suicide Rates Among Adults Aged 34+](ddd_ddd_34plus_event.png)
+
+![Figure 13: Triple DDD - Hispanic vs White Suicide Rates Among All Individuals](ddd_ddd_all_event.png)
+
+![Figure 14: Triple DDD with Sanctuary Heterogeneity - Children Aged 5–14](5to14_event.png)
+
+![Figure 15: Triple DDD with Sanctuary Heterogeneity - Youth Aged 15–24](15to24_event.png)
+
+![Figure 16: Triple DDD with Sanctuary Heterogeneity - Adults Aged 34+](34plus_event.png)
+
+![Figure 17: Triple DDD with Sanctuary Heterogeneity - All Individuals](all_event.png)
 
 <!-- ## Citation
 
