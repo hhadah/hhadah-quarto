@@ -11,6 +11,7 @@ author:
     affiliation: Tulane University
 categories: 
   - Waiting Periods
+  - Suicides
   - Firearm Suicides
   - Policy Evaluation
   - Mental Health

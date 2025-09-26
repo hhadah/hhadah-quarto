@@ -13,6 +13,7 @@ categories:
   - Difference-in-differences
   - Policy Evaluation
   - Mental Health
+  - Ethnicity
 pub-info:
   reference: >-
     <strong>Hussain Hadah</strong>, "Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates"</em>
