@@ -61,7 +61,7 @@ A review of the determinants of the location, size, growth, and form of urban ar
 
 17. Class 17:  Criminal Justice and the Labor Market \[[**.html**](https://hhadah.github.io/urban-econ/slides/09-week9/01-class/incarceration-ban-box.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/09-week9/01-class/incarceration-ban-box.pdf)\]
 
-18. Class 18:  Housing Subsidies \[[**.html**](https://hhadah.github.io/xaringan/urban-econ/slides/09-week9/03-class/01-housing.html) | [**.pdf**](https://hhadah.github.io/xaringan/urban-econ/slides/09-week9/03-class/01-housing.pdf)\]
+18. Class 18:  Housing Subsidies \[[**.html**](https://hhadah.github.io/urban-econ/slides/09-week9/03-class/01-housing.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/09-week9/03-class/01-housing.pdf)\]
 
 <!--
 19. Class 18:  Housing Policies I \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/02-lecture2/19-HousingPoliciesMetcalfSlides.pdf)\]
