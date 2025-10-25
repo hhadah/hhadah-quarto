@@ -35,51 +35,26 @@ pub-info:
 
 ## Abstract
 
-I estimate the causal effect of the US Secure Communities (SC)---a nationwide immigration enforcement program that greatly expanded deportation risk---on suicide rates among Hispanic populations. Using the program's staggered county-level roll-out from 2008 to 2013, I use the Borusyak, Jaravel, and Spiess (2024) method to identify causal impacts. The results reveal heterogeneous effects across age groups: SC led to a 6\% increase in suicide rates among Hispanic children aged 5-14, but an 18\% decrease among Hispanic youth aged 15-24, and a 10\% increase among Hispanic adults aged 34 and older (equivalent to approximately 300 additional deaths annually for this group). Triple difference-in-differences analysis comparing Hispanic to non-Hispanic White populations shows that Hispanic children and adolescents experienced significant decreases in suicide rates relative to their White counterparts, while Hispanic adults showed increases of up to 60\% relative to Whites. Due to likely underreporting of Hispanic ethnicity in vital statistics, my results probably underestimate the true influence of immigration enforcement on mental health outcomes. The analysis reveals significant variations depending on local policy contexts: sanctuary counties generally showed stronger protective effects for younger Hispanic populations but similar or greater adverse effects for older adults compared to non-sanctuary counties. The results reveal that aggressive immigration enforcement has complex, age-specific impacts on mental health, with particularly concerning effects on older Hispanic adults.
+I estimate the causal impact of the US Secure Communities (SC) program---which greatly expanded deportation risk nationwide---on suicide rates among Hispanic populations. Exploiting SC's staggered county-level rollout between 2008 and 2013, I use the triple difference-in-differences (DDD) estimator proposed by Borusyak, Jaravel, and Spiess (2024) to identify causal effects. The DDD comparisons between Hispanic and non-Hispanic Whites reveal striking heterogeneity across age groups: Hispanic children aged 5-14 experience decreases of 0.35-1 suicides per 100,000 (35-100\% relative decreases), and adolescents aged 15-24 show reductions of 2.2 suicides per 100,000, while Hispanic adults aged 34+ suffer increases of 0.5-2.6 suicides per 100,000 in years 2-4 post-implementation. Local contexts significantly moderate these effects: counties with stronger economic conditions show more protective effects, while Democratic-leaning counties experience larger increases in adult suicide rates. Sanctuary counties provide enhanced protection for youth (reductions of 4.25 vs 0.76 suicides per 100,000 for children) but simultaneously show greater adverse effects for adults (increases of 4.93 vs 2.32 suicides per 100,000) compared to non-sanctuary counties. Because Hispanic ethnicity is often underreported in mortality data, these estimates likely understate the true effects. Overall, the evidence suggests that immigration enforcement produces complex mental health impacts fundamentally shaped by age, gender, and local economic and political environments.
 
 ## Important Figures
 
 ![Figure 1: County-level variation in waiting period policies](04-staggarred_sample_panel_view.png)
 
-![Figure 2: Effect of Secure Communities on Suicide Rates Among Hispanic Children Aged 5–14](controlled_hisp_5to14_event.png)
+![Figure 2: Suicides: By Age Groups](01-all-overlay.png)
 
-![Figure 3: Effect of Secure Communities on Suicide Rates Among Hispanic Children Aged 15–24](controlled_hisp_15to24_event.png)
+![Figure 3: Triple DDD - Hispanic vs White Suicide Rates Among Children Aged 5–14](ddd_ddd_rate_5to14_event_pre5.png)
 
-![Figure 4: Effect of Secure Communities on Suicide Rates Among Hispanic Youth Aged 5–24](controlled_hisp_5to24_event.png)
+![Figure 4: Triple DDD - Hispanic vs White Suicide Rates Among Youth Aged 15–24](ddd_ddd_rate_15to24_event_pre5.png)
 
-![Figure 5: Effect of Secure Communities on Suicide Rates Among Hispanic Adults Aged 34 and Older](controlled_hisp_34plus_event.png)
+![Figure 5: Triple DDD - Hispanic vs White Suicide Rates Among Adults Aged 34+](ddd_ddd_rate_34plus_event_pre5.png)
 
-![Figure 6: Effect of Secure Communities on Suicide Rates Among All Hispanic Individuals](controlled_hisp_all_event.png)
+![Figure 6: Triple DDD - Hispanic vs White Suicide Rates Among All Individuals](ddd_ddd_rate_all_event_pre5.png)
 
-![Figure 7: Effect of Secure Communities on Suicide Rates Among Hispanic Children Aged 5-14: By Sanctuary Status](hetby_hisp_5to14_full.png)
+![Figure 7: Triple DDD with Sanctuary Heterogeneity - Children Aged 5–14](sanctuary_hetero_rate_pre5_rate_5to14_event.png)
 
-![Figure 8: Effect of Secure Communities on Suicide Rates Among Hispanic Youth Aged 15-24: By Sanctuary Status](hetby_hisp_15to24_full.png)
+![Figure 8: Triple DDD with Sanctuary Heterogeneity - Youth Aged 15–24](sanctuary_hetero_rate_pre5_rate_15to24_event.png)
 
-![Figure 9: Effect of Secure Communities on Suicide Rates Among Hispanics Aged 34+: By Sanctuary Status](hetby_hisp_34plus_full.png)
+![Figure 9: Triple DDD with Sanctuary Heterogeneity - Adults Aged 34+](sanctuary_hetero_rate_pre5_rate_over34_event.png)
 
-![Figure 10: Triple DDD - Hispanic vs White Suicide Rates Among Children Aged 5–14](ddd_ddd_5to14_event.png)
-
-![Figure 11: Triple DDD - Hispanic vs White Suicide Rates Among Youth Aged 15–24](ddd_ddd_15to24_event.png)
-
-![Figure 12: Triple DDD - Hispanic vs White Suicide Rates Among Adults Aged 34+](ddd_ddd_34plus_event.png)
-
-![Figure 13: Triple DDD - Hispanic vs White Suicide Rates Among All Individuals](ddd_ddd_all_event.png)
-
-![Figure 14: Triple DDD with Sanctuary Heterogeneity - Children Aged 5–14](5to14_event.png)
-
-![Figure 15: Triple DDD with Sanctuary Heterogeneity - Youth Aged 15–24](15to24_event.png)
-
-![Figure 16: Triple DDD with Sanctuary Heterogeneity - Adults Aged 34+](34plus_event.png)
-
-![Figure 17: Triple DDD with Sanctuary Heterogeneity - All Individuals](all_event.png)
-
-<!-- ## Citation
-
-Hadah, Hussain, The Effect of Anti-Asian Attitudes on Asian Identity in the U.S. (September 24, 2024). Available at https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
-
-```bibtex
-@article{hadah2024hispanicidentity,
-    Author = {Hadah, Hussain},
-    Title = {The Effect of Anti-Asian Attitudes on Asian Identity in the U.S.},
-    Year = {2024}}
-``` -->
+![Figure 10: Triple DDD with Sanctuary Heterogeneity - All Individuals](sanctuary_hetero_rate_pre5_rate_total_event.png)
