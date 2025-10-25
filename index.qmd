@@ -66,10 +66,11 @@ Please feel free to contact me if you have questions about my work or would like
 ::: {.callout-tip icon=false}
 ### Latest Publications & Achievements
 
-- **Published** in *Journal of Economics, Race, and Policy* (2025): "The Impact of Hispanic Last Names on Educational and Labor Market Outcomes"
-- **Published** in *Southern Economic Journal* (2024): "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S."
-- **Revise & Resubmit** at *Journal of Policy Analysis and Management*: "The Effect of Anti-Asian Attitudes on Asian Identity in the U.S."
+- **Upcoming Conference:** Presenting research at the [2025 APPAM Fall Research Conference](https://www.appam.org/conference-events/2025appam/) in Seattle. If you'll be there, let's grab coffee ☕ and chat!
+- **New Working Paper:** [_"Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates"_](https://hhadah.github.io/sc-and-hispanic-children-suicide/my_paper/sc_and_hispanic_children_suicide.pdf) estimates the causal impact of the Secure Communities program on suicide rates among Hispanic individuals in the United States, finding large decreases for youth but increases for adults, with effects varying by local context.
 - **$140,746 Grant** from J-PAL Social Policy Research Initiative for school choice discrimination research
+- **Revise & Resubmit** at *Journal of Policy Analysis and Management*: "The Effect of Anti-Asian Attitudes on Asian Identity in the U.S."
+- **Published** in *Journal of Economics, Race, and Policy* (2025): "The Impact of Hispanic Last Names on Educational and Labor Market Outcomes"
 :::
 
 # Interests & Education
