@@ -1,0 +1,73 @@
+---
+title: "Immigration Enforcement and Hispanic Children Outcomes"
+# date: 2022-11-15
+author:
+  - name: Hussain Hadah
+    url: http://www.hussainhadah.com/
+    orcid: 0000-0002-8705-6386
+    affiliation: Tulane University
+  - name: Augustine Denteh
+    # orcid: 0000-0002-8705-6386
+    affiliation: Davidson College
+categories: 
+  - Immigration enforcement
+  - Secure Communities
+  - Difference-in-differences
+  - Policy Evaluation
+  - Ethnicity
+pub-info:
+  reference: >-
+    Augustine Denteh and <strong>Hussain Hadah</strong>, "Immigration Enforcement and Hispanic Children Outcomes"</em>
+  # links:
+  #   - name: Preprint
+  #     url: https://dx.doi.org/10.2139/ssrn.5383500
+  #     icon: fa-solid fa-file-pdf
+  #     local: false
+
+  # extra: >-
+      
+    
+# doi: https://dx.doi.org/10.2139/ssrn.5383500
+---
+
+<!-- ## Important links
+
+- [Slides](https://hhadah.github.io/presentations/2024-dec-4/dec-4.pdf)
+- [Paper](https://hhadah.github.io/compta-hadah/compta_hadah_2025.pdf) -->
+
+## Abstract
+
+We study how the Secure Communities (SC) program altered Hispanic children's ethnic self-identification in the American Community Survey.
+Leveraging staggered SC roll-out across counties, we implement a difference-in-differences strategy to track identification patterns for first- through fourth-generation children. We find that exposure to SC reduces the likelihood that Hispanic children report as Hispanic, with attrition concentrated among children of highly educated parents. Attrition appears across every generation we study, spanning first- through fourth-generation youth. Comparisons across sanctuary and non-sanctuary jurisdictions yield similar declines, indicating that local sanctuary policies do not offset SC-driven identity loss.
+
+## Key Figures
+
+![Overall decline in Hispanic self-identification following Secure Communities adoption](plot06-all-hisp-hispan.png)
+
+:::: {.layout-ncol=2 .fig-cap-location=center}
+::: {.column}
+![](plot01-firstgen-hispan.png){fig-alt="First-generation Hispanic children"}
+
+![](plot02-secondgen-hispan.png){fig-alt="Second-generation Hispanic children"}
+:::
+::: {.column}
+![](plot03-thirdgen-hispan.png){fig-alt="Third-generation Hispanic children"}
+
+![](plot04-fourthgen-hispan.png){fig-alt="Fourth-generation Hispanic children"}
+:::
+::::
+
+![Attrition by parental education](plot22-hetby_paredu__all.png)
+
+![Comparison across sanctuary and non-sanctuary jurisdictions](plot27-hetby_sanctuary__all.png)
+
+<!-- ## Citation
+
+Hadah, Hussain, The Effect of Anti-Asian Attitudes on Asian Identity in the U.S. (September 24, 2024). Available at https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
+
+```bibtex
+@article{hadah2024hispanicidentity,
+    Author = {Hadah, Hussain},
+    Title = {The Effect of Anti-Asian Attitudes on Asian Identity in the U.S.},
+    Year = {2024}}
+``` -->
