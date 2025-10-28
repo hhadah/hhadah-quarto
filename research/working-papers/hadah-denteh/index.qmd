@@ -42,24 +42,19 @@ Leveraging staggered SC roll-out across counties, we implement a difference-in-d
 
 ## Key Figures
 
+The samples in the figures below include first-, second-, and third-generation Hispanic children that are racially White, ages 17 and below who live in intact families. First-generation Hispanic immigrants are children that were born in a Spanish-speaking country. Native-born second-generation Hispanic immigrants are children with at least one parent born in a Spanish-speaking country. Native-born third-generation Hispanic immigrants are children with native-born parents and at least one grandparent born in a Spanish-speaking country. 
+
 ![Overall decline in Hispanic self-identification following Secure Communities adoption](plot06-all-hisp-hispan.png)
 
-:::: {.layout-ncol=2 .fig-cap-location=center}
-::: {.column}
-![](plot01-firstgen-hispan.png){fig-alt="First-generation Hispanic children"}
+![First-generation Hispanic children](plot01-firstgen-hispan.png)
 
-![](plot02-secondgen-hispan.png){fig-alt="Second-generation Hispanic children"}
-:::
-::: {.column}
-![](plot03-thirdgen-hispan.png){fig-alt="Third-generation Hispanic children"}
+![Second-generation Hispanic children](plot02-secondgen-hispan.png)
 
-![](plot04-fourthgen-hispan.png){fig-alt="Fourth-generation Hispanic children"}
-:::
-::::
+![Third-generation Hispanic children](plot03-thirdgen-hispan.png)
 
-![Attrition by parental education](plot22-hetby_paredu__all.png)
+![Attrition by parental education among all generations of Hispanic immigrant children](plot22-hetby_paredu__all.png)
 
-![Comparison across sanctuary and non-sanctuary jurisdictions](plot27-hetby_sanctuary__all.png)
+![Comparison across sanctuary and non-sanctuary jurisdictions  among all generations of Hispanic immigrant children](plot27-hetby_sanctuary__all.png)
 
 <!-- ## Citation
 
