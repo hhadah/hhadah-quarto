@@ -7,7 +7,7 @@ author:
     orcid: 0000-0002-8705-6386
     affiliation: Tulane University
   - name: Augustine Denteh
-    # orcid: 0000-0002-8705-6386
+    orcid: 0000-0003-0965-015X
     affiliation: Davidson College
 categories: 
   - Immigration enforcement
