@@ -66,10 +66,10 @@ A review of the determinants of the location, size, growth, and form of urban ar
 
 19. Class 18:  Housing Policies I \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/10-week10/03-class/19-HousingPoliciesMetcalfSlides.pdf)\]
 
+20. Class 19:  Housing Policies II \[[**.html**](https://hhadah.github.io/urban-econ/slides/11-week11/03-class/03-housing.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/11-week11/03-class/03-housing.pdf)\]
+
 <!--
-20. Class 19:  Housing Policies II \[[**.html**](https://hhadah.github.io/urban-econ/slides/11-housing/03-lecture3/03-housing.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/03-lecture3/03-housing.pdf)\]
+2.  Class 20:  Neighborhood Effects \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/04-lecture4/21-NeighborhoodEffectsMovingtoOpportunity.pdf)\]
 
-21. Class 20:  Neighborhood Effects \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/04-lecture4/21-NeighborhoodEffectsMovingtoOpportunity.pdf)\]
-
-22. Class 21:  Rent Control \[[**.html**](https://hhadah.github.io/urban-econ/slides/11-housing/05-rent-control/rent-control.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/05-rent-control/rent-control.pdf)\]
+3.  Class 21:  Rent Control \[[**.html**](https://hhadah.github.io/urban-econ/slides/11-housing/05-rent-control/rent-control.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/05-rent-control/rent-control.pdf)\]
 -->
