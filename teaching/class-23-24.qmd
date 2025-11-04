@@ -44,9 +44,9 @@ A review of the determinants of the location, size, growth, and form of urban ar
 (Urban) Economics  \[[**.html**](https://hhadah.github.io/urban-econ/slides/04-week4/03-class/causal-term.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/04-week4/03-class/causal-term.pdf)\]
 
 
-11. Class 11: Effect of Police on Crime \[[**.html**](https://hhadah.github.io/urban-econ/slides/05-week5/02-class/02-class2.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/05-week5/02-class/02-class2.pdf)\]
+11. Class 10: Effect of Police on Crime \[[**.html**](https://hhadah.github.io/urban-econ/slides/05-week5/02-class/02-class2.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/05-week5/02-class/02-class2.pdf)\]
 
-12. Class 12: Effect of Economic Circumstances on Crime \[[**.html**](https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.pdf)\]
+12. Class 11: Effect of Economic Circumstances on Crime \[[**.html**](https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.pdf)\]
 
 12. Class 12: Crime and Gender-Based Violence \[[**.html**](https://hhadah.github.io/urban-econ/slides/06-week6/01-class//gender-based-violence.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/06-week6/01-class//gender-based-violence.pdf)\]
 
@@ -64,11 +64,13 @@ A review of the determinants of the location, size, growth, and form of urban ar
 18. Class 18:  Housing Subsidies \[[**.html**](https://hhadah.github.io/urban-econ/slides/09-week9/03-class/01-housing.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/09-week9/03-class/01-housing.pdf)\]
 
 
-19. Class 18:  Housing Policies I \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/10-week10/03-class/19-HousingPoliciesMetcalfSlides.pdf)\]
+19. Class 19:  Housing Policies I \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/10-week10/03-class/19-HousingPoliciesMetcalfSlides.pdf)\]
 
-20. Class 19:  Housing Policies II \[[**.html**](https://hhadah.github.io/urban-econ/slides/11-week11/03-class/03-housing.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/11-week11/03-class/03-housing.pdf)\]
+20. Class 20:  Housing Policies II \[[**.html**](https://hhadah.github.io/urban-econ/slides/11-week11/03-class/03-housing.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/11-week11/03-class/03-housing.pdf)\]
 
-21. Class 20:  Neighborhood Effects \[[**.html**](https://hhadah.github.io/urban-econ/slides/12-week12/01-class/01-class.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/12-week12/01-class/01-class.pdf)\]
-<!--
-22. Class 21:  Rent Control \[[**.html**](https://hhadah.github.io/urban-econ/slides/11-housing/05-rent-control/rent-control.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/05-rent-control/rent-control.pdf)\]
--->
+21. Class 21:  Neighborhood Effects \[[**.html**](https://hhadah.github.io/urban-econ/slides/12-week12/01-class/01-class.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/12-week12/01-class/01-class.pdf)\]
+
+22. Class 22:  Rent Control \[[**.html**](https://hhadah.github.io/urban-econ/slides/12-week12/02-class/rent-control.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/12-week12/02-class/rent-control.pdf)\] 
+
+23. Class 23:  Family Options Study \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/12-week12/03-class/Family-Options-Study-Presentation-Slides.pdf)\] 
+
