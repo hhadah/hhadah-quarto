@@ -32,8 +32,8 @@ pub-info:
 - [Paper (pdf)](https://hhadah.github.io/sc-and-hispanic-children-suicide/my_paper/sc_and_hispanic_children_suicide.pdf)
 - [Slides (pdf)](https://hhadah.github.io/sc-and-hispanic-children-suicide/presentations/01-oct-22-2025/hadah-oct-22-2025.pdf)
 - [Slides (html)](https://hhadah.github.io/sc-and-hispanic-children-suicide/presentations/01-oct-22-2025/hadah-oct-22-2025.html)
-- [APPAM Slides (pdf)](https://hhadah.github.io/sc-and-hispanic-children-suicide/presentations/02-appam/hadah-nov-15-2025/hadah-nov-15-2025.pdf)
-- [APPAM Slides (html)](https://hhadah.github.io/sc-and-hispanic-children-suicide/presentations/02-appam/hadah-nov-15-2025/hadah-nov-15-2025.pdf)
+- [APPAM Slides (pdf)](https://hhadah.github.io/sc-and-hispanic-children-suicide/presentations/02-appam/hadah-nov-15-2025.pdf)
+- [APPAM Slides (html)](https://hhadah.github.io/sc-and-hispanic-children-suicide/presentations/02-appam/hadah-nov-15-2025.pdf)
 - 
 ## Abstract
 
