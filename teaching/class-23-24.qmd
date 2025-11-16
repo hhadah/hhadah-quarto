@@ -75,3 +75,5 @@ A review of the determinants of the location, size, growth, and form of urban ar
 23. Class 23:  Family Options Study \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/12-week12/03-class/Family-Options-Study-Presentation-Slides.pdf)\] 
 
 24. Class 24: The Flint Water Crisis and Neighborhood Based Interventions \[[**.html**](https://hhadah.github.io/urban-econ/slides/13-week13/01-class/01-class.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/13-week13/01-class/01-class.pdf)\]
+
+25. Class 25: Urban Sprawl and Land-Use Controls \[[**.html**](https://hhadah.github.io/urban-econ/slides/14-week14/01-class/01-class.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/14-week14/01-class/01-class.pdf)\]
