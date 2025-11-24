@@ -67,7 +67,7 @@ Please feel free to contact me if you have questions about my work or would like
 ### Latest Publications & Achievements
 
 - **Upcoming Conference:** Presenting research at the [2025 APPAM Fall Research Conference](https://www.appam.org/conference-events/2025appam/) in Seattle. If you'll be there, let's grab coffee ☕ and chat!
-- **New Working Paper:** [_"Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates"_](https://hhadah.github.io/sc-hispanic-adult-suicidemy_paper/sc_and_hispanic_children_suicide.pdf) estimates the causal impact of the Secure Communities program on suicide rates among Hispanic individuals in the United States, finding large decreases for youth but increases for adults, with effects varying by local context.
+- **New Working Paper:** [_"Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates"_](https://hhadah.github.io/sc-hispanic-adult-suicide/my_paper/sc_and_hispanic_children_suicide.pdf) estimates the causal impact of the Secure Communities program on suicide rates among Hispanic individuals in the United States, finding large decreases for youth but increases for adults, with effects varying by local context.
 - **$140,746 Grant** from J-PAL Social Policy Research Initiative for school choice discrimination research
 - **Revise & Resubmit** at *Journal of Policy Analysis and Management*: "The Effect of Anti-Asian Attitudes on Asian Identity in the U.S."
 - **Published** in *Journal of Economics, Race, and Policy* (2025): "The Impact of Hispanic Last Names on Educational and Labor Market Outcomes"
@@ -123,7 +123,7 @@ Please feel free to contact me if you have questions about my work or would like
 - Hadah, H. **Peer Effects in Adolescent Mental Health**. [(preprint)](https://dx.doi.org/10.2139/ssrn.5159123)
 - Hadah, H. **The Effect of Anti-Asian Attitudes on Asian Identity in the U.S**, _Revise and Resubmit at the Journal of Policy Analysis and Management_ [(preprint)](https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf)
 - Hadah, H., & Compta, G.\* **The Effects of Waiting Periods on Firearm Suicides in the U.S.** [(preprint)](https://hhadah.github.io/compta-hadah/compta_hadah_2025.pdf)
-- Hadah, H. **Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates** [(preprint)](https://hhadah.github.io/sc-hispanic-adult-suicidemy_paper/sc_and_hispanic_children_suicide.pdf)
+- Hadah, H. **Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates** [(preprint)](https://hhadah.github.io/sc-hispanic-adult-suicide/my_paper/sc_and_hispanic_children_suicide.pdf)
 - Denteh, A., & Hadah, H. **Immigration Enforcement and Hispanic Children Outcomes**. _(Draft available soon)_
   - _See a preview of the results [here](https://hussainhadah.com/research/working-papers/hadah-denteh/)_
 
