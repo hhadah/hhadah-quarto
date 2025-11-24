@@ -19,7 +19,7 @@ pub-info:
     <strong>Hussain Hadah</strong>, "Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates"</em>
   links:
     - name: Preprint
-      url: https://hhadah.github.io/sc-and-hispanic-children-suicide/my_paper/sc_and_hispanic_children_suicide.pdf
+      url: https://hhadah.github.io/sc-hispanic-adult-suicidemy_paper/sc_and_hispanic_children_suicide.pdf
       icon: fa-solid fa-file-pdf
       local: false
   extra: >-
@@ -29,11 +29,11 @@ pub-info:
 
 ## Important links
 
-- [Paper (pdf)](https://hhadah.github.io/sc-and-hispanic-children-suicide/my_paper/sc_and_hispanic_children_suicide.pdf)
-- [Slides (pdf)](https://hhadah.github.io/sc-and-hispanic-children-suicide/presentations/01-oct-22-2025/hadah-oct-22-2025.pdf)
-- [Slides (html)](https://hhadah.github.io/sc-and-hispanic-children-suicide/presentations/01-oct-22-2025/hadah-oct-22-2025.html)
-- [APPAM Slides (pdf)](https://hhadah.github.io/sc-and-hispanic-children-suicide/presentations/02-appam/hadah-nov-15-2025.pdf)
-- [APPAM Slides (html)](https://hhadah.github.io/sc-and-hispanic-children-suicide/presentations/02-appam/hadah-nov-15-2025.html)
+- [Paper (pdf)](https://hhadah.github.io/sc-hispanic-adult-suicidemy_paper/sc_and_hispanic_children_suicide.pdf)
+- [Slides (pdf)](https://hhadah.github.io/sc-hispanic-adult-suicidepresentations/01-oct-22-2025/hadah-oct-22-2025.pdf)
+- [Slides (html)](https://hhadah.github.io/sc-hispanic-adult-suicidepresentations/01-oct-22-2025/hadah-oct-22-2025.html)
+- [APPAM Slides (pdf)](https://hhadah.github.io/sc-hispanic-adult-suicidepresentations/02-appam/hadah-nov-15-2025.pdf)
+- [APPAM Slides (html)](https://hhadah.github.io/sc-hispanic-adult-suicidepresentations/02-appam/hadah-nov-15-2025.html)
 - 
 ## Abstract
 
