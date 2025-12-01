@@ -77,3 +77,5 @@ A review of the determinants of the location, size, growth, and form of urban ar
 24. Class 24: The Flint Water Crisis and Neighborhood Based Interventions \[[**.html**](https://hhadah.github.io/urban-econ/slides/13-week13/01-class/01-class.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/13-week13/01-class/01-class.pdf)\]
 
 25. Class 25: Urban Sprawl and Land-Use Controls \[[**.html**](https://hhadah.github.io/urban-econ/slides/14-week14/01-class/01-class.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/14-week14/01-class/01-class.pdf)\]
+
+26. Class 26: Negative Externalities Activity \[[**.html**](https://hhadah.github.io/urban-econ/slides/15-week15/in-class.html)\]
