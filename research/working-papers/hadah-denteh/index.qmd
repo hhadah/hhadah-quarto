@@ -17,12 +17,12 @@ categories:
   - Ethnicity
 pub-info:
   reference: >-
-    Augustine Denteh and <strong>Hussain Hadah</strong>, "Immigration Enforcement and Hispanic Children Outcomes"</em>
-  # links:
-  #   - name: Preprint
-  #     url: https://dx.doi.org/10.2139/ssrn.5383500
-  #     icon: fa-solid fa-file-pdf
-  #     local: false
+    Augustine Denteh and <strong>Hussain Hadah</strong>, "Immigration Enforcement and Children's Hispanic Identity"</em>
+  links:
+    - name: Paper PDF
+      url: /research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf
+      icon: fa-solid fa-file-pdf
+      local: true
 
   # extra: >-
       
@@ -37,8 +37,7 @@ pub-info:
 
 ## Abstract
 
-We study how the Secure Communities (SC) program altered Hispanic children's ethnic self-identification in the American Community Survey.
-Leveraging staggered SC roll-out across counties, we implement a difference-in-differences strategy to track identification patterns for first- through fourth-generation children. We find that exposure to SC reduces the likelihood that Hispanic children report as Hispanic, with attrition concentrated among children of highly educated parents. Attrition appears across every generation we study, spanning first- through fourth-generation youth. Comparisons across sanctuary and non-sanctuary jurisdictions yield similar declines, indicating that local sanctuary policies do not offset SC-driven identity loss.
+Ethnic identity is typically treated as an immutable demographic attribute in most economic analysis. Motivated by recent work on ethnic attrition, we estimate the causal effect of immigration enforcement on the self-identification of Hispanic children. Exploiting the staggered rollout of the Secure Communities and imputation difference-in-differences method, we find that enforcement reduces self-reported Hispanic identity. This average effect masks a remarkable divergence by generation. While first- and third-generation immigrants retreat from Hispanic identity, second-generation citizens increase identification. We also find larger reductions among college-educated families and no differential effects by sanctuary city. Our results suggest that ethnic identity is not immune to policy, suggesting that policy evaluations must account for ethnic self-identity to avoid conflating policy effects with compositional changes in the target population.
 
 ## Key Figures
 
