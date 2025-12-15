@@ -19,8 +19,8 @@ pub-info:
   reference: >-
     Augustine Denteh and <strong>Hussain Hadah</strong>, "Immigration Enforcement and Children's Hispanic Identity"</em>
   links:
-    - name: Paper PDF
-      url: /research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf
+    - name: Preprint
+      url: https://hussainhadah.com/research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf
       icon: fa-solid fa-file-pdf
       local: true
 
