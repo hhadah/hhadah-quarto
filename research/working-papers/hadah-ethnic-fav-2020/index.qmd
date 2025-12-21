@@ -11,6 +11,7 @@ categories:
   - Dictatorships
   - Democracy
   - Institutions
+  - Difference-in-differences
 pub-info:
   reference: >-
     <strong>Hussain Hadah</strong> and Bariş Alan, “Democracy and Ethnic Favoritism: Evidence from Africa,” <em>Under Review</em>

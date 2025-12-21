@@ -15,6 +15,7 @@ categories:
   - Firearm Suicides
   - Policy Evaluation
   - Mental Health
+  - Difference-in-differences
 pub-info:
   reference: >-
     <strong>Hussain Hadah</strong> and Gael Compta, "The Effects of Waiting Periods on Firearm Suicides in the U.S."</em>
