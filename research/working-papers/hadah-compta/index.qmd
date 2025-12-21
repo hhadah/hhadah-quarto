@@ -37,27 +37,29 @@ pub-info:
 
 ## Abstract
 
-Suicide is often an impulsive act, and in the United States, nearly one-half of suicides involve a firearm, the most lethal and readily available method. In this paper, we use recent developments in difference-in-differences methodology to study the causal effect of waiting-period laws on firearm suicides. We find that waiting periods reduce firearm suicides among men by 1.3 deaths per 100,000 population, a statistically significant effect at the 90\% confidence level. For white individuals, we observe a statistically significant reduction of 21.6 deaths per 100,000 (p-value = 0.09). While the reductions for the overall population (0.47 per 100,000) and adults aged 55 and older (26.3 per 100,000) are not statistically significant, the majority of confidence intervals lie in the negative range, suggesting protective effects. Crucially, we find no evidence of substitution toward non-firearm suicide methods following waiting period adoption. We also examine the effects of waiting period repeal and find no statistically significant increases in firearm suicides, which may indicate persistent protective effects even after policy removal. These findings provide evidence that even brief delays in firearm access can disrupt the pathway from suicidal ideation to death, suggesting that cooling-off periods may be an important policy tool for suicide prevention.
+Suicide is often an impulsive act, and in the United States, nearly one-half of suicides involve a firearm, the most lethal and readily available method. In this paper, we use recent developments in difference-in-differences methodology to study the causal effect of waiting-period laws on firearm suicides. We find that waiting periods reduce firearm suicides among men by 1.5 deaths per 100,000 population, an 11% decrease from baseline. For white individuals, we observe a statistically significant reduction of 37.5 deaths per 100,000, a 37% decrease. For adults aged 55 and older, we find a reduction of 25 deaths per 100,000, representing a 40% decrease. For the overall population, we find a statistically significant reduction of 0.92 deaths per 100,000, a 12% decrease from baseline. Crucially, we find no evidence of substitution toward non-firearm suicide methods following waiting period adoption; among men, adults 55 and older, and white individuals, we find significant decreases in non-firearm suicides. We also examine the effects of waiting period repeal and find statistically significant increases in firearm suicides. Back-of-the-envelope calculations suggest waiting periods prevented approximately 3,000 firearm suicide deaths annually, yielding social benefits of roughly $41 billion. Our findings show that even brief delays in firearm access can disrupt the pathway from suicidal ideation to death, suggesting that cooling-off periods may be an important policy tool for suicide prevention.
 
 ## Important Figures
 
 ![Figure 1: State-level variation in waiting period policies](193-staggarred_sample_panel_view.png)
 
-![Figure 2: The causal effects of waiting periods on firearms suicides](1000-csid-all-fire.png)
+![Figure 2: The causal effects of waiting periods on firearms suicides](1035-didimp-all-fire-noNY.png)
 
-![Figure 3: The causal effects of waiting periods on firearms suicides among men](1001-csid-men-fire.png)
+![Figure 3: The causal effects of waiting periods on firearms suicides among men](1036-didimp-men-fire-noNY.png)
 
-![Figure 4: The causal effects of waiting periods on firearms suicides among individuals aged 55+](1002-csid-age_55p-fire.png)
+![Figure 4: The causal effects of waiting periods on firearms suicides among individuals aged 55+](1037-didimp-age_55p-fire-noNY.png)
 
-![Figure 5: The causal effects of waiting periods on firearms suicides among white individuals](1003-csid-white-fire.png)
+![Figure 5: The causal effects of waiting periods on firearms suicides among white individuals](1038-didimp-white-fire-noNY.png)
 
-<!-- ## Citation
+## Citation
 
-Hadah, Hussain, The Effect of Anti-Asian Attitudes on Asian Identity in the U.S. (September 24, 2024). Available at https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
+Hadah, Hussain, and Gael Compta. The Effects of Waiting Periods on Firearm Suicides in the U.S. Working paper, Tulane University, 2025. Available at https://dx.doi.org/10.2139/ssrn.5383500.
 
-```bibtex
-@article{hadah2024hispanicidentity,
-    Author = {Hadah, Hussain},
-    Title = {The Effect of Anti-Asian Attitudes on Asian Identity in the U.S.},
-    Year = {2024}}
-``` -->
+@misc{HadahCompta2025WaitingPeriods,
+  title        = {The Effects of Waiting Periods on Firearm Suicides in the U.S.},
+  author       = {Hadah, Hussain and Compta, Gael},
+  year         = {2025},
+  month        = dec,
+  note         = {Working paper}
+}
+```
