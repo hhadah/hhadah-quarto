@@ -86,6 +86,37 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
       }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<script>
+// Quarto 1.5 listing category selector fix (upstream bug missing closing bracket)
+(function () {
+  const patchActivateCategory = () => {
+    if (typeof window === "undefined" || typeof window.filterListingCategory !== "function") {
+      return;
+    }
+    window.activateCategory = function (category) {
+      // Remove any previously active category chips
+      document
+        .querySelectorAll(".quarto-listing-category .category.active")
+        .forEach((el) => el.classList.remove("active"));
+
+      const safeCategory =
+        typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
+      const selector = `.quarto-listing-category .category[data-category='${safeCategory}']`;
+      const categoryEl = document.querySelector(selector);
+      if (categoryEl) {
+        categoryEl.classList.add("active");
+      }
+      window.filterListingCategory(category);
+    };
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", patchActivateCategory);
+  } else {
+    patchActivateCategory();
+  }
+})();
+</script>
 
 
 </head>
@@ -165,6 +196,7 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
                                 <div class="quarto-category">Firearm Suicides</div>
                                 <div class="quarto-category">Policy Evaluation</div>
                                 <div class="quarto-category">Mental Health</div>
+                                <div class="quarto-category">Difference-in-differences</div>
                             </div>
                                 </div>
     </div>
@@ -229,6 +261,7 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
   <li><a href="#important-links" id="toc-important-links" class="nav-link active" data-scroll-target="#important-links">Important links</a></li>
   <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
   <li><a href="#important-figures" id="toc-important-figures" class="nav-link" data-scroll-target="#important-figures">Important Figures</a></li>
+  <li><a href="#citation" id="toc-citation" class="nav-link" data-scroll-target="#citation">Citation</a></li>
   </ul>
 </nav>
 </nav>
@@ -245,13 +278,12 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 <section id="important-links" class="level2">
 <h2 class="anchored" data-anchor-id="important-links">Important links</h2>
 <ul>
-<li><a href="https://hhadah.github.io/presentations/2024-dec-4/dec-4.pdf">Slides</a></li>
 <li><a href="https://hhadah.github.io/compta-hadah/compta_hadah_2025.pdf">Paper</a></li>
 </ul>
 </section>
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>Suicide is often an impulsive act, and in the United States, nearly one-half of suicides involve a firearm, the most lethal and readily available method. In this paper, using developments in difference-in-differences design, we study the effect of waiting-period laws on firearm suicides and provide the first causal evaluation of such laws. We find that waiting periods reduce firearm suicides for men (-1.3 per 100,000), while the reduction for the overall population (-0.5 per 100,000), adults aged 55 + (-28.5 per 100,000), and white individuals (-23.1 per 100,000) was statistically insignificant. Waiting periods did not cause an increase in non-firearm suicides. The majority of confidence intervals were in the negative range, and the lack of statistically significant estimates does not mean that waiting periods did not cause a decrease in suicides. These findings provide some evidence that even brief delays in firearm access could disrupt the pathway from suicidal ideation to death, suggesting that cooling-off periods may be a crucial policy tool for suicide prevention.</p>
+<p>Suicide is often an impulsive act, and in the United States, nearly one-half of suicides involve a firearm, the most lethal and readily available method. In this paper, we use recent developments in difference-in-differences methodology to study the causal effect of waiting-period laws on firearm suicides. We find that waiting periods reduce firearm suicides among men by 1.5 deaths per 100,000 population, an 11% decrease from baseline. For white individuals, we observe a statistically significant reduction of 37.5 deaths per 100,000, a 37% decrease. For adults aged 55 and older, we find a reduction of 25 deaths per 100,000, representing a 40% decrease. For the overall population, we find a statistically significant reduction of 0.92 deaths per 100,000, a 12% decrease from baseline. Crucially, we find no evidence of substitution toward non-firearm suicide methods following waiting period adoption; among men, adults 55 and older, and white individuals, we find significant decreases in non-firearm suicides. We also examine the effects of waiting period repeal and find statistically significant increases in firearm suicides. Back-of-the-envelope calculations suggest waiting periods prevented approximately 3,000 firearm suicide deaths annually, yielding social benefits of roughly $41 billion. Our findings show that even brief delays in firearm access can disrupt the pathway from suicidal ideation to death, suggesting that cooling-off periods may be an important policy tool for suicide prevention.</p>
 </section>
 <section id="important-figures" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="important-figures">Important Figures</h2>
@@ -263,38 +295,39 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 </div>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
-<p><img src="1000-csid-all-fire.png" class="img-fluid figure-img"></p>
+<p><img src="1035-didimp-all-fire-noNY.png" class="img-fluid figure-img"></p>
 <figcaption class="margin-caption">Figure 2: The causal effects of waiting periods on firearms suicides</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
-<p><img src="1001-csid-men-fire.png" class="img-fluid figure-img"></p>
+<p><img src="1036-didimp-men-fire-noNY.png" class="img-fluid figure-img"></p>
 <figcaption class="margin-caption">Figure 3: The causal effects of waiting periods on firearms suicides among men</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
-<p><img src="1002-csid-age_55p-fire.png" class="img-fluid figure-img"></p>
+<p><img src="1037-didimp-age_55p-fire-noNY.png" class="img-fluid figure-img"></p>
 <figcaption class="margin-caption">Figure 4: The causal effects of waiting periods on firearms suicides among individuals aged 55+</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
-<p><img src="1003-csid-white-fire.png" class="img-fluid figure-img"></p>
+<p><img src="1038-didimp-white-fire-noNY.png" class="img-fluid figure-img"></p>
 <figcaption class="margin-caption">Figure 5: The causal effects of waiting periods on firearms suicides among white individuals</figcaption>
 </figure>
 </div>
-<!-- ## Citation
-
-Hadah, Hussain, The Effect of Anti-Asian Attitudes on Asian Identity in the U.S. (September 24, 2024). Available at https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
-
-```bibtex
-@article{hadah2024hispanicidentity,
-    Author = {Hadah, Hussain},
-    Title = {The Effect of Anti-Asian Attitudes on Asian Identity in the U.S.},
-    Year = {2024}}
-``` -->
+</section>
+<section id="citation" class="level2">
+<h2 class="anchored" data-anchor-id="citation">Citation</h2>
+<p>Hadah, Hussain, and Gael Compta. The Effects of Waiting Periods on Firearm Suicides in the U.S. Working paper, Tulane University, 2025. Available at https://dx.doi.org/10.2139/ssrn.5383500.</p>
+<pre><code>@misc{HadahCompta2025WaitingPeriods,
+  title        = {The Effects of Waiting Periods on Firearm Suicides in the U.S.},
+  author       = {Hadah, Hussain and Compta, Gael},
+  year         = {2025},
+  month        = dec,
+  note         = {Working paper}
+}</code></pre>
 
 
 </section>

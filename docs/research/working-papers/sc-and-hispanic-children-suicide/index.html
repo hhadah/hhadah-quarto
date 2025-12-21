@@ -86,6 +86,37 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
       }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<script>
+// Quarto 1.5 listing category selector fix (upstream bug missing closing bracket)
+(function () {
+  const patchActivateCategory = () => {
+    if (typeof window === "undefined" || typeof window.filterListingCategory !== "function") {
+      return;
+    }
+    window.activateCategory = function (category) {
+      // Remove any previously active category chips
+      document
+        .querySelectorAll(".quarto-listing-category .category.active")
+        .forEach((el) => el.classList.remove("active"));
+
+      const safeCategory =
+        typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
+      const selector = `.quarto-listing-category .category[data-category='${safeCategory}']`;
+      const categoryEl = document.querySelector(selector);
+      if (categoryEl) {
+        categoryEl.classList.add("active");
+      }
+      window.filterListingCategory(category);
+    };
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", patchActivateCategory);
+  } else {
+    patchActivateCategory();
+  }
+})();
+</script>
 
 
 </head>
@@ -162,7 +193,7 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
                                     <div class="quarto-categories">
                                 <div class="quarto-category">Immigration enforcement</div>
                                 <div class="quarto-category">Secure Communities</div>
-                                <div class="quarto-category">Suicide</div>
+                                <div class="quarto-category">Suicides</div>
                                 <div class="quarto-category">Difference-in-differences</div>
                                 <div class="quarto-category">Policy Evaluation</div>
                                 <div class="quarto-category">Mental Health</div>
@@ -177,7 +208,7 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
         </div>
                 <ul class="project-links">
                         <li class="project-link">
-                <a href="https://hhadah.github.io/sc-and-hispanic-children-suicide/my_paper/sc_and_hispanic_children_suicide.pdf"><i class="fa-solid fa-file-pdf"></i> Preprint</a>
+                <a href="https://dx.doi.org/10.2139/ssrn.5886942"><i class="fa-solid fa-file-pdf"></i> Preprint (SSRN)</a>
             </li>
                     </ul>
             </div>
@@ -214,7 +245,6 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
    
   <ul>
   <li><a href="#important-links" id="toc-important-links" class="nav-link active" data-scroll-target="#important-links">Important links</a></li>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
   <li><a href="#important-figures" id="toc-important-figures" class="nav-link" data-scroll-target="#important-figures">Important Figures</a></li>
   </ul>
 </nav>
@@ -232,14 +262,14 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 <section id="important-links" class="level2">
 <h2 class="anchored" data-anchor-id="important-links">Important links</h2>
 <ul>
-<li><a href="https://hhadah.github.io/sc-and-hispanic-children-suicide/my_paper/sc_and_hispanic_children_suicide.pdf">Paper (pdf)</a></li>
-<li><a href="https://hhadah.github.io/sc-and-hispanic-children-suicide/presentations/01-oct-22-2025/hadah-oct-22-2025.pdf">Slides (pdf)</a></li>
-<li><a href="https://hhadah.github.io/sc-and-hispanic-children-suicide/presentations/01-oct-22-2025/hadah-oct-22-2025.html">Slides (html)</a></li>
+<li><a href="https://hhadah.github.io/sc-hispanic-adult-suicide/my_paper/sc_and_hispanic_children_suicide.pdf">Paper (pdf)</a></li>
+<li><a href="https://hhadah.github.io/sc-hispanic-adult-suicide/presentations/01-oct-22-2025/hadah-oct-22-2025.pdf">Slides (pdf)</a></li>
+<li><a href="https://hhadah.github.io/sc-hispanic-adult-suicide/presentations/01-oct-22-2025/hadah-oct-22-2025.html">Slides (html)</a></li>
+<li><a href="https://hhadah.github.io/sc-hispanic-adult-suicide/presentations/02-appam/hadah-nov-15-2025.pdf">APPAM Slides (pdf)</a></li>
+<li><a href="https://hhadah.github.io/sc-hispanic-adult-suicide/presentations/02-appam/hadah-nov-15-2025.html">APPAM Slides (html)</a></li>
+<li><h2 id="abstract" class="anchored">Abstract</h2></li>
 </ul>
-</section>
-<section id="abstract" class="level2">
-<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>I estimate the causal impact of the US Secure Communities (SC) program—which greatly expanded deportation risk nationwide—on suicide rates among Hispanic populations. Exploiting SC’s staggered county-level rollout between 2008 and 2013, I use the triple difference-in-differences (DDD) estimator proposed by Borusyak, Jaravel, and Spiess (2024) to identify causal effects. The DDD comparisons between Hispanic and non-Hispanic Whites reveal striking heterogeneity across age groups: Hispanic children aged 5-14 experience decreases of 0.35-1 suicides per 100,000 (35-100% relative decreases), and adolescents aged 15-24 show reductions of 2.2 suicides per 100,000, while Hispanic adults aged 34+ suffer increases of 0.5-2.6 suicides per 100,000 in years 2-4 post-implementation. Local contexts significantly moderate these effects: counties with stronger economic conditions show more protective effects, while Democratic-leaning counties experience larger increases in adult suicide rates. Sanctuary counties provide enhanced protection for youth (reductions of 4.25 vs 0.76 suicides per 100,000 for children) but simultaneously show greater adverse effects for adults (increases of 4.93 vs 2.32 suicides per 100,000) compared to non-sanctuary counties. Because Hispanic ethnicity is often underreported in mortality data, these estimates likely understate the true effects. Overall, the evidence suggests that immigration enforcement produces complex mental health impacts fundamentally shaped by age, gender, and local economic and political environments.</p>
+<p>I estimate the causal impact of the US Secure Communities (SC) program—which greatly expanded deportation risk nationwide—on suicide rates among Hispanic populations. Exploiting SC’s staggered county-level rollout between 2008 and 2013, I use the triple difference-in-differences (DDD) estimator proposed by Borusyak, Jaravel, and Spiess (2024) to identify causal effects. The DDD comparison of Hispanic versus non-Hispanic White populations reveals complex and heterogeneous effects. For adults aged 34+, SC produces a significant overall increase of 0.11 per 100,000. The results are driven by men, who experience substantial increases of 1.21 while women show significant decreases. The gender divergence is particularly pronounced among adults aged 45+, where men show large increases 2.27 representing a 23.5% increase from baseline, while women exhibit sustained decreases. Local contexts significantly moderate these effects: stronger economic conditions provide greater protection, while Democratic-leaning counties experience larger adult suicide rate increases. I find that the mechanisms—and the stark gender gaps—are supported by significant increases in deaths of despair among Hispanic men following SC implementation. Sanctuary policies appear to have neither a mitigating nor a worsening effect on Hispanic suicides. Because Hispanic ethnicity is often underreported in mortality data, these estimates likely understate the true effects, especially for adult men who bear the greatest harm. Overall, immigration enforcement produces complex mental health impacts fundamentally shaped by gender, age, and local economic environments.</p>
 </section>
 <section id="important-figures" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="important-figures">Important Figures</h2>

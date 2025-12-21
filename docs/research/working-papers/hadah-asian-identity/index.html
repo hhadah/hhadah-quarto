@@ -120,6 +120,37 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
       }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<script>
+// Quarto 1.5 listing category selector fix (upstream bug missing closing bracket)
+(function () {
+  const patchActivateCategory = () => {
+    if (typeof window === "undefined" || typeof window.filterListingCategory !== "function") {
+      return;
+    }
+    window.activateCategory = function (category) {
+      // Remove any previously active category chips
+      document
+        .querySelectorAll(".quarto-listing-category .category.active")
+        .forEach((el) => el.classList.remove("active"));
+
+      const safeCategory =
+        typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
+      const selector = `.quarto-listing-category .category[data-category='${safeCategory}']`;
+      const categoryEl = document.querySelector(selector);
+      if (categoryEl) {
+        categoryEl.classList.add("active");
+      }
+      window.filterListingCategory(category);
+    };
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", patchActivateCategory);
+  } else {
+    patchActivateCategory();
+  }
+})();
+</script>
 
 
 </head>
@@ -268,7 +299,7 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 </section>
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>I study the determinants of the choice to identify as Asian among those who could—those whose parents, grandparents, or selves were born in an Asian country. I find that individuals with Asian ancestry are significantly less likely to self-identify as Asian if they live in states with high levels of implicit ethnic bias. A one standard deviation increase in bias decreases self-reported Asian identity by 9 percentage points for all immigrants. A one standard deviation increase in bias decreases self-reported Asian identity by 8 and 9 percentage points for second- and third-generation Asians respectively. These findings have implications for the interpretation of research on racial and ethnic gaps in economic outcomes and the correct counting of the population.</p>
+<p>In this paper, I study the determinants of Asian self-identification among individuals whose parents, grandparents, or selves were born in an Asian country. Using a multiple proxy regression approach, I construct a bias measure based on the Implicit Association Test (IAT), the American National Election Studies (ANES), and hate crimes against Asians. I find that individuals with Asian ancestry are significantly less likely to self-identify as Asian if they live in states with high levels of bias: a one standard deviation increase in bias decreases self-reported Asian identity by 9 percentage points across all generations, with effects of 5 percentage points for first-generation (statistically insignificant), 8 percentage points for second-generation, and 8 percentage points for third-generation Asian Americans. Children of mixed-race families show the strongest response, with bias decreasing Asian identity by 15 percentage points among children of Asian fathers and White mothers, and 10 percentage points among children of White fathers and Asian mothers. Multinomial logit results show that higher bias pushes mixed-race adults toward White or multiracial identities rather than Asian-only identification. Parental education and income have modest effects relative to bias. These findings have implications for interpreting research on racial gaps in economic outcomes and population measurement.</p>
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>

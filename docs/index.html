@@ -86,6 +86,37 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
       }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<script>
+// Quarto 1.5 listing category selector fix (upstream bug missing closing bracket)
+(function () {
+  const patchActivateCategory = () => {
+    if (typeof window === "undefined" || typeof window.filterListingCategory !== "function") {
+      return;
+    }
+    window.activateCategory = function (category) {
+      // Remove any previously active category chips
+      document
+        .querySelectorAll(".quarto-listing-category .category.active")
+        .forEach((el) => el.classList.remove("active"));
+
+      const safeCategory =
+        typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
+      const selector = `.quarto-listing-category .category[data-category='${safeCategory}']`;
+      const categoryEl = document.querySelector(selector);
+      if (categoryEl) {
+        categoryEl.classList.add("active");
+      }
+      window.filterListingCategory(category);
+    };
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", patchActivateCategory);
+  } else {
+    patchActivateCategory();
+  }
+})();
+</script>
 
 
 </head>
@@ -233,7 +264,7 @@ Latest Publications &amp; Achievements
 <div class="callout-body-container callout-body">
 <ul>
 <li><strong>Upcoming Conference:</strong> Presenting research at the <a href="https://www.appam.org/conference-events/2025appam/">2025 APPAM Fall Research Conference</a> in Seattle. If you’ll be there, let’s grab coffee ☕ and chat!</li>
-<li><strong>New Working Paper:</strong> <a href="https://hhadah.github.io/sc-and-hispanic-children-suicide/my_paper/sc_and_hispanic_children_suicide.pdf"><em>“Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates”</em></a> estimates the causal impact of the Secure Communities program on suicide rates among Hispanic individuals in the United States, finding large decreases for youth but increases for adults, with effects varying by local context.</li>
+<li><strong>New Working Paper:</strong> <a href="https://hhadah.github.io/sc-hispanic-adult-suicide/my_paper/sc_and_hispanic_children_suicide.pdf"><em>“Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates”</em></a> estimates the causal impact of the Secure Communities program on suicide rates among Hispanic individuals in the United States, finding large decreases for youth but increases for adults, with effects varying by local context.</li>
 <li><strong>$140,746 Grant</strong> from J-PAL Social Policy Research Initiative for school choice discrimination research</li>
 <li><strong>Revise &amp; Resubmit</strong> at <em>Journal of Policy Analysis and Management</em>: “The Effect of Anti-Asian Attitudes on Asian Identity in the U.S.”</li>
 <li><strong>Published</strong> in <em>Journal of Economics, Race, and Policy</em> (2025): “The Impact of Hispanic Last Names on Educational and Labor Market Outcomes”</li>
@@ -297,8 +328,8 @@ Quick Links
 <li>Hadah, H. <strong>Peer Effects in Adolescent Mental Health</strong>. <a href="https://dx.doi.org/10.2139/ssrn.5159123">(preprint)</a></li>
 <li>Hadah, H. <strong>The Effect of Anti-Asian Attitudes on Asian Identity in the U.S</strong>, <em>Revise and Resubmit at the Journal of Policy Analysis and Management</em> <a href="https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf">(preprint)</a></li>
 <li>Hadah, H., &amp; Compta, G.* <strong>The Effects of Waiting Periods on Firearm Suicides in the U.S.</strong> <a href="https://hhadah.github.io/compta-hadah/compta_hadah_2025.pdf">(preprint)</a></li>
-<li>Hadah, H. <strong>Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates</strong> <a href="https://hhadah.github.io/sc-and-hispanic-children-suicide/my_paper/sc_and_hispanic_children_suicide.pdf">(preprint)</a></li>
-<li>Denteh, A., &amp; Hadah, H. <strong>Immigration Enforcement and Hispanic Children Outcomes</strong>. <em>(Draft available soon)</em>
+<li>Hadah, H. <strong>Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates</strong> <a href="https://hhadah.github.io/sc-hispanic-adult-suicide/my_paper/sc_and_hispanic_children_suicide.pdf">(preprint)</a></li>
+<li>Denteh, A., &amp; Hadah, H. <strong>Immigration Enforcement and Children’s Hispanic Identity</strong> <a href="https://hussainhadah.com/research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf">(paper)</a>
 <ul>
 <li><em>See a preview of the results <a href="https://hussainhadah.com/research/working-papers/hadah-denteh/">here</a></em></li>
 </ul></li>

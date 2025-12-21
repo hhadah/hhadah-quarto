@@ -80,6 +80,37 @@ gtag('js', new Date());
 gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<script>
+// Quarto 1.5 listing category selector fix (upstream bug missing closing bracket)
+(function () {
+  const patchActivateCategory = () => {
+    if (typeof window === "undefined" || typeof window.filterListingCategory !== "function") {
+      return;
+    }
+    window.activateCategory = function (category) {
+      // Remove any previously active category chips
+      document
+        .querySelectorAll(".quarto-listing-category .category.active")
+        .forEach((el) => el.classList.remove("active"));
+
+      const safeCategory =
+        typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
+      const selector = `.quarto-listing-category .category[data-category='${safeCategory}']`;
+      const categoryEl = document.querySelector(selector);
+      if (categoryEl) {
+        categoryEl.classList.add("active");
+      }
+      window.filterListingCategory(category);
+    };
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", patchActivateCategory);
+  } else {
+    patchActivateCategory();
+  }
+})();
+</script>
 
 
 </head>
@@ -216,8 +247,8 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 <li><p>Class 7: Economic Development Incentives [<a href="https://hhadah.github.io/urban-econ/slides/03-week3/02-class/01-class01.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/03-week3/02-class/01-class01.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 8: Introduction to Economics of Crime [<a href="https://hhadah.github.io/urban-econ/slides/04-week4/02-class/crime-intro.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/04-week4/02-class/crime-intro.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 9: Explanation of Common Terminology in Causal Studies in (Urban) Economics [<a href="https://hhadah.github.io/urban-econ/slides/04-week4/03-class/causal-term.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/04-week4/03-class/causal-term.pdf"><strong>.pdf</strong></a>]</p></li>
-<li><p>Class 11: Effect of Police on Crime [<a href="https://hhadah.github.io/urban-econ/slides/05-week5/02-class/02-class2.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/05-week5/02-class/02-class2.pdf"><strong>.pdf</strong></a>]</p></li>
-<li><p>Class 12: Effect of Economic Circumstances on Crime [<a href="https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.pdf"><strong>.pdf</strong></a>]</p></li>
+<li><p>Class 10: Effect of Police on Crime [<a href="https://hhadah.github.io/urban-econ/slides/05-week5/02-class/02-class2.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/05-week5/02-class/02-class2.pdf"><strong>.pdf</strong></a>]</p></li>
+<li><p>Class 11: Effect of Economic Circumstances on Crime [<a href="https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 12: Crime and Gender-Based Violence [<a href="https://hhadah.github.io/urban-econ/slides/06-week6/01-class//gender-based-violence.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/06-week6/01-class//gender-based-violence.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 13: Introduction to the Economics of Discrimination [<a href="https://hhadah.github.io/urban-econ/slides/06-week6/02-class/UrbanEconomicsIntrotoDiscrimination.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 14: Racial Bias in the Criminal Justice System [<a href="https://hhadah.github.io/urban-econ/slides/06-week6/03-class/racial-bias.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/06-week6/03-class/racial-bias.pdf"><strong>.pdf</strong></a>]</p></li>
@@ -225,15 +256,15 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 <li><p>Class 16: Racial Bias in Policing II [<a href="https://hhadah.github.io/urban-econ/slides/08-week8/01-class/racial-bias-w.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/08-week8/01-class/racial-bias-w.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 17: Criminal Justice and the Labor Market [<a href="https://hhadah.github.io/urban-econ/slides/09-week9/01-class/incarceration-ban-box.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/09-week9/01-class/incarceration-ban-box.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 18: Housing Subsidies [<a href="https://hhadah.github.io/urban-econ/slides/09-week9/03-class/01-housing.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/09-week9/03-class/01-housing.pdf"><strong>.pdf</strong></a>]</p></li>
-<li><p>Class 18: Housing Policies I [<a href="https://hhadah.github.io/urban-econ/slides/10-week10/03-class/19-HousingPoliciesMetcalfSlides.pdf"><strong>.pdf</strong></a>]</p></li>
+<li><p>Class 19: Housing Policies I [<a href="https://hhadah.github.io/urban-econ/slides/10-week10/03-class/19-HousingPoliciesMetcalfSlides.pdf"><strong>.pdf</strong></a>]</p></li>
+<li><p>Class 20: Housing Policies II [<a href="https://hhadah.github.io/urban-econ/slides/11-week11/03-class/03-housing.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/11-week11/03-class/03-housing.pdf"><strong>.pdf</strong></a>]</p></li>
+<li><p>Class 21: Neighborhood Effects [<a href="https://hhadah.github.io/urban-econ/slides/12-week12/01-class/01-class.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/12-week12/01-class/01-class.pdf"><strong>.pdf</strong></a>]</p></li>
+<li><p>Class 22: Rent Control [<a href="https://hhadah.github.io/urban-econ/slides/12-week12/02-class/rent-control.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/12-week12/02-class/rent-control.pdf"><strong>.pdf</strong></a>]</p></li>
+<li><p>Class 23: Family Options Study [<a href="https://hhadah.github.io/urban-econ/slides/12-week12/03-class/Family-Options-Study-Presentation-Slides.pdf"><strong>.pdf</strong></a>]</p></li>
+<li><p>Class 24: The Flint Water Crisis and Neighborhood Based Interventions [<a href="https://hhadah.github.io/urban-econ/slides/13-week13/01-class/01-class.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/13-week13/01-class/01-class.pdf"><strong>.pdf</strong></a>]</p></li>
+<li><p>Class 25: Urban Sprawl and Land-Use Controls [<a href="https://hhadah.github.io/urban-econ/slides/14-week14/01-class/01-class.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/14-week14/01-class/01-class.pdf"><strong>.pdf</strong></a>]</p></li>
+<li><p>Class 26: Negative Externalities Activity [<a href="https://hhadah.github.io/urban-econ/slides/15-week15/in-class.html"><strong>.html</strong></a>]</p></li>
 </ol>
-<!--
-20. Class 19:  Housing Policies II \[[**.html**](https://hhadah.github.io/urban-econ/slides/11-housing/03-lecture3/03-housing.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/03-lecture3/03-housing.pdf)\]
-
-21. Class 20:  Neighborhood Effects \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/04-lecture4/21-NeighborhoodEffectsMovingtoOpportunity.pdf)\]
-
-22. Class 21:  Rent Control \[[**.html**](https://hhadah.github.io/urban-econ/slides/11-housing/05-rent-control/rent-control.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/11-housing/05-rent-control/rent-control.pdf)\]
--->
 
 
 </section>

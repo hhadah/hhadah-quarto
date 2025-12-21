@@ -145,6 +145,37 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
       }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<script>
+// Quarto 1.5 listing category selector fix (upstream bug missing closing bracket)
+(function () {
+  const patchActivateCategory = () => {
+    if (typeof window === "undefined" || typeof window.filterListingCategory !== "function") {
+      return;
+    }
+    window.activateCategory = function (category) {
+      // Remove any previously active category chips
+      document
+        .querySelectorAll(".quarto-listing-category .category.active")
+        .forEach((el) => el.classList.remove("active"));
+
+      const safeCategory =
+        typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
+      const selector = `.quarto-listing-category .category[data-category='${safeCategory}']`;
+      const categoryEl = document.querySelector(selector);
+      if (categoryEl) {
+        categoryEl.classList.add("active");
+      }
+      window.filterListingCategory(category);
+    };
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", patchActivateCategory);
+  } else {
+    patchActivateCategory();
+  }
+})();
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
@@ -290,7 +321,7 @@ window.Quarto = {
   <li><a href="#works-in-progress" id="toc-works-in-progress" class="nav-link" data-scroll-target="#works-in-progress">Works in Progress</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Add Health dataset">Add Health dataset <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Bias">Bias <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Democracy">Democracy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Dictatorships">Dictatorships <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Difference-in-differences">Difference-in-differences <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Discrimination">Discrimination <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Ethnic favoritism">Ethnic favoritism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ethnicity">Ethnicity <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Firearm Suicides">Firearm Suicides <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Immigration enforcement">Immigration enforcement <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Institutions">Institutions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Instrumental variable">Instrumental variable <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Mental Health">Mental Health <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Peer effects">Peer effects <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Policy Evaluation">Policy Evaluation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Race">Race <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Secure Communities">Secure Communities <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Social network">Social network <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Suicide">Suicide <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Suicides">Suicides <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Waiting Periods">Waiting Periods <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Add Health dataset">Add Health dataset <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Bias">Bias <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Democracy">Democracy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Dictatorships">Dictatorships <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Difference-in-differences">Difference-in-differences <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Discrimination">Discrimination <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Ethnic favoritism">Ethnic favoritism <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ethnicity">Ethnicity <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Firearm Suicides">Firearm Suicides <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Immigration enforcement">Immigration enforcement <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Institutions">Institutions <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Instrumental variable">Instrumental variable <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Mental Health">Mental Health <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Peer effects">Peer effects <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Policy Evaluation">Policy Evaluation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Race">Race <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Secure Communities">Secure Communities <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Social network">Social network <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Suicides">Suicides <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Waiting Periods">Waiting Periods <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -303,7 +334,7 @@ window.Quarto = {
 <div class="research project-list">
 <ul class="list">
     
-        <li class="project" data-index="0" data-categories="Ethnicity,Bias,Discrimination" data-listing-date-sort="1755925200000" data-listing-file-modified-sort="1760651181570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="207">
+        <li class="project" data-index="0" data-categories="Ethnicity,Bias,Discrimination" data-listing-date-sort="1755928800000" data-listing-file-modified-sort="1760651181570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="207">
             <div class="project-content listing-pub-info">
                 <p><strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names on Educational and Labor Market Outcomes,” <em>Journal of Economics, Race, and Policy</em> (2025), doi: <a href="https://doi.org/10.1007/s41996-025-00177-3"><code>https://doi.org/10.1007/s41996-025-00177-3</code></a></p>
             </div>
@@ -375,7 +406,7 @@ window.Quarto = {
             </div>
         </li>
         
-        <li class="project" data-index="1" data-categories="Ethnicity,Bias,Discrimination" data-listing-date-sort="1733724000000" data-listing-file-modified-sort="1760651181569" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="326">
+        <li class="project" data-index="1" data-categories="Ethnicity,Bias,Discrimination" data-listing-date-sort="1733727600000" data-listing-file-modified-sort="1760651181569" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="326">
             <div class="project-content listing-pub-info">
                 <p><strong>Hussain Hadah</strong>, “The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S." <em>Southern Economic Journal</em> (2024), doi: <a href="https://doi.org/10.1002/soej.12749"><code>https://doi.org/10.1002/soej.12749</code></a></p>
             </div>
@@ -433,6 +464,7 @@ window.Quarto = {
         
 </ul>
 </div>
+
 <div class="listing-no-matching d-none">
 No matching items
 </div>
@@ -444,7 +476,7 @@ No matching items
 <div class="research project-list">
 <ul class="list">
     
-        <li class="project" data-index="0" data-categories="Ethnicity,Race,Bias,Discrimination" data-listing-file-modified-sort="1760651181571" data-listing-reading-time-sort="1" data-listing-word-count-sort="169">
+        <li class="project" data-index="0" data-categories="Ethnicity,Race,Bias,Discrimination" data-listing-file-modified-sort="1765380404599" data-listing-reading-time-sort="2" data-listing-word-count-sort="251">
             <div class="project-content listing-pub-info">
                 <p><strong>Hussain Hadah</strong>, “The Effect of Anti-Asian Attitudes on Asian Identity in the U.S." <em>Revise and Resubmit at the Journal of Policy Analysis and Management</em></p>
             </div>
@@ -496,7 +528,7 @@ No matching items
             </div>
         </li>
         
-        <li class="project" data-index="1" data-categories="Waiting Periods,Suicides,Firearm Suicides,Policy Evaluation,Mental Health" data-listing-file-modified-sort="1760651181690" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
+        <li class="project" data-index="1" data-categories="Waiting Periods,Suicides,Firearm Suicides,Policy Evaluation,Mental Health,Difference-in-differences" data-listing-file-modified-sort="1766358786892" data-listing-reading-time-sort="2" data-listing-word-count-sort="377">
             <div class="project-content listing-pub-info">
                 <p><strong>Hussain Hadah</strong> and Gael Compta, "The Effects of Waiting Periods on Firearm Suicides in the U.S."</p>
             </div>
@@ -522,6 +554,10 @@ No matching items
                     
                     <div class="project-category"><a href="#category=Mental Health">
                             Mental Health
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Difference-in-differences">
+                            Difference-in-differences
                         </a></div>
                     
             </div>
@@ -552,9 +588,9 @@ No matching items
             </div>
         </li>
         
-        <li class="project" data-index="2" data-categories="Immigration enforcement,Secure Communities,Difference-in-differences,Policy Evaluation,Ethnicity" data-listing-file-modified-sort="1761676562992" data-listing-reading-time-sort="2" data-listing-word-count-sort="261">
+        <li class="project" data-index="2" data-categories="Immigration enforcement,Secure Communities,Difference-in-differences,Policy Evaluation,Ethnicity" data-listing-file-modified-sort="1765767786742" data-listing-reading-time-sort="2" data-listing-word-count-sort="288">
             <div class="project-content listing-pub-info">
-                <p>Augustine Denteh and <strong>Hussain Hadah</strong>, "Immigration Enforcement and Hispanic Children Outcomes"</p>
+                <p>Augustine Denteh and <strong>Hussain Hadah</strong>, "Immigration Enforcement and Children's Hispanic Identity"</p>
             </div>
 
             
@@ -594,11 +630,21 @@ No matching items
                         </a>
                     </li>
                     
+                        
+                    <li class="project-link">
+                        
+                        <a href="../research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf">
+                        
+                            <i class="fa-solid fa-file-pdf"></i> Preprint
+                        </a>
+                    </li>
+                        
+                    
                 </ul>
             </div>
         </li>
         
-        <li class="project" data-index="3" data-categories="Ethnic favoritism,Dictatorships,Democracy,Institutions" data-listing-file-modified-sort="1760651181699" data-listing-reading-time-sort="1" data-listing-word-count-sort="154">
+        <li class="project" data-index="3" data-categories="Ethnic favoritism,Dictatorships,Democracy,Institutions,Difference-in-differences" data-listing-file-modified-sort="1766358804863" data-listing-reading-time-sort="1" data-listing-word-count-sort="154">
             <div class="project-content listing-pub-info">
                 <p><strong>Hussain Hadah</strong> and Bariş Alan, “Democracy and Ethnic Favoritism: Evidence from Africa,” <em>Under Review</em></p>
             </div>
@@ -620,6 +666,10 @@ No matching items
                     
                     <div class="project-category"><a href="#category=Institutions">
                             Institutions
+                        </a></div>
+                    
+                    <div class="project-category"><a href="#category=Difference-in-differences">
+                            Difference-in-differences
                         </a></div>
                     
             </div>
@@ -726,7 +776,7 @@ No matching items
             </div>
         </li>
         
-        <li class="project" data-index="5" data-categories="Immigration enforcement,Secure Communities,Suicide,Difference-in-differences,Policy Evaluation,Mental Health,Ethnicity" data-listing-file-modified-sort="1761354141668" data-listing-reading-time-sort="2" data-listing-word-count-sort="316">
+        <li class="project" data-index="5" data-categories="Immigration enforcement,Secure Communities,Suicides,Difference-in-differences,Policy Evaluation,Mental Health,Ethnicity" data-listing-file-modified-sort="1766358336641" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
             <div class="project-content listing-pub-info">
                 <p><strong>Hussain Hadah</strong>, "Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates"</p>
             </div>
@@ -742,8 +792,8 @@ No matching items
                             Secure Communities
                         </a></div>
                     
-                    <div class="project-category"><a href="#category=Suicide">
-                            Suicide
+                    <div class="project-category"><a href="#category=Suicides">
+                            Suicides
                         </a></div>
                     
                     <div class="project-category"><a href="#category=Difference-in-differences">
@@ -779,9 +829,9 @@ No matching items
                         
                     <li class="project-link">
                         
-                        <a href="https://hhadah.github.io/sc-and-hispanic-children-suicide/my_paper/sc_and_hispanic_children_suicide.pdf">
+                        <a href="https://dx.doi.org/10.2139/ssrn.5886942">
                         
-                            <i class="fa-solid fa-file-pdf"></i> Preprint
+                            <i class="fa-solid fa-file-pdf"></i> Preprint (SSRN)
                         </a>
                     </li>
                         
@@ -792,6 +842,7 @@ No matching items
         
 </ul>
 </div>
+
 <div class="listing-no-matching d-none">
 No matching items
 </div>
@@ -802,18 +853,18 @@ No matching items
 <!-- :::{#works-in-progress}
 ::: -->
 <ul class="list-group" style="margin-bottom: 15px;"><li class="list-group-item" style="border-bottom: none; padding-bottom: 0;"></li><li class="list-group-item"><b>Hussain Hadah</b>. "Endogenous Hispanic Identity and Ethnic Gaps in the U.S."<br></li></ul>
-<ul class="list-group" style="margin-bottom: 15px;"><li class="list-group-item" style="border-bottom: none; padding-bottom: 0;"></li><li class="list-group-item">Patrick Button, <b>Hussain Hadah</b>, David Schwegman, Javiera Selman, Tran Nguyen-Phuong, and Cathy Balfe. "Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment."<br></li><li class="list-group-item" style="border-top: none; font-size: smaller; padding-top: 0;"><ul>
+<ul class="list-group" style="margin-bottom: 15px;"><li class="list-group-item" style="border-bottom: none; padding-bottom: 0;"></li><li class="list-group-item">Patrick Button, <b>Hussain Hadah</b>, Javiera Selman, Tran Nguyen-Phuong, and Cathy Balfe. "Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment."<br></li><li class="list-group-item" style="border-top: none; font-size: smaller; padding-top: 0;"><ul>
 <li><em>Related: See <a href="https://journals.sagepub.com/doi/full/10.1177/1525822X211057623">Balfe et al. (2022)</a> for the pilot study.</em></li>
 <li><em>Note: The experiment is in the field.</em></li>
 </ul></li></ul>
 <ul class="list-group" style="margin-bottom: 15px;"><li class="list-group-item" style="border-bottom: none; padding-bottom: 0;"></li><li class="list-group-item">Patrick Button, <b>Hussain Hadah</b>, Douglas Harris, and Barbara Lundebjerg. "Parent’s Choice or School’s Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools."<br></li><li class="list-group-item" style="border-top: none; font-size: smaller; padding-top: 0;"><ul>
-<li><em>Note: we will be estimating discrimination based on race and ethnicity (White, Black, Hispanic), sexual orientation, gender identity, disability (student has an IEP), and religion (Christian, Jewish, Muslim). We are finalizing the experimental design and will be running a pilot study in Fall 2025.</em></li>
+<li><em>Note: we will be estimating discrimination based on race and ethnicity (White, Black, Hispanic, Arab), sexual orientation, gender identity, and disability (student has an IEP). The experiment is in the field.</em></li>
 <li><em>Grant: We received a $140,746.6 grant from  J-PAL Social Policy Research Initiative / Racial Equity Special Topic RFP.</em> </li>
 <li><em>You can find a link to a Russell Sage Foundation letter of interest using this <a href="https://hhadah.github.io/statements/EducationAudit-LOI-RST-Final.pdf">link</a>.</em></li>
 <li><em>You can find a link to the slides presented at J-PAL <a href="https://hhadah.github.io/jpal-presentation/hadah-jpal-presentation.html">here</a>.</em></li>
 </ul></li></ul>
 <ul class="list-group" style="margin-bottom: 15px;"><li class="list-group-item" style="border-bottom: none; padding-bottom: 0;"></li><li class="list-group-item">Patrick Button, Clare Daniel, <b>Hussain Hadah</b>, Julie Hernandez, Mirya Holman, and Anna Mahoney. "Auditing Crisis Pregnancy Centers: Racial biases, misinformation, and the misallocation government resources."<br></li><li class="list-group-item" style="border-top: none; font-size: smaller; padding-top: 0;"><ul>
-<li><em>Note: We are currently working on the experimental design and expect to run the experiment in 2025.</em></li>
+<li><em>Note: We are currently working on the experimental design and expect to run the experiment in 2026.</em></li>
 </ul></li></ul>
 <ul class="list-group" style="margin-bottom: 15px;"><li class="list-group-item" style="border-bottom: none; padding-bottom: 0;"></li><li class="list-group-item">Augustine Denteh and <b>Hussain Hadah</b>. "Assimilation of Hispanics and Arabs in America."<br></li></ul>
 <!-- ## Book chapters
