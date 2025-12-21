@@ -2,8 +2,7 @@
 <div class="research project-list">
 <ul class="list">
     <% for (const item of items) { %>
-        <% const categoryData = item.categories ? ' data-category="' + item.categories.join(' ') + '"' : ''; %>
-        <li class="project"<%=metadataAttrs(item) %><%- categoryData %> data-listing-type="project">
+        <li class="project" <%=metadataAttrs(item) %>>
             <div class="project-content listing-pub-info">
                 <p><%= item['pub-info'].reference %></p>
             </div>
