@@ -9,7 +9,7 @@ author:
 categories: 
   - Immigration enforcement
   - Secure Communities
-  - Suicide
+  - Suicides
   - Difference-in-differences
   - Policy Evaluation
   - Mental Health
@@ -20,6 +20,11 @@ pub-info:
   links:
     - name: Preprint
       url: https://hhadah.github.io/sc-hispanic-adult-suicide/my_paper/sc_and_hispanic_children_suicide.pdf
+      icon: fa-solid fa-file-pdf
+      local: false
+  links:
+    - name: SSRN
+      url: https://dx.doi.org/10.2139/ssrn.5886942
       icon: fa-solid fa-file-pdf
       local: false
   extra: >-
