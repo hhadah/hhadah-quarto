@@ -18,11 +18,6 @@ pub-info:
   reference: >-
     <strong>Hussain Hadah</strong>, "Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates"</em>
   links:
-    - name: PDF
-      url: https://hhadah.github.io/sc-hispanic-adult-suicide/my_paper/sc_and_hispanic_children_suicide.pdf
-      icon: fa-solid fa-file-pdf
-      local: false
-  links:
     - name: Preprint (SSRN)
       url: https://dx.doi.org/10.2139/ssrn.5886942
       icon: fa-solid fa-file-pdf
