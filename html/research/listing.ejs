@@ -1,25 +1,8 @@
 ```{=html}
 <div class="research project-list">
-<div class="listing-filters" style="margin-bottom: 20px;">
-  <div class="filter-group">
-    <button class="filter-btn active" data-filter="" style="margin-right: 8px; padding: 6px 12px; border: 1px solid #ddd; border-radius: 4px; background: #f8f9fa; cursor: pointer;">All</button>
-    <% const allCats = new Set(); %>
-    <% for (const item of items) { %>
-      <% if (item.categories) { %>
-        <% for (const cat of item.categories) { %>
-          <% allCats.add(cat); %>
-        <% } %>
-      <% } %>
-    <% } %>
-    <% for (const cat of Array.from(allCats).sort()) { %>
-      <button class="filter-btn" data-filter="<%= cat %>" style="margin-right: 8px; padding: 6px 12px; border: 1px solid #ddd; border-radius: 4px; cursor: pointer;"><%= cat %></button>
-    <% } %>
-  </div>
-</div>
 <ul class="list">
     <% for (const item of items) { %>
-        <% const cats = item.categories ? item.categories.join(' ') : ''; %>
-        <li class="project listing-item" <%=metadataAttrs(item) %> data-categories="<%= cats %>" style="display: block;">
+        <li class="project" <%=metadataAttrs(item) %>>
             <div class="project-content listing-pub-info">
                 <p><%= item['pub-info'].reference %></p>
             </div>
@@ -70,30 +53,4 @@
 </ul>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const listItems = document.querySelectorAll('.listing-item');
-  
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-      const selectedFilter = this.getAttribute('data-filter');
-      
-      // Update active button
-      filterBtns.forEach(b => b.style.background = '');
-      this.style.background = '#e0e0e0';
-      
-      // Filter items
-      listItems.forEach(item => {
-        const categories = item.getAttribute('data-categories') || '';
-        if (selectedFilter === '' || categories.includes(selectedFilter)) {
-          item.style.display = 'block';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    });
-  });
-});
-</script>
 ```
