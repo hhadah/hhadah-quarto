@@ -1,66 +1,73 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <script>
-// Keep listing category filtering working even if Quarto's built-in script fails (e.g., different build environments)
+// Robust category filtering that works even if Quarto's list JS fails or isn't loaded
 (function () {
-  const safeAttr = (category) =>
-    typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
+  const parseCategoryList = (str = "") =>
+    str
+      .split(",")
+      .map((c) => c.trim())
+      .filter(Boolean);
+
+  const items = () => Array.from(document.querySelectorAll(".quarto-listing .list > li.project"));
 
   const setActiveChip = (category) => {
-    document
-      .querySelectorAll(".quarto-listing-category .category.active")
-      .forEach((el) => el.classList.remove("active"));
-
-    const selector = `.quarto-listing-category .category[data-category='${safeAttr(category)}']`;
-    const chip = document.querySelector(selector);
+    const safeCategory =
+      typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
+    document.querySelectorAll(".quarto-listing-category .category.active").forEach((el) => {
+      el.classList.remove("active");
+    });
+    const chip = document.querySelector(
+      `.quarto-listing-category .category[data-category='${safeCategory}']`
+    );
     if (chip) chip.classList.add("active");
   };
 
-  // Use Quarto's filterListingCategory when available; fall back to direct filtering otherwise
-  const filterListings = (category) => {
-    const cat = category || "";
-
-    if (typeof window.filterListingCategory === "function") {
-      try {
-        window.filterListingCategory(cat);
-        return;
-      } catch (err) {
-        console.warn("Quarto listing filter failed, using fallback.", err);
-      }
-    }
-
-    // Try to filter via list.js instances if Quarto didn't wire things up
-    const listingRegistry = window["quarto-listings"];
-    if (listingRegistry && typeof listingRegistry === "object") {
-      Object.values(listingRegistry).forEach((list) => {
-        if (!list) return;
-        if (!cat) {
-          list.filter();
-          return;
-        }
-        list.filter((item) => {
-          const raw = (item?.values()?.categories || "").toString();
-          const cats = raw.split(",").map((c) => c.trim()).filter(Boolean);
-          return cats.includes(cat);
-        });
+  const showNoMatchMessages = () => {
+    document.querySelectorAll(".quarto-listing").forEach((listing) => {
+      const anyVisible = Array.from(listing.querySelectorAll(".list > li.project")).some(
+        (item) => !item.classList.contains("d-none")
+      );
+      listing.querySelectorAll(".listing-no-matching").forEach((msg) => {
+        msg.classList.toggle("d-none", anyVisible);
       });
-      return;
-    }
+    });
+  };
 
-    // Last-resort DOM filter if the list registry isn't present
-    document.querySelectorAll(".quarto-listing .list .project").forEach((item) => {
-      const cats = (item.dataset.categories || "")
-        .split(",")
-        .map((c) => c.trim())
-        .filter(Boolean);
+  const hideViaListJs = (category) => {
+    const registry = window["quarto-listings"];
+    if (!registry || typeof registry !== "object") return false;
+    const cat = category || "";
+    Object.values(registry).forEach((list) => {
+      if (!list) return;
+      if (!cat) {
+        list.filter();
+        return;
+      }
+      list.filter((item) => {
+        const cats = parseCategoryList(item?.values()?.categories || "");
+        return cats.includes(cat);
+      });
+    });
+    return true;
+  };
+
+  const domFilter = (category) => {
+    const cat = category || "";
+    items().forEach((item) => {
+      const cats = parseCategoryList(item.dataset.categories || "");
       const show = !cat || cats.includes(cat);
       item.classList.toggle("d-none", !show);
     });
+    showNoMatchMessages();
   };
 
   const applyCategory = (category) => {
     const cat = category || "";
     setActiveChip(cat);
-    filterListings(cat);
+    // Try list.js-backed filtering first; if unavailable, fall back to DOM toggling
+    if (!hideViaListJs(cat)) {
+      domFilter(cat);
+    }
   };
 
   const categoryFromHash = () => {
@@ -77,7 +84,7 @@
   const handleHashChange = () => applyCategory(categoryFromHash());
 
   const wireCategoryLinks = () => {
-    // Inline category badges in listings
+    // Inline badges
     document.querySelectorAll(".project-category a[href^='#category=']").forEach((link) => {
       link.addEventListener("click", (event) => {
         event.preventDefault();
@@ -88,7 +95,7 @@
       });
     });
 
-    // Category chips in the margin sidebar
+    // Sidebar chips
     document.querySelectorAll(".quarto-listing-category .category").forEach((chip) => {
       chip.addEventListener("click", () => {
         const cat = chip.getAttribute("data-category") || "";
@@ -99,11 +106,16 @@
   };
 
   const init = () => {
+    if (!items().length) return;
     wireCategoryLinks();
     handleHashChange();
   };
 
-  // Re-run our filter whenever Quarto finishes wiring listings
+  // Override Quarto hooks so any upstream calls use the resilient filter
+  window.activateCategory = applyCategory;
+  window.filterListingCategory = applyCategory;
+
+  // When Quarto finishes wiring listings, re-apply the filter
   const originalLoaded = window["quarto-listing-loaded"];
   window["quarto-listing-loaded"] = () => {
     if (typeof originalLoaded === "function") {
@@ -112,11 +124,7 @@
     handleHashChange();
   };
 
-  // Override activateCategory so that any Quarto calls hit our resilient path
-  window.activateCategory = applyCategory;
-
   window.addEventListener("hashchange", handleHashChange);
-
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {

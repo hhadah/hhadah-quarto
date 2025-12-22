@@ -1,4 +1,4 @@
 - source: project
   netlify:
     - id: f6d41ea3-c916-4e73-9d8f-42de890d0410
-      url: 'https://hussainhadah.com'
+      url: https://hussainhadah.com
