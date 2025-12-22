@@ -86,6 +86,37 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
       }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<script>
+// Quarto 1.5 listing category selector fix (upstream bug missing closing bracket)
+(function () {
+  const patchActivateCategory = () => {
+    if (typeof window === "undefined" || typeof window.filterListingCategory !== "function") {
+      return;
+    }
+    window.activateCategory = function (category) {
+      // Remove any previously active category chips
+      document
+        .querySelectorAll(".quarto-listing-category .category.active")
+        .forEach((el) => el.classList.remove("active"));
+
+      const safeCategory =
+        typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
+      const selector = `.quarto-listing-category .category[data-category='${safeCategory}']`;
+      const categoryEl = document.querySelector(selector);
+      if (categoryEl) {
+        categoryEl.classList.add("active");
+      }
+      window.filterListingCategory(category);
+    };
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", patchActivateCategory);
+  } else {
+    patchActivateCategory();
+  }
+})();
+</script>
 
 
 </head>
@@ -294,7 +325,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/hussainhadah\.com");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

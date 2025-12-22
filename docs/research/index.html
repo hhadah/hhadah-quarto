@@ -34,7 +34,38 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../">
 <link href="../img/favicon.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js?v=catfix1"></script>
+<script>
+// Quarto listing category selector fix (patches broken selector in upstream 1.5.x)
+(function () {
+  const patchActivateCategory = () => {
+    if (typeof window === "undefined" || typeof window.filterListingCategory !== "function") {
+      return;
+    }
+    window.activateCategory = function (category) {
+      // Clear any previous selection
+      document
+        .querySelectorAll(".quarto-listing-category .category.active")
+        .forEach((el) => el.classList.remove("active"));
+
+      const safeCategory =
+        typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
+      const selector = `.quarto-listing-category .category[data-category='${safeCategory}']`;
+      const categoryEl = document.querySelector(selector);
+      if (categoryEl) {
+        categoryEl.classList.add("active");
+      }
+      window.filterListingCategory(category);
+    };
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", patchActivateCategory);
+  } else {
+    patchActivateCategory();
+  }
+})();
+</script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
