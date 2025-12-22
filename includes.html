@@ -1,32 +1,126 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 <script>
-// Quarto 1.5 listing category selector fix (upstream bug missing closing bracket)
+// Keep listing category filtering working even if Quarto's built-in script fails (e.g., different build environments)
 (function () {
-  const patchActivateCategory = () => {
-    if (typeof window === "undefined" || typeof window.filterListingCategory !== "function") {
-      return;
-    }
-    window.activateCategory = function (category) {
-      // Remove any previously active category chips
-      document
-        .querySelectorAll(".quarto-listing-category .category.active")
-        .forEach((el) => el.classList.remove("active"));
+  const safeAttr = (category) =>
+    typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
 
-      const safeCategory =
-        typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
-      const selector = `.quarto-listing-category .category[data-category='${safeCategory}']`;
-      const categoryEl = document.querySelector(selector);
-      if (categoryEl) {
-        categoryEl.classList.add("active");
-      }
-      window.filterListingCategory(category);
-    };
+  const setActiveChip = (category) => {
+    document
+      .querySelectorAll(".quarto-listing-category .category.active")
+      .forEach((el) => el.classList.remove("active"));
+
+    const selector = `.quarto-listing-category .category[data-category='${safeAttr(category)}']`;
+    const chip = document.querySelector(selector);
+    if (chip) chip.classList.add("active");
   };
 
+  // Use Quarto's filterListingCategory when available; fall back to direct filtering otherwise
+  const filterListings = (category) => {
+    const cat = category || "";
+
+    if (typeof window.filterListingCategory === "function") {
+      try {
+        window.filterListingCategory(cat);
+        return;
+      } catch (err) {
+        console.warn("Quarto listing filter failed, using fallback.", err);
+      }
+    }
+
+    // Try to filter via list.js instances if Quarto didn't wire things up
+    const listingRegistry = window["quarto-listings"];
+    if (listingRegistry && typeof listingRegistry === "object") {
+      Object.values(listingRegistry).forEach((list) => {
+        if (!list) return;
+        if (!cat) {
+          list.filter();
+          return;
+        }
+        list.filter((item) => {
+          const raw = (item?.values()?.categories || "").toString();
+          const cats = raw.split(",").map((c) => c.trim()).filter(Boolean);
+          return cats.includes(cat);
+        });
+      });
+      return;
+    }
+
+    // Last-resort DOM filter if the list registry isn't present
+    document.querySelectorAll(".quarto-listing .list .project").forEach((item) => {
+      const cats = (item.dataset.categories || "")
+        .split(",")
+        .map((c) => c.trim())
+        .filter(Boolean);
+      const show = !cat || cats.includes(cat);
+      item.classList.toggle("d-none", !show);
+    });
+  };
+
+  const applyCategory = (category) => {
+    const cat = category || "";
+    setActiveChip(cat);
+    filterListings(cat);
+  };
+
+  const categoryFromHash = () => {
+    const match = window.location.hash.match(/category=([^&]*)/);
+    return match ? decodeURIComponent(match[1]) : "";
+  };
+
+  const updateHash = (category) => {
+    const url = new URL(window.location);
+    url.hash = category ? `category=${encodeURIComponent(category)}` : "";
+    window.history.replaceState(null, "", url);
+  };
+
+  const handleHashChange = () => applyCategory(categoryFromHash());
+
+  const wireCategoryLinks = () => {
+    // Inline category badges in listings
+    document.querySelectorAll(".project-category a[href^='#category=']").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        const raw = link.getAttribute("href").split("category=")[1] || "";
+        const cat = decodeURIComponent(raw);
+        updateHash(cat);
+        applyCategory(cat);
+      });
+    });
+
+    // Category chips in the margin sidebar
+    document.querySelectorAll(".quarto-listing-category .category").forEach((chip) => {
+      chip.addEventListener("click", () => {
+        const cat = chip.getAttribute("data-category") || "";
+        updateHash(cat);
+        applyCategory(cat);
+      });
+    });
+  };
+
+  const init = () => {
+    wireCategoryLinks();
+    handleHashChange();
+  };
+
+  // Re-run our filter whenever Quarto finishes wiring listings
+  const originalLoaded = window["quarto-listing-loaded"];
+  window["quarto-listing-loaded"] = () => {
+    if (typeof originalLoaded === "function") {
+      originalLoaded();
+    }
+    handleHashChange();
+  };
+
+  // Override activateCategory so that any Quarto calls hit our resilient path
+  window.activateCategory = applyCategory;
+
+  window.addEventListener("hashchange", handleHashChange);
+
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", patchActivateCategory);
+    document.addEventListener("DOMContentLoaded", init);
   } else {
-    patchActivateCategory();
+    init();
   }
 })();
 </script>
