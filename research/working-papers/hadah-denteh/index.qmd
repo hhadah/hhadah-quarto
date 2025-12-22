@@ -54,13 +54,16 @@ The samples in the figures below include first-, second-, and third-generation H
 
 ![Comparison across sanctuary and non-sanctuary jurisdictions  among all generations of Hispanic immigrant children](plot27-hetby_sanctuary__all.png)
 
-<!-- ## Citation
+## Citation
 
-Hadah, Hussain, The Effect of Anti-Asian Attitudes on Asian Identity in the U.S. (September 24, 2024). Available at https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
+Hadah, Hussain and Denteh, Augustine, Immigration Enforcement and Hispanic Children Outcomes (December 2025). Working paper. Available at http://www.hussainhadah.com/research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf
 
 ```bibtex
-@article{hadah2024hispanicidentity,
-    Author = {Hadah, Hussain},
-    Title = {The Effect of Anti-Asian Attitudes on Asian Identity in the U.S.},
-    Year = {2024}}
-``` -->
+@misc{HadahDenteh2025SC,
+  title        = {Immigration Enforcement and Hispanic Children Outcomes},
+  author       = {Hadah, Hussain and Denteh, Augustine},
+  year         = {2025},
+  month        = dec,
+  note         = {Working paper}
+}
+```

@@ -55,7 +55,7 @@ Suicide is often an impulsive act, and in the United States, nearly one-half of 
 
 Hadah, Hussain, and Gael Compta. The Effects of Waiting Periods on Firearm Suicides in the U.S. Working paper, Tulane University, 2025. Available at https://dx.doi.org/10.2139/ssrn.5383500.
 
-```
+```bibtex
 @misc{HadahCompta2025WaitingPeriods,
   title        = {The Effects of Waiting Periods on Firearm Suicides in the U.S.},
   author       = {Hadah, Hussain and Compta, Gael},
