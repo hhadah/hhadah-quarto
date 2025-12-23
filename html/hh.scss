@@ -418,6 +418,24 @@ pre.text, pre.sourceCode, .cell-output pre {
             padding: 0.25em 0.75em 0.25em 0em;
             font-size: 0.7em;
             text-transform: uppercase;
+
+            a.category-filter {
+                text-decoration: none;
+                color: inherit;
+                cursor: pointer;
+                transition: all 0.2s ease;
+
+                &:hover {
+                    text-decoration: underline;
+                    opacity: 0.7;
+                }
+
+                &.active {
+                    font-weight: bold;
+                    text-decoration: underline;
+                    color: $green;
+                }
+            }
         }
     }
 }

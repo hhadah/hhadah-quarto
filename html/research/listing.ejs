@@ -1,8 +1,9 @@
 ```{=html}
-<div class="research project-list">
+<% const listingId = 'listing-' + Math.random().toString(36).substr(2, 9); %>
+<div class="research project-list" data-listing-id="<%= listingId %>">
 <ul class="list">
     <% for (const item of items) { %>
-        <li class="project" <%=metadataAttrs(item) %>>
+        <li class="project" <%=metadataAttrs(item) %> data-listing-categories="<%= item.categories ? item.categories.join(',') : '' %>">
             <div class="project-content listing-pub-info">
                 <p><%= item['pub-info'].reference %></p>
             </div>
@@ -10,9 +11,9 @@
             <% if(item.categories) { %>
             <div class="project-categories">
                 <% for (const cat of item.categories) { %>
-                    <div class="project-category"><a href="#category=<%= cat %>">
-                            <%= cat %>
-                        </a></div>
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="<%= cat %>" data-listing="<%= listingId %>"><%= cat %></a>
+                    </div>
                     <% } %>
             </div>
             <% } %>
@@ -52,4 +53,70 @@
         <% } %>
 </ul>
 </div>
+
+<script>
+(function() {
+  // Track active filters per listing
+  const activeFilters = {};
+
+  // Add click handlers to all category filter links
+  document.querySelectorAll('.category-filter').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const category = this.getAttribute('data-category');
+      const listingType = this.getAttribute('data-listing');
+
+      // Toggle filter for this listing
+      if (activeFilters[listingType] === category) {
+        // Clear filter if clicking the same category
+        delete activeFilters[listingType];
+        updateListingDisplay(listingType, null);
+      } else {
+        // Set new filter
+        activeFilters[listingType] = category;
+        updateListingDisplay(listingType, category);
+      }
+
+      // Update visual state of category links
+      updateCategoryLinks(listingType, activeFilters[listingType]);
+    });
+  });
+
+  function updateListingDisplay(listingType, category) {
+    const listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
+    if (!listingContainer) return;
+
+    const items = listingContainer.querySelectorAll('.project');
+    items.forEach(function(item) {
+      if (!category) {
+        // Show all items
+        item.style.display = '';
+      } else {
+        // Show only items that have this category
+        const categories = item.getAttribute('data-listing-categories');
+        if (categories && categories.split(',').indexOf(category) !== -1) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      }
+    });
+  }
+
+  function updateCategoryLinks(listingType, activeCategory) {
+    const listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
+    if (!listingContainer) return;
+
+    const links = listingContainer.querySelectorAll('.category-filter[data-listing="' + listingType + '"]');
+    links.forEach(function(link) {
+      const category = link.getAttribute('data-category');
+      if (category === activeCategory) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+})();
+</script>
 ```
