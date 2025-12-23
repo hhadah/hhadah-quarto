@@ -437,7 +437,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="journal-articles">Journal articles</h2>
 <div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
 
-<div class="research project-list" data-listing-id="listing-mltt8n93l">
+<div class="research project-list" data-listing-id="listing-4fp3kczqi">
 <ul class="list">
     
         <li class="project" data-index="0" data-categories="RXRobmljaXR5JTJDQmlhcyUyQ0Rpc2NyaW1pbmF0aW9u" data-listing-date-sort="1755928800000" data-listing-file-modified-sort="1760651181570" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="207" data-listing-categories="Ethnicity,Bias,Discrimination">
@@ -449,15 +449,15 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-mltt8n93l">Ethnicity</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-4fp3kczqi">Ethnicity</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Bias" data-listing="listing-mltt8n93l">Bias</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Bias" data-listing="listing-4fp3kczqi">Bias</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-mltt8n93l">Discrimination</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-4fp3kczqi">Discrimination</a>
                     </div>
                     
             </div>
@@ -521,15 +521,15 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-mltt8n93l">Ethnicity</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-4fp3kczqi">Ethnicity</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Bias" data-listing="listing-mltt8n93l">Bias</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Bias" data-listing="listing-4fp3kczqi">Bias</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-mltt8n93l">Discrimination</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-4fp3kczqi">Discrimination</a>
                     </div>
                     
             </div>
@@ -572,45 +572,47 @@ window.Quarto = {
 </div>
 
 <script>
+// Initialize category filtering - runs once when first listing loads
 (function() {
+  if (window.categoryFilterInitialized) return;
+  window.categoryFilterInitialized = true;
+
   // Track active filters per listing
-  const activeFilters = {};
+  var activeFilters = {};
 
-  // Add click handlers to all category filter links
-  document.querySelectorAll('.category-filter').forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const category = this.getAttribute('data-category');
-      const listingType = this.getAttribute('data-listing');
+  // Initialize when DOM is ready
+  function init() {
+    // Add click handlers to all category filter links
+    document.querySelectorAll('.category-filter').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var category = this.getAttribute('data-category');
+        var listingType = this.getAttribute('data-listing');
 
-      // Toggle filter for this listing
-      if (activeFilters[listingType] === category) {
-        // Clear filter if clicking the same category
-        delete activeFilters[listingType];
-        updateListingDisplay(listingType, null);
-      } else {
-        // Set new filter
-        activeFilters[listingType] = category;
-        updateListingDisplay(listingType, category);
-      }
+        // Toggle filter for this listing
+        if (activeFilters[listingType] === category) {
+          delete activeFilters[listingType];
+          updateListingDisplay(listingType, null);
+        } else {
+          activeFilters[listingType] = category;
+          updateListingDisplay(listingType, category);
+        }
 
-      // Update visual state of category links
-      updateCategoryLinks(listingType, activeFilters[listingType]);
+        updateCategoryLinks(listingType, activeFilters[listingType]);
+      });
     });
-  });
+  }
 
   function updateListingDisplay(listingType, category) {
-    const listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
+    var listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
     if (!listingContainer) return;
 
-    const items = listingContainer.querySelectorAll('.project');
+    var items = listingContainer.querySelectorAll('.project');
     items.forEach(function(item) {
       if (!category) {
-        // Show all items
         item.style.display = '';
       } else {
-        // Show only items that have this category
-        const categories = item.getAttribute('data-listing-categories');
+        var categories = item.getAttribute('data-listing-categories');
         if (categories && categories.split(',').indexOf(category) !== -1) {
           item.style.display = '';
         } else {
@@ -621,18 +623,25 @@ window.Quarto = {
   }
 
   function updateCategoryLinks(listingType, activeCategory) {
-    const listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
+    var listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
     if (!listingContainer) return;
 
-    const links = listingContainer.querySelectorAll('.category-filter[data-listing="' + listingType + '"]');
+    var links = listingContainer.querySelectorAll('.category-filter[data-listing="' + listingType + '"]');
     links.forEach(function(link) {
-      const category = link.getAttribute('data-category');
+      var category = link.getAttribute('data-category');
       if (category === activeCategory) {
         link.classList.add('active');
       } else {
         link.classList.remove('active');
       }
     });
+  }
+
+  // Run initialization
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 })();
 </script>
@@ -643,7 +652,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="working-papers">Working papers</h2>
 <div id="listing-working-papers" class="quarto-listing quarto-listing-container-custom">
 
-<div class="research project-list" data-listing-id="listing-3ubqhyqdc">
+<div class="research project-list" data-listing-id="listing-7t42l14zu">
 <ul class="list">
     
         <li class="project" data-index="0" data-categories="RXRobmljaXR5JTJDUmFjZSUyQ0JpYXMlMkNEaXNjcmltaW5hdGlvbg==" data-listing-file-modified-sort="1765380404599" data-listing-reading-time-sort="2" data-listing-word-count-sort="251" data-listing-categories="Ethnicity,Race,Bias,Discrimination">
@@ -655,19 +664,19 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-3ubqhyqdc">Ethnicity</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-7t42l14zu">Ethnicity</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Race" data-listing="listing-3ubqhyqdc">Race</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Race" data-listing="listing-7t42l14zu">Race</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Bias" data-listing="listing-3ubqhyqdc">Bias</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Bias" data-listing="listing-7t42l14zu">Bias</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-3ubqhyqdc">Discrimination</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-7t42l14zu">Discrimination</a>
                     </div>
                     
             </div>
@@ -707,27 +716,27 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Waiting Periods" data-listing="listing-3ubqhyqdc">Waiting Periods</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Waiting Periods" data-listing="listing-7t42l14zu">Waiting Periods</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Suicides" data-listing="listing-3ubqhyqdc">Suicides</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Suicides" data-listing="listing-7t42l14zu">Suicides</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Firearm Suicides" data-listing="listing-3ubqhyqdc">Firearm Suicides</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Firearm Suicides" data-listing="listing-7t42l14zu">Firearm Suicides</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-3ubqhyqdc">Policy Evaluation</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-7t42l14zu">Policy Evaluation</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Mental Health" data-listing="listing-3ubqhyqdc">Mental Health</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Mental Health" data-listing="listing-7t42l14zu">Mental Health</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-3ubqhyqdc">Difference-in-differences</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-7t42l14zu">Difference-in-differences</a>
                     </div>
                     
             </div>
@@ -767,23 +776,23 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Immigration enforcement" data-listing="listing-3ubqhyqdc">Immigration enforcement</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Immigration enforcement" data-listing="listing-7t42l14zu">Immigration enforcement</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Secure Communities" data-listing="listing-3ubqhyqdc">Secure Communities</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Secure Communities" data-listing="listing-7t42l14zu">Secure Communities</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-3ubqhyqdc">Difference-in-differences</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-7t42l14zu">Difference-in-differences</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-3ubqhyqdc">Policy Evaluation</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-7t42l14zu">Policy Evaluation</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-3ubqhyqdc">Ethnicity</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-7t42l14zu">Ethnicity</a>
                     </div>
                     
             </div>
@@ -823,23 +832,23 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnic favoritism" data-listing="listing-3ubqhyqdc">Ethnic favoritism</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnic favoritism" data-listing="listing-7t42l14zu">Ethnic favoritism</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Dictatorships" data-listing="listing-3ubqhyqdc">Dictatorships</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Dictatorships" data-listing="listing-7t42l14zu">Dictatorships</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Democracy" data-listing="listing-3ubqhyqdc">Democracy</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Democracy" data-listing="listing-7t42l14zu">Democracy</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Institutions" data-listing="listing-3ubqhyqdc">Institutions</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Institutions" data-listing="listing-7t42l14zu">Institutions</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-3ubqhyqdc">Difference-in-differences</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-7t42l14zu">Difference-in-differences</a>
                     </div>
                     
             </div>
@@ -895,19 +904,19 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Social network" data-listing="listing-3ubqhyqdc">Social network</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Social network" data-listing="listing-7t42l14zu">Social network</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Peer effects" data-listing="listing-3ubqhyqdc">Peer effects</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Peer effects" data-listing="listing-7t42l14zu">Peer effects</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Instrumental variable" data-listing="listing-3ubqhyqdc">Instrumental variable</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Instrumental variable" data-listing="listing-7t42l14zu">Instrumental variable</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Add Health dataset" data-listing="listing-3ubqhyqdc">Add Health dataset</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Add Health dataset" data-listing="listing-7t42l14zu">Add Health dataset</a>
                     </div>
                     
             </div>
@@ -955,31 +964,31 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Immigration enforcement" data-listing="listing-3ubqhyqdc">Immigration enforcement</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Immigration enforcement" data-listing="listing-7t42l14zu">Immigration enforcement</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Secure Communities" data-listing="listing-3ubqhyqdc">Secure Communities</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Secure Communities" data-listing="listing-7t42l14zu">Secure Communities</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Suicides" data-listing="listing-3ubqhyqdc">Suicides</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Suicides" data-listing="listing-7t42l14zu">Suicides</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-3ubqhyqdc">Difference-in-differences</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-7t42l14zu">Difference-in-differences</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-3ubqhyqdc">Policy Evaluation</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-7t42l14zu">Policy Evaluation</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Mental Health" data-listing="listing-3ubqhyqdc">Mental Health</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Mental Health" data-listing="listing-7t42l14zu">Mental Health</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-3ubqhyqdc">Ethnicity</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-7t42l14zu">Ethnicity</a>
                     </div>
                     
             </div>
@@ -1014,45 +1023,47 @@ window.Quarto = {
 </div>
 
 <script>
+// Initialize category filtering - runs once when first listing loads
 (function() {
+  if (window.categoryFilterInitialized) return;
+  window.categoryFilterInitialized = true;
+
   // Track active filters per listing
-  const activeFilters = {};
+  var activeFilters = {};
 
-  // Add click handlers to all category filter links
-  document.querySelectorAll('.category-filter').forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const category = this.getAttribute('data-category');
-      const listingType = this.getAttribute('data-listing');
+  // Initialize when DOM is ready
+  function init() {
+    // Add click handlers to all category filter links
+    document.querySelectorAll('.category-filter').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var category = this.getAttribute('data-category');
+        var listingType = this.getAttribute('data-listing');
 
-      // Toggle filter for this listing
-      if (activeFilters[listingType] === category) {
-        // Clear filter if clicking the same category
-        delete activeFilters[listingType];
-        updateListingDisplay(listingType, null);
-      } else {
-        // Set new filter
-        activeFilters[listingType] = category;
-        updateListingDisplay(listingType, category);
-      }
+        // Toggle filter for this listing
+        if (activeFilters[listingType] === category) {
+          delete activeFilters[listingType];
+          updateListingDisplay(listingType, null);
+        } else {
+          activeFilters[listingType] = category;
+          updateListingDisplay(listingType, category);
+        }
 
-      // Update visual state of category links
-      updateCategoryLinks(listingType, activeFilters[listingType]);
+        updateCategoryLinks(listingType, activeFilters[listingType]);
+      });
     });
-  });
+  }
 
   function updateListingDisplay(listingType, category) {
-    const listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
+    var listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
     if (!listingContainer) return;
 
-    const items = listingContainer.querySelectorAll('.project');
+    var items = listingContainer.querySelectorAll('.project');
     items.forEach(function(item) {
       if (!category) {
-        // Show all items
         item.style.display = '';
       } else {
-        // Show only items that have this category
-        const categories = item.getAttribute('data-listing-categories');
+        var categories = item.getAttribute('data-listing-categories');
         if (categories && categories.split(',').indexOf(category) !== -1) {
           item.style.display = '';
         } else {
@@ -1063,18 +1074,25 @@ window.Quarto = {
   }
 
   function updateCategoryLinks(listingType, activeCategory) {
-    const listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
+    var listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
     if (!listingContainer) return;
 
-    const links = listingContainer.querySelectorAll('.category-filter[data-listing="' + listingType + '"]');
+    var links = listingContainer.querySelectorAll('.category-filter[data-listing="' + listingType + '"]');
     links.forEach(function(link) {
-      const category = link.getAttribute('data-category');
+      var category = link.getAttribute('data-category');
       if (category === activeCategory) {
         link.classList.add('active');
       } else {
         link.classList.remove('active');
       }
     });
+  }
+
+  // Run initialization
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 })();
 </script>
@@ -1207,7 +1225,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/hussainhadah\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

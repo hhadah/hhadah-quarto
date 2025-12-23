@@ -55,45 +55,47 @@
 </div>
 
 <script>
+// Initialize category filtering - runs once when first listing loads
 (function() {
+  if (window.categoryFilterInitialized) return;
+  window.categoryFilterInitialized = true;
+
   // Track active filters per listing
-  const activeFilters = {};
+  var activeFilters = {};
 
-  // Add click handlers to all category filter links
-  document.querySelectorAll('.category-filter').forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const category = this.getAttribute('data-category');
-      const listingType = this.getAttribute('data-listing');
+  // Initialize when DOM is ready
+  function init() {
+    // Add click handlers to all category filter links
+    document.querySelectorAll('.category-filter').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var category = this.getAttribute('data-category');
+        var listingType = this.getAttribute('data-listing');
 
-      // Toggle filter for this listing
-      if (activeFilters[listingType] === category) {
-        // Clear filter if clicking the same category
-        delete activeFilters[listingType];
-        updateListingDisplay(listingType, null);
-      } else {
-        // Set new filter
-        activeFilters[listingType] = category;
-        updateListingDisplay(listingType, category);
-      }
+        // Toggle filter for this listing
+        if (activeFilters[listingType] === category) {
+          delete activeFilters[listingType];
+          updateListingDisplay(listingType, null);
+        } else {
+          activeFilters[listingType] = category;
+          updateListingDisplay(listingType, category);
+        }
 
-      // Update visual state of category links
-      updateCategoryLinks(listingType, activeFilters[listingType]);
+        updateCategoryLinks(listingType, activeFilters[listingType]);
+      });
     });
-  });
+  }
 
   function updateListingDisplay(listingType, category) {
-    const listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
+    var listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
     if (!listingContainer) return;
 
-    const items = listingContainer.querySelectorAll('.project');
+    var items = listingContainer.querySelectorAll('.project');
     items.forEach(function(item) {
       if (!category) {
-        // Show all items
         item.style.display = '';
       } else {
-        // Show only items that have this category
-        const categories = item.getAttribute('data-listing-categories');
+        var categories = item.getAttribute('data-listing-categories');
         if (categories && categories.split(',').indexOf(category) !== -1) {
           item.style.display = '';
         } else {
@@ -104,18 +106,25 @@
   }
 
   function updateCategoryLinks(listingType, activeCategory) {
-    const listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
+    var listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
     if (!listingContainer) return;
 
-    const links = listingContainer.querySelectorAll('.category-filter[data-listing="' + listingType + '"]');
+    var links = listingContainer.querySelectorAll('.category-filter[data-listing="' + listingType + '"]');
     links.forEach(function(link) {
-      const category = link.getAttribute('data-category');
+      var category = link.getAttribute('data-category');
       if (category === activeCategory) {
         link.classList.add('active');
       } else {
         link.classList.remove('active');
       }
     });
+  }
+
+  // Run initialization
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 })();
 </script>
