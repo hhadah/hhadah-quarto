@@ -93,16 +93,39 @@
     var items = listingContainer.querySelectorAll('.project');
     items.forEach(function(item) {
       if (!category) {
+        // Show all items
+        item.classList.remove('d-none');
         item.style.display = '';
       } else {
+        // Show only items that have this category
         var categories = item.getAttribute('data-listing-categories');
         if (categories && categories.split(',').indexOf(category) !== -1) {
+          item.classList.remove('d-none');
           item.style.display = '';
         } else {
+          item.classList.add('d-none');
           item.style.display = 'none';
         }
       }
     });
+
+    // Update "no matching items" message
+    updateNoMatchingMessage(listingContainer);
+  }
+
+  function updateNoMatchingMessage(listingContainer) {
+    var anyVisible = Array.from(listingContainer.querySelectorAll('.project')).some(function(item) {
+      return !item.classList.contains('d-none');
+    });
+
+    var noMatchMsg = listingContainer.parentElement.querySelector('.listing-no-matching');
+    if (noMatchMsg) {
+      if (anyVisible) {
+        noMatchMsg.classList.add('d-none');
+      } else {
+        noMatchMsg.classList.remove('d-none');
+      }
+    }
   }
 
   function updateCategoryLinks(listingType, activeCategory) {
