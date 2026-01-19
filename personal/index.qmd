@@ -85,13 +85,6 @@ Houston sports fan and FC Barcelona supporter.
 **Teams:** Astros ⚾ | Rockets 🏀 | Barcelona ⚽ | Texans 🏈
 :::
 
-::: {.g-col-12 .g-col-md-4}
-![Houston Astros](astros.png){.img-fluid style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" group="sports"}
-
-::: {.text-center style="font-size: 0.8em; color: #666; margin-top: 0.3rem;"}
-*World Series Champions*
-:::
-:::
 :::
 
 ---

@@ -402,23 +402,12 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 </div>
 <hr>
 </section>
-<section id="sports-fan" class="level2 page-columns page-full">
+<section id="sports-fan" class="level2">
 <h2 class="anchored" data-anchor-id="sports-fan">🏟️ Sports Fan</h2>
-<div class="grid page-columns page-full">
+<div class="grid">
 <div class="g-col-12 g-col-md-8">
 <p>Houston sports fan and FC Barcelona supporter.</p>
 <p><strong>Teams:</strong> Astros ⚾ | Rockets 🏀 | Barcelona ⚽ | Texans 🏈</p>
-</div>
-<div class="g-col-12 g-col-md-4 page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><a href="astros.png" class="lightbox" data-gallery="sports" title="Houston Astros"><img src="astros.png" class="img-fluid figure-img" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" alt="Houston Astros"></a></p>
-<figcaption class="margin-caption">Houston Astros</figcaption>
-</figure>
-</div>
-<div class="text-center" style="font-size: 0.8em; color: #666; margin-top: 0.3rem;">
-<p><em>World Series Champions</em></p>
-</div>
 </div>
 </div>
 <hr>
@@ -513,7 +502,7 @@ Note
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/hussainhadah\.com");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
