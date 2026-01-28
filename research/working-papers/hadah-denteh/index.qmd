@@ -1,5 +1,5 @@
 ---
-title: "Immigration Enforcement and Hispanic Children Outcomes"
+title: "Immigration Enforcement and Hispanic Identity"
 # date: 2022-11-15
 author:
   - name: Hussain Hadah
