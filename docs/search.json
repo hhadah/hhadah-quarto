@@ -32,7 +32,7 @@
     "href": "index.html#working-papers",
     "title": "Welcome to my website!",
     "section": "Working Papers",
-    "text": "Working Papers\n\nHadah, H. Peer Effects in Adolescent Mental Health. (preprint)\nHadah, H. The Effect of Anti-Asian Attitudes on Asian Identity in the U.S, Revise and Resubmit at the Journal of Policy Analysis and Management (preprint)\nHadah, H., & Compta, G.* The Effects of Waiting Periods on Firearm Suicides in the U.S. (preprint)\nHadah, H. Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates (preprint)\nDenteh, A., & Hadah, H. Immigration Enforcement and Children’s Hispanic Identity (paper)\n\nSee a preview of the results here"
+    "text": "Working Papers\n\nHadah, H. Peer Effects in Adolescent Mental Health. (preprint)\nHadah, H. The Effect of Anti-Asian Attitudes on Asian Identity in the U.S, Revise and Resubmit at the Journal of Policy Analysis and Management (preprint)\nHadah, H., & Compta, G.* The Effects of Waiting Periods on Firearm Suicides in the U.S. (preprint)\nHadah, H. Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates (preprint)\nDenteh, A., & Hadah, H. Immigration Enforcement and Hispanic Identity (paper)\n\nSee a preview of the results here"
   },
   {
     "objectID": "index.html#research-in-progress",
@@ -86,35 +86,35 @@
   {
     "objectID": "research/working-papers/hadah-denteh/index.html",
     "href": "research/working-papers/hadah-denteh/index.html",
-    "title": "Immigration Enforcement and Hispanic Children Outcomes",
+    "title": "Immigration Enforcement and Hispanic Identity",
     "section": "",
     "text": "Paper"
   },
   {
     "objectID": "research/working-papers/hadah-denteh/index.html#important-links",
     "href": "research/working-papers/hadah-denteh/index.html#important-links",
-    "title": "Immigration Enforcement and Hispanic Children Outcomes",
+    "title": "Immigration Enforcement and Hispanic Identity",
     "section": "",
     "text": "Paper"
   },
   {
     "objectID": "research/working-papers/hadah-denteh/index.html#abstract",
     "href": "research/working-papers/hadah-denteh/index.html#abstract",
-    "title": "Immigration Enforcement and Hispanic Children Outcomes",
+    "title": "Immigration Enforcement and Hispanic Identity",
     "section": "Abstract",
     "text": "Abstract\nEthnic identity is typically treated as an immutable demographic attribute in most economic analysis. Motivated by recent work on ethnic attrition, we estimate the causal effect of immigration enforcement on the self-identification of Hispanic children. Exploiting the staggered rollout of the Secure Communities and imputation difference-in-differences method, we find that enforcement reduces self-reported Hispanic identity. This average effect masks a remarkable divergence by generation. While first- and third-generation immigrants retreat from Hispanic identity, second-generation citizens increase identification. We also find larger reductions among college-educated families and no differential effects by sanctuary city. Our results suggest that ethnic identity is not immune to policy, suggesting that policy evaluations must account for ethnic self-identity to avoid conflating policy effects with compositional changes in the target population."
   },
   {
     "objectID": "research/working-papers/hadah-denteh/index.html#key-figures",
     "href": "research/working-papers/hadah-denteh/index.html#key-figures",
-    "title": "Immigration Enforcement and Hispanic Children Outcomes",
+    "title": "Immigration Enforcement and Hispanic Identity",
     "section": "Key Figures",
     "text": "Key Figures\nThe samples in the figures below include first-, second-, and third-generation Hispanic children that are racially White, ages 17 and below who live in intact families. First-generation Hispanic immigrants are children that were born in a Spanish-speaking country. Native-born second-generation Hispanic immigrants are children with at least one parent born in a Spanish-speaking country. Native-born third-generation Hispanic immigrants are children with native-born parents and at least one grandparent born in a Spanish-speaking country.\n\n\n\nOverall decline in Hispanic self-identification following Secure Communities adoption\n\n\n\n\n\nFirst-generation Hispanic children\n\n\n\n\n\nSecond-generation Hispanic children\n\n\n\n\n\nThird-generation Hispanic children\n\n\n\n\n\nAttrition by parental education among all generations of Hispanic immigrant children\n\n\n\n\n\nComparison across sanctuary and non-sanctuary jurisdictions among all generations of Hispanic immigrant children"
   },
   {
     "objectID": "research/working-papers/hadah-denteh/index.html#citation",
     "href": "research/working-papers/hadah-denteh/index.html#citation",
-    "title": "Immigration Enforcement and Hispanic Children Outcomes",
+    "title": "Immigration Enforcement and Hispanic Identity",
     "section": "Citation",
     "text": "Citation\nHadah, Hussain and Denteh, Augustine, Immigration Enforcement and Hispanic Children Outcomes (December 2025). Working paper. Available at http://www.hussainhadah.com/research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf\n@misc{HadahDenteh2025SC,\n  title        = {Immigration Enforcement and Hispanic Children Outcomes},\n  author       = {Hadah, Hussain and Denteh, Augustine},\n  year         = {2025},\n  month        = dec,\n  note         = {Working paper}\n}"
   },
@@ -298,7 +298,7 @@
     "href": "research/working-papers/hadah-compta/index.html#abstract",
     "title": "The Effects of Waiting Periods on Firearm Suicides in the U.S.",
     "section": "Abstract",
-    "text": "Abstract\nSuicide is often an impulsive act, and in the United States, nearly one-half of suicides involve a firearm, the most lethal and readily available method. In this paper, we use recent developments in difference-in-differences methodology to study the causal effect of waiting-period laws on firearm suicides. We find that waiting periods reduce firearm suicides among men by 1.5 deaths per 100,000 population, an 11% decrease from baseline. For white individuals, we observe a statistically significant reduction of 37.5 deaths per 100,000, a 37% decrease. For adults aged 55 and older, we find a reduction of 25 deaths per 100,000, representing a 40% decrease. For the overall population, we find a statistically significant reduction of 0.92 deaths per 100,000, a 12% decrease from baseline. Crucially, we find no evidence of substitution toward non-firearm suicide methods following waiting period adoption; among men, adults 55 and older, and white individuals, we find significant decreases in non-firearm suicides. We also examine the effects of waiting period repeal and find statistically significant increases in firearm suicides. Back-of-the-envelope calculations suggest waiting periods prevented approximately 3,000 firearm suicide deaths annually, yielding social benefits of roughly $41 billion. Our findings show that even brief delays in firearm access can disrupt the pathway from suicidal ideation to death, suggesting that cooling-off periods may be an important policy tool for suicide prevention."
+    "text": "Abstract\nSuicide is often an impulsive act, and in the United States, nearly one-half of suicides involve a firearm, the most lethal and readily available method. In this paper, we use recent developments in difference-in-differences methodology to study the causal effect of waiting-period laws on firearm suicides. We find that waiting periods reduce firearm suicides among men by 1.5 deaths per 100,000 population, an 11% decrease from baseline. For white individuals, we observe a statistically significant reduction of 14.4 deaths per 100,000, a 37% decrease. For adults aged 55 and older, we find a reduction of 25 deaths per 100,000, representing a 40% decrease. For the overall population, we find a statistically significant reduction of 0.92 deaths per 100,000, a 12% decrease from baseline. Crucially, we find no evidence of substitution toward non-firearm suicide methods following waiting period adoption; among men, adults 55 and older, and white individuals, we find significant decreases in non-firearm suicides. We also examine the effects of waiting period repeal and find statistically significant increases in firearm suicides. Back-of-the-envelope calculations suggest waiting periods prevented approximately 3,000 firearm suicide deaths annually, yielding social benefits of roughly $41 billion. Our findings show that even brief delays in firearm access can disrupt the pathway from suicidal ideation to death, suggesting that cooling-off periods may be an important policy tool for suicide prevention."
   },
   {
     "objectID": "research/working-papers/hadah-compta/index.html#important-figures",
