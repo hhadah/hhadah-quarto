@@ -141,10 +141,10 @@ cpc-project:
     notes: |
         - _Note: We are currently working on the experimental design and expect to run the experiment in 2026._
 secure-communities:
-    title: "Immigration Enforcement and Hispanic Children Outcomes"
+    title: "Immigration Enforcement and Hispanic Identity"
     authors:
-        - Augustine Denteh
         - Hussain Hadah
+        - Augustine Denteh
     year:
     preprint:
     published_url:

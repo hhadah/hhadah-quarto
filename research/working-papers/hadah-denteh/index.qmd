@@ -17,7 +17,7 @@ categories:
   - Ethnicity
 pub-info:
   reference: >-
-    Augustine Denteh and <strong>Hussain Hadah</strong>, "Immigration Enforcement and Children's Hispanic Identity"</em>
+    <strong>Hussain Hadah</strong> and Augustine Denteh, "Immigration Enforcement and Children's Hispanic Identity"</em>
   links:
     - name: Preprint
       url: immigration_enforcement_hispanic.pdf
