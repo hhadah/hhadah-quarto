@@ -133,7 +133,7 @@ Please feel free to contact me if you have questions about my work or would like
   - Related: See Balfe et al. (2022) for the pilot study.
   - Note: Experiment in the field.
   
-- Button, P., Hadah, H., Harris, D., & Lundebjerg, B.\* **Parent's Choice or School's Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools**.
+- Hadah, H., Button, P.,  Harris, D., & Lundebjerg, B.\* **Parent's Choice or School's Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools**.
 
   - _Note: we will be estimating discrimination based on race and ethnicity (White, Black, Hispanic), sexual orientation, gender identity, disability (student has an IEP), and religion (Christian, Jewish, Muslim). We are finalizing the experimental design and will be running a pilot study in Fall 2025._
   - _Grant: We received a $140,746.6 grant from  J-PAL Social Policy Research Initiative / Racial Equity Special Topic RFP._ 
