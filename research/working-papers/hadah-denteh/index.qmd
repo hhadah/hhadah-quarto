@@ -24,7 +24,9 @@ pub-info:
       icon: fa-solid fa-file-pdf
       local: true
 
-  # extra: >-
+  extra: >-
+    Presented at [NBER Economics of Race and Stratification](https://www.youtube.com/live/9j5VG4eZet8?si=H-wQVlJr51r37lvT&t=20353),
+    Spring 2026
       
     
 # doi: https://dx.doi.org/10.2139/ssrn.5383500

@@ -69,10 +69,9 @@ Please feel free to contact me if you have questions about my work or would like
 ::: {.callout-tip icon=false}
 ### Latest Publications & Achievements
 
-- **New Working Paper:** [_"Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates"_](https://dx.doi.org/10.2139/ssrn.5886942) estimates the causal impact of the Secure Communities program on suicide rates among Hispanic individuals in the United States, finding large increase in adult Hispanic suicides.
+- **NBER Presentation:** I presented [_"Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates"_](https://dx.doi.org/10.2139/ssrn.5886942) at the [NBER Economics of Race and Stratification](https://www.youtube.com/live/9j5VG4eZet8?si=H-wQVlJr51r37lvT&t=20353) conference ([watch here](https://www.youtube.com/live/9j5VG4eZet8?si=H-wQVlJr51r37lvT&t=20353)).
 - **$140,746 Grant** from J-PAL Social Policy Research Initiative for school choice discrimination research
 - **Revise & Resubmit** at *Journal of Policy Analysis and Management*: "The Effect of Anti-Asian Attitudes on Asian Identity in the U.S."
-- **Published** in *Journal of Economics, Race, and Policy* (2025): "The Impact of Hispanic Last Names on Educational and Labor Market Outcomes"
 :::
 
 # Interests & Education
