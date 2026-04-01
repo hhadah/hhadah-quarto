@@ -69,7 +69,7 @@ Please feel free to contact me if you have questions about my work or would like
 ::: {.callout-tip icon=false}
 ### Latest Publications & Achievements
 
-- **NBER Presentation:** I presented [_"Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates"_](https://dx.doi.org/10.2139/ssrn.5886942) at the [NBER Economics of Race and Stratification](https://www.youtube.com/live/9j5VG4eZet8?si=H-wQVlJr51r37lvT&t=20353) conference ([watch here](https://www.youtube.com/live/9j5VG4eZet8?si=H-wQVlJr51r37lvT&t=20353)).
+- **NBER Presentation:** I presented [_"Immigration Enforcement and Hispanic Identity"_](https://hussainhadah.com/research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf) at the [NBER Economics of Race and Stratification](https://www.youtube.com/live/9j5VG4eZet8?si=H-wQVlJr51r37lvT&t=20353) conference ([watch here](https://www.youtube.com/live/9j5VG4eZet8?si=H-wQVlJr51r37lvT&t=20353)).
 - **$140,746 Grant** from J-PAL Social Policy Research Initiative for school choice discrimination research
 - **Revise & Resubmit** at *Journal of Policy Analysis and Management*: "The Effect of Anti-Asian Attitudes on Asian Identity in the U.S."
 :::
