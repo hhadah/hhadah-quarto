@@ -140,7 +140,7 @@ Please feel free to contact me if you have questions about my work or would like
   - _Note: we will be estimating discrimination based on race and ethnicity (White, Black, Hispanic), sexual orientation, gender identity, disability (student has an IEP), and religion (Christian, Jewish, Muslim). We are finalizing the experimental design and will be running a pilot study in Fall 2025._
   - _Grant: We received a $140,746.6 grant from  J-PAL Social Policy Research Initiative / Racial Equity Special Topic RFP._ 
   - _You can find a link to a Russell Sage Foundation letter of interest using this [link](https://hhadah.github.io/statements/EducationAudit-LOI-RST-Final.pdf)._
-  - _You can find a link to the slides presented at J-PAL [here](https://hhadah.github.io/jpal-presentation/hadah-jpal-presentation.html)/[here](https://hhadah.github.io/ed-audit-presentation/hadah-ed-audit-presentation.html)._
+  - _You can find a link to the slides presented at J-PAL [here](https://hhadah.github.io/jpal-presentation/hadah-jpal-presentation.html)._
 
 - Button, P., Daniel, C., Hadah, H., Hernandez, J., Holman, M., & Mahoney, A. **Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources**.
 
