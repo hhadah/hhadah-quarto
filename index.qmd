@@ -127,7 +127,8 @@ Please feel free to contact me if you have questions about my work or would like
 - Hadah, H. **Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates** [(preprint)](https://hhadah.github.io/sc-hispanic-adult-suicide/my_paper/sc_and_hispanic_children_suicide.pdf)
 - Hadah, H, & Denteh, A. **Immigration Enforcement and Hispanic Identity** [(paper)](https://hussainhadah.com/research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf)
   - _See a preview of the results [here](https://hussainhadah.com/research/working-papers/hadah-denteh/)_
-
+- Yin, M., Hadah, H., & Seo, R. The labor market impacts of the Workforce Innovation and Opportunity Act: Evidence from the Virginia Longitudinal Data System. RISEI Lab, Northwestern University.
+- Yin, M., Hadah, H., & Seo, R. Longitudinal evidence on the economic returns to disability services. RISEI Lab, Northwestern University.
 
 ## Research In Progress {#research-in-progress}
 

@@ -1,0 +1,35 @@
+---
+title: "The Labor Market Impacts of the Workforce Innovation and Opportunity Act: Evidence from the Virginia Longitudinal Data System"
+author:
+  - name: Michelle Yin
+    affiliation: Northwestern University
+  - name: Hussain Hadah
+    url: http://www.hussainhadah.com/
+    orcid: 0000-0002-8705-6386
+    affiliation: Tulane University
+  - name: Regina Seo
+    affiliation: Northwestern University
+categories:
+  - Workforce Innovation and Opportunity Act
+  - Labor markets
+  - Workforce development
+  - Policy Evaluation
+  - Administrative data
+pub-info:
+  reference: >-
+    Michelle Yin, <strong>Hussain Hadah</strong>, and Regina Seo, "The Labor Market Impacts of the Workforce Innovation and Opportunity Act: Evidence from the Virginia Longitudinal Data System." <em>Working paper</em>, RISEI Lab, Northwestern University.
+  extra: >-
+---
+
+## Citation
+
+Yin, Michelle, Hadah, Hussain, and Seo, Regina (2026). The labor market impacts of the Workforce Innovation and Opportunity Act: Evidence from the Virginia Longitudinal Data System [working paper]. RISEI Lab, Northwestern University.
+
+```bibtex
+@misc{YinHadahSeo2026WIOA,
+  title        = {The Labor Market Impacts of the Workforce Innovation and Opportunity Act: Evidence from the Virginia Longitudinal Data System},
+  author       = {Yin, Michelle and Hadah, Hussain and Seo, Regina},
+  year         = {2026},
+  note         = {Working paper, RISEI Lab, Northwestern University}
+}
+```
