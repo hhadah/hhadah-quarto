@@ -20,7 +20,7 @@ categories:
   - Sexual Orientation
 pub-info:
   reference: >-
-    Patrick Button, <strong>Hussain Hadah</strong>, Javiera Selman, Cathy Balfe*, &amp; Tran Nguyen-Phuong*. "Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment." <em>Work in Progress</em>.
+    Patrick Button, <strong>Hussain Hadah</strong>, Javiera Selman, Cathy Balfe*, &amp; Tran Nguyen-Phuong*. "Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment."
   extra: >-
     Related: See <a href="https://journals.sagepub.com/doi/full/10.1177/1525822X211057623">Balfe et al. (2022)</a> for the pilot study. Experiment is in the field.
 pub-status:

@@ -13,7 +13,7 @@ categories:
   - Add Health dataset
 pub-info:
   reference: >-
-    <strong>Hussain Hadah</strong>, “Peer Effects in Adolescent Mental Health,” <em>Under Review</em>
+    <strong>Hussain Hadah</strong>, “Peer Effects in Adolescent Mental Health,” <em>Under Review</em>.
   links:
     - name: Preprint
       url: https://dx.doi.org/10.2139/ssrn.5159123

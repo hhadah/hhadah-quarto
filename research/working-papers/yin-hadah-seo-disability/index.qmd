@@ -17,7 +17,7 @@ categories:
   - Administrative data
 pub-info:
   reference: >-
-    Michelle Yin, <strong>Hussain Hadah</strong>, and Regina Seo, "Longitudinal Evidence on the Economic Returns to Disability Services." <em>Working paper</em>, RISEI Lab, Northwestern University.
+    Michelle Yin, <strong>Hussain Hadah</strong>, and Regina Seo, "Longitudinal Evidence on the Economic Returns to Disability Services." RISEI Lab, Northwestern University.
   extra: >-
 ---
 

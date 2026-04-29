@@ -16,7 +16,7 @@ categories:
   - Ethnicity
 pub-info:
   reference: >-
-    <strong>Hussain Hadah</strong>, "Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates"</em>
+    <strong>Hussain Hadah</strong>, "Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates,” <em>Under Review</em>.
   links:
     - name: Preprint
       url: https://dx.doi.org/10.2139/ssrn.5886942

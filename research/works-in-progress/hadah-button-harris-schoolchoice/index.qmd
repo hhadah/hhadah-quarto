@@ -18,7 +18,7 @@ categories:
   - School Choice
 pub-info:
   reference: >-
-    <strong>Hussain Hadah</strong>, Patrick Button, Douglas Harris, &amp; Barbara Lundebjerg*. "Parent's Choice or School's Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools." <em>Work in Progress</em>. Funded by a $140,747 grant from J-PAL.
+    <strong>Hussain Hadah</strong>, Patrick Button, Douglas Harris, &amp; Barbara Lundebjerg*. "Parent's Choice or School's Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools." Funded by a $140,747 grant from J-PAL.
   links:
     - name: Russell Sage LOI
       url: https://hhadah.github.io/statements/EducationAudit-LOI-RST-Final.pdf

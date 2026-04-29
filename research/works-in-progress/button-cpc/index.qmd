@@ -22,7 +22,7 @@ categories:
   - Reproductive Rights
 pub-info:
   reference: >-
-    Patrick Button, Clare Daniel, <strong>Hussain Hadah</strong>, Julie Hernandez, Mirya Holman, &amp; Anna Mahoney. "Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources." <em>Work in Progress</em>.
+    Patrick Button, Clare Daniel, <strong>Hussain Hadah</strong>, Julie Hernandez, Mirya Holman, &amp; Anna Mahoney. "Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources."
   extra: >-
     Currently developing the experimental design; expect to run in 2026.
 pub-status:

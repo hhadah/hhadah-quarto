@@ -18,7 +18,7 @@ categories:
   - Difference-in-differences
 pub-info:
   reference: >-
-    <strong>Hussain Hadah</strong> and Gael Compta, "The Effects of Waiting Periods on Firearm Suicides in the U.S."</em>
+    <strong>Hussain Hadah</strong> and Gael Compta, "The Effects of Waiting Periods on Firearm Suicides in the U.S."</em> <em>Under Review</em>.
   links:
     - name: Preprint
       url: https://dx.doi.org/10.2139/ssrn.5383500

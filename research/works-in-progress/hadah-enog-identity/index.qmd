@@ -8,7 +8,7 @@ author:
     affiliation: University of Houston
 pub-info:
   reference: >-
-    <a><strong>Hussain Hadah</strong>, “Endogenous Hispanic Identity and Ethnic Gaps in the U.S.,” <em>Works in Progress</em></a>
+    <a><strong>Hussain Hadah</strong>, “Endogenous Hispanic Identity and Ethnic Gaps in the U.S.”</a>
 pub-status: 
   status: Writing
   class: warning
