@@ -1,0 +1,30 @@
+---
+title: "Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment"
+date: 2025-09-01
+author:
+  - name: Patrick Button
+    affiliation: Tulane University
+  - name: Hussain Hadah
+    url: https://www.hussainhadah.com/
+    affiliation: Northwestern University
+  - name: Javiera Selman
+    affiliation: ""
+  - name: Cathy Balfe*
+    affiliation: ""
+  - name: Tran Nguyen-Phuong*
+    affiliation: ""
+categories:
+  - Discrimination
+  - Audit
+  - Mortgage
+  - Sexual Orientation
+pub-info:
+  reference: >-
+    Patrick Button, <strong>Hussain Hadah</strong>, Javiera Selman, Cathy Balfe*, &amp; Tran Nguyen-Phuong*. "Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment." <em>Work in Progress</em>.
+  extra: >-
+    Related: See <a href="https://journals.sagepub.com/doi/full/10.1177/1525822X211057623">Balfe et al. (2022)</a> for the pilot study. Experiment is in the field.
+pub-status:
+  status: In Field
+  class: warning
+  icon: fa-solid fa-flask
+---

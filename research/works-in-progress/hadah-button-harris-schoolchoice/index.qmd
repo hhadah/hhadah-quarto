@@ -1,0 +1,37 @@
+---
+title: "Parent's Choice or School's Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools"
+date: 2025-08-01
+author:
+  - name: Hussain Hadah
+    url: https://www.hussainhadah.com/
+    affiliation: Northwestern University
+  - name: Patrick Button
+    affiliation: Tulane University
+  - name: Douglas Harris
+    affiliation: Tulane University
+  - name: Barbara Lundebjerg*
+    affiliation: ""
+categories:
+  - Discrimination
+  - Audit
+  - Education
+  - School Choice
+pub-info:
+  reference: >-
+    <strong>Hussain Hadah</strong>, Patrick Button, Douglas Harris, &amp; Barbara Lundebjerg*. "Parent's Choice or School's Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools." <em>Work in Progress</em>. Funded by a $140,747 grant from J-PAL.
+  links:
+    - name: Russell Sage LOI
+      url: https://hhadah.github.io/statements/EducationAudit-LOI-RST-Final.pdf
+      icon: fa-solid fa-file-pdf
+      local: false
+    - name: J-PAL Slides
+      url: https://hhadah.github.io/jpal-presentation/hadah-jpal-presentation.html
+      icon: fa-solid fa-presentation-screen
+      local: false
+  extra: >-
+    Estimating discrimination based on race and ethnicity (White, Black, Hispanic), sexual orientation, gender identity, disability (IEP), and religion. Pilot study in Fall 2025.
+pub-status:
+  status: In Design
+  class: warning
+  icon: fa-solid fa-pencil
+---

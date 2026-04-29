@@ -9,6 +9,22 @@ pagetitle: "{{< meta website.title >}}"
 main-photo: /img/Hussain_Hadah-2025-09-04-07945pp.jpg
 main-photo-square: /img/Hussain_Hadah-2025-09-04-07945pp.jpg
 title-block-banner: "#CF4446"
+listing:
+  - id: home-articles
+    contents: "research/articles/*/index.qmd"
+    sort: "date desc"
+    template: html/research/listing.ejs
+    categories: false
+  - id: home-working-papers
+    contents: "research/working-papers/*/index.qmd"
+    sort: "date desc"
+    template: html/research/listing.ejs
+    categories: false
+  - id: home-wip
+    contents: "research/works-in-progress/*/index.qmd"
+    sort: "date desc"
+    template: html/research/listing.ejs
+    categories: false
 format:
   html:
     quarto-template-params:
@@ -115,38 +131,15 @@ Please feel free to contact me if you have questions about my work or would like
 
 ## Publications {#publications}
 
-- Hadah, H. **The Impact of Hispanic Last Names on Educational and Labor Market Outcomes**. _Journal of Economics, Race, and Policy_, (2025). [https://doi.org/10.1007/s41996-025-00177-3](https://doi.org/10.1007/s41996-025-00177-3)
-
-- Hadah, H. **The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S.** _Southern Economic Journal_, (2024). Available at [https://doi.org/10.1002/soej.12749](https://doi.org/10.1002/soej.12749)
+:::{#home-articles}
+:::
 
 ## Working Papers {#working-papers}
 
-- Hadah, H. **Peer Effects in Adolescent Mental Health**. [(preprint)](https://dx.doi.org/10.2139/ssrn.5159123)
-- Hadah, H. **The Effect of Anti-Asian Attitudes on Asian Identity in the U.S**, _Revise and Resubmit at the Journal of Policy Analysis and Management_ [(preprint)](https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf)
-- Hadah, H., & Compta, G.\* **The Effects of Waiting Periods on Firearm Suicides in the U.S.** [(preprint)](https://hhadah.github.io/compta-hadah/compta_hadah_2025.pdf)
-- Hadah, H. **Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates** [(preprint)](https://hhadah.github.io/sc-hispanic-adult-suicide/my_paper/sc_and_hispanic_children_suicide.pdf)
-- Hadah, H, & Denteh, A. **Immigration Enforcement and Hispanic Identity** [(paper)](https://hussainhadah.com/research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf)
-  - _See a preview of the results [here](https://hussainhadah.com/research/working-papers/hadah-denteh/)_
-- Yin, M., Hadah, H., & Seo, R. The labor market impacts of the Workforce Innovation and Opportunity Act: Evidence from the Virginia Longitudinal Data System. RISEI Lab, Northwestern University.
-- Yin, M., Hadah, H., & Seo, R. Longitudinal evidence on the economic returns to disability services. RISEI Lab, Northwestern University.
+:::{#home-working-papers}
+:::
 
 ## Research In Progress {#research-in-progress}
 
-- Button, P., Hadah, H., Schwegman, D., Selman, J., Nguyen-Phuong, T.\*, & Balfe, C.\* **Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment**.
-  - Related: See Balfe et al. (2022) for the pilot study.
-  - Note: Experiment in the field.
-  
-- Hadah, H., Button, P.,  Harris, D., & Lundebjerg, B.\* **Parent's Choice or School's Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools**.
-
-  - _Note: we will be estimating discrimination based on race and ethnicity (White, Black, Hispanic), sexual orientation, gender identity, disability (student has an IEP), and religion (Christian, Jewish, Muslim). We are finalizing the experimental design and will be running a pilot study in Fall 2025._
-  - _Grant: We received a $140,746.6 grant from  J-PAL Social Policy Research Initiative / Racial Equity Special Topic RFP._ 
-  - _You can find a link to a Russell Sage Foundation letter of interest using this [link](https://hhadah.github.io/statements/EducationAudit-LOI-RST-Final.pdf)._
-  - _You can find a link to the slides presented at J-PAL [here](https://hhadah.github.io/jpal-presentation/hadah-jpal-presentation.html)._
-
-- Button, P., Daniel, C., Hadah, H., Hernandez, J., Holman, M., & Mahoney, A. **Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources**.
-
-  - Note: We are currently working on the experimental design and expect to run the experiment in 2025
-
-- Hadah, H. **Endogenous Hispanic Identity and Ethnic Gaps in the U.S.**. (Using census administrative data with the RDC).
-
-- Denteh, A., & Hadah, H. **Assimilation of Hispanics and Arabs in America**. (Using census administrative data with the RDC).
+:::{#home-wip}
+:::

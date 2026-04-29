@@ -656,3 +656,9 @@ pre.text, pre.sourceCode, .cell-output pre {
         left: 0;
     }
 }
+
+// Hide the "Full details »" link in the home page's Research-in-Progress
+// listing — those entries don't have detail pages worth visiting yet.
+#listing-home-wip .project-link.details {
+    display: none;
+}

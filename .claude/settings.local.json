@@ -7,7 +7,14 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git push)",
-      "Bash(open:*)"
+      "Bash(open:*)",
+      "Bash(latexmk -pdf -interaction=nonstopmode -halt-on-error hadah-cv.tex)",
+      "Bash(rm -f hadah-cv.aux hadah-cv.bbl hadah-cv.bcf hadah-cv.blg hadah-cv.fdb_latexmk hadah-cv.fls hadah-cv.log hadah-cv.out hadah-cv.run.xml hadah-cv.synctex.gz)",
+      "Bash(pdflatex -interaction=nonstopmode hadah-cv.tex)",
+      "Bash(biber hadah-cv *)",
+      "Bash(pdftotext hadah-cv.pdf -)",
+      "Bash(brew list *)",
+      "Bash(latexmk -pdf -interaction=nonstopmode hadah-cv.tex)"
     ]
   }
 }

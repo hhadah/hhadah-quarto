@@ -1,5 +1,25 @@
 [
   {
+    "listing": "/index.html",
+    "items": [
+      "/research/articles/hadah-lastnames-2022/index.html",
+      "/research/articles/hadah-jmp-2022/index.html",
+      "/research/working-papers/hadah-asian-identity/index.html",
+      "/research/working-papers/hadah-compta/index.html",
+      "/research/working-papers/hadah-denteh/index.html",
+      "/research/working-papers/hadah-ethnic-fav-2020/index.html",
+      "/research/working-papers/hadah-peer-effect-depression-2023/index.html",
+      "/research/working-papers/sc-and-hispanic-children-suicide/index.html",
+      "/research/working-papers/yin-hadah-seo-disability/index.html",
+      "/research/working-papers/yin-hadah-seo-wioa/index.html",
+      "/research/works-in-progress/button-hadah-mortgage/index.html",
+      "/research/works-in-progress/hadah-button-harris-schoolchoice/index.html",
+      "/research/works-in-progress/button-cpc/index.html",
+      "/research/works-in-progress/denteh-hadah-arabs-hispanics/index.html",
+      "/research/works-in-progress/hadah-enog-identity/index.html"
+    ]
+  },
+  {
     "listing": "/research/index.html",
     "items": [
       "/research/articles/hadah-lastnames-2022/index.html",
@@ -9,7 +29,9 @@
       "/research/working-papers/hadah-denteh/index.html",
       "/research/working-papers/hadah-ethnic-fav-2020/index.html",
       "/research/working-papers/hadah-peer-effect-depression-2023/index.html",
-      "/research/working-papers/sc-and-hispanic-children-suicide/index.html"
+      "/research/working-papers/sc-and-hispanic-children-suicide/index.html",
+      "/research/working-papers/yin-hadah-seo-disability/index.html",
+      "/research/working-papers/yin-hadah-seo-wioa/index.html"
     ]
   }
 ]

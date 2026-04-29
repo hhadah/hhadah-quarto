@@ -40,6 +40,51 @@
 
 \usepackage{textcomp}
 
+% --- Bibliography (publications, R&R, working papers, works in progress) ---
+% Source of truth: publications.bib. Compile with biber, e.g.:
+%   pdflatex cv && biber cv && pdflatex cv && pdflatex cv
+% (latexmk runs biber automatically.)
+\usepackage{csquotes}
+\usepackage[backend=biber,
+            style=authoryear,
+            sorting=none,
+            maxbibnames=99,
+            giveninits=false,
+            dashed=false,
+            uniquename=false,
+            uniquelist=false,
+            doi=true,
+            url=true,
+            isbn=false,
+            eprint=false]{biblatex}
+\addbibresource{publications.bib}
+
+% Always render names "Last, First" (not just the first author).
+\DeclareNameAlias{sortname}{family-given}
+\DeclareNameAlias{default}{family-given}
+
+% Render a bare URL as "[Link]" (matches the existing CV).
+\DeclareFieldFormat{url}{[\href{#1}{Link}]}
+\renewbibmacro*{url+urldate}{\printfield{url}}
+
+% Render DOI as "DOI: 10.xxx/..." (matches the existing CV).
+\DeclareFieldFormat{doi}{\href{https://doi.org/#1}{DOI:~#1}}
+
+% Quote titles, with the trailing period inside the closing quote.
+\DeclareFieldFormat[article]{title}{\mkbibquote{#1\isdot}}
+\DeclareFieldFormat[unpublished,techreport,misc]{title}{\mkbibquote{#1\isdot}}
+
+% Suppress "(n.d.)" for entries without a year (e.g., works in progress).
+\renewbibmacro*{date+extradate}{%
+  \iflabeldateisdate
+    {\printtext[parens]{\printlabeldateextra}}%
+    {}}
+
+% Use the CV's existing \section* styling for each bibliography heading.
+\defbibheading{cvsection}{\section*{#1}\vspace{2 mm}}
+
+\nocite{*}
+
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\bfseries\scshape}{}{0em}{}[] % Text formatting of sections
 \titlespacing{\section}{0pt}{1pt}{1pt} % Spacing around sections
@@ -151,53 +196,16 @@ New Orleans, LA 70118\\
 \end{itemize}
 \vspace{2 mm}
 
-\section*{Publications}
-\vspace{2 mm}
-\begin{itemize}
-      \item Hadah, Hussain. (2025). ``The Impact of Hispanic Last Names on Labor Market and Educational \\  
-    \makebox[4mm]{} Outcomes.'' \textit{Journal of Economics, Race, and Policy}. \href{https://doi.org/10.1007/s41996-025-00177-3}{DOI: 10.1007/s41996-025-00177-3}
-    \item  Hadah, Hussain. (2024). ``The effect of racial and ethnic attitudes on Hispanic identity in the \\ 
-    \makebox[4mm]{} United States.'' \textit{Southern Economic Journal}. \href{https://doi.org/10.1002/soej.12749}{DOI: 10.1002/soej.12749}.
-\end{itemize}
+\printbibliography[heading=cvsection, title={Publications},        keyword=published]
 \vspace{2 mm}
 
-\section*{Revise and Resubmit}
-\vspace{2 mm}
-\begin{itemize}
-  \item Hadah, Hussain. ``The Effect of Anti-Asian Attitudes on Asian Identity in the U.S.'', \textit{Revise and Resubmit} \\{\makebox[4mm]{\hfill}} \textit{Journal of Policy Analysis and Management} [\href{https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf}{Link}]. 
-\end{itemize}
-\vspace{2 mm}
-\section*{Working Papers}
-\vspace{2 mm}
-\begin{itemize}
-  \item Hadah, Hussain. ``Peer Effects in Adolescent Mental Health'' [\href{https://hhadah.github.io/Depression_Idea/my_paper/Hadah-Peer-Effect-Depression.pdf}{Link}].
-  \item Hadah, Hussain and Bariş Alan\student. ``Democratic Institutions and Their Effect on Ethnic Favo-\\{\makebox[4mm]{\hfill}} ritism: Evidence from Saharan Africa'' [\href{https://dx.doi.org/10.2139/ssrn.4566225}{Link}].
-  \item Hadah, Hussain and Gael Compta\student. ``The Effects of Waiting Periods on Firearm Suicides in the \\{\makebox[4mm]{\hfill}} U.S.'' [\href{https://dx.doi.org/10.2139/ssrn.5383500}{Link}]
-  \item Hadah, Hussain ``Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates'' [\href{https://hhadah.github.io/sc-hispanic-adult-suicide/my_paper/sc_and_hispanic_children_suicide.pdf}{Link}]
-  \item Hadah, Hussain, and Augustine Denteh. ``Immigration Enforcement and Hispanic Identity.'' [\href{https://hussainhadah.com/research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf}{Link}]
-  \item Yin, Michelle, Hadah, Hussain, and Seo, Rregina (2026). The labor market impacts of the Workforce \\{\makebox[4mm]{\hfill}} Innovation and Opportunity Act: Evidence from the Virginia Longitudinal Data System \\{\makebox[4mm]{\hfill}} [working paper]. RISEI Lab. Northwestern University
-  \item Yin, Michelle, Hadah, Hussain, and Seo, Rregina (2026). Longitudinal evidence on the economic returns \\{\makebox[4mm]{\hfill}} to disability services [working paper]. RISEI Lab. Northwestern University
-\end{itemize}
+\printbibliography[heading=cvsection, title={Revise and Resubmit}, keyword=rr]
 \vspace{2 mm}
 
-\section*{Works in Progress}
+\printbibliography[heading=cvsection, title={Working Papers},      keyword=wp]
 \vspace{2 mm}
-\begin{itemize}
-\item Button, Patrick, Hussain Hadah, Javiera Selman, Cathy Balfe\student, and Tran Nguyen-\\{\makebox[4mm]{\hfill}}Phuong\student. ``Sexual orientation discrimination in mortgage lending: an audit field experiment.''
 
-\item Hadah, Hussain, Patrick Button, Douglas Harris, and Barbara Lundebjerg\student. ``Parent’s Choice or School’s \\{\makebox[4mm]{\hfill}} Choice?
-Discrimination Against Students in Admission to Private, Charter, and Traditional Public \\{\makebox[4mm]{\hfill}} Schools.'' \textit{Funded by \$140,747 grant from JPAL}
-
-\item Button, Patrick, Clare Daniel, Hussain Hadah, 
-Julie Hernandez, Mirya Holman, and Anna Mahoney. 
-\\{\makebox[4mm]{\hfill}}``Auditing Crisis
- Pregnancy Centers: Racial biases, misinformation, 
-and the misallocation \\{\makebox[4mm]{\hfill}}government resources.'' (tentative title)
-
-\item Hadah, Hussain. ``Endogenous Hispanic Identity and Ethnic Gaps in the U.S''. (Using census \\{\makebox[4mm]{\hfill}} administrative data with the RDC).
-
-
-\end{itemize}
+\printbibliography[heading=cvsection, title={Works in Progress},   keyword=wip]
 
 
 \section*{Grants}

@@ -1,0 +1,598 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{hadah2025hispaniclastnames}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{fullhash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{fullhashraw}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{bibnamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorbibnamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authornamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorfullhash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorfullhashraw}{091f3b21f21a72f28da7c6db491e1522}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Economics, Race, and Policy}
+      \field{title}{The Impact of {H}ispanic Last Names on Labor Market and Educational Outcomes}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1007/s41996-025-00177-3
+      \endverb
+      \keyw{published}
+    \endentry
+    \entry{hadah2024hispanicidentity}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{fullhash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{fullhashraw}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{bibnamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorbibnamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authornamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorfullhash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorfullhashraw}{091f3b21f21a72f28da7c6db491e1522}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Southern Economic Journal}
+      \field{title}{The Effect of Racial and Ethnic Attitudes on {H}ispanic Identity in the {U}nited {S}tates}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.1002/soej.12749
+      \endverb
+      \keyw{published}
+    \endentry
+    \entry{hadah-asianidentity}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{fullhash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{fullhashraw}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{bibnamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorbibnamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authornamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorfullhash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorfullhashraw}{091f3b21f21a72f28da7c6db491e1522}
+      \field{extraname}{3}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{extradate}{1}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Revise and Resubmit, \textit{Journal of Policy Analysis and Management}}
+      \field{title}{The Effect of Anti-{A}sian Attitudes on {A}sian Identity in the {U.S.}}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
+      \endverb
+      \verb{url}
+      \verb https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
+      \endverb
+      \keyw{rr}
+    \endentry
+    \entry{hadah-peereffects}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{fullhash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{fullhashraw}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{bibnamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorbibnamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authornamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorfullhash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorfullhashraw}{091f3b21f21a72f28da7c6db491e1522}
+      \field{extraname}{4}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{extradate}{2}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Peer Effects in Adolescent Mental Health}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://hhadah.github.io/Depression_Idea/my_paper/Hadah-Peer-Effect-Depression.pdf
+      \endverb
+      \verb{url}
+      \verb https://hhadah.github.io/Depression_Idea/my_paper/Hadah-Peer-Effect-Depression.pdf
+      \endverb
+      \keyw{wp}
+    \endentry
+    \entry{hadah-alan-democracy}{unpublished}{}{}
+      \name{author}{2}{}{%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e4f61d8cadfa8c893f1a90958f58a31e}{%
+           family={Alan},
+           familyi={A\bibinitperiod},
+           given={{Bariş\student}},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{d4e93e5746a0b93c929b8f642c5fddeb}
+      \strng{fullhash}{d4e93e5746a0b93c929b8f642c5fddeb}
+      \strng{fullhashraw}{d4e93e5746a0b93c929b8f642c5fddeb}
+      \strng{bibnamehash}{d4e93e5746a0b93c929b8f642c5fddeb}
+      \strng{authorbibnamehash}{d4e93e5746a0b93c929b8f642c5fddeb}
+      \strng{authornamehash}{d4e93e5746a0b93c929b8f642c5fddeb}
+      \strng{authorfullhash}{d4e93e5746a0b93c929b8f642c5fddeb}
+      \strng{authorfullhashraw}{d4e93e5746a0b93c929b8f642c5fddeb}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Democratic Institutions and Their Effect on Ethnic Favoritism: Evidence from {S}aharan {A}frica}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.2139/ssrn.4566225
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.2139/ssrn.4566225
+      \endverb
+      \keyw{wp}
+    \endentry
+    \entry{hadah-compta-firearmsuicide}{unpublished}{}{}
+      \name{author}{2}{}{%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+        {{hash=6d939b4922fb970e8bed8b16a44d8f57}{%
+           family={Compta},
+           familyi={C\bibinitperiod},
+           given={{Gael\student}},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d09468ac1f72c70120747b2d84a940fc}
+      \strng{fullhash}{d09468ac1f72c70120747b2d84a940fc}
+      \strng{fullhashraw}{d09468ac1f72c70120747b2d84a940fc}
+      \strng{bibnamehash}{d09468ac1f72c70120747b2d84a940fc}
+      \strng{authorbibnamehash}{d09468ac1f72c70120747b2d84a940fc}
+      \strng{authornamehash}{d09468ac1f72c70120747b2d84a940fc}
+      \strng{authorfullhash}{d09468ac1f72c70120747b2d84a940fc}
+      \strng{authorfullhashraw}{d09468ac1f72c70120747b2d84a940fc}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Effects of Waiting Periods on Firearm Suicides in the {U.S.}}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.2139/ssrn.5383500
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.2139/ssrn.5383500
+      \endverb
+      \keyw{wp}
+    \endentry
+    \entry{hadah-sanctuarysuicide}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{fullhash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{fullhashraw}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{bibnamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorbibnamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authornamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorfullhash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorfullhashraw}{091f3b21f21a72f28da7c6db491e1522}
+      \field{extraname}{5}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{extradate}{3}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Immigration Enforcement, Sanctuary Cities, and Rising {H}ispanic Suicide Rates}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://hhadah.github.io/sc-hispanic-adult-suicide/my_paper/sc_and_hispanic_children_suicide.pdf
+      \endverb
+      \verb{url}
+      \verb https://hhadah.github.io/sc-hispanic-adult-suicide/my_paper/sc_and_hispanic_children_suicide.pdf
+      \endverb
+      \keyw{wp}
+    \endentry
+    \entry{hadah-denteh-immigration}{unpublished}{}{}
+      \name{author}{2}{}{%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8f84d434e4ea53f2933b15a800242ccc}{%
+           family={Denteh},
+           familyi={D\bibinitperiod},
+           given={Augustine},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{018a479b8b53192e95fac82eaf5132d9}
+      \strng{fullhash}{018a479b8b53192e95fac82eaf5132d9}
+      \strng{fullhashraw}{018a479b8b53192e95fac82eaf5132d9}
+      \strng{bibnamehash}{018a479b8b53192e95fac82eaf5132d9}
+      \strng{authorbibnamehash}{018a479b8b53192e95fac82eaf5132d9}
+      \strng{authornamehash}{018a479b8b53192e95fac82eaf5132d9}
+      \strng{authorfullhash}{018a479b8b53192e95fac82eaf5132d9}
+      \strng{authorfullhashraw}{018a479b8b53192e95fac82eaf5132d9}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Immigration Enforcement and {H}ispanic Identity}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://hussainhadah.com/research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf
+      \endverb
+      \verb{url}
+      \verb https://hussainhadah.com/research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf
+      \endverb
+      \keyw{wp}
+    \endentry
+    \entry{yin-hadah-seo-wioa}{report}{}{}
+      \name{author}{3}{}{%
+        {{hash=789b647d17f8205e75866f3cc5538a9b}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Michelle},
+           giveni={M\bibinitperiod}}}%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+        {{hash=581607c9186bea271adbd954c2282bcc}{%
+           family={Seo},
+           familyi={S\bibinitperiod},
+           given={Regina},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {RISEI Lab, Northwestern University}%
+      }
+      \strng{namehash}{d551c8210f347a7276b2a1f1a2626290}
+      \strng{fullhash}{d551c8210f347a7276b2a1f1a2626290}
+      \strng{fullhashraw}{d551c8210f347a7276b2a1f1a2626290}
+      \strng{bibnamehash}{d551c8210f347a7276b2a1f1a2626290}
+      \strng{authorbibnamehash}{d551c8210f347a7276b2a1f1a2626290}
+      \strng{authornamehash}{d551c8210f347a7276b2a1f1a2626290}
+      \strng{authorfullhash}{d551c8210f347a7276b2a1f1a2626290}
+      \strng{authorfullhashraw}{d551c8210f347a7276b2a1f1a2626290}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Labor Market Impacts of the Workforce Innovation and Opportunity Act: Evidence from the {V}irginia Longitudinal Data System}
+      \field{type}{Working Paper}
+      \field{year}{2026}
+      \true{nocite}
+      \keyw{wp}
+    \endentry
+    \entry{yin-hadah-seo-disability}{report}{}{}
+      \name{author}{3}{}{%
+        {{hash=789b647d17f8205e75866f3cc5538a9b}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Michelle},
+           giveni={M\bibinitperiod}}}%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+        {{hash=581607c9186bea271adbd954c2282bcc}{%
+           family={Seo},
+           familyi={S\bibinitperiod},
+           given={Regina},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {RISEI Lab, Northwestern University}%
+      }
+      \strng{namehash}{d551c8210f347a7276b2a1f1a2626290}
+      \strng{fullhash}{d551c8210f347a7276b2a1f1a2626290}
+      \strng{fullhashraw}{d551c8210f347a7276b2a1f1a2626290}
+      \strng{bibnamehash}{d551c8210f347a7276b2a1f1a2626290}
+      \strng{authorbibnamehash}{d551c8210f347a7276b2a1f1a2626290}
+      \strng{authornamehash}{d551c8210f347a7276b2a1f1a2626290}
+      \strng{authorfullhash}{d551c8210f347a7276b2a1f1a2626290}
+      \strng{authorfullhashraw}{d551c8210f347a7276b2a1f1a2626290}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Longitudinal Evidence on the Economic Returns to Disability Services}
+      \field{type}{Working Paper}
+      \field{year}{2026}
+      \true{nocite}
+      \keyw{wp}
+    \endentry
+    \entry{yin-guerrero-hadah-seo-vu-disability}{unpublished}{}{}
+      \name{author}{5}{}{%
+        {{hash=789b647d17f8205e75866f3cc5538a9b}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Michelle},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c0aeb4f2ea2cc10a022a1310ff26c2e7}{%
+           family={Guerrero},
+           familyi={G\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod}}}%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+        {{hash=581607c9186bea271adbd954c2282bcc}{%
+           family={Seo},
+           familyi={S\bibinitperiod},
+           given={Regina},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c26fe772cfdfd3840bd355942117e1e7}{%
+           family={Vu},
+           familyi={V\bibinitperiod},
+           given={Hoa},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb0310cef9542bd4308b831a3a2bdfc8}
+      \strng{fullhash}{7069aca1d55ed73671eb640c0fb74f12}
+      \strng{fullhashraw}{7069aca1d55ed73671eb640c0fb74f12}
+      \strng{bibnamehash}{7069aca1d55ed73671eb640c0fb74f12}
+      \strng{authorbibnamehash}{7069aca1d55ed73671eb640c0fb74f12}
+      \strng{authornamehash}{bb0310cef9542bd4308b831a3a2bdfc8}
+      \strng{authorfullhash}{7069aca1d55ed73671eb640c0fb74f12}
+      \strng{authorfullhashraw}{7069aca1d55ed73671eb640c0fb74f12}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{RISEI Lab, Northwestern University}
+      \field{title}{Disability Onset, Labor Market Outcomes, and Intra-Household Responses: Evidence from Restricted-Access Census Data}
+      \true{nocite}
+      \keyw{wip}
+    \endentry
+    \entry{button-hadah-mortgage}{unpublished}{}{}
+      \name{author}{5}{}{%
+        {{hash=3bdb33282f0c93c16e91cdfaa22b1bed}{%
+           family={Button},
+           familyi={B\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8053d4749507905fd7209a5272d76f00}{%
+           family={Selman},
+           familyi={S\bibinitperiod},
+           given={Javiera},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9d7661f24495d5752947158189c3924d}{%
+           family={Balfe},
+           familyi={B\bibinitperiod},
+           given={{Cathy\student}},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fff8e9cc9b12675452fb0ea641560eb5}{%
+           family={Nguyen-Phuong},
+           familyi={N\bibinithyphendelim P\bibinitperiod},
+           given={{Tran\student}},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{75c713fa1a71630dc9623a8ecd20f254}
+      \strng{fullhash}{78b738475fa3ddff3fff21397829a41a}
+      \strng{fullhashraw}{78b738475fa3ddff3fff21397829a41a}
+      \strng{bibnamehash}{78b738475fa3ddff3fff21397829a41a}
+      \strng{authorbibnamehash}{78b738475fa3ddff3fff21397829a41a}
+      \strng{authornamehash}{75c713fa1a71630dc9623a8ecd20f254}
+      \strng{authorfullhash}{78b738475fa3ddff3fff21397829a41a}
+      \strng{authorfullhashraw}{78b738475fa3ddff3fff21397829a41a}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extradate}{1}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sexual Orientation Discrimination in Mortgage Lending: An Audit Field Experiment}
+      \true{nocite}
+      \keyw{wip}
+    \endentry
+    \entry{hadah-button-harris-schoolchoice}{unpublished}{}{}
+      \name{author}{4}{}{%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3bdb33282f0c93c16e91cdfaa22b1bed}{%
+           family={Button},
+           familyi={B\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d03619a1adee8561dbf0693beafbf1bb}{%
+           family={Harris},
+           familyi={H\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+        {{hash=52721260081570c76145f3abe62adb9e}{%
+           family={Lundebjerg},
+           familyi={L\bibinitperiod},
+           given={{Barbara\student}},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{a0fd8e1923c9c589c7d9611474cde387}
+      \strng{fullhash}{cfff3ac1735223280eb2015782240679}
+      \strng{fullhashraw}{cfff3ac1735223280eb2015782240679}
+      \strng{bibnamehash}{cfff3ac1735223280eb2015782240679}
+      \strng{authorbibnamehash}{cfff3ac1735223280eb2015782240679}
+      \strng{authornamehash}{a0fd8e1923c9c589c7d9611474cde387}
+      \strng{authorfullhash}{cfff3ac1735223280eb2015782240679}
+      \strng{authorfullhashraw}{cfff3ac1735223280eb2015782240679}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\textit{Funded by \$140{,}747 grant from JPAL}}
+      \field{title}{Parent's Choice or School's Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools}
+      \true{nocite}
+      \keyw{wip}
+    \endentry
+    \entry{button-cpc}{unpublished}{}{}
+      \name{author}{6}{}{%
+        {{hash=3bdb33282f0c93c16e91cdfaa22b1bed}{%
+           family={Button},
+           familyi={B\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3a963ff408149e385ddbc93bbc554eeb}{%
+           family={Daniel},
+           familyi={D\bibinitperiod},
+           given={Clare},
+           giveni={C\bibinitperiod}}}%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f362a926f8838161f8fdc5831bbbe663}{%
+           family={Hernandez},
+           familyi={H\bibinitperiod},
+           given={Julie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a9ae59bd20d943e083a756a1039316e6}{%
+           family={Holman},
+           familyi={H\bibinitperiod},
+           given={Mirya},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8efc4c732515e55cf7821cbaa171a583}{%
+           family={Mahoney},
+           familyi={M\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{75c713fa1a71630dc9623a8ecd20f254}
+      \strng{fullhash}{91af8545a876bdcfa105099fb1ca56b3}
+      \strng{fullhashraw}{91af8545a876bdcfa105099fb1ca56b3}
+      \strng{bibnamehash}{91af8545a876bdcfa105099fb1ca56b3}
+      \strng{authorbibnamehash}{91af8545a876bdcfa105099fb1ca56b3}
+      \strng{authornamehash}{75c713fa1a71630dc9623a8ecd20f254}
+      \strng{authorfullhash}{91af8545a876bdcfa105099fb1ca56b3}
+      \strng{authorfullhashraw}{91af8545a876bdcfa105099fb1ca56b3}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extradate}{2}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{(tentative title)}
+      \field{title}{Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources}
+      \true{nocite}
+      \keyw{wip}
+    \endentry
+    \entry{hadah-endogenous}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{fullhash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{fullhashraw}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{bibnamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorbibnamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authornamehash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorfullhash}{091f3b21f21a72f28da7c6db491e1522}
+      \strng{authorfullhashraw}{091f3b21f21a72f28da7c6db491e1522}
+      \field{extraname}{6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extradate}{4}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{(Using census administrative data with the RDC)}
+      \field{title}{Endogenous {H}ispanic Identity and Ethnic Gaps in the {U.S.}}
+      \true{nocite}
+      \keyw{wip}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

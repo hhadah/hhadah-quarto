@@ -1,0 +1,32 @@
+---
+title: "Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources"
+date: 2025-07-01
+author:
+  - name: Patrick Button
+    affiliation: Tulane University
+  - name: Clare Daniel
+    affiliation: Tulane University
+  - name: Hussain Hadah
+    url: https://www.hussainhadah.com/
+    affiliation: Northwestern University
+  - name: Julie Hernandez
+    affiliation: Tulane University
+  - name: Mirya Holman
+    affiliation: ""
+  - name: Anna Mahoney
+    affiliation: Tulane University
+categories:
+  - Discrimination
+  - Audit
+  - Health
+  - Reproductive Rights
+pub-info:
+  reference: >-
+    Patrick Button, Clare Daniel, <strong>Hussain Hadah</strong>, Julie Hernandez, Mirya Holman, &amp; Anna Mahoney. "Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources." <em>Work in Progress</em>.
+  extra: >-
+    Currently developing the experimental design; expect to run in 2026.
+pub-status:
+  status: In Design
+  class: warning
+  icon: fa-solid fa-pencil
+---
