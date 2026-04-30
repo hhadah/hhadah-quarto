@@ -55,95 +55,57 @@
 </div>
 
 <script>
-// Initialize category filtering - runs once when first listing loads
+// Initialize category filtering - runs once when first listing loads.
+// A category click filters ALL research listings on the page at once,
+// so a user can pick e.g. "Discrimination" and see matching items across
+// Publications, Working Papers, and Works in Progress simultaneously.
 (function() {
   if (window.categoryFilterInitialized) return;
   window.categoryFilterInitialized = true;
 
-  // Track active filters per listing
-  var activeFilters = {};
+  var activeCategory = null;
 
-  // Initialize when DOM is ready
   function init() {
-    // Add click handlers to all category filter links
     document.querySelectorAll('.category-filter').forEach(function(link) {
       link.addEventListener('click', function(e) {
         e.preventDefault();
         var category = this.getAttribute('data-category');
-        var listingType = this.getAttribute('data-listing');
-
-        // Toggle filter for this listing
-        if (activeFilters[listingType] === category) {
-          delete activeFilters[listingType];
-          updateListingDisplay(listingType, null);
-        } else {
-          activeFilters[listingType] = category;
-          updateListingDisplay(listingType, category);
-        }
-
-        updateCategoryLinks(listingType, activeFilters[listingType]);
+        activeCategory = (activeCategory === category) ? null : category;
+        applyFilter(activeCategory);
       });
     });
   }
 
-  function updateListingDisplay(listingType, category) {
-    var listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
-    if (!listingContainer) return;
-
-    var items = listingContainer.querySelectorAll('.project');
-    items.forEach(function(item) {
-      if (!category) {
-        // Show all items
-        item.classList.remove('d-none');
-        item.style.display = '';
-      } else {
-        // Show only items that have this category
-        var categories = item.getAttribute('data-listing-categories');
-        if (categories && categories.split(',').indexOf(category) !== -1) {
-          item.classList.remove('d-none');
-          item.style.display = '';
-        } else {
-          item.classList.add('d-none');
-          item.style.display = 'none';
-        }
-      }
+  function applyFilter(category) {
+    document.querySelectorAll('.research.project-list').forEach(function(container) {
+      container.querySelectorAll('.project').forEach(function(item) {
+        var categories = item.getAttribute('data-listing-categories') || '';
+        var match = !category || categories.split(',').indexOf(category) !== -1;
+        item.classList.toggle('d-none', !match);
+        item.style.display = match ? '' : 'none';
+      });
+      updateNoMatchingMessage(container);
     });
-
-    // Update "no matching items" message
-    updateNoMatchingMessage(listingContainer);
+    updateCategoryLinks(category);
   }
 
   function updateNoMatchingMessage(listingContainer) {
     var anyVisible = Array.from(listingContainer.querySelectorAll('.project')).some(function(item) {
       return !item.classList.contains('d-none');
     });
-
     var noMatchMsg = listingContainer.parentElement.querySelector('.listing-no-matching');
     if (noMatchMsg) {
-      if (anyVisible) {
-        noMatchMsg.classList.add('d-none');
-      } else {
-        noMatchMsg.classList.remove('d-none');
-      }
+      noMatchMsg.classList.toggle('d-none', anyVisible);
     }
   }
 
-  function updateCategoryLinks(listingType, activeCategory) {
-    var listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
-    if (!listingContainer) return;
-
-    var links = listingContainer.querySelectorAll('.category-filter[data-listing="' + listingType + '"]');
-    links.forEach(function(link) {
+  function updateCategoryLinks(activeCategory) {
+    document.querySelectorAll('.category-filter').forEach(function(link) {
       var category = link.getAttribute('data-category');
-      if (category === activeCategory) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
+      link.classList.toggle('active', category === activeCategory);
     });
   }
 
-  // Run initialization
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
