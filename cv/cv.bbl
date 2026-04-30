@@ -423,55 +423,8 @@
       \true{nocite}
       \keyw{wip}
     \endentry
-    \entry{button-hadah-mortgage}{unpublished}{}{}
-      \name{author}{5}{}{%
-        {{hash=3bdb33282f0c93c16e91cdfaa22b1bed}{%
-           family={Button},
-           familyi={B\bibinitperiod},
-           given={Patrick},
-           giveni={P\bibinitperiod}}}%
-        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
-           family={Hadah},
-           familyi={H\bibinitperiod},
-           given={Hussain},
-           giveni={H\bibinitperiod}}}%
-        {{hash=8053d4749507905fd7209a5272d76f00}{%
-           family={Selman},
-           familyi={S\bibinitperiod},
-           given={Javiera},
-           giveni={J\bibinitperiod}}}%
-        {{hash=9d7661f24495d5752947158189c3924d}{%
-           family={Balfe},
-           familyi={B\bibinitperiod},
-           given={{Cathy\student}},
-           giveni={C\bibinitperiod}}}%
-        {{hash=fff8e9cc9b12675452fb0ea641560eb5}{%
-           family={Nguyen-Phuong},
-           familyi={N\bibinithyphendelim P\bibinitperiod},
-           given={{Tran\student}},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{75c713fa1a71630dc9623a8ecd20f254}
-      \strng{fullhash}{78b738475fa3ddff3fff21397829a41a}
-      \strng{fullhashraw}{78b738475fa3ddff3fff21397829a41a}
-      \strng{bibnamehash}{78b738475fa3ddff3fff21397829a41a}
-      \strng{authorbibnamehash}{78b738475fa3ddff3fff21397829a41a}
-      \strng{authornamehash}{75c713fa1a71630dc9623a8ecd20f254}
-      \strng{authorfullhash}{78b738475fa3ddff3fff21397829a41a}
-      \strng{authorfullhashraw}{78b738475fa3ddff3fff21397829a41a}
-      \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{extradate}{1}
-      \field{labeldatesource}{nodate}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Sexual Orientation Discrimination in Mortgage Lending: An Audit Field Experiment}
-      \true{nocite}
-      \keyw{wip}
-    \endentry
     \entry{hadah-button-harris-schoolchoice}{unpublished}{}{}
-      \name{author}{4}{}{%
+      \name{author}{5}{}{%
         {{hash=091f3b21f21a72f28da7c6db491e1522}{%
            family={Hadah},
            familyi={H\bibinitperiod},
@@ -492,15 +445,20 @@
            familyi={L\bibinitperiod},
            given={{Barbara\student}},
            giveni={B\bibinitperiod}}}%
+        {{hash=e4f61d8cadfa8c893f1a90958f58a31e}{%
+           family={Alan},
+           familyi={A\bibinitperiod},
+           given={{Bariş\student}},
+           giveni={B\bibinitperiod}}}%
       }
       \strng{namehash}{a0fd8e1923c9c589c7d9611474cde387}
-      \strng{fullhash}{cfff3ac1735223280eb2015782240679}
-      \strng{fullhashraw}{cfff3ac1735223280eb2015782240679}
-      \strng{bibnamehash}{cfff3ac1735223280eb2015782240679}
-      \strng{authorbibnamehash}{cfff3ac1735223280eb2015782240679}
+      \strng{fullhash}{d2da22e0a41e10693f9ddd36448bd5c2}
+      \strng{fullhashraw}{d2da22e0a41e10693f9ddd36448bd5c2}
+      \strng{bibnamehash}{d2da22e0a41e10693f9ddd36448bd5c2}
+      \strng{authorbibnamehash}{d2da22e0a41e10693f9ddd36448bd5c2}
       \strng{authornamehash}{a0fd8e1923c9c589c7d9611474cde387}
-      \strng{authorfullhash}{cfff3ac1735223280eb2015782240679}
-      \strng{authorfullhashraw}{cfff3ac1735223280eb2015782240679}
+      \strng{authorfullhash}{d2da22e0a41e10693f9ddd36448bd5c2}
+      \strng{authorfullhashraw}{d2da22e0a41e10693f9ddd36448bd5c2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeldatesource}{nodate}
@@ -552,10 +510,8 @@
       \strng{authornamehash}{75c713fa1a71630dc9623a8ecd20f254}
       \strng{authorfullhash}{91af8545a876bdcfa105099fb1ca56b3}
       \strng{authorfullhashraw}{91af8545a876bdcfa105099fb1ca56b3}
-      \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{extradate}{2}
       \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}

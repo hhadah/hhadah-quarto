@@ -14,7 +14,7 @@ categories:
   - Immigration
 pub-info:
   reference: >-
-    Augustine Denteh &amp; <strong>Hussain Hadah</strong>. "Assimilation of Hispanics and Arabs in America."
+    Augustine Denteh and <strong>Hussain Hadah</strong>. "Assimilation of Hispanics and Arabs in America."
   extra: >-
     Using restricted-access census data with the RDC.
 pub-status:
