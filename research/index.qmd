@@ -112,6 +112,10 @@ for key, data in yaml_data.items():
 ```
 
 
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-9}
+
 ## Journal articles
 
 :::{#articles}
@@ -126,6 +130,17 @@ for key, data in yaml_data.items():
 ## Works in Progress
 
 :::{#works-in-progress}
+:::
+
+:::
+
+::: {.g-col-12 .g-col-md-3}
+
+::: {#research-category-filter .research-category-sidebar}
+:::
+
+:::
+
 :::
 
 <!-- :::{#works-in-progress}
