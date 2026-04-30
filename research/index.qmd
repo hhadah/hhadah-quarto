@@ -11,11 +11,11 @@ listing:
     sort: "date desc"
     template: ../html/research/listing.ejs
     categories: false
-    
-#   - id: works-in-progress
-#     contents: "works-in-progress/*/index.qmd"
-#     sort: "date desc"
-#     template: ../html/research/listing.ejs
+  - id: works-in-progress
+    contents: "works-in-progress/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+    categories: false
 
   # - id: book-chapters
   #   contents: "chapters/*/index.qmd"
@@ -125,7 +125,7 @@ for key, data in yaml_data.items():
 
 ## Works in Progress
 
-:::{#home-wip}
+:::{#works-in-progress}
 :::
 
 <!-- :::{#works-in-progress}
