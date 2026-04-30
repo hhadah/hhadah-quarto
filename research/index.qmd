@@ -39,7 +39,7 @@ listing:
   #   template: ../html/research/listing.ejs
 page-layout: full
 include-back-link: false
-toc-location: right
+toc-location: left
 echo: false
 jupyter: python3
 ---
