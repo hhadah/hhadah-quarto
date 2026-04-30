@@ -125,8 +125,10 @@ for key, data in yaml_data.items():
 
 ## Works in Progress
 
+:::{#home-wip}
+:::
+
 <!-- :::{#works-in-progress}
-::: -->
 
 ```{python}
 #| label: "not-published-year-works"
@@ -152,6 +154,7 @@ for year in sorted(pub_strs["worksinprogress"].keys(), reverse=True):
         )
     display(HTML('\n'.join(bolded_publications)))
 ```
+::: -->
 
 <!-- ## Book chapters
 
