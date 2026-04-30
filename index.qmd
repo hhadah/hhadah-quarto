@@ -139,7 +139,7 @@ Please feel free to contact me if you have questions about my work or would like
 :::{#home-working-papers}
 :::
 
-## Research In Progress {#research-in-progress}
+## Works in Progress {#research-in-progress}
 
 :::{#home-wip}
 :::
