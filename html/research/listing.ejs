@@ -94,17 +94,18 @@
     var sorted = Object.keys(counts).sort();
     if (sorted.length === 0) return;
 
-    var html = '<h3 class="research-category-sidebar-title">Filter by topic</h3><ul>';
-    html += '<li><a href="javascript:void(0)" class="category-filter-sidebar active" data-category="">All <span class="count">' + total + '</span></a></li>';
+    var html = '<div class="quarto-listing-category-title">Categories</div>';
+    html += '<div class="quarto-listing-category category-cloud">';
+    html += '<div class="category active" data-category="">All <span class="quarto-category-count">(' + total + ')</span></div>';
     sorted.forEach(function(cat) {
-      html += '<li><a href="javascript:void(0)" class="category-filter-sidebar" data-category="' + cat + '">' + cat + ' <span class="count">' + counts[cat] + '</span></a></li>';
+      html += '<div class="category" data-category="' + cat + '">' + cat + ' <span class="quarto-category-count">(' + counts[cat] + ')</span></div>';
     });
-    html += '</ul>';
+    html += '</div>';
     sidebar.innerHTML = html;
     sidebar.dataset.populated = 'true';
 
-    sidebar.querySelectorAll('.category-filter-sidebar').forEach(function(link) {
-      link.addEventListener('click', function(e) {
+    sidebar.querySelectorAll('.category').forEach(function(el) {
+      el.addEventListener('click', function(e) {
         e.preventDefault();
         var cat = this.getAttribute('data-category');
         activeCategory = cat || null;
@@ -141,11 +142,14 @@
       var category = link.getAttribute('data-category');
       link.classList.toggle('active', category === activeCategory);
     });
-    document.querySelectorAll('.category-filter-sidebar').forEach(function(link) {
-      var category = link.getAttribute('data-category');
-      var isActive = activeCategory ? category === activeCategory : category === '';
-      link.classList.toggle('active', isActive);
-    });
+    var sidebar = document.getElementById('research-category-filter');
+    if (sidebar) {
+      sidebar.querySelectorAll('.category').forEach(function(el) {
+        var category = el.getAttribute('data-category');
+        var isActive = activeCategory ? category === activeCategory : category === '';
+        el.classList.toggle('active', isActive);
+      });
+    }
   }
 
   if (document.readyState === 'loading') {
