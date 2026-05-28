@@ -27,7 +27,7 @@ During a trip to Barcelona in May 2026, I was able to go to El Clasico (when Bar
 ![Championship team celebrating](el-clasico.png){.img-fluid style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" group="sports"}
 
 ::: {.text-center style="margin-top: 0.5rem; font-size: 0.9em; color: #666;"}
-*Barcelona---theBest team in the world---clinches title against Real Madrid*
+*May 10th, 2026 Barcelona---the Best team in the world---clinches La Liga title against Real Madrid*
 :::
 :::
 :::
