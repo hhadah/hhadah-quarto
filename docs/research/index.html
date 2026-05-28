@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1b3db88def35042d172274863c1cdcf0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-cdceb558ee9f3cded3a9752d344dd73e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e1cf0905aa38887c87b7966d67558d22.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -119,6 +119,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-working-papers'] = new List('listing-working-papers', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-works-in-progress .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-pagetitle','listing-description-meta','listing-author-meta','listing-website','listing-extensions','listing-project','listing-execute','listing-format','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-include-back-link','listing-title','listing-date','listing-author','listing-categories','listing-pub-info','listing-pub-status','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-pagetitle","listing-description-meta","listing-author-meta","listing-website","listing-extensions","listing-project","listing-execute","listing-format","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-include-back-link","listing-title","listing-date","listing-author","listing-categories","listing-pub-info","listing-pub-status","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-works-in-progress'] = new List('listing-works-in-progress', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -330,7 +358,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="floating nav-fixed slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -391,9 +419,9 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block research default page-columns page-full">
+<header id="title-block-header" class="quarto-title-block research default toc-left page-columns page-full">
     <div class="quarto-title-banner page-columns page-full">
-                <div class="quarto-title column-page-left">
+                <div class="quarto-title column-body">
             <h1 class="title">Research</h1>
 
             
@@ -404,7 +432,7 @@ window.Quarto = {
     
     
     
-    <div class="quarto-title-meta column-page-left">
+    <div class="quarto-title-meta">
 
         
       
@@ -413,11 +441,10 @@ window.Quarto = {
       
 
     
-</header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+</header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Contents</h2>
    
   <ul>
@@ -426,18 +453,27 @@ window.Quarto = {
   <li><a href="#works-in-progress" id="toc-works-in-progress" class="nav-link" data-scroll-target="#works-in-progress">Works in Progress</a></li>
   </ul>
 </nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
 
-<section id="journal-articles" class="level2">
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div id="research-category-filter" class="research-category-sidebar">
+
+</div>
+</div></div><section id="journal-articles" class="level2">
 <h2 class="anchored" data-anchor-id="journal-articles">Journal articles</h2>
 <div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
 
-<div class="research project-list" data-listing-id="listing-ydubmj4ts">
+<div class="research project-list" data-listing-id="listing-rkks9d0rt">
 <ul class="list">
     
         <li class="project" data-index="0" data-categories="RXRobmljaXR5JTJDQmlhcyUyQ0Rpc2NyaW1pbmF0aW9u" data-listing-date-sort="1755928800000" data-listing-file-modified-sort="1777503866702" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="207" data-listing-categories="Ethnicity,Bias,Discrimination">
@@ -449,15 +485,15 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-ydubmj4ts">Ethnicity</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-rkks9d0rt">Ethnicity</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Bias" data-listing="listing-ydubmj4ts">Bias</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Bias" data-listing="listing-rkks9d0rt">Bias</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-ydubmj4ts">Discrimination</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-rkks9d0rt">Discrimination</a>
                     </div>
                     
             </div>
@@ -521,15 +557,15 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-ydubmj4ts">Ethnicity</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-rkks9d0rt">Ethnicity</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Bias" data-listing="listing-ydubmj4ts">Bias</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Bias" data-listing="listing-rkks9d0rt">Bias</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-ydubmj4ts">Discrimination</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-rkks9d0rt">Discrimination</a>
                     </div>
                     
             </div>
@@ -572,95 +608,103 @@ window.Quarto = {
 </div>
 
 <script>
-// Initialize category filtering - runs once when first listing loads
+// Initialize category filtering - runs once when first listing loads.
+// A category click filters ALL research listings on the page at once,
+// so a user can pick e.g. "Discrimination" and see matching items across
+// Publications, Working Papers, and Works in Progress simultaneously.
 (function() {
   if (window.categoryFilterInitialized) return;
   window.categoryFilterInitialized = true;
 
-  // Track active filters per listing
-  var activeFilters = {};
+  var activeCategory = null;
 
-  // Initialize when DOM is ready
   function init() {
-    // Add click handlers to all category filter links
     document.querySelectorAll('.category-filter').forEach(function(link) {
       link.addEventListener('click', function(e) {
         e.preventDefault();
         var category = this.getAttribute('data-category');
-        var listingType = this.getAttribute('data-listing');
+        activeCategory = (activeCategory === category) ? null : category;
+        applyFilter(activeCategory);
+      });
+    });
+    populateSidebar();
+  }
 
-        // Toggle filter for this listing
-        if (activeFilters[listingType] === category) {
-          delete activeFilters[listingType];
-          updateListingDisplay(listingType, null);
-        } else {
-          activeFilters[listingType] = category;
-          updateListingDisplay(listingType, category);
-        }
+  // Build a unified category list in #research-category-filter, if present,
+  // so the user can filter all listings on the page from one sticky sidebar.
+  function populateSidebar() {
+    var sidebar = document.getElementById('research-category-filter');
+    if (!sidebar || sidebar.dataset.populated === 'true') return;
 
-        updateCategoryLinks(listingType, activeFilters[listingType]);
+    var counts = {};
+    var total = 0;
+    document.querySelectorAll('.research.project-list .project').forEach(function(item) {
+      total++;
+      var cats = (item.getAttribute('data-listing-categories') || '').split(',').filter(Boolean);
+      cats.forEach(function(c) { counts[c] = (counts[c] || 0) + 1; });
+    });
+
+    var sorted = Object.keys(counts).sort();
+    if (sorted.length === 0) return;
+
+    var html = '<div class="quarto-listing-category-title">Categories</div>';
+    html += '<div class="quarto-listing-category category-cloud">';
+    html += '<div class="category active" data-category="">All <span class="quarto-category-count">(' + total + ')</span></div>';
+    sorted.forEach(function(cat) {
+      html += '<div class="category" data-category="' + cat + '">' + cat + ' <span class="quarto-category-count">(' + counts[cat] + ')</span></div>';
+    });
+    html += '</div>';
+    sidebar.innerHTML = html;
+    sidebar.dataset.populated = 'true';
+
+    sidebar.querySelectorAll('.category').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        var cat = this.getAttribute('data-category');
+        activeCategory = cat || null;
+        applyFilter(activeCategory);
       });
     });
   }
 
-  function updateListingDisplay(listingType, category) {
-    var listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
-    if (!listingContainer) return;
-
-    var items = listingContainer.querySelectorAll('.project');
-    items.forEach(function(item) {
-      if (!category) {
-        // Show all items
-        item.classList.remove('d-none');
-        item.style.display = '';
-      } else {
-        // Show only items that have this category
-        var categories = item.getAttribute('data-listing-categories');
-        if (categories && categories.split(',').indexOf(category) !== -1) {
-          item.classList.remove('d-none');
-          item.style.display = '';
-        } else {
-          item.classList.add('d-none');
-          item.style.display = 'none';
-        }
-      }
+  function applyFilter(category) {
+    document.querySelectorAll('.research.project-list').forEach(function(container) {
+      container.querySelectorAll('.project').forEach(function(item) {
+        var categories = item.getAttribute('data-listing-categories') || '';
+        var match = !category || categories.split(',').indexOf(category) !== -1;
+        item.classList.toggle('d-none', !match);
+        item.style.display = match ? '' : 'none';
+      });
+      updateNoMatchingMessage(container);
     });
-
-    // Update "no matching items" message
-    updateNoMatchingMessage(listingContainer);
+    updateCategoryLinks(category);
   }
 
   function updateNoMatchingMessage(listingContainer) {
     var anyVisible = Array.from(listingContainer.querySelectorAll('.project')).some(function(item) {
       return !item.classList.contains('d-none');
     });
-
     var noMatchMsg = listingContainer.parentElement.querySelector('.listing-no-matching');
     if (noMatchMsg) {
-      if (anyVisible) {
-        noMatchMsg.classList.add('d-none');
-      } else {
-        noMatchMsg.classList.remove('d-none');
-      }
+      noMatchMsg.classList.toggle('d-none', anyVisible);
     }
   }
 
-  function updateCategoryLinks(listingType, activeCategory) {
-    var listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
-    if (!listingContainer) return;
-
-    var links = listingContainer.querySelectorAll('.category-filter[data-listing="' + listingType + '"]');
-    links.forEach(function(link) {
+  function updateCategoryLinks(activeCategory) {
+    document.querySelectorAll('.category-filter').forEach(function(link) {
       var category = link.getAttribute('data-category');
-      if (category === activeCategory) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
+      link.classList.toggle('active', category === activeCategory);
     });
+    var sidebar = document.getElementById('research-category-filter');
+    if (sidebar) {
+      sidebar.querySelectorAll('.category').forEach(function(el) {
+        var category = el.getAttribute('data-category');
+        var isActive = activeCategory ? category === activeCategory : category === '';
+        el.classList.toggle('active', isActive);
+      });
+    }
   }
 
-  // Run initialization
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
@@ -675,7 +719,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="working-papers">Working papers</h2>
 <div id="listing-working-papers" class="quarto-listing quarto-listing-container-custom">
 
-<div class="research project-list" data-listing-id="listing-ju0wo8j1m">
+<div class="research project-list" data-listing-id="listing-xvzvzvbxc">
 <ul class="list">
     
         <li class="project" data-index="0" data-categories="RXRobmljaXR5JTJDUmFjZSUyQ0JpYXMlMkNEaXNjcmltaW5hdGlvbg==" data-listing-file-modified-sort="1777503878769" data-listing-reading-time-sort="2" data-listing-word-count-sort="251" data-listing-categories="Ethnicity,Race,Bias,Discrimination">
@@ -687,19 +731,19 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-ju0wo8j1m">Ethnicity</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-xvzvzvbxc">Ethnicity</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Race" data-listing="listing-ju0wo8j1m">Race</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Race" data-listing="listing-xvzvzvbxc">Race</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Bias" data-listing="listing-ju0wo8j1m">Bias</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Bias" data-listing="listing-xvzvzvbxc">Bias</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-ju0wo8j1m">Discrimination</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-xvzvzvbxc">Discrimination</a>
                     </div>
                     
             </div>
@@ -730,36 +774,36 @@ window.Quarto = {
             </div>
         </li>
         
-        <li class="project" data-index="1" data-categories="V2FpdGluZyUyMFBlcmlvZHMlMkNTdWljaWRlcyUyQ0ZpcmVhcm0lMjBTdWljaWRlcyUyQ1BvbGljeSUyMEV2YWx1YXRpb24lMkNNZW50YWwlMjBIZWFsdGglMkNEaWZmZXJlbmNlLWluLWRpZmZlcmVuY2Vz" data-listing-file-modified-sort="1777501096318" data-listing-reading-time-sort="2" data-listing-word-count-sort="377" data-listing-categories="Waiting Periods,Suicides,Firearm Suicides,Policy Evaluation,Mental Health,Difference-in-differences">
+        <li class="project" data-index="1" data-categories="V2FpdGluZyUyMFBlcmlvZHMlMkNTdWljaWRlcyUyQ0ZpcmVhcm0lMjBTdWljaWRlcyUyQ1BvbGljeSUyMEV2YWx1YXRpb24lMkNNZW50YWwlMjBIZWFsdGglMkNEaWZmZXJlbmNlLWluLWRpZmZlcmVuY2Vz" data-listing-file-modified-sort="1780004756503" data-listing-reading-time-sort="2" data-listing-word-count-sort="377" data-listing-categories="Waiting Periods,Suicides,Firearm Suicides,Policy Evaluation,Mental Health,Difference-in-differences">
             <div class="project-content listing-pub-info">
-                <p><strong>Hussain Hadah</strong> and Gael Compta, "The Effects of Waiting Periods on Firearm Suicides in the U.S." <em>Under Review</em>.</p>
+                <p><strong>Hussain Hadah</strong>, Gael Compta, and Ali Saffouri, "The Effects of Waiting Periods on Firearm Suicides in the U.S." <em>Under Review</em>.</p>
             </div>
 
             
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Waiting Periods" data-listing="listing-ju0wo8j1m">Waiting Periods</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Waiting Periods" data-listing="listing-xvzvzvbxc">Waiting Periods</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Suicides" data-listing="listing-ju0wo8j1m">Suicides</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Suicides" data-listing="listing-xvzvzvbxc">Suicides</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Firearm Suicides" data-listing="listing-ju0wo8j1m">Firearm Suicides</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Firearm Suicides" data-listing="listing-xvzvzvbxc">Firearm Suicides</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-ju0wo8j1m">Policy Evaluation</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-xvzvzvbxc">Policy Evaluation</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Mental Health" data-listing="listing-ju0wo8j1m">Mental Health</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Mental Health" data-listing="listing-xvzvzvbxc">Mental Health</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-ju0wo8j1m">Difference-in-differences</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-xvzvzvbxc">Difference-in-differences</a>
                     </div>
                     
             </div>
@@ -785,6 +829,14 @@ window.Quarto = {
                         </a>
                     </li>
                         
+                    <li class="project-link">
+                        
+                        <a href="https://docs.iza.org/dp18624.pdf">
+                        
+                            <i class="fa-solid fa-pen-nib"></i> IZA DP No. 18624
+                        </a>
+                    </li>
+                        
                     
                 </ul>
             </div>
@@ -799,23 +851,23 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Immigration enforcement" data-listing="listing-ju0wo8j1m">Immigration enforcement</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Immigration enforcement" data-listing="listing-xvzvzvbxc">Immigration enforcement</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Secure Communities" data-listing="listing-ju0wo8j1m">Secure Communities</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Secure Communities" data-listing="listing-xvzvzvbxc">Secure Communities</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-ju0wo8j1m">Difference-in-differences</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-xvzvzvbxc">Difference-in-differences</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-ju0wo8j1m">Policy Evaluation</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-xvzvzvbxc">Policy Evaluation</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-ju0wo8j1m">Ethnicity</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-xvzvzvbxc">Ethnicity</a>
                     </div>
                     
             </div>
@@ -855,23 +907,23 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnic favoritism" data-listing="listing-ju0wo8j1m">Ethnic favoritism</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnic favoritism" data-listing="listing-xvzvzvbxc">Ethnic favoritism</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Dictatorships" data-listing="listing-ju0wo8j1m">Dictatorships</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Dictatorships" data-listing="listing-xvzvzvbxc">Dictatorships</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Democracy" data-listing="listing-ju0wo8j1m">Democracy</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Democracy" data-listing="listing-xvzvzvbxc">Democracy</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Institutions" data-listing="listing-ju0wo8j1m">Institutions</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Institutions" data-listing="listing-xvzvzvbxc">Institutions</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-ju0wo8j1m">Difference-in-differences</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-xvzvzvbxc">Difference-in-differences</a>
                     </div>
                     
             </div>
@@ -918,7 +970,7 @@ window.Quarto = {
             </div>
         </li>
         
-        <li class="project" data-index="4" data-categories="U29jaWFsJTIwbmV0d29yayUyQ1BlZXIlMjBlZmZlY3RzJTJDSW5zdHJ1bWVudGFsJTIwdmFyaWFibGUlMkNBZGQlMjBIZWFsdGglMjBkYXRhc2V0" data-listing-file-modified-sort="1777503905420" data-listing-reading-time-sort="2" data-listing-word-count-sort="294" data-listing-categories="Social network,Peer effects,Instrumental variable,Add Health dataset">
+        <li class="project" data-index="4" data-categories="U29jaWFsJTIwbmV0d29yayUyQ1BlZXIlMjBlZmZlY3RzJTJDSW5zdHJ1bWVudGFsJTIwdmFyaWFibGUlMkNBZGQlMjBIZWFsdGglMjBkYXRhc2V0" data-listing-file-modified-sort="1780004656668" data-listing-reading-time-sort="2" data-listing-word-count-sort="294" data-listing-categories="Social network,Peer effects,Instrumental variable,Add Health dataset">
             <div class="project-content listing-pub-info">
                 <p><strong>Hussain Hadah</strong>, “Peer Effects in Adolescent Mental Health,” <em>Under Review</em>.</p>
             </div>
@@ -927,19 +979,19 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Social network" data-listing="listing-ju0wo8j1m">Social network</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Social network" data-listing="listing-xvzvzvbxc">Social network</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Peer effects" data-listing="listing-ju0wo8j1m">Peer effects</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Peer effects" data-listing="listing-xvzvzvbxc">Peer effects</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Instrumental variable" data-listing="listing-ju0wo8j1m">Instrumental variable</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Instrumental variable" data-listing="listing-xvzvzvbxc">Instrumental variable</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Add Health dataset" data-listing="listing-ju0wo8j1m">Add Health dataset</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Add Health dataset" data-listing="listing-xvzvzvbxc">Add Health dataset</a>
                     </div>
                     
             </div>
@@ -973,12 +1025,20 @@ window.Quarto = {
                         </a>
                     </li>
                         
+                    <li class="project-link">
+                        
+                        <a href="https://docs.iza.org/dp18623.pdf">
+                        
+                            <i class="fa-solid fa-pen-nib"></i> IZA DP No. 18623
+                        </a>
+                    </li>
+                        
                     
                 </ul>
             </div>
         </li>
         
-        <li class="project" data-index="5" data-categories="SW1taWdyYXRpb24lMjBlbmZvcmNlbWVudCUyQ1NlY3VyZSUyMENvbW11bml0aWVzJTJDU3VpY2lkZXMlMkNEaWZmZXJlbmNlLWluLWRpZmZlcmVuY2VzJTJDUG9saWN5JTIwRXZhbHVhdGlvbiUyQ01lbnRhbCUyMEhlYWx0aCUyQ0V0aG5pY2l0eQ==" data-listing-file-modified-sort="1777503914935" data-listing-reading-time-sort="3" data-listing-word-count-sort="408" data-listing-categories="Immigration enforcement,Secure Communities,Suicides,Difference-in-differences,Policy Evaluation,Mental Health,Ethnicity">
+        <li class="project" data-index="5" data-categories="SW1taWdyYXRpb24lMjBlbmZvcmNlbWVudCUyQ1NlY3VyZSUyMENvbW11bml0aWVzJTJDU3VpY2lkZXMlMkNEaWZmZXJlbmNlLWluLWRpZmZlcmVuY2VzJTJDUG9saWN5JTIwRXZhbHVhdGlvbiUyQ01lbnRhbCUyMEhlYWx0aCUyQ0V0aG5pY2l0eQ==" data-listing-file-modified-sort="1780004793314" data-listing-reading-time-sort="3" data-listing-word-count-sort="408" data-listing-categories="Immigration enforcement,Secure Communities,Suicides,Difference-in-differences,Policy Evaluation,Mental Health,Ethnicity">
             <div class="project-content listing-pub-info">
                 <p><strong>Hussain Hadah</strong>, "Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates,” <em>Under Review</em>.</p>
             </div>
@@ -987,31 +1047,31 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Immigration enforcement" data-listing="listing-ju0wo8j1m">Immigration enforcement</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Immigration enforcement" data-listing="listing-xvzvzvbxc">Immigration enforcement</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Secure Communities" data-listing="listing-ju0wo8j1m">Secure Communities</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Secure Communities" data-listing="listing-xvzvzvbxc">Secure Communities</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Suicides" data-listing="listing-ju0wo8j1m">Suicides</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Suicides" data-listing="listing-xvzvzvbxc">Suicides</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-ju0wo8j1m">Difference-in-differences</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Difference-in-differences" data-listing="listing-xvzvzvbxc">Difference-in-differences</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-ju0wo8j1m">Policy Evaluation</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-xvzvzvbxc">Policy Evaluation</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Mental Health" data-listing="listing-ju0wo8j1m">Mental Health</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Mental Health" data-listing="listing-xvzvzvbxc">Mental Health</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-ju0wo8j1m">Ethnicity</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-xvzvzvbxc">Ethnicity</a>
                     </div>
                     
             </div>
@@ -1037,6 +1097,14 @@ window.Quarto = {
                         </a>
                     </li>
                         
+                    <li class="project-link">
+                        
+                        <a href="https://docs.iza.org/dp18613.pdf">
+                        
+                            <i class="fa-solid fa-pen-nib"></i> IZA DP No. 18613
+                        </a>
+                    </li>
+                        
                     
                 </ul>
             </div>
@@ -1051,23 +1119,23 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Disability services" data-listing="listing-ju0wo8j1m">Disability services</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Disability services" data-listing="listing-xvzvzvbxc">Disability services</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Labor markets" data-listing="listing-ju0wo8j1m">Labor markets</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Labor markets" data-listing="listing-xvzvzvbxc">Labor markets</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Returns to services" data-listing="listing-ju0wo8j1m">Returns to services</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Returns to services" data-listing="listing-xvzvzvbxc">Returns to services</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-ju0wo8j1m">Policy Evaluation</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-xvzvzvbxc">Policy Evaluation</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Administrative data" data-listing="listing-ju0wo8j1m">Administrative data</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Administrative data" data-listing="listing-xvzvzvbxc">Administrative data</a>
                     </div>
                     
             </div>
@@ -1097,23 +1165,23 @@ window.Quarto = {
             <div class="project-categories">
                 
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Workforce Innovation and Opportunity Act" data-listing="listing-ju0wo8j1m">Workforce Innovation and Opportunity Act</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Workforce Innovation and Opportunity Act" data-listing="listing-xvzvzvbxc">Workforce Innovation and Opportunity Act</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Labor markets" data-listing="listing-ju0wo8j1m">Labor markets</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Labor markets" data-listing="listing-xvzvzvbxc">Labor markets</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Workforce development" data-listing="listing-ju0wo8j1m">Workforce development</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Workforce development" data-listing="listing-xvzvzvbxc">Workforce development</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-ju0wo8j1m">Policy Evaluation</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Policy Evaluation" data-listing="listing-xvzvzvbxc">Policy Evaluation</a>
                     </div>
                     
                     <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="Administrative data" data-listing="listing-ju0wo8j1m">Administrative data</a>
+                        <a href="javascript:void(0)" class="category-filter" data-category="Administrative data" data-listing="listing-xvzvzvbxc">Administrative data</a>
                     </div>
                     
             </div>
@@ -1138,95 +1206,103 @@ window.Quarto = {
 </div>
 
 <script>
-// Initialize category filtering - runs once when first listing loads
+// Initialize category filtering - runs once when first listing loads.
+// A category click filters ALL research listings on the page at once,
+// so a user can pick e.g. "Discrimination" and see matching items across
+// Publications, Working Papers, and Works in Progress simultaneously.
 (function() {
   if (window.categoryFilterInitialized) return;
   window.categoryFilterInitialized = true;
 
-  // Track active filters per listing
-  var activeFilters = {};
+  var activeCategory = null;
 
-  // Initialize when DOM is ready
   function init() {
-    // Add click handlers to all category filter links
     document.querySelectorAll('.category-filter').forEach(function(link) {
       link.addEventListener('click', function(e) {
         e.preventDefault();
         var category = this.getAttribute('data-category');
-        var listingType = this.getAttribute('data-listing');
+        activeCategory = (activeCategory === category) ? null : category;
+        applyFilter(activeCategory);
+      });
+    });
+    populateSidebar();
+  }
 
-        // Toggle filter for this listing
-        if (activeFilters[listingType] === category) {
-          delete activeFilters[listingType];
-          updateListingDisplay(listingType, null);
-        } else {
-          activeFilters[listingType] = category;
-          updateListingDisplay(listingType, category);
-        }
+  // Build a unified category list in #research-category-filter, if present,
+  // so the user can filter all listings on the page from one sticky sidebar.
+  function populateSidebar() {
+    var sidebar = document.getElementById('research-category-filter');
+    if (!sidebar || sidebar.dataset.populated === 'true') return;
 
-        updateCategoryLinks(listingType, activeFilters[listingType]);
+    var counts = {};
+    var total = 0;
+    document.querySelectorAll('.research.project-list .project').forEach(function(item) {
+      total++;
+      var cats = (item.getAttribute('data-listing-categories') || '').split(',').filter(Boolean);
+      cats.forEach(function(c) { counts[c] = (counts[c] || 0) + 1; });
+    });
+
+    var sorted = Object.keys(counts).sort();
+    if (sorted.length === 0) return;
+
+    var html = '<div class="quarto-listing-category-title">Categories</div>';
+    html += '<div class="quarto-listing-category category-cloud">';
+    html += '<div class="category active" data-category="">All <span class="quarto-category-count">(' + total + ')</span></div>';
+    sorted.forEach(function(cat) {
+      html += '<div class="category" data-category="' + cat + '">' + cat + ' <span class="quarto-category-count">(' + counts[cat] + ')</span></div>';
+    });
+    html += '</div>';
+    sidebar.innerHTML = html;
+    sidebar.dataset.populated = 'true';
+
+    sidebar.querySelectorAll('.category').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        var cat = this.getAttribute('data-category');
+        activeCategory = cat || null;
+        applyFilter(activeCategory);
       });
     });
   }
 
-  function updateListingDisplay(listingType, category) {
-    var listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
-    if (!listingContainer) return;
-
-    var items = listingContainer.querySelectorAll('.project');
-    items.forEach(function(item) {
-      if (!category) {
-        // Show all items
-        item.classList.remove('d-none');
-        item.style.display = '';
-      } else {
-        // Show only items that have this category
-        var categories = item.getAttribute('data-listing-categories');
-        if (categories && categories.split(',').indexOf(category) !== -1) {
-          item.classList.remove('d-none');
-          item.style.display = '';
-        } else {
-          item.classList.add('d-none');
-          item.style.display = 'none';
-        }
-      }
+  function applyFilter(category) {
+    document.querySelectorAll('.research.project-list').forEach(function(container) {
+      container.querySelectorAll('.project').forEach(function(item) {
+        var categories = item.getAttribute('data-listing-categories') || '';
+        var match = !category || categories.split(',').indexOf(category) !== -1;
+        item.classList.toggle('d-none', !match);
+        item.style.display = match ? '' : 'none';
+      });
+      updateNoMatchingMessage(container);
     });
-
-    // Update "no matching items" message
-    updateNoMatchingMessage(listingContainer);
+    updateCategoryLinks(category);
   }
 
   function updateNoMatchingMessage(listingContainer) {
     var anyVisible = Array.from(listingContainer.querySelectorAll('.project')).some(function(item) {
       return !item.classList.contains('d-none');
     });
-
     var noMatchMsg = listingContainer.parentElement.querySelector('.listing-no-matching');
     if (noMatchMsg) {
-      if (anyVisible) {
-        noMatchMsg.classList.add('d-none');
-      } else {
-        noMatchMsg.classList.remove('d-none');
-      }
+      noMatchMsg.classList.toggle('d-none', anyVisible);
     }
   }
 
-  function updateCategoryLinks(listingType, activeCategory) {
-    var listingContainer = document.querySelector('[data-listing-id="' + listingType + '"]');
-    if (!listingContainer) return;
-
-    var links = listingContainer.querySelectorAll('.category-filter[data-listing="' + listingType + '"]');
-    links.forEach(function(link) {
+  function updateCategoryLinks(activeCategory) {
+    document.querySelectorAll('.category-filter').forEach(function(link) {
       var category = link.getAttribute('data-category');
-      if (category === activeCategory) {
-        link.classList.add('active');
-      } else {
-        link.classList.remove('active');
-      }
+      link.classList.toggle('active', category === activeCategory);
     });
+    var sidebar = document.getElementById('research-category-filter');
+    if (sidebar) {
+      sidebar.querySelectorAll('.category').forEach(function(el) {
+        var category = el.getAttribute('data-category');
+        var isActive = activeCategory ? category === activeCategory : category === '';
+        el.classList.toggle('active', isActive);
+      });
+    }
   }
 
-  // Run initialization
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
@@ -1239,23 +1315,351 @@ window.Quarto = {
 </section>
 <section id="works-in-progress" class="level2">
 <h2 class="anchored" data-anchor-id="works-in-progress">Works in Progress</h2>
+<div id="listing-works-in-progress" class="quarto-listing quarto-listing-container-custom">
+
+<div class="research project-list" data-listing-id="listing-7095bx3vb">
+<ul class="list">
+    
+        <li class="project" data-index="0" data-categories="RGlzY3JpbWluYXRpb24lMkNBdWRpdCUyQ01vcnRnYWdlJTJDU2V4dWFsJTIwT3JpZW50YXRpb24=" data-listing-date-sort="1756706400000" data-listing-file-modified-sort="1777556012407" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-categories="Discrimination,Audit,Mortgage,Sexual Orientation">
+            <div class="project-content listing-pub-info">
+                <p>Patrick Button, <strong>Hussain Hadah</strong>, Javiera Selman, Bariş Alan*, Cathy Balfe*, and Tran Nguyen-Phuong*. "Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment."</p>
+            </div>
+
+            
+            <div class="project-categories">
+                
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-7095bx3vb">Discrimination</a>
+                    </div>
+                    
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Audit" data-listing="listing-7095bx3vb">Audit</a>
+                    </div>
+                    
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Mortgage" data-listing="listing-7095bx3vb">Mortgage</a>
+                    </div>
+                    
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Sexual Orientation" data-listing="listing-7095bx3vb">Sexual Orientation</a>
+                    </div>
+                    
+            </div>
+            
+
+            
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/works-in-progress/button-hadah-mortgage/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li class="project" data-index="1" data-categories="RGlzY3JpbWluYXRpb24lMkNBdWRpdCUyQ0VkdWNhdGlvbiUyQ1NjaG9vbCUyMENob2ljZQ==" data-listing-date-sort="1754028000000" data-listing-file-modified-sort="1777555585242" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-categories="Discrimination,Audit,Education,School Choice">
+            <div class="project-content listing-pub-info">
+                <p><strong>Hussain Hadah</strong>, Patrick Button, Douglas Harris, Barbara Lundebjerg*, and Bariş Alan*. "Parent's Choice or School's Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools." Funded by a $140,747 grant from J-PAL.</p>
+            </div>
+
+            
+            <div class="project-categories">
+                
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-7095bx3vb">Discrimination</a>
+                    </div>
+                    
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Audit" data-listing="listing-7095bx3vb">Audit</a>
+                    </div>
+                    
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Education" data-listing="listing-7095bx3vb">Education</a>
+                    </div>
+                    
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="School Choice" data-listing="listing-7095bx3vb">School Choice</a>
+                    </div>
+                    
+            </div>
+            
+
+            
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/works-in-progress/hadah-button-harris-schoolchoice/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://hhadah.github.io/statements/EducationAudit-LOI-RST-Final.pdf">
+                        
+                            <i class="fa-solid fa-file-pdf"></i> Russell Sage LOI
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://hhadah.github.io/jpal-presentation/hadah-jpal-presentation.html">
+                        
+                            <i class="fa-solid fa-presentation-screen"></i> J-PAL Slides
+                        </a>
+                    </li>
+                        
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li class="project" data-index="2" data-categories="RGlzY3JpbWluYXRpb24lMkNBdWRpdCUyQ0hlYWx0aCUyQ1JlcHJvZHVjdGl2ZSUyMFJpZ2h0cw==" data-listing-date-sort="1751349600000" data-listing-file-modified-sort="1777555619625" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-categories="Discrimination,Audit,Health,Reproductive Rights">
+            <div class="project-content listing-pub-info">
+                <p>Patrick Button, Clare Daniel, <strong>Hussain Hadah</strong>, Julie Hernandez, Mirya Holman, and Anna Mahoney. "Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources."</p>
+            </div>
+
+            
+            <div class="project-categories">
+                
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Discrimination" data-listing="listing-7095bx3vb">Discrimination</a>
+                    </div>
+                    
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Audit" data-listing="listing-7095bx3vb">Audit</a>
+                    </div>
+                    
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Health" data-listing="listing-7095bx3vb">Health</a>
+                    </div>
+                    
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Reproductive Rights" data-listing="listing-7095bx3vb">Reproductive Rights</a>
+                    </div>
+                    
+            </div>
+            
+
+            
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/works-in-progress/button-cpc/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li class="project" data-index="3" data-categories="SWRlbnRpdHklMkNSYWNlJTJDRXRobmljaXR5JTJDSW1taWdyYXRpb24=" data-listing-date-sort="1748757600000" data-listing-file-modified-sort="1777555634420" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-categories="Identity,Race,Ethnicity,Immigration">
+            <div class="project-content listing-pub-info">
+                <p>Augustine Denteh and <strong>Hussain Hadah</strong>. "Assimilation of Hispanics and Arabs in America."</p>
+            </div>
+
+            
+            <div class="project-categories">
+                
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Identity" data-listing="listing-7095bx3vb">Identity</a>
+                    </div>
+                    
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Race" data-listing="listing-7095bx3vb">Race</a>
+                    </div>
+                    
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Ethnicity" data-listing="listing-7095bx3vb">Ethnicity</a>
+                    </div>
+                    
+                    <div class="project-category">
+                        <a href="javascript:void(0)" class="category-filter" data-category="Immigration" data-listing="listing-7095bx3vb">Immigration</a>
+                    </div>
+                    
+            </div>
+            
+
+            
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/works-in-progress/denteh-hadah-arabs-hispanics/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li class="project" data-index="4" data-listing-date-sort="1677135600000" data-listing-file-modified-sort="1777503938924" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-categories="">
+            <div class="project-content listing-pub-info">
+                <p><a><strong>Hussain Hadah</strong>, “Endogenous Hispanic Identity and Ethnic Gaps in the U.S.”</a></p>
+            </div>
+
+            
+
+            
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/works-in-progress/hadah-enog-identity/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        
+</ul>
+</div>
+
+<script>
+// Initialize category filtering - runs once when first listing loads.
+// A category click filters ALL research listings on the page at once,
+// so a user can pick e.g. "Discrimination" and see matching items across
+// Publications, Working Papers, and Works in Progress simultaneously.
+(function() {
+  if (window.categoryFilterInitialized) return;
+  window.categoryFilterInitialized = true;
+
+  var activeCategory = null;
+
+  function init() {
+    document.querySelectorAll('.category-filter').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var category = this.getAttribute('data-category');
+        activeCategory = (activeCategory === category) ? null : category;
+        applyFilter(activeCategory);
+      });
+    });
+    populateSidebar();
+  }
+
+  // Build a unified category list in #research-category-filter, if present,
+  // so the user can filter all listings on the page from one sticky sidebar.
+  function populateSidebar() {
+    var sidebar = document.getElementById('research-category-filter');
+    if (!sidebar || sidebar.dataset.populated === 'true') return;
+
+    var counts = {};
+    var total = 0;
+    document.querySelectorAll('.research.project-list .project').forEach(function(item) {
+      total++;
+      var cats = (item.getAttribute('data-listing-categories') || '').split(',').filter(Boolean);
+      cats.forEach(function(c) { counts[c] = (counts[c] || 0) + 1; });
+    });
+
+    var sorted = Object.keys(counts).sort();
+    if (sorted.length === 0) return;
+
+    var html = '<div class="quarto-listing-category-title">Categories</div>';
+    html += '<div class="quarto-listing-category category-cloud">';
+    html += '<div class="category active" data-category="">All <span class="quarto-category-count">(' + total + ')</span></div>';
+    sorted.forEach(function(cat) {
+      html += '<div class="category" data-category="' + cat + '">' + cat + ' <span class="quarto-category-count">(' + counts[cat] + ')</span></div>';
+    });
+    html += '</div>';
+    sidebar.innerHTML = html;
+    sidebar.dataset.populated = 'true';
+
+    sidebar.querySelectorAll('.category').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        var cat = this.getAttribute('data-category');
+        activeCategory = cat || null;
+        applyFilter(activeCategory);
+      });
+    });
+  }
+
+  function applyFilter(category) {
+    document.querySelectorAll('.research.project-list').forEach(function(container) {
+      container.querySelectorAll('.project').forEach(function(item) {
+        var categories = item.getAttribute('data-listing-categories') || '';
+        var match = !category || categories.split(',').indexOf(category) !== -1;
+        item.classList.toggle('d-none', !match);
+        item.style.display = match ? '' : 'none';
+      });
+      updateNoMatchingMessage(container);
+    });
+    updateCategoryLinks(category);
+  }
+
+  function updateNoMatchingMessage(listingContainer) {
+    var anyVisible = Array.from(listingContainer.querySelectorAll('.project')).some(function(item) {
+      return !item.classList.contains('d-none');
+    });
+    var noMatchMsg = listingContainer.parentElement.querySelector('.listing-no-matching');
+    if (noMatchMsg) {
+      noMatchMsg.classList.toggle('d-none', anyVisible);
+    }
+  }
+
+  function updateCategoryLinks(activeCategory) {
+    document.querySelectorAll('.category-filter').forEach(function(link) {
+      var category = link.getAttribute('data-category');
+      link.classList.toggle('active', category === activeCategory);
+    });
+    var sidebar = document.getElementById('research-category-filter');
+    if (sidebar) {
+      sidebar.querySelectorAll('.category').forEach(function(el) {
+        var category = el.getAttribute('data-category');
+        var isActive = activeCategory ? category === activeCategory : category === '';
+        el.classList.toggle('active', isActive);
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 <!-- :::{#works-in-progress}
-::: -->
-<ul class="list-group" style="margin-bottom: 15px;"><li class="list-group-item" style="border-bottom: none; padding-bottom: 0;"></li><li class="list-group-item"><b>Hussain Hadah</b>. "Endogenous Hispanic Identity and Ethnic Gaps in the U.S."<br></li></ul>
-<ul class="list-group" style="margin-bottom: 15px;"><li class="list-group-item" style="border-bottom: none; padding-bottom: 0;"></li><li class="list-group-item">Patrick Button, <b>Hussain Hadah</b>, Javiera Selman, Tran Nguyen-Phuong, and Cathy Balfe. "Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment."<br></li><li class="list-group-item" style="border-top: none; font-size: smaller; padding-top: 0;"><ul>
+
+```{=html}
+<ul class='list-group' style='margin-bottom: 15px;'><li class='list-group-item' style='border-bottom: none; padding-bottom: 0;'><li class='list-group-item'><b>Hussain Hadah</b>. "Endogenous Hispanic Identity and Ethnic Gaps in the U.S."<br></li></li></ul>
+<ul class='list-group' style='margin-bottom: 15px;'><li class='list-group-item' style='border-bottom: none; padding-bottom: 0;'><li class='list-group-item'>Patrick Button, <b>Hussain Hadah</b>, Javiera Selman, Tran Nguyen-Phuong, and Cathy Balfe. "Sexual Orientation and Racial Discrimination in Mortgage Lending: An Audit Correspondence Field Experiment."<br></li></li><li class='list-group-item' style='border-top: none; font-size: smaller; padding-top: 0;'><ul>
 <li><em>Related: See <a href="https://journals.sagepub.com/doi/full/10.1177/1525822X211057623">Balfe et al. (2022)</a> for the pilot study.</em></li>
 <li><em>Note: The experiment is in the field.</em></li>
 </ul></li></ul>
-<ul class="list-group" style="margin-bottom: 15px;"><li class="list-group-item" style="border-bottom: none; padding-bottom: 0;"></li><li class="list-group-item"><b>Hussain Hadah</b>, Patrick Button, Douglas Harris, and Barbara Lundebjerg. "Parent’s Choice or School’s Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools."<br></li><li class="list-group-item" style="border-top: none; font-size: smaller; padding-top: 0;"><ul>
+<ul class='list-group' style='margin-bottom: 15px;'><li class='list-group-item' style='border-bottom: none; padding-bottom: 0;'><li class='list-group-item'><b>Hussain Hadah</b>, Patrick Button, Douglas Harris, and Barbara Lundebjerg. "Parent’s Choice or School’s Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools."<br></li></li><li class='list-group-item' style='border-top: none; font-size: smaller; padding-top: 0;'><ul>
 <li><em>Note: we will be estimating discrimination based on race and ethnicity (White, Black, Hispanic, Arab), sexual orientation, gender identity, and disability (student has an IEP). The experiment is in the field.</em></li>
 <li><em>Grant: We received a $140,746.6 grant from  J-PAL Social Policy Research Initiative / Racial Equity Special Topic RFP.</em> </li>
 <li><em>You can find a link to a Russell Sage Foundation letter of interest using this <a href="https://hhadah.github.io/statements/EducationAudit-LOI-RST-Final.pdf">link</a>.</em></li>
 <li><em>You can find a link to the slides presented at J-PAL <a href="https://hhadah.github.io/jpal-presentation/hadah-jpal-presentation.html">here</a>.</em></li>
 </ul></li></ul>
-<ul class="list-group" style="margin-bottom: 15px;"><li class="list-group-item" style="border-bottom: none; padding-bottom: 0;"></li><li class="list-group-item">Patrick Button, Clare Daniel, <b>Hussain Hadah</b>, Julie Hernandez, Mirya Holman, and Anna Mahoney. "Auditing Crisis Pregnancy Centers: Racial biases, misinformation, and the misallocation government resources."<br></li><li class="list-group-item" style="border-top: none; font-size: smaller; padding-top: 0;"><ul>
+<ul class='list-group' style='margin-bottom: 15px;'><li class='list-group-item' style='border-bottom: none; padding-bottom: 0;'><li class='list-group-item'>Patrick Button, Clare Daniel, <b>Hussain Hadah</b>, Julie Hernandez, Mirya Holman, and Anna Mahoney. "Auditing Crisis Pregnancy Centers: Racial biases, misinformation, and the misallocation government resources."<br></li></li><li class='list-group-item' style='border-top: none; font-size: smaller; padding-top: 0;'><ul>
 <li><em>Note: We are currently working on the experimental design and expect to run the experiment in 2026.</em></li>
 </ul></li></ul>
-<ul class="list-group" style="margin-bottom: 15px;"><li class="list-group-item" style="border-bottom: none; padding-bottom: 0;"></li><li class="list-group-item"><b>Hussain Hadah</b> and Augustine Denteh. "Assimilation of Hispanics and Arabs in America."<br></li></ul>
+<ul class='list-group' style='margin-bottom: 15px;'><li class='list-group-item' style='border-bottom: none; padding-bottom: 0;'><li class='list-group-item'><b>Hussain Hadah</b> and Augustine Denteh. "Assimilation of Hispanics and Arabs in America."<br></li></li></ul>
+```
+
+
+::: -->
 <!-- ## Book chapters
 
 :::{#book-chapters}
