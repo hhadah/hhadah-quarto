@@ -22,6 +22,10 @@ pub-info:
       url: https://dx.doi.org/10.2139/ssrn.5886942
       icon: fa-solid fa-file-pdf
       local: false
+    - name: IZA DP No. 18613
+      url: https://docs.iza.org/dp18613.pdf
+      icon: fa-solid fa-pen-nib
+      local: false
   extra: >-
     
 # doi: 

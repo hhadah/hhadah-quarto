@@ -187,7 +187,7 @@
       \keyw{wp}
     \endentry
     \entry{hadah-compta-firearmsuicide}{unpublished}{}{}
-      \name{author}{2}{}{%
+      \name{author}{3}{}{%
         {{hash=091f3b21f21a72f28da7c6db491e1522}{%
            family={Hadah},
            familyi={H\bibinitperiod},
@@ -198,15 +198,20 @@
            familyi={C\bibinitperiod},
            given={{Gael\student}},
            giveni={G\bibinitperiod}}}%
+        {{hash=ad997dcc2eff6aed99715229cfd1abb7}{%
+           family={Saffouri},
+           familyi={S\bibinitperiod},
+           given={{Ali\student}},
+           giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{d09468ac1f72c70120747b2d84a940fc}
-      \strng{fullhash}{d09468ac1f72c70120747b2d84a940fc}
-      \strng{fullhashraw}{d09468ac1f72c70120747b2d84a940fc}
-      \strng{bibnamehash}{d09468ac1f72c70120747b2d84a940fc}
-      \strng{authorbibnamehash}{d09468ac1f72c70120747b2d84a940fc}
-      \strng{authornamehash}{d09468ac1f72c70120747b2d84a940fc}
-      \strng{authorfullhash}{d09468ac1f72c70120747b2d84a940fc}
-      \strng{authorfullhashraw}{d09468ac1f72c70120747b2d84a940fc}
+      \strng{namehash}{20e2673eb20d7a2a935e220f9721dc2f}
+      \strng{fullhash}{20e2673eb20d7a2a935e220f9721dc2f}
+      \strng{fullhashraw}{20e2673eb20d7a2a935e220f9721dc2f}
+      \strng{bibnamehash}{20e2673eb20d7a2a935e220f9721dc2f}
+      \strng{authorbibnamehash}{20e2673eb20d7a2a935e220f9721dc2f}
+      \strng{authornamehash}{20e2673eb20d7a2a935e220f9721dc2f}
+      \strng{authorfullhash}{20e2673eb20d7a2a935e220f9721dc2f}
+      \strng{authorfullhashraw}{20e2673eb20d7a2a935e220f9721dc2f}
       \field{sortinit}{7}
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeldatesource}{nodate}
