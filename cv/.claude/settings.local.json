@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(latexmk -pdf -interaction=nonstopmode hadah-cv.tex)",
+      "Bash(pdftotext hadah-cv.pdf -)"
+    ]
+  }
+}

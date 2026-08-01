@@ -428,6 +428,58 @@
       \true{nocite}
       \keyw{wip}
     \endentry
+    \entry{button-hadah-mortgage}{unpublished}{}{}
+      \name{author}{6}{}{%
+        {{hash=3bdb33282f0c93c16e91cdfaa22b1bed}{%
+           family={Button},
+           familyi={B\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=091f3b21f21a72f28da7c6db491e1522}{%
+           family={Hadah},
+           familyi={H\bibinitperiod},
+           given={Hussain},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8053d4749507905fd7209a5272d76f00}{%
+           family={Selman},
+           familyi={S\bibinitperiod},
+           given={Javiera},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e4f61d8cadfa8c893f1a90958f58a31e}{%
+           family={Alan},
+           familyi={A\bibinitperiod},
+           given={{Bariş\student}},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9d7661f24495d5752947158189c3924d}{%
+           family={Balfe},
+           familyi={B\bibinitperiod},
+           given={{Cathy\student}},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fff8e9cc9b12675452fb0ea641560eb5}{%
+           family={Nguyen-Phuong},
+           familyi={N\bibinithyphendelim P\bibinitperiod},
+           given={{Tran\student}},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{75c713fa1a71630dc9623a8ecd20f254}
+      \strng{fullhash}{066c59d96b1891410aa4b7024549a94e}
+      \strng{fullhashraw}{066c59d96b1891410aa4b7024549a94e}
+      \strng{bibnamehash}{066c59d96b1891410aa4b7024549a94e}
+      \strng{authorbibnamehash}{066c59d96b1891410aa4b7024549a94e}
+      \strng{authornamehash}{75c713fa1a71630dc9623a8ecd20f254}
+      \strng{authorfullhash}{066c59d96b1891410aa4b7024549a94e}
+      \strng{authorfullhashraw}{066c59d96b1891410aa4b7024549a94e}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extradate}{1}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sexual Orientation Discrimination in Mortgage Lending: An Audit Field Experiment}
+      \true{nocite}
+      \keyw{wip}
+    \endentry
     \entry{hadah-button-harris-schoolchoice}{unpublished}{}{}
       \name{author}{5}{}{%
         {{hash=091f3b21f21a72f28da7c6db491e1522}{%
@@ -515,8 +567,10 @@
       \strng{authornamehash}{75c713fa1a71630dc9623a8ecd20f254}
       \strng{authorfullhash}{91af8545a876bdcfa105099fb1ca56b3}
       \strng{authorfullhashraw}{91af8545a876bdcfa105099fb1ca56b3}
+      \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{extradate}{2}
       \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
