@@ -57,7 +57,7 @@ format:
 
 # About Me
 
-I am a labor, health, and education economist. I am currently a lead research economics at the [Research and Innovation for Social and Economic Inclusion (RISEI) Lab](https://riseilab.org/index.html) at Northwestern University. I was previously a postdoctoral fellow at Tulane University's [Murphy Institute](https://murphy.tulane.edu/) and the [Department of Economics](https://liberalarts.tulane.edu/departments/economics) from 2023 to 2026. My research uses causal inference methods, field experiments, and administrative data to evaluate policies and understand economic behavior in contexts such as discrimination, identity formation, peer effects, institutional effectiveness, and public health interventions.
+I am a labor, health, and education economist. I am currently a lead research economist at the [Research and Innovation for Social and Economic Inclusion (RISEI) Lab](https://riseilab.org/index.html) at Northwestern University. I was previously a postdoctoral fellow at Tulane University's [Murphy Institute](https://murphy.tulane.edu/) and the [Department of Economics](https://liberalarts.tulane.edu/departments/economics) from 2023 to 2026. My research uses causal inference methods, field experiments, and administrative data to evaluate policies and understand economic behavior in contexts such as discrimination, identity formation, peer effects, institutional effectiveness, and public health interventions.
 
 I am also a Research Affiliate at the [IZA Institute of Labor Economics](https://www.iza.org/person/34828/hussain-hadah) and the [Murphy Institute](https://murphy.tulane.edu/).
 
