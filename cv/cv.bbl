@@ -140,6 +140,7 @@
       \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{note}{Revise and Resubmit, \textit{Economica}}
       \field{title}{Peer Effects in Adolescent Mental Health}
       \true{nocite}
       \verb{urlraw}
@@ -148,7 +149,7 @@
       \verb{url}
       \verb https://hhadah.github.io/Depression_Idea/my_paper/Hadah-Peer-Effect-Depression.pdf
       \endverb
-      \keyw{wp}
+      \keyw{rr}
     \endentry
     \entry{hadah-alan-democracy}{unpublished}{}{}
       \name{author}{2}{}{%
