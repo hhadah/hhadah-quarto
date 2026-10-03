@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 description: "Hussain Hadah's research agenda in discrimination, identity, education, health, and labor economics."
-title-block-banner: "#006747"
+title-block-banner: true
 page-layout: full
 ---
 

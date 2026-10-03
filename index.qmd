@@ -5,7 +5,7 @@ image: /img/social-card.jpg
 image-alt: "Hussain Hadah, labor, health, and education economist"
 toc: false
 page-layout: full
-title-block-banner: "#006747"
+title-block-banner: true
 listing:
   - id: home-articles
     contents: "research/articles/*/index.qmd"
@@ -31,7 +31,9 @@ format:
 
 ::::: {.homepage-hero}
 :::: {.homepage-hero-copy}
-# Labor, health, and education economist {.homepage-title}
+# Hussain Hadah {.homepage-title}
+
+<p class="homepage-role">Labor, health, and education economist</p>
 
 :::: {.homepage-lede}
 I am a lead research economist at Northwestern University's [Research and Innovation for Social and Economic Inclusion Lab](https://riseilab.org/). I use causal inference methods, field experiments, and administrative data to study discrimination, ethnic identity, immigration, mental health, education, and labor markets.

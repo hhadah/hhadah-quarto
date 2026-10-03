@@ -1,7 +1,7 @@
 ---
 title: "Teaching"
 description: "Courses, materials, and teaching approach from economist Hussain Hadah."
-title-block-banner: "#EE6A24"
+title-block-banner: true
 page-layout: full
 toc: true
 toc-location: right

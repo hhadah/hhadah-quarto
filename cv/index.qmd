@@ -3,13 +3,13 @@ title: Curriculum vitæ
 description: "Download or view Hussain Hadah's current curriculum vitae."
 date: 2026-09-08
 date-format: "MMMM D, YYYY"
-title-block-banner: "#006747"
+title-block-banner: true
 published-title: CV last updated
 ---
 
 
 ```{=html}
-<div class="cv-actions" aria-label="Curriculum vitae actions">
+<div class="cv-actions" role="group" aria-label="Curriculum vitae actions">
   <a class="btn btn-primary btn-lg cv-download" href="cv.pdf" target="_blank" rel="noopener">
     <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>&ensp;Open current CV
   </a>

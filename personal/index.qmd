@@ -1,7 +1,7 @@
 ---
 title: "Beyond the Research"
 description: "Hussain Hadah's interests outside economics, including soccer, hiking, snowboarding, and his dogs."
-title-block-banner: "#006747"
+title-block-banner: true
 page-layout: full
 lightbox: auto
 fig-cap-location: bottom

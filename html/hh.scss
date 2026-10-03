@@ -12,7 +12,7 @@ $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #66716b !default;
+$gray-600: #868e96 !default;
 $gray-700: #495057 !default;
 $gray-800: #373a3c !default;
 $gray-900: #212529 !default;
@@ -1117,24 +1117,25 @@ hr {
     z-index: 1;
 }
 
-.homepage-eyebrow {
-    margin: 0 0 0.8rem;
-    color: $green;
-    font-family: $headings-font-family;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-}
 
 h1.homepage-title {
     max-width: 17ch;
-    margin: 0 0 1.25rem;
+    margin: 0 0 0.55rem;
     color: $gray-900;
     font-size: clamp(2.25rem, 4.5vw, 3.7rem);
     font-weight: 700;
     letter-spacing: -0.04em;
     line-height: 1.02;
+}
+
+.homepage-role {
+    margin: 0 0 1.35rem;
+    color: $green;
+    font-family: $headings-font-family;
+    font-size: clamp(1.15rem, 2vw, 1.45rem);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.25;
 }
 
 .homepage-lede {
@@ -1352,8 +1353,6 @@ figure:has(.personal-photo) figcaption {
 
 // Teaching cards
 .teaching-course {
-    grid-column: body-content-start / body-content-end !important;
-    width: 100%;
     align-items: center;
     margin: 1rem 0 2.75rem !important;
     border: 1px solid rgba($forest, 0.12);
@@ -1396,30 +1395,35 @@ figure:has(.personal-photo) figcaption {
 
     h1.homepage-title {
         order: 1;
+        margin-bottom: 0;
+    }
+
+    .homepage-role {
+        order: 2;
         margin-bottom: 0.25rem;
     }
 
     .homepage-hero-media {
         width: min(45vw, 10.5rem);
-        order: 2;
+        order: 3;
         justify-self: start;
     }
 
     .homepage-lede {
-        order: 3;
+        order: 4;
     }
 
     .homepage-actions {
-        order: 4;
+        order: 5;
         margin-top: 0.35rem;
     }
 
     .homepage-secondary-links {
-        order: 5;
+        order: 6;
     }
 
     .homepage-hero-copy > p:last-child {
-        order: 6;
+        order: 7;
         margin: 0;
     }
 
@@ -1490,9 +1494,6 @@ figure:has(.personal-photo) figcaption {
         }
     }
 
-    .homepage-hero-media {
-        width: min(45vw, 10.5rem);
-    }
 
     .project-list li.project {
         border-radius: 0.75rem;
