@@ -18,9 +18,7 @@ listing:
     template: ../html/research/listing.ejs
     categories: false
 include-back-link: false
-toc: true
-toc-location: left
-toc-title: "Research sections"
+toc: false
 format:
   html:
     include-in-header: ../html/research/filter.html
@@ -29,6 +27,8 @@ format:
 My research uses causal inference, field experiments, and administrative data to study discrimination, identity and immigration, education, health, labor markets, and policy.
 
 <p class="student-coauthor-note">&ast; Student coauthor at the time of writing.</p>
+
+<nav class="research-section-nav" aria-label="Research sections"><a href="#journal-articles">Journal articles</a><a href="#working-papers">Working papers</a><a href="#works-in-progress">Works in progress</a></nav>
 
 ::: {.column-margin}
 :::{#research-category-filter .research-category-sidebar}

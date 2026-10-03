@@ -10,15 +10,15 @@ toc-title: Semester
 
 ## Teaching statement
 
-[Read my teaching statement](/cv/Hadah_Teaching.pdf).
+[Read my teaching statement](/cv/Hadah_Teaching.pdf){.btn .btn-primary role="button"}
 
 ---
 
 ## Spring 2024
 
-::: {.grid}
+::: {.grid .teaching-course}
 ::: {.g-col-12 .g-col-md-2 .d-flex .align-items-center .justify-content-center}
-![Urban Economics course logo](logos/urban_economics_class.png){.img-fluid width="150" height="173"}
+![](logos/urban_economics_class.png){fig-alt="Urban Economics course logo" .img-fluid width="150" height="173"}
 :::
 
 ::: {.g-col-12 .g-col-md-10}
@@ -28,7 +28,7 @@ toc-title: Semester
 
 A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use.
 
-[**📄 View Syllabus**](https://hhadah.github.io/urban-econ/syllabus/UrbanEcon3320SyllabusSpring2024HHadah.pdf) | [**🎯 View Course Materials**](class-23-24.qmd)
+[📄 View Syllabus](https://hhadah.github.io/urban-econ/syllabus/UrbanEcon3320SyllabusSpring2024HHadah.pdf){.btn .btn-outline-primary role="button"} [🎯 View Course Materials](class-23-24.qmd){.btn .btn-primary role="button"}
 :::
 :::
 
@@ -36,9 +36,9 @@ A review of the determinants of the location, size, growth, and form of urban ar
 
 ## 2021 to 2022
 
-::: {.grid}
+::: {.grid .teaching-course}
 ::: {.g-col-12 .g-col-md-2 .d-flex .align-items-center .justify-content-center}
-![Principles of Microeconomics course logo](logos/principles_of_microeconomics.png){.img-fluid width="150" height="173"}
+![](logos/principles_of_microeconomics.png){fig-alt="Principles of Microeconomics course logo" .img-fluid width="150" height="173"}
 :::
 
 ::: {.g-col-12 .g-col-md-10}
@@ -48,7 +48,7 @@ A review of the determinants of the location, size, growth, and form of urban ar
 
 This course is an introduction to microeconomics: individual consumer and firm behavior, supply and demand, and the market determination of prices, production and income. We analyze government policies of price controls, taxation, monopoly and antitrust laws, market failures and environmental policy.
 
-[**📄 View Syllabus**](https://hhadah.github.io/MicroSlides/Syllabus/ECON2304_Summer2022_Syllabus.pdf) | [**🎯 View Course Materials**](econ-101.qmd)
+[📄 View Syllabus](https://hhadah.github.io/MicroSlides/Syllabus/ECON2304_Summer2022_Syllabus.pdf){.btn .btn-outline-primary role="button"} [🎯 View Course Materials](econ-101.qmd){.btn .btn-primary role="button"}
 :::
 :::
 

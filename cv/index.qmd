@@ -9,11 +9,16 @@ published-title: CV last updated
 
 
 ```{=html}
-<p class="text-center">
+<div class="cv-actions" aria-label="Curriculum vitae actions">
   <a class="btn btn-primary btn-lg cv-download" href="cv.pdf" target="_blank" rel="noopener">
-    <i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i>&ensp;Download current CV
+    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>&ensp;Open current CV
   </a>
-</p>
+  <a class="btn btn-outline-primary btn-lg" href="cv.pdf" download>
+    <i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i>&ensp;Download PDF
+  </a>
+</div>
+
+<p class="cv-mobile-note">The embedded preview is available on larger screens.</p>
 
 <div class="embed-container">
   <object data="cv.pdf" type="application/pdf" title="Hussain Hadah curriculum vitae">

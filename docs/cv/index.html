@@ -45,13 +45,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1b3db88def35042d172274863c1cdcf0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-70c7f3babec43cc8cfd326d71a1f4c8d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-c54ee27505e698bca43df724b888837f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
-  "type": "textbox",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -204,11 +204,16 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 
 
 
-<p class="text-center">
+<div class="cv-actions" aria-label="Curriculum vitae actions">
   <a class="btn btn-primary btn-lg cv-download" href="cv.pdf" target="_blank" rel="noopener">
-    <i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i> Download current CV
+    <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Open current CV
   </a>
-</p>
+  <a class="btn btn-outline-primary btn-lg" href="cv.pdf" download="">
+    <i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i> Download PDF
+  </a>
+</div>
+
+<p class="cv-mobile-note">The embedded preview is available on larger screens.</p>
 
 <div class="embed-container">
   <object data="cv.pdf" type="application/pdf" title="Hussain Hadah curriculum vitae">
@@ -640,13 +645,13 @@ if (sidebarNavigation) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><span class="faux-block">© 2026 Hussain Hadah</span> <span class="faux-block"><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span></p>
+<p><span>© 2026 Hussain Hadah</span></p>
 </div>   
     <div class="nav-footer-center">
-<p><span class="faux-block"><a href="https://orcid.org/0000-0002-8705-6386">ORCID 0000-0002-8705-6386</a></span></p>
+<p><span><a href="https://orcid.org/0000-0002-8705-6386">ORCID</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span></p>
 </div>
     <div class="nav-footer-right">
-<p><span class="faux-block"><a href="https://github.com/hhadah/hhadah-quarto">Source</a></span></p>
+<p><span><a href="https://github.com/hhadah/hhadah-quarto">Source</a></span></p>
 </div>
   </div>
 </footer>

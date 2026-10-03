@@ -3,11 +3,8 @@ title: "Hussain Hadah"
 description-meta: "Labor, health, and education economist at Northwestern University's RISEI Lab."
 image: /img/social-card.jpg
 image-alt: "Hussain Hadah, labor, health, and education economist"
-toc: true
-toc-location: right
-toc-float: true
-toc-title: "On this page"
-toc-depth: 3
+toc: false
+page-layout: full
 title-block-banner: "#006747"
 listing:
   - id: home-articles
@@ -32,39 +29,16 @@ format:
       banner-header-class: "home"
 ---
 
-::: {.grid .homepage-intro}
+::::: {.homepage-hero}
+:::: {.homepage-hero-copy}
+# Labor, health, and education economist {.homepage-title}
 
-::: {.g-col-12 .g-col-sm-4}
-
-```{=html}
-<div class="grid" style="--bs-columns: 5; row-gap: 0;">
-  <div class="g-col-1 g-col-sm-0"></div>
-  <div class="g-col-4 g-col-sm-6">
-    <picture>
-      <source type="image/webp"
-              srcset="/img/headshot-400.webp 400w, /img/headshot-800.webp 800w"
-              sizes="(max-width: 576px) 72vw, 28vw">
-      <img class="img-fluid homepage-portrait"
-           src="/img/Hussain_Hadah-2025-09-04-07945pp.jpg"
-           alt="Hussain Hadah"
-           width="800"
-           height="1200"
-           decoding="async"
-           fetchpriority="high">
-    </picture>
-  </div>
-</div>
-```
-
-:::
-
-::: {.g-col-12 .g-col-sm-8}
-
-## Labor, health, and education economist
-
+:::: {.homepage-lede}
 I am a lead research economist at Northwestern University's [Research and Innovation for Social and Economic Inclusion Lab](https://riseilab.org/). I use causal inference methods, field experiments, and administrative data to study discrimination, ethnic identity, immigration, mental health, education, and labor markets.
 
 I am also a research affiliate at the [IZA Institute of Labor Economics](https://www.iza.org/person/34828/hussain-hadah) and Tulane University's [Murphy Institute](https://murphy.tulane.edu/). Before joining Northwestern, I was a postdoctoral fellow at Tulane from 2023 to 2026. I earned my PhD in Economics from the University of Houston in 2023.
+::::
+
 
 ::: {.homepage-actions}
 [Research](#research){.btn .btn-primary role="button"}
@@ -72,17 +46,36 @@ I am also a research affiliate at the [IZA Institute of Labor Economics](https:/
 [Email](mailto:hussainhadah@gmail.com){.btn .btn-outline-primary role="button"}
 :::
 
+::: {.homepage-secondary-links}
 [Research statement](/cv/Hadah_Research.pdf) · [Teaching statement](/cv/Hadah_Teaching.pdf) · [Diversity statement](/cv/Hadah_Diversity.pdf)
+:::
 
 [Outside economics](/personal/), I play soccer, snowboard, hike with my dogs, and follow Houston sports and FC Barcelona.
+::::
 
-:::
+:::: {.homepage-hero-media}
+```{=html}
+<picture>
+  <source type="image/webp"
+          srcset="/img/headshot-400.webp 400w, /img/headshot-800.webp 800w"
+          sizes="(max-width: 576px) 56vw, 24vw">
+  <img class="homepage-portrait"
+       src="/img/Hussain_Hadah-2025-09-04-07945pp.jpg"
+       alt="Hussain Hadah"
+       width="800"
+       height="1200"
+       decoding="async"
+       fetchpriority="high">
+</picture>
+```
+::::
+:::::
 
-:::
+::: {.homepage-content}
 
 ## Recent highlights
 
-::: {.callout-tip icon=false}
+::: {.callout-tip .homepage-recent icon=false}
 ### Research news
 
 - **Revise and resubmit at *Economica*:** "Peer Effects in Adolescent Mental Health"
@@ -95,7 +88,7 @@ I am also a research affiliate at the [IZA Institute of Labor Economics](https:/
 
 All publications, working papers, and active projects appear below so the homepage also works as a complete research overview.
 
-[Publications](#publications) · [Working papers](#working-papers) · [Works in progress](#research-in-progress)
+<nav class="research-section-nav" aria-label="Research sections"><a href="#publications">Publications</a><a href="#working-papers">Working papers</a><a href="#research-in-progress">Works in progress</a></nav>
 
 <p class="student-coauthor-note">&ast; Student coauthor at the time of writing.</p>
 
@@ -112,4 +105,5 @@ All publications, working papers, and active projects appear below so the homepa
 ### Works in progress {#research-in-progress}
 
 :::{#home-wip}
+:::
 :::

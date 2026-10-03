@@ -18,8 +18,8 @@ website:
   
   # start of the navigation bar at the top of the website
   navbar:
-    background: dark
-    foreground: light
+    background: light
+    foreground: dark
     logo: /img/logo.png
     logo-alt: "Hussain Hadah home"
     
@@ -50,17 +50,16 @@ website:
   
 
 # Don't touch unless you know what you are doing :) ------------
-  search: 
+  search:
     location: navbar
-    type: textbox
+    type: overlay
   page-footer:
     left: |
-      <span class="faux-block">&copy; 2026 Hussain Hadah</span>
-      <span class="faux-block">[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)</span>
+      <span>&copy; 2026 Hussain Hadah</span>
     center: |
-      <span class="faux-block">[ORCID 0000-0002-8705-6386](https://orcid.org/0000-0002-8705-6386)</span>
+      <span>[ORCID](https://orcid.org/0000-0002-8705-6386) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)</span>
     right: |
-      <span class="faux-block">[Source](https://github.com/hhadah/hhadah-quarto)</span>
+      <span>[Source](https://github.com/hhadah/hhadah-quarto)</span>
 
 
 project:

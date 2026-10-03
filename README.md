@@ -16,6 +16,14 @@ The preview opens at <http://localhost:5555>. Build the production files in `doc
 quarto render
 ```
 
+## Interface structure
+
+- `html/hh.scss` contains the shared color, type, spacing, navigation, card, gallery, and responsive rules.
+- `html/research/listing.ejs` renders research cards. `html/research/filter.html` supplies the cross-section topic filter.
+- The homepage, research archive, personal gallery, teaching page, and CV page use named component classes in their `.qmd` files rather than page-specific inline styles.
+
+Check layout changes at both 390px and 1440px widths. The mobile research filters intentionally scroll horizontally.
+
 ## Publishing
 
 Pushing to `main` or `master` runs `.github/workflows/netlify-publish.yml`. The workflow installs Quarto 1.8.26, renders the project, and publishes the result to the Netlify site in `_publish.yml`. The repository must provide a `NETLIFY_AUTH_TOKEN` Actions secret. The workflow can also be run manually from GitHub Actions.
