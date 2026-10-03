@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Hussain Hadah">
-<meta name="description" content="I am a labor, health, and education economist and lead research economist at the RISEI Lab at Northwestern University. I study discrimination, ethnic identity, immigration, and mental health using causal inference methods, field experiments, and administrative data.">
+<meta name="description" content="Hussain Hadah’s research agenda in discrimination, identity, education, health, and labor economics.">
 
-<title>About Me | Hussain Hadah (he/him) – Hussain Hadah (he/him)</title>
+<title>About Me – Hussain Hadah</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
@@ -43,9 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1b3db88def35042d172274863c1cdcf0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e1cf0905aa38887c87b7966d67558d22.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-70c7f3babec43cc8cfd326d71a1f4c8d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -87,142 +86,20 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
         background: #006747;
       }
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<script>
-// Robust category filtering that works even if Quarto's list JS fails or isn't loaded
-(function () {
-  const parseCategoryList = (str = "") =>
-    str
-      .split(",")
-      .map((c) => c.trim())
-      .filter(Boolean);
-
-  const items = () => Array.from(document.querySelectorAll(".quarto-listing .list > li.project"));
-
-  const setActiveChip = (category) => {
-    const safeCategory =
-      typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
-    document.querySelectorAll(".quarto-listing-category .category.active").forEach((el) => {
-      el.classList.remove("active");
-    });
-    const chip = document.querySelector(
-      `.quarto-listing-category .category[data-category='${safeCategory}']`
-    );
-    if (chip) chip.classList.add("active");
-  };
-
-  const showNoMatchMessages = () => {
-    document.querySelectorAll(".quarto-listing").forEach((listing) => {
-      const anyVisible = Array.from(listing.querySelectorAll(".list > li.project")).some(
-        (item) => !item.classList.contains("d-none")
-      );
-      listing.querySelectorAll(".listing-no-matching").forEach((msg) => {
-        msg.classList.toggle("d-none", anyVisible);
-      });
-    });
-  };
-
-  const hideViaListJs = (category) => {
-    const registry = window["quarto-listings"];
-    if (!registry || typeof registry !== "object") return false;
-    const cat = category || "";
-    Object.values(registry).forEach((list) => {
-      if (!list) return;
-      if (!cat) {
-        list.filter();
-        return;
-      }
-      list.filter((item) => {
-        const cats = parseCategoryList(item?.values()?.categories || "");
-        return cats.includes(cat);
-      });
-    });
-    return true;
-  };
-
-  const domFilter = (category) => {
-    const cat = category || "";
-    items().forEach((item) => {
-      const cats = parseCategoryList(item.dataset.categories || "");
-      const show = !cat || cats.includes(cat);
-      item.classList.toggle("d-none", !show);
-    });
-    showNoMatchMessages();
-  };
-
-  const applyCategory = (category) => {
-    const cat = category || "";
-    setActiveChip(cat);
-    // Try list.js-backed filtering first; if unavailable, fall back to DOM toggling
-    if (!hideViaListJs(cat)) {
-      domFilter(cat);
-    }
-  };
-
-  const categoryFromHash = () => {
-    const match = window.location.hash.match(/category=([^&]*)/);
-    return match ? decodeURIComponent(match[1]) : "";
-  };
-
-  const updateHash = (category) => {
-    const url = new URL(window.location);
-    url.hash = category ? `category=${encodeURIComponent(category)}` : "";
-    window.history.replaceState(null, "", url);
-  };
-
-  const handleHashChange = () => applyCategory(categoryFromHash());
-
-  const wireCategoryLinks = () => {
-    // Inline badges
-    document.querySelectorAll(".project-category a[href^='#category=']").forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        const raw = link.getAttribute("href").split("category=")[1] || "";
-        const cat = decodeURIComponent(raw);
-        updateHash(cat);
-        applyCategory(cat);
-      });
-    });
-
-    // Sidebar chips
-    document.querySelectorAll(".quarto-listing-category .category").forEach((chip) => {
-      chip.addEventListener("click", () => {
-        const cat = chip.getAttribute("data-category") || "";
-        updateHash(cat);
-        applyCategory(cat);
-      });
-    });
-  };
-
-  const init = () => {
-    if (!items().length) return;
-    wireCategoryLinks();
-    handleHashChange();
-  };
-
-  // Override Quarto hooks so any upstream calls use the resilient filter
-  window.activateCategory = applyCategory;
-  window.filterListingCategory = applyCategory;
-
-  // When Quarto finishes wiring listings, re-apply the filter
-  const originalLoaded = window["quarto-listing-loaded"];
-  window["quarto-listing-loaded"] = () => {
-    if (typeof originalLoaded === "function") {
-      originalLoaded();
-    }
-    handleHashChange();
-  };
-
-  window.addEventListener("hashchange", handleHashChange);
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
-})();
-</script>
 
 
+<meta property="og:title" content="About Me – Hussain Hadah">
+<meta property="og:description" content="Hussain Hadah’s research agenda in discrimination, identity, education, health, and labor economics.">
+<meta property="og:image" content="https://hussainhadah.com/img/social-card.jpg">
+<meta property="og:site_name" content="Hussain Hadah">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:alt" content="Hussain Hadah, labor, health, and education economist">
+<meta name="twitter:title" content="About Me – Hussain Hadah">
+<meta name="twitter:description" content="Hussain Hadah’s research agenda in discrimination, identity, education, health, and labor economics.">
+<meta name="twitter:image" content="https://hussainhadah.com/img/social-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="Hussain Hadah, labor, health, and education economist">
+<link rel="canonical" href="https://hussainhadah.com/about/">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -233,11 +110,11 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../img/logo.png" alt="" class="navbar-logo light-content">
-    <img src="../img/logo.png" alt="" class="navbar-logo dark-content">
+    <img src="../img/logo.png" alt="Hussain Hadah home" class="navbar-logo light-content">
+    <img src="../img/logo.png" alt="Hussain Hadah home" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Hussain Hadah (he/him)</span>
+    <span class="navbar-title">Hussain Hadah</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -269,12 +146,12 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:hussainhadah@gmail.com"> <i class="bi bi-envelope" role="img" aria-label="email">
+    <a class="nav-link" href="mailto:hussainhadah@gmail.com"> <i class="bi bi-envelope" role="img" aria-label="Email Hussain Hadah">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/hhadah"> <i class="bi bi-github" role="img" aria-label="github">
+    <a class="nav-link" href="https://github.com/hhadah"> <i class="bi bi-github" role="img" aria-label="Hussain Hadah on GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -288,13 +165,18 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
+    <div class="quarto-title column-page-left">
       <h1 class="title">About Me</h1>
-                      </div>
+                  <div>
+        <div class="description">
+          Hussain Hadah’s research agenda in discrimination, identity, education, health, and labor economics.
+        </div>
+      </div>
+                </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -305,39 +187,58 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#discrimination-and-identity" id="toc-discrimination-and-identity" class="nav-link active" data-scroll-target="#discrimination-and-identity">Discrimination and identity</a></li>
+  <li><a href="#field-experiments" id="toc-field-experiments" class="nav-link" data-scroll-target="#field-experiments">Field experiments</a></li>
+  <li><a href="#health-education-and-labor" id="toc-health-education-and-labor" class="nav-link" data-scroll-target="#health-education-and-labor">Health, education, and labor</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
 
-<p>I am a labor, health, and education economist currently a postdoctoral fellow at Tulane University’s <a href="https://liberalarts.tulane.edu/departments/economics">Department of Economics</a> and <a href="https://murphy.tulane.edu/">Murphy Institute</a>. My research uses causal inference methods, field experiments, and administrative data to evaluate policies and understand economic behavior across diverse contexts including discrimination, identity formation, peer effects, institutional effectiveness, and public health interventions.</p>
-<ol type="1">
-<li><p><strong>Discrimination against Minorities and Ethnic Identity</strong></p>
-<ul>
-<li><p>I compared the children of inter-ethnic couples to quantify labor and education markets discrimination against people with Hispanic-sounding last names.</p></li>
-<li><p>I examined how state-level variation in bias influences Hispanics’ decisions to identify with, or not identify, their ethnic minority status.</p></li>
-</ul></li>
-<li><p><strong>Quantifying Discrimination Using Audit Field Experiments</strong></p>
-<ul>
-<li><p>In two working papers, I study discrimination using audit field experiments.</p></li>
-<li><p>In one audit, we quantify discrimination in access to the mortgage market against same-sex couples and racial minorities.</p></li>
-<li><p>In another audit, we study discrimination in access to education, with an emphasis on differences between traditional, private, and charter schools against children who are LGBTQI+, racial minorities, have behavioral issues, or have IEP status.</p></li>
-</ul></li>
-<li><p><strong>Applied Microeconomics: Education, Labor, and Health</strong></p>
-<ul>
-<li><p>My applied microeconomics research also includes studying education, labor, and health. This involves analyzing how disparities in access and outcomes across different demographic groups affect labor and education markets, and health outcomes.</p></li>
-<li><p>In other research, I explore the impact of peer mental health on individual mental health outcomes, education, and labor market outcomes.</p></li>
-</ul></li>
-</ol>
+<p>I am a labor, health, and education economist and a lead research economist at the <a href="https://riseilab.org/">Research and Innovation for Social and Economic Inclusion Lab</a> at Northwestern University. I am also a research affiliate at the <a href="https://www.iza.org/person/34828/hussain-hadah">IZA Institute of Labor Economics</a> and Tulane University’s <a href="https://murphy.tulane.edu/">Murphy Institute</a>.</p>
+<section id="discrimination-and-identity" class="level2">
+<h2 class="anchored" data-anchor-id="discrimination-and-identity">Discrimination and identity</h2>
+<p>I study how names, social attitudes, and public policy affect discrimination and ethnic self-identification. My published work examines Hispanic surnames in education and labor markets and the relationship between racial attitudes and Hispanic identity.</p>
+</section>
+<section id="field-experiments" class="level2">
+<h2 class="anchored" data-anchor-id="field-experiments">Field experiments</h2>
+<p>My audit studies measure discrimination in mortgage lending and school admissions. The school-admissions project compares responses from traditional public, charter, and private schools to families who differ by race, ethnicity, disability, socioeconomic status, sexual orientation, or gender identity.</p>
+</section>
+<section id="health-education-and-labor" class="level2">
+<h2 class="anchored" data-anchor-id="health-education-and-labor">Health, education, and labor</h2>
+<p>My other projects study peer effects in adolescent mental health, firearm waiting periods and suicide, immigration enforcement, disability services, and workforce-development policy. I use causal inference methods, field experiments, and administrative data to answer these questions.</p>
 
 
+</section>
 
 </main> <!-- /main -->
+<script>
+document.querySelectorAll(".navbar-toggler[role]").forEach((button) => {
+  button.removeAttribute("role");
+});
+
+const primaryNavigation = document.querySelector("#quarto-header .navbar");
+if (primaryNavigation) {
+  primaryNavigation.setAttribute("aria-label", "Primary");
+}
+
+document.getElementById("quarto-header")?.setAttribute("role", "none");
+
+const sidebarNavigation = document.getElementById("quarto-sidebar");
+if (sidebarNavigation) {
+  sidebarNavigation.setAttribute("aria-label", "Sidebar navigation");
+}
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -411,7 +312,7 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/hussainhadah\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -742,13 +643,13 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><span class="faux-block"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2025 Hussain Hadah</span> <span class="faux-block">All content licensed under<br><a href="https://creativecommons.org/licenses/by-sa/4.0/"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i> Creative Commons CC BY-SA 4.0</a></span></p>
+<p><span class="faux-block">© 2026 Hussain Hadah</span> <span class="faux-block"><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span></p>
 </div>   
     <div class="nav-footer-center">
-<p><span class="faux-block"><i class="fa-brands fa-orcid" aria-label="orcid"></i> <strong>ORCID</strong> <a href="https://orcid.org/0000-0002-8705-6386">0000-0002-8705-6386</a></span></p>
+<p><span class="faux-block"><a href="https://orcid.org/0000-0002-8705-6386">ORCID 0000-0002-8705-6386</a></span></p>
 </div>
     <div class="nav-footer-right">
-<p><span class="faux-block">Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a></span> <span class="faux-block"><a href="https://github.com/hhadah/hhadah-quarto">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></span></p>
+<p><span class="faux-block"><a href="https://github.com/hhadah/hhadah-quarto">Source</a></span></p>
 </div>
   </div>
 </footer>

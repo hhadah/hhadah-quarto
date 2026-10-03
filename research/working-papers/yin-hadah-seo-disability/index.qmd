@@ -1,24 +1,22 @@
 ---
 title: "Longitudinal Evidence on the Economic Returns to Disability Services"
+description: "Uses longitudinal administrative records to study the labor-market returns to disability services."
+order: 30
 author:
   - name: Michelle Yin
     affiliation: Northwestern University
   - name: Hussain Hadah
-    url: http://www.hussainhadah.com/
+    url: https://www.hussainhadah.com/
     orcid: 0000-0002-8705-6386
-    affiliation: Tulane University
+    affiliation: Northwestern University
   - name: Regina Seo
     affiliation: Northwestern University
 categories:
-  - Disability services
-  - Labor markets
-  - Returns to services
+  - Labor
   - Policy Evaluation
-  - Administrative data
 pub-info:
-  reference: >-
-    Michelle Yin, <strong>Hussain Hadah</strong>, and Regina Seo, "Longitudinal Evidence on the Economic Returns to Disability Services." RISEI Lab, Northwestern University.
-  extra: >-
+  authors: Michelle Yin, <strong>Hussain Hadah</strong>, and Regina Seo
+  venue: RISEI Lab, Northwestern University.
 ---
 
 ## Citation

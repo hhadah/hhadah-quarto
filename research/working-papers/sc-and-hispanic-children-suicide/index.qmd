@@ -1,34 +1,28 @@
 ---
 title: "Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates"
-# date: 2022-11-15
+description: "Secure Communities increases suicide rates among Hispanic adults aged 34 and older by 0.11 per 100,000 overall, with increases among men and decreases among women."
+order: 40
 author:
   - name: Hussain Hadah
-    url: http://www.hussainhadah.com/
+    url: https://www.hussainhadah.com/
     orcid: 0000-0002-8705-6386
-    affiliation: Tulane University
-categories: 
-  - Immigration enforcement
-  - Secure Communities
-  - Suicides
-  - Difference-in-differences
+    affiliation: Northwestern University
+categories:
+  - Health
+  - Identity and Immigration
   - Policy Evaluation
-  - Mental Health
-  - Ethnicity
 pub-info:
-  reference: >-
-    <strong>Hussain Hadah</strong>, "Immigration Enforcement, Sanctuary Cities, and Rising Hispanic Suicide Rates,” <em>Under Review</em>.
+  authors: <strong>Hussain Hadah</strong>
+  venue: <em>Under review</em>.
   links:
     - name: Preprint
       url: https://dx.doi.org/10.2139/ssrn.5886942
-      icon: fa-solid fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: false
     - name: IZA DP No. 18613
       url: https://docs.iza.org/dp18613.pdf
-      icon: fa-solid fa-pen-nib
+      icon: bi bi-file-earmark-text
       local: false
-  extra: >-
-    
-# doi: 
 ---
 
 ## Important links
@@ -46,29 +40,29 @@ I estimate the causal impact of the US Secure Communities (SC) program---which g
 
 ## Important Figures
 
-![Figure 1: County-level variation in waiting period policies](04-staggarred_sample_panel_view.png)
+![Figure 1: County-level variation in Secure Communities adoption](04-staggarred_sample_panel_view.png){loading="lazy" width="3000" height="1800"}
 
-![Figure 2: Suicides: By Age Groups](01-adult-age-bands.png)
+![Figure 2: Suicides by age group](01-adult-age-bands.png){loading="lazy" width="3600" height="1200"}
 
-![Figure 3: Triple DDD - Effect of Secure Communities on Hispanic vs White Suicide Rates Among Adults Aged 34 and Older](ddd_rate_over34_event_pre5.png)
+![Figure 3: Triple difference estimate for Hispanic versus White suicide rates among adults aged 34 and older](ddd_rate_over34_event_pre5.png){loading="lazy" width="1200" height="800"}
 
-![Figure 4: Triple DDD - Effect of Secure Communities on Hispanic vs White Suicide Rates Among Adults Aged 25-34](ddd_rate_25to34_event_pre5.png)
+![Figure 4: Triple difference estimate for Hispanic versus White suicide rates among adults aged 25–34](ddd_rate_25to34_event_pre5.png){loading="lazy" width="1200" height="800"}
 
-![Figure 5: Triple DDD - Effect of Secure Communities on Hispanic vs White Suicide Rates Among Adults Aged 35-44](ddd_rate_35to44_event_pre5.png)
+![Figure 5: Triple difference estimate for Hispanic versus White suicide rates among adults aged 35–44](ddd_rate_35to44_event_pre5.png){loading="lazy" width="1200" height="800"}
 
-![Figure 6: Triple DDD - Effect of Secure Communities on Hispanic vs White Suicide Rates Among Adults Aged 45+](ddd_rate_45plus_event_pre5.png)
+![Figure 6: Triple difference estimate for Hispanic versus White suicide rates among adults aged 45 and older](ddd_rate_45plus_event_pre5.png){loading="lazy" width="1200" height="800"}
 
-![Figure 7: Triple DDD - Effect of Secure Communities on Hispanic vs White Suicide Rates Among Adults Aged 25+](ddd_rate_25plus_event_pre5.png)
+![Figure 7: Triple difference estimate for Hispanic versus White suicide rates among adults aged 25 and older](ddd_rate_25plus_event_pre5.png){loading="lazy" width="1200" height="800"}
 
-![Figure 8: Triple DDD - Effect of Secure Communities on Hispanic vs White Suicide Rates Among All Adults](ddd_rate_total_event_pre5.png)
+![Figure 8: Triple difference estimate for Hispanic versus White suicide rates among all adults](ddd_rate_total_event_pre5.png){loading="lazy" width="1200" height="800"}
 
 
-![Figure 9: Triple DDD with Sanctuary Heterogeneity - Adults Aged 34 and Older](sanc_het_rate_pre5_rate_over34_event.png)
+![Figure 9: Triple difference estimate with sanctuary heterogeneity for adults aged 34 and older](sanc_het_rate_pre5_rate_over34_event.png){loading="lazy" width="1200" height="800"}
 
-![Figure 10: Triple DDD with Sanctuary Heterogeneity - Adults 25-34](sanc_het_rate_pre5_rate_25to34_event.png)
+![Figure 10: Triple difference estimate with sanctuary heterogeneity for adults aged 25–34](sanc_het_rate_pre5_rate_25to34_event.png){loading="lazy" width="1200" height="800"}
 
-![Figure 11: Triple DDD with Sanctuary Heterogeneity - Adults Aged 35-44](sanc_het_rate_pre5_rate_35to44_event.png)
+![Figure 11: Triple difference estimate with sanctuary heterogeneity for adults aged 35–44](sanc_het_rate_pre5_rate_35to44_event.png){loading="lazy" width="1200" height="800"}
 
-![Figure 12: Triple DDD with Sanctuary Heterogeneity - Adults 45+](sanc_het_rate_pre5_rate_45plus_event.png)
+![Figure 12: Triple difference estimate with sanctuary heterogeneity for adults aged 45 and older](sanc_het_rate_pre5_rate_45plus_event.png){loading="lazy" width="1200" height="800"}
 
-![Figure 13: Triple DDD with Sanctuary Heterogeneity - Adults 25+](sanc_het_rate_pre5_rate_25plus_event.png)
+![Figure 13: Triple difference estimate with sanctuary heterogeneity for adults aged 25 and older](sanc_het_rate_pre5_rate_25plus_event.png){loading="lazy" width="1200" height="800"}

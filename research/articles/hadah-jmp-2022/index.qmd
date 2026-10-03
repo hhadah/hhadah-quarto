@@ -1,29 +1,31 @@
 ---
 title: "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S."
 date: 2024-12-09
+published-title: "Published online"
+description: "A one-standard-deviation increase in state-level bias reduces self-reported Hispanic identity by 4 percentage points among people with Hispanic ancestry."
 author:
   - name: Hussain Hadah
-    url: http://www.hussainhadah.com/
+    url: https://www.hussainhadah.com/
     orcid: 0000-0002-8705-6386
-    affiliation: Tulane University
-categories: 
-  - Ethnicity
-  - Bias
+    affiliation: Northwestern University
+categories:
   - Discrimination
+  - Identity and Immigration
 pub-info:
-  reference: >-
-    <strong>Hussain Hadah</strong>, “The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the U.S." <em>Southern Economic Journal</em> (2024), doi: <a href="https://doi.org/10.1002/soej.12749"><code>https://doi.org/10.1002/soej.12749</code></a>.
+  authors: <strong>Hussain Hadah</strong>
+  venue: >-
+    <em>Southern Economic Journal</em>, published online 2024; 92(2), 338–358 (2025). doi: <a href="https://doi.org/10.1002/soej.12749"><code>10.1002/soej.12749</code></a>.
   links:
     - name: Preprint
       url: https://dx.doi.org/10.2139/ssrn.4566232
-      icon: fa-solid fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: false
     - name: Final version
       url: https://doi.org/10.1002/soej.12749
-      icon: fa-solid fa-scroll
+      icon: bi bi-journal-text
   extra: >-
     Presented at the 2023 European Society for Population Economics (ESPE) conference and the 93<sup>rd</sup> Southern Economic Association Annual Meeting.
-doi: https://doi.org/10.1002/soej.12749
+doi: 10.1002/soej.12749
 ---
 
 ## Important links
@@ -36,19 +38,19 @@ I study the determinants of the choice to identify as Hispanic among those who c
 
 ## Citation
 
-Hadah, Hussain. "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the United States." Southern Economic Journal (Forthcoming, 2024). Wiley Online Library. https://doi.org/10.1002/soej.12749.
+Hadah, Hussain. "The Effect of Racial and Ethnic Attitudes on Hispanic Identity in the United States." *Southern Economic Journal*, published online December 9, 2024; 92(2): 338–358 (2025). https://doi.org/10.1002/soej.12749.
 
 ```bibtex
 @article{hadah2024hispanicidentity,
 author = {Hadah, Hussain},
 title = {The effect of racial and ethnic attitudes on Hispanic identity in the United States},
 journal = {Southern Economic Journal},
-year={2024},
-volume = {n/a},
-number = {n/a},
-pages = {},
+year = {2025},
+volume = {92},
+number = {2},
+pages = {338--358},
 keywords = {Economics of Minorities, Race, and Immigrants, Discrimination and Prejudice, Stratification Economics},
-doi = {https://doi.org/10.1002/soej.12749},
+doi = {10.1002/soej.12749},
 url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/soej.12749},
 eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/soej.12749},
 abstract = {Abstract I study the determinants of choosing to identify as Hispanic among individuals who are eligible—those whose parents, grandparents, or themselves were born in a Spanish-speaking country. Using a multiple proxy regression approach, I construct a bias measure based on the Implicit Association Test (IAT) and the American National Election Studies (ANES). I find that individuals with Hispanic ancestry are significantly less likely to self-identify as Hispanic if they reside in states with high levels of bias. A one standard deviation increase in bias reduces self-reported Hispanic identity by 4 percentage points among all Hispanics. These effects are more pronounced among second-generation immigrants with both parents born in a Spanish-speaking country compared to children of inter-ethnic parents. These findings have implications for interpreting research on ethnic gaps in economic outcomes and for accurately counting the population.},

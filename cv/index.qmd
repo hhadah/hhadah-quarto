@@ -1,42 +1,23 @@
 ---
 title: Curriculum vitæ
-description-meta: "Hussain Hadah's CV"
-# date: 2023-05-12
+description: "Download or view Hussain Hadah's current curriculum vitae."
+date: 2026-09-08
+date-format: "MMMM D, YYYY"
 title-block-banner: "#006747"
 published-title: CV last updated
-engine: knitr 
-cv:
-  pdf: "cv.pdf"
 ---
 
-```{css echo=FALSE}
-.embed-container {
-    position: relative;
-    padding-bottom: 129%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-```
 
 ```{=html}
 <p class="text-center">
-  <a class="btn btn-primary btn-lg cv-download" href="`r rmarkdown::metadata$cv$pdf`" target="_blank">
-    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Download current CV
+  <a class="btn btn-primary btn-lg cv-download" href="cv.pdf" target="_blank" rel="noopener">
+    <i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i>&ensp;Download current CV
   </a>
 </p>
 
 <div class="embed-container">
-  <iframe src="`r rmarkdown::metadata$cv$pdf`" style="border: 0.5px"></iframe>
+  <object data="cv.pdf" type="application/pdf" title="Hussain Hadah curriculum vitae">
+    <p>Your browser cannot display the embedded PDF. <a href="cv.pdf">Download the current CV</a>.</p>
+  </object>
 </div>
 ```

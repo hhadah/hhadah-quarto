@@ -1,27 +1,25 @@
 ---
 title: "Immigration Enforcement and Hispanic Identity"
-# date: 2022-11-15
+description: "Secure Communities reduces self-reported Hispanic identity on average, with declines among first- and third-generation children but increased identification among second-generation children."
+order: 60
 author:
   - name: Hussain Hadah
-    url: http://www.hussainhadah.com/
+    url: https://www.hussainhadah.com/
     orcid: 0000-0002-8705-6386
-    affiliation: Tulane University
+    affiliation: Northwestern University
   - name: Augustine Denteh
     orcid: 0000-0003-0965-015X
     affiliation: Davidson College
-categories: 
-  - Immigration enforcement
-  - Secure Communities
-  - Difference-in-differences
+categories:
+  - Identity and Immigration
   - Policy Evaluation
-  - Ethnicity
 pub-info:
-  reference: >-
-    <strong>Hussain Hadah</strong> and Augustine Denteh, "Immigration Enforcement and Children's Hispanic Identity,” <em>Under Review</em>.
+  authors: <strong>Hussain Hadah</strong> and Augustine Denteh
+  venue: <em>Under review</em>.
   links:
     - name: Preprint
       url: immigration_enforcement_hispanic.pdf
-      icon: fa-solid fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: true
 
   extra: >-
@@ -29,7 +27,6 @@ pub-info:
     Spring 2026
       
     
-# doi: https://dx.doi.org/10.2139/ssrn.5383500
 ---
 
 ## Important links
@@ -44,25 +41,25 @@ Ethnic identity is typically treated as an immutable demographic attribute in mo
 
 The samples in the figures below include first-, second-, and third-generation Hispanic children that are racially White, ages 17 and below who live in intact families. First-generation Hispanic immigrants are children that were born in a Spanish-speaking country. Native-born second-generation Hispanic immigrants are children with at least one parent born in a Spanish-speaking country. Native-born third-generation Hispanic immigrants are children with native-born parents and at least one grandparent born in a Spanish-speaking country. 
 
-![Overall decline in Hispanic self-identification following Secure Communities adoption](plot06-all-hisp-hispan.png)
+![Overall decline in Hispanic self-identification following Secure Communities adoption](plot06-all-hisp-hispan.png){loading="lazy" width="1206" height="804"}
 
-![First-generation Hispanic children](plot01-firstgen-hispan.png)
+![First-generation Hispanic children](plot01-firstgen-hispan.png){loading="lazy" width="1206" height="804"}
 
-![Second-generation Hispanic children](plot02-secondgen-hispan.png)
+![Second-generation Hispanic children](plot02-secondgen-hispan.png){loading="lazy" width="1206" height="804"}
 
-![Third-generation Hispanic children](plot03-thirdgen-hispan.png)
+![Third-generation Hispanic children](plot03-thirdgen-hispan.png){loading="lazy" width="1206" height="804"}
 
-![Attrition by parental education among all generations of Hispanic immigrant children](plot22-hetby_paredu__all.png)
+![Attrition by parental education among all generations of Hispanic immigrant children](plot22-hetby_paredu__all.png){loading="lazy" width="1200" height="800"}
 
-![Comparison across sanctuary and non-sanctuary jurisdictions  among all generations of Hispanic immigrant children](plot27-hetby_sanctuary__all.png)
+![Comparison across sanctuary and non-sanctuary jurisdictions among all generations of Hispanic immigrant children](plot27-hetby_sanctuary__all.png){loading="lazy" width="1200" height="800"}
 
 ## Citation
 
-Hadah, Hussain and Denteh, Augustine, Immigration Enforcement and Hispanic Children Outcomes (December 2025). Working paper. Available at http://www.hussainhadah.com/research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf
+Hadah, Hussain and Denteh, Augustine. *Immigration Enforcement and Hispanic Identity* (December 2025). Working paper. https://www.hussainhadah.com/research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf
 
 ```bibtex
 @misc{HadahDenteh2025SC,
-  title        = {Immigration Enforcement and Hispanic Children Outcomes},
+  title        = {Immigration Enforcement and Hispanic Identity},
   author       = {Hadah, Hussain and Denteh, Augustine},
   year         = {2025},
   month        = dec,

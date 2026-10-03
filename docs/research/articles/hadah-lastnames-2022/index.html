@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Hussain Hadah">
-<meta name="description" content="I am a labor, health, and education economist and lead research economist at the RISEI Lab at Northwestern University. I study discrimination, ethnic identity, immigration, and mental health using causal inference methods, field experiments, and administrative data.">
+<meta name="description" content="People likely to have Hispanic surnames complete 0.39 fewer years of education, and men earn 5 percentage points less, than otherwise similar children of interethnic couples.">
 
-<title>The Impact of Hispanic Last Names on Educational and Labor Market Outcomes | Hussain Hadah (he/him) – Hussain Hadah (he/him)</title>
+<title>The Impact of Hispanic Last Names on Educational and Labor Market Outcomes – Hussain Hadah</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 /* CSS for syntax highlighting */
 html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
@@ -78,9 +79,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-1b3db88def35042d172274863c1cdcf0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-e1cf0905aa38887c87b7966d67558d22.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-70c7f3babec43cc8cfd326d71a1f4c8d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -119,145 +118,21 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 <style>
 
       .quarto-title-block .quarto-title-banner {
-        background: #CF4446;
+        background: #006747;
       }
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<script>
-// Robust category filtering that works even if Quarto's list JS fails or isn't loaded
-(function () {
-  const parseCategoryList = (str = "") =>
-    str
-      .split(",")
-      .map((c) => c.trim())
-      .filter(Boolean);
-
-  const items = () => Array.from(document.querySelectorAll(".quarto-listing .list > li.project"));
-
-  const setActiveChip = (category) => {
-    const safeCategory =
-      typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
-    document.querySelectorAll(".quarto-listing-category .category.active").forEach((el) => {
-      el.classList.remove("active");
-    });
-    const chip = document.querySelector(
-      `.quarto-listing-category .category[data-category='${safeCategory}']`
-    );
-    if (chip) chip.classList.add("active");
-  };
-
-  const showNoMatchMessages = () => {
-    document.querySelectorAll(".quarto-listing").forEach((listing) => {
-      const anyVisible = Array.from(listing.querySelectorAll(".list > li.project")).some(
-        (item) => !item.classList.contains("d-none")
-      );
-      listing.querySelectorAll(".listing-no-matching").forEach((msg) => {
-        msg.classList.toggle("d-none", anyVisible);
-      });
-    });
-  };
-
-  const hideViaListJs = (category) => {
-    const registry = window["quarto-listings"];
-    if (!registry || typeof registry !== "object") return false;
-    const cat = category || "";
-    Object.values(registry).forEach((list) => {
-      if (!list) return;
-      if (!cat) {
-        list.filter();
-        return;
-      }
-      list.filter((item) => {
-        const cats = parseCategoryList(item?.values()?.categories || "");
-        return cats.includes(cat);
-      });
-    });
-    return true;
-  };
-
-  const domFilter = (category) => {
-    const cat = category || "";
-    items().forEach((item) => {
-      const cats = parseCategoryList(item.dataset.categories || "");
-      const show = !cat || cats.includes(cat);
-      item.classList.toggle("d-none", !show);
-    });
-    showNoMatchMessages();
-  };
-
-  const applyCategory = (category) => {
-    const cat = category || "";
-    setActiveChip(cat);
-    // Try list.js-backed filtering first; if unavailable, fall back to DOM toggling
-    if (!hideViaListJs(cat)) {
-      domFilter(cat);
-    }
-  };
-
-  const categoryFromHash = () => {
-    const match = window.location.hash.match(/category=([^&]*)/);
-    return match ? decodeURIComponent(match[1]) : "";
-  };
-
-  const updateHash = (category) => {
-    const url = new URL(window.location);
-    url.hash = category ? `category=${encodeURIComponent(category)}` : "";
-    window.history.replaceState(null, "", url);
-  };
-
-  const handleHashChange = () => applyCategory(categoryFromHash());
-
-  const wireCategoryLinks = () => {
-    // Inline badges
-    document.querySelectorAll(".project-category a[href^='#category=']").forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        const raw = link.getAttribute("href").split("category=")[1] || "";
-        const cat = decodeURIComponent(raw);
-        updateHash(cat);
-        applyCategory(cat);
-      });
-    });
-
-    // Sidebar chips
-    document.querySelectorAll(".quarto-listing-category .category").forEach((chip) => {
-      chip.addEventListener("click", () => {
-        const cat = chip.getAttribute("data-category") || "";
-        updateHash(cat);
-        applyCategory(cat);
-      });
-    });
-  };
-
-  const init = () => {
-    if (!items().length) return;
-    wireCategoryLinks();
-    handleHashChange();
-  };
-
-  // Override Quarto hooks so any upstream calls use the resilient filter
-  window.activateCategory = applyCategory;
-  window.filterListingCategory = applyCategory;
-
-  // When Quarto finishes wiring listings, re-apply the filter
-  const originalLoaded = window["quarto-listing-loaded"];
-  window["quarto-listing-loaded"] = () => {
-    if (typeof originalLoaded === "function") {
-      originalLoaded();
-    }
-    handleHashChange();
-  };
-
-  window.addEventListener("hashchange", handleHashChange);
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
-})();
-</script>
 
 
+<meta property="og:title" content="The Impact of Hispanic Last Names on Educational and Labor Market Outcomes – Hussain Hadah">
+<meta property="og:description" content="People likely to have Hispanic surnames complete 0.39 fewer years of education, and men earn 5 percentage points less, than otherwise similar children of interethnic couples.">
+<meta property="og:image" content="https://hussainhadah.com/research/articles/hadah-lastnames-2022/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta property="og:site_name" content="Hussain Hadah">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="The Impact of Hispanic Last Names on Educational and Labor Market Outcomes – Hussain Hadah">
+<meta name="twitter:description" content="People likely to have Hispanic surnames complete 0.39 fewer years of education, and men earn 5 percentage points less, than otherwise similar children of interethnic couples.">
+<meta name="twitter:image" content="https://hussainhadah.com/research/articles/hadah-lastnames-2022/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://hussainhadah.com/research/articles/hadah-lastnames-2022/">
 </head>
 
 <body class="floating nav-fixed quarto-light">
@@ -268,11 +143,11 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../img/logo.png" alt="" class="navbar-logo light-content">
-    <img src="../../../img/logo.png" alt="" class="navbar-logo dark-content">
+    <img src="../../../img/logo.png" alt="Hussain Hadah home" class="navbar-logo light-content">
+    <img src="../../../img/logo.png" alt="Hussain Hadah home" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../../../index.html">
-    <span class="navbar-title">Hussain Hadah (he/him)</span>
+    <span class="navbar-title">Hussain Hadah</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -304,12 +179,12 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:hussainhadah@gmail.com"> <i class="bi bi-envelope" role="img" aria-label="email">
+    <a class="nav-link" href="mailto:hussainhadah@gmail.com"> <i class="bi bi-envelope" role="img" aria-label="Email Hussain Hadah">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/hhadah"> <i class="bi bi-github" role="img" aria-label="github">
+    <a class="nav-link" href="https://github.com/hhadah"> <i class="bi bi-github" role="img" aria-label="Hussain Hadah on GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -328,32 +203,38 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
             <h1 class="title">The Impact of Hispanic Last Names on Educational and Labor Market Outcomes</h1>
 
             
+                        <div>
+                <div class="description">
+                    People likely to have Hispanic surnames complete 0.39 fewer years of education, and men earn 5 percentage points less, than otherwise similar children of interethnic couples.
+                </div>
+            </div>
             
             
                                     <div class="quarto-categories">
-                                <div class="quarto-category">Ethnicity</div>
-                                <div class="quarto-category">Bias</div>
                                 <div class="quarto-category">Discrimination</div>
+                                <div class="quarto-category">Identity and Immigration</div>
+                                <div class="quarto-category">Education</div>
+                                <div class="quarto-category">Labor</div>
                             </div>
                                 </div>
     </div>
     
         <div class="project-details">
         <div class="publication-content">
-            <p><strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names on Educational and Labor Market Outcomes,” <em>Journal of Economics, Race, and Policy</em> (2025), doi: <a href="https://doi.org/10.1007/s41996-025-00177-3"><code>https://doi.org/10.1007/s41996-025-00177-3</code></a>.</p>
+            <p><em>Journal of Economics, Race, and Policy</em>, published online 2025; 9(1), 1–11 (2026). doi: <a href="https://doi.org/10.1007/s41996-025-00177-3"><code>10.1007/s41996-025-00177-3</code></a>.</p>
         </div>
                 <ul class="project-links">
                         <li class="project-link">
-                <a href="https://dx.doi.org/10.2139/ssrn.4566234"><i class="fa-solid fa-file-pdf"></i> Preprint</a>
+                <a href="https://dx.doi.org/10.2139/ssrn.4566234"><i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Preprint</a>
             </li>
                         <li class="project-link">
-                <a href="https://doi.org/10.1007/s41996-025-00177-3"><i class="fa-solid fa-scroll"></i> Final version</a>
+                <a href="https://doi.org/10.1007/s41996-025-00177-3"><i class="bi bi-journal-text" aria-hidden="true"></i> Final version</a>
             </li>
                         <li class="project-link">
-                <a href="https://github.com/hhadah/hispanic-last-names.git"><i class="fab fa-github"></i> Code</a>
+                <a href="https://github.com/hhadah/hispanic-last-names.git"><i class="bi bi-github" aria-hidden="true"></i> Code</a>
             </li>
                         <li class="project-link">
-                <a href="https://github.com/hhadah/hispanic-last-names/tree/main/data"><i class="fas fa-table"></i> Data</a>
+                <a href="https://github.com/hhadah/hispanic-last-names/tree/main/data"><i class="bi bi-table" aria-hidden="true"></i> Data</a>
             </li>
                     </ul>
             </div>
@@ -364,11 +245,11 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
       <div class="quarto-title-meta-heading">Affiliation</div>
       
         <div class="quarto-title-meta-contents">
-        <p class="author"><a href="http://www.hussainhadah.com/">Hussain Hadah</a> <a href="https://orcid.org/0000-0002-8705-6386" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+        <p class="author"><a href="https://www.hussainhadah.com/">Hussain Hadah</a> <a href="https://orcid.org/0000-0002-8705-6386" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
       </div>
       <div class="quarto-title-meta-contents">
             <p class="affiliation">
-                Tulane University
+                Northwestern University
               </p>
           </div>
       </div>
@@ -377,7 +258,7 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 
           
         <div>
-        <div class="quarto-title-meta-heading">Published</div>
+        <div class="quarto-title-meta-heading">Published online</div>
         <div class="quarto-title-meta-contents">
           <p class="date">August 2025</p>
         </div>
@@ -388,7 +269,7 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
         <div class="quarto-title-meta-heading">Doi</div>
         <div class="quarto-title-meta-contents">
           <p class="doi">
-            <a href="https://doi.org/https://doi.org/10.1007/s41996-025-00177-3">https://doi.org/10.1007/s41996-025-00177-3</a>
+            <a href="https://doi.org/10.1007/s41996-025-00177-3">10.1007/s41996-025-00177-3</a>
           </p>
         </div>
       </div>
@@ -431,18 +312,39 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 </section>
 <section id="citation" class="level2">
 <h2 class="anchored" data-anchor-id="citation">Citation</h2>
-<p>Hadah, Hussain. The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes. Forthcoming, Journal of Economics, Race, and Policy, 2025. Available at SSRN: https://ssrn.com/abstract=4566234 or http://dx.doi.org/10.2139/ssrn.4566234</p>
+<p>Hadah, Hussain. “The Impact of Hispanic Last Names on Educational and Labor Market Outcomes.” <em>Journal of Economics, Race, and Policy</em>, published online August 23, 2025; 9(1): 1–11 (2026). https://doi.org/10.1007/s41996-025-00177-3.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">hadah2025effect</span>,</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">author</span> = {Hadah, Hussain},</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">title</span> = {The Impact of Hispanic Last Names on Educational and Labor Market Outcomes},</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">journal</span> = {Journal of Economics, Race, and Policy},</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">year</span> = {2025}</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">year</span> = {2026},</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">volume</span> = {9},</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">number</span> = {1},</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">pages</span> = {1--11},</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">doi</span> = {10.1007/s41996-025-00177-3}</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>
 
 </main> <!-- /main -->
+<script>
+document.querySelectorAll(".navbar-toggler[role]").forEach((button) => {
+  button.removeAttribute("role");
+});
+
+const primaryNavigation = document.querySelector("#quarto-header .navbar");
+if (primaryNavigation) {
+  primaryNavigation.setAttribute("aria-label", "Primary");
+}
+
+document.getElementById("quarto-header")?.setAttribute("role", "none");
+
+const sidebarNavigation = document.getElementById("quarto-sidebar");
+if (sidebarNavigation) {
+  sidebarNavigation.setAttribute("aria-label", "Sidebar navigation");
+}
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -516,7 +418,7 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/hussainhadah\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -847,13 +749,13 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><span class="faux-block"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2025 Hussain Hadah</span> <span class="faux-block">All content licensed under<br><a href="https://creativecommons.org/licenses/by-sa/4.0/"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i> Creative Commons CC BY-SA 4.0</a></span></p>
+<p><span class="faux-block">© 2026 Hussain Hadah</span> <span class="faux-block"><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span></p>
 </div>   
     <div class="nav-footer-center">
-<p><span class="faux-block"><i class="fa-brands fa-orcid" aria-label="orcid"></i> <strong>ORCID</strong> <a href="https://orcid.org/0000-0002-8705-6386">0000-0002-8705-6386</a></span></p>
+<p><span class="faux-block"><a href="https://orcid.org/0000-0002-8705-6386">ORCID 0000-0002-8705-6386</a></span></p>
 </div>
     <div class="nav-footer-right">
-<p><span class="faux-block">Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a></span> <span class="faux-block"><a href="https://github.com/hhadah/hhadah-quarto">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></span></p>
+<p><span class="faux-block"><a href="https://github.com/hhadah/hhadah-quarto">Source</a></span></p>
 </div>
   </div>
 </footer>

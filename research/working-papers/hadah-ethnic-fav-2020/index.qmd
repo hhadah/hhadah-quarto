@@ -1,34 +1,31 @@
 ---
 title: "Democracy and Ethnic Favoritism: Evidence from Africa"
-# date: 2020-05-01
+description: "Evidence of ethnic favoritism is mixed overall but stronger within the democracy-only and anocracy-only samples."
+order: 10
 author:
   - name: Hussain Hadah
-    url: http://www.hussainhadah.com/
+    url: https://www.hussainhadah.com/
     orcid: 0000-0002-8705-6386
-    affiliation: Tulane University
-categories: 
-  - Ethnic favoritism
-  - Dictatorships
-  - Democracy
-  - Institutions
-  - Difference-in-differences
+    affiliation: Northwestern University
+  - name: Bariş Alan&ast;
+categories:
+  - Political Economy and Institutions
 pub-info:
-  reference: >-
-    <strong>Hussain Hadah</strong> and Bariş Alan, “Democracy and Ethnic Favoritism: Evidence from Africa,” <em>Under Review</em>.
+  authors: <strong>Hussain Hadah</strong> and Bariş Alan&ast;
+  venue: <em>Under review</em>.
   links:
     - name: Preprint
       url: "https://dx.doi.org/10.2139/ssrn.4566225"
-      icon: fas fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: false
     - name: Code
       url: https://github.com/hhadah/ethnicfavoritism.git
-      icon: fab fa-github
+      icon: bi bi-github
     - name: Data
       url: https://github.com/hhadah/ethnicfavoritism/tree/main/data/raw
-      icon: fas fa-table
+      icon: bi bi-table
   extra: >-
     Presented at the 2021 Southern Economic Association.
-# doi: 
 ---
 
 ## Important links

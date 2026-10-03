@@ -1,0 +1,134 @@
+<script>
+(() => {
+  const listingItems = () =>
+    Array.from(document.querySelectorAll(".research.project-list .project"));
+
+  const categoriesFor = (item) =>
+    (item.dataset.listingCategories || "")
+      .split(",")
+      .map((category) => category.trim())
+      .filter(Boolean);
+
+  const selectedCategory = () => {
+    const match = window.location.hash.match(/^#category=(.*)$/);
+    return match ? decodeURIComponent(match[1]) : "";
+  };
+
+  const setHash = (category) => {
+    const url = new URL(window.location.href);
+    url.hash = category ? `category=${encodeURIComponent(category)}` : "";
+    window.history.replaceState(null, "", url);
+  };
+
+  const updateControls = (category) => {
+    document.querySelectorAll(".category-filter").forEach((control) => {
+      const selected = control.dataset.category === category;
+      control.classList.toggle("active", selected);
+      control.setAttribute("aria-pressed", String(selected));
+    });
+  };
+
+  const updateEmptyMessages = () => {
+    document.querySelectorAll(".research.project-list").forEach((listing) => {
+      const hasVisibleItem = Array.from(listing.querySelectorAll(".project"))
+        .some((item) => !item.hidden);
+      const message = listing.parentElement.querySelector(".listing-no-matching");
+      if (message) message.classList.toggle("d-none", hasVisibleItem);
+    });
+  };
+
+  const applyFilter = (category = "") => {
+    const items = listingItems();
+    let visibleCount = 0;
+
+    items.forEach((item) => {
+      const visible = !category || categoriesFor(item).includes(category);
+      item.hidden = !visible;
+      if (visible) visibleCount += 1;
+    });
+
+    updateControls(category);
+    updateEmptyMessages();
+
+    const status = document.getElementById("research-filter-status");
+    if (status) {
+      status.textContent = category
+        ? `${visibleCount} research ${visibleCount === 1 ? "item" : "items"} in ${category}`
+        : `Showing all ${visibleCount} research items`;
+    }
+  };
+
+  const chooseCategory = (category) => {
+    const current = selectedCategory();
+    const next = current === category ? "" : category;
+    setHash(next);
+    applyFilter(next);
+  };
+
+  const createSidebar = () => {
+    const sidebar = document.getElementById("research-category-filter");
+    if (!sidebar || sidebar.dataset.populated === "true") return;
+
+    const items = listingItems();
+    const counts = new Map();
+    items.forEach((item) => {
+      categoriesFor(item).forEach((category) => {
+        counts.set(category, (counts.get(category) || 0) + 1);
+      });
+    });
+
+    const title = document.createElement("div");
+    title.className = "quarto-listing-category-title";
+    title.textContent = "Filter by topic";
+
+    const list = document.createElement("div");
+    list.className = "quarto-listing-category";
+
+    const addControl = (label, category, count) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "category category-filter";
+      button.dataset.category = category;
+      button.setAttribute("aria-pressed", "false");
+      button.append(document.createTextNode(label));
+
+      const countLabel = document.createElement("span");
+      countLabel.className = "quarto-category-count";
+      countLabel.textContent = ` (${count})`;
+      button.append(countLabel);
+      list.append(button);
+    };
+
+    addControl("All", "", items.length);
+    Array.from(counts.keys()).sort().forEach((category) => {
+      addControl(category, category, counts.get(category));
+    });
+
+    const status = document.createElement("p");
+    status.id = "research-filter-status";
+    status.className = "visually-hidden";
+    status.setAttribute("aria-live", "polite");
+
+    sidebar.replaceChildren(title, list, status);
+    sidebar.dataset.populated = "true";
+  };
+
+  const init = () => {
+    if (!listingItems().length) return;
+    createSidebar();
+    document.addEventListener("click", (event) => {
+      const control = event.target.closest(".category-filter");
+      if (!control) return;
+      chooseCategory(control.dataset.category || "");
+    });
+    applyFilter(selectedCategory());
+  };
+
+  window.addEventListener("hashchange", () => applyFilter(selectedCategory()));
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+</script>

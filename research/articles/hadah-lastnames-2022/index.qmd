@@ -1,33 +1,37 @@
 ---
 title: "The Impact of Hispanic Last Names on Educational and Labor Market Outcomes"
 date: 2025-08-23
+published-title: "Published online"
+description: "People likely to have Hispanic surnames complete 0.39 fewer years of education, and men earn 5 percentage points less, than otherwise similar children of interethnic couples."
 author:
   - name: Hussain Hadah
-    url: http://www.hussainhadah.com/
+    url: https://www.hussainhadah.com/
     orcid: 0000-0002-8705-6386
-    affiliation: Tulane University
-categories: 
-  - Ethnicity
-  - Bias
+    affiliation: Northwestern University
+categories:
   - Discrimination
+  - Identity and Immigration
+  - Education
+  - Labor
 pub-info:
-  reference: >-
-    <strong>Hussain Hadah</strong>, “The Impact of Hispanic Last Names on Educational and Labor Market Outcomes,” <em>Journal of Economics, Race, and Policy</em> (2025), doi: <a href="https://doi.org/10.1007/s41996-025-00177-3"><code>https://doi.org/10.1007/s41996-025-00177-3</code></a>.
+  authors: <strong>Hussain Hadah</strong>
+  venue: >-
+    <em>Journal of Economics, Race, and Policy</em>, published online 2025; 9(1), 1–11 (2026). doi: <a href="https://doi.org/10.1007/s41996-025-00177-3"><code>10.1007/s41996-025-00177-3</code></a>.
   links:
     - name: Preprint
       url: https://dx.doi.org/10.2139/ssrn.4566234
-      icon: fa-solid fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: false
     - name: Final version
       url: https://doi.org/10.1007/s41996-025-00177-3
-      icon: fa-solid fa-scroll
+      icon: bi bi-journal-text
     - name: Code
       url: https://github.com/hhadah/hispanic-last-names.git
-      icon: fab fa-github
+      icon: bi bi-github
     - name: Data
       url: https://github.com/hhadah/hispanic-last-names/tree/main/data
-      icon: fas fa-table
-doi: https://doi.org/10.1007/s41996-025-00177-3
+      icon: bi bi-table
+doi: 10.1007/s41996-025-00177-3
 ---
 
 
@@ -41,13 +45,17 @@ Do individuals with Hispanic surnames face discrimination in access to education
 
 ## Citation
 
-Hadah, Hussain. The Impact of Hispanic Last Names and Identity on Educational and Labor Market Outcomes. Forthcoming, Journal of Economics, Race, and Policy, 2025. Available at SSRN: https://ssrn.com/abstract=4566234 or http://dx.doi.org/10.2139/ssrn.4566234
+Hadah, Hussain. "The Impact of Hispanic Last Names on Educational and Labor Market Outcomes." *Journal of Economics, Race, and Policy*, published online August 23, 2025; 9(1): 1–11 (2026). https://doi.org/10.1007/s41996-025-00177-3.
 
 ```bibtex
 @article{hadah2025effect,
     author = {Hadah, Hussain},
     title = {The Impact of Hispanic Last Names on Educational and Labor Market Outcomes},
     journal = {Journal of Economics, Race, and Policy},
-    year = {2025}
+    year = {2026},
+    volume = {9},
+    number = {1},
+    pages = {1--11},
+    doi = {10.1007/s41996-025-00177-3}
 }
 ```

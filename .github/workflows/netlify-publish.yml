@@ -1,42 +1,30 @@
-name: Render and Publish to Netlify
+name: Render and publish to Netlify
 
 on:
+  workflow_dispatch:
   push:
     branches: [main, master]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: netlify-production
+  cancel-in-progress: true
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up Quarto
+      - name: Set up Quarto 1.8.26
         uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          version: 1.8.26
 
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install jupyter nbformat nbclient pyyaml markdown
-
-      - name: Set up R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: '4.3'
-
-      - name: Install R dependencies (if any)
-        run: |
-          if [ -f "renv.lock" ]; then
-            Rscript -e "install.packages('renv'); renv::restore()"
-          fi
-
-      - name: Render and Publish to Netlify
+      - name: Render and publish to Netlify
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: netlify

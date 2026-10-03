@@ -3,23 +3,23 @@ title: "Principles of Microeconomics"
 description: "This course is an introduction to microeconomics: individual consumer and firm behavior, supply and demand, and the market determination of prices, production and income. We will analyze government policies of price controls, taxation, monopoly and antitrust laws, market failures and environmental policy."
 ---
 
-# ![Principles of Microeconomics](logos/principles_of_microeconomics.png){style="height: 24px; width: auto; vertical-align: middle; margin-right: 10px;"} Course Overview
+## ![Principles of Microeconomics](logos/principles_of_microeconomics.png){width="21" height="24" style="vertical-align: middle; margin-right: 10px;"} Course overview
 
 **Course Information**
 - **Institution**: University of Houston
-- **Semester**: Spring 2020
+- **Semesters**: Summer 2021, Spring 2022, and Summer 2022
 - **Course Code**: ECON 2304
 
 This course is an introduction to microeconomics: individual consumer and firm behavior, supply and demand, and the market determination of prices, production and income. We will analyze government policies of price controls, taxation, monopoly and antitrust laws, market failures and environmental policy.
 
 ::: {.callout-important icon=false}
-## 📋 Course Resources
-[**📄 Download Syllabus**](https://hhadah.github.io/MicroSlides/Syllabus/ECON2304_Summer2022_Syllabus.pdf)
+### Course resources
+[Download the syllabus](https://hhadah.github.io/MicroSlides/Syllabus/ECON2304_Summer2022_Syllabus.pdf).
 :::
 
 ---
 
-#### Slides
+## Slides
 
 1. Introduction \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/intro/intro.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/intro/intro.pdf)\]
 
@@ -41,14 +41,14 @@ This course is an introduction to microeconomics: individual consumer and firm b
 
 9. The Costs of Taxation \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch8/Ch8.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch8/Ch8.pdf)\]
 
-1. International Trade \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch9/Ch9.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch9/Ch9.pdf)\]
+10. International Trade \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch9/Ch9.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch9/Ch9.pdf)\]
 
-1. Externalities \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch10/Ch10.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch10/Ch10.pdf)\]
+11. Externalities \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch10/Ch10.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch10/Ch10.pdf)\]
 
-1. Public Goods and Common Resources \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch11/Ch11.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch11/Ch11.pdf)\]
+12. Public Goods and Common Resources \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch11/Ch11.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch11/Ch11.pdf)\]
 
-1. The Costs of Production \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch13/Ch13.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch13/Ch13.pdf)\]
+13. The Costs of Production \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch13/Ch13.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch13/Ch13.pdf)\]
 
-1. Monopoly \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch15/Ch15.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch15/Ch15.pdf)\]
+14. Monopoly \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch15/Ch15.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch15/Ch15.pdf)\]
 
-1. Monopolistic Competition \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch16/Ch16.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch16/Ch16.pdf)\]
+15. Monopolistic Competition \[[**.html**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch16/Ch16.html) | [**.pdf**](https://hhadah.github.io/MicroSlides/MyPresentations/Ch16/Ch16.pdf)\]

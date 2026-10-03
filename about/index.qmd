@@ -1,28 +1,20 @@
 ---
 title: "About Me"
+description: "Hussain Hadah's research agenda in discrimination, identity, education, health, and labor economics."
 title-block-banner: "#006747"
 page-layout: full
 ---
 
-I am a labor, health, and education economist currently a postdoctoral fellow at Tulane University's [Department of Economics](https://liberalarts.tulane.edu/departments/economics) and [Murphy Institute](https://murphy.tulane.edu/). My research uses causal inference methods, field experiments, and administrative data to evaluate policies and understand economic behavior across diverse contexts including discrimination, identity formation, peer effects, institutional effectiveness, and public health interventions.
+I am a labor, health, and education economist and a lead research economist at the [Research and Innovation for Social and Economic Inclusion Lab](https://riseilab.org/) at Northwestern University. I am also a research affiliate at the [IZA Institute of Labor Economics](https://www.iza.org/person/34828/hussain-hadah) and Tulane University's [Murphy Institute](https://murphy.tulane.edu/).
 
-1. **Discrimination against Minorities and Ethnic Identity**
+## Discrimination and identity
 
-    - I compared the children of inter-ethnic couples to quantify labor and education markets discrimination against people with Hispanic-sounding last names.
-    
-    - I examined how state-level variation in bias influences Hispanics' decisions to identify with, or not identify, their ethnic minority status.
+I study how names, social attitudes, and public policy affect discrimination and ethnic self-identification. My published work examines Hispanic surnames in education and labor markets and the relationship between racial attitudes and Hispanic identity.
 
-2. **Quantifying Discrimination Using Audit Field Experiments**
+## Field experiments
 
-    - In two working papers, I study discrimination using audit field experiments.
-    
-    - In one audit, we quantify discrimination in access to the mortgage market against same-sex couples and racial minorities.
-    
-    - In another audit, we study discrimination in access to education, with an emphasis on differences between traditional, private, and charter schools against children who are LGBTQI+, racial minorities, have behavioral issues, or have IEP status.
+My audit studies measure discrimination in mortgage lending and school admissions. The school-admissions project compares responses from traditional public, charter, and private schools to families who differ by race, ethnicity, disability, socioeconomic status, sexual orientation, or gender identity.
 
-3. **Applied Microeconomics: Education, Labor, and Health**
+## Health, education, and labor
 
-    - My applied microeconomics research also includes studying education, labor, and health. This involves analyzing how disparities in access and outcomes across different demographic groups affect labor and education markets, and health outcomes.
-
-    
-    - In other research, I explore the impact of peer mental health on individual mental health outcomes, education, and labor market outcomes.
+My other projects study peer effects in adolescent mental health, firearm waiting periods and suicide, immigration enforcement, disability services, and workforce-development policy. I use causal inference methods, field experiments, and administrative data to answer these questions.

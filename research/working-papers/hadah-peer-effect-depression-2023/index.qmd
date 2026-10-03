@@ -1,35 +1,33 @@
 ---
 title: "Peer Effects in Adolescent Mental Health"
-# date: 2022-05-01
+description: "Friends' mental health is strongly associated with adolescents' own mental health, academic achievement, physical health, and risky behavior."
+order: 80
 author:
   - name: Hussain Hadah
-    url: http://www.hussainhadah.com/
+    url: https://www.hussainhadah.com/
     orcid: 0000-0002-8705-6386
-    affiliation: Tulane University
-categories: 
-  - Social network
-  - Peer effects
-  - Instrumental variable
-  - Add Health dataset
+    affiliation: Northwestern University
+categories:
+  - Health
+  - Education
 pub-info:
-  reference: >-
-    <strong>Hussain Hadah</strong>, “Peer Effects in Adolescent Mental Health,” <em>Revise and Resubmit at Economica</em>.
+  authors: <strong>Hussain Hadah</strong>
+  venue: <em>Revise and resubmit at Economica</em>.
   links:
     - name: Preprint
       url: https://dx.doi.org/10.2139/ssrn.5159123
-      icon: fa-solid fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: false
     - name: Online Appendix
       url: https://hhadah.github.io/Depression_Idea/my_paper/hadah_peer_effects_online_appendix.pdf
-      icon: fa-solid fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: false
     - name: IZA DP No. 18623
       url: https://docs.iza.org/dp18623.pdf
-      icon: fa-solid fa-pen-nib
+      icon: bi bi-file-earmark-text
       local: false
   extra: >-
     Presented at the 2023 Stata Texas Empirical Microeconomics Conference and won the best graduate poster. Presented at the 93<sup>rd</sup> Southern Economic Association Annual Meeting and the Tenth Annual Conference on Network Science in Economics, Stanford University, CA.
-# doi: 
 ---
 
 
@@ -49,20 +47,20 @@ This paper examines how peer mental health influences adolescents' mental well-b
 
 <!-- Figure 1: Peer effects of friends' mental health on own mental health -->
 
-![Figure 1: Peer effects of friends' mental health on own mental health, educational, and behavioral outcomes ](all-in-one-I.png)
+![Figure 1: Peer effects of friends' mental health on own mental health, educational, and behavioral outcomes](all-in-one-I.png){loading="lazy" width="4800" height="2100"}
 
-![Figure 2: Peer effects of friends' mental health on health, risky behavior, socialization, and alcohol and drug take up](all-in-one-II.png)
+![Figure 2: Peer effects of friends' mental health on health, risky behavior, socialization, and alcohol and drug take-up](all-in-one-II.png){loading="lazy" width="4800" height="2100"}
 
-![Figure 3: Peer effects of friends' mental health on own mental health](own-depression.png)
+![Figure 3: Peer effects of friends' mental health on own mental health](own-depression.png){loading="lazy" width="3000" height="1200"}
 
-![Figure 4: Peer effects of friends' mental health on own Grade Point Average](gpa.png)
+![Figure 4: Peer effects of friends' mental health on own grade point average](gpa.png){loading="lazy" width="3000" height="1200"}
 
-![Figure 5: Peer effects of friends' mental health on probability of skipping school for no reason](skip-school.png)
+![Figure 5: Peer effects of friends' mental health on the probability of skipping school for no reason](skip-school.png){loading="lazy" width="3000" height="1200"}
 
 <!-- ## Citation
 
 <p class="buttons" style="text-align:center;">
-<a class="btn btn-danger" target="_blank" href="https://www.zotero.org/save?type=doi&q=10.1111/1758-5899.12984">{{< ai zotero >}}&emsp;Add to Zotero {{< fa square-arrow-up-right >}}</a>
+<a class="btn btn-danger" target="_blank" rel="noopener" href="https://www.zotero.org/save?type=doi&q=10.1111/1758-5899.12984"><i class="bi bi-bookmark-plus" aria-hidden="true"></i>&emsp;Add to Zotero <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>
 </p>
 
 ```bibtex

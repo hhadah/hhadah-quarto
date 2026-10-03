@@ -1,0 +1,17 @@
+<script>
+document.querySelectorAll(".navbar-toggler[role]").forEach((button) => {
+  button.removeAttribute("role");
+});
+
+const primaryNavigation = document.querySelector("#quarto-header .navbar");
+if (primaryNavigation) {
+  primaryNavigation.setAttribute("aria-label", "Primary");
+}
+
+document.getElementById("quarto-header")?.setAttribute("role", "none");
+
+const sidebarNavigation = document.getElementById("quarto-sidebar");
+if (sidebarNavigation) {
+  sidebarNavigation.setAttribute("aria-label", "Sidebar navigation");
+}
+</script>

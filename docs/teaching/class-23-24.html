@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Hussain Hadah">
-<meta name="description" content="I am a labor, health, and education economist and lead research economist at the RISEI Lab at Northwestern University. I study discrimination, ethnic identity, immigration, and mental health using causal inference methods, field experiments, and administrative data.">
+<meta name="description" content="A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use.">
 
-<title>Urban Economics | Hussain Hadah (he/him) – Hussain Hadah (he/him)</title>
+<title>Urban Economics – Hussain Hadah</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
@@ -43,9 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1b3db88def35042d172274863c1cdcf0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e1cf0905aa38887c87b7966d67558d22.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-70c7f3babec43cc8cfd326d71a1f4c8d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,142 +80,24 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 </script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<script>
-// Robust category filtering that works even if Quarto's list JS fails or isn't loaded
-(function () {
-  const parseCategoryList = (str = "") =>
-    str
-      .split(",")
-      .map((c) => c.trim())
-      .filter(Boolean);
-
-  const items = () => Array.from(document.querySelectorAll(".quarto-listing .list > li.project"));
-
-  const setActiveChip = (category) => {
-    const safeCategory =
-      typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
-    document.querySelectorAll(".quarto-listing-category .category.active").forEach((el) => {
-      el.classList.remove("active");
-    });
-    const chip = document.querySelector(
-      `.quarto-listing-category .category[data-category='${safeCategory}']`
-    );
-    if (chip) chip.classList.add("active");
-  };
-
-  const showNoMatchMessages = () => {
-    document.querySelectorAll(".quarto-listing").forEach((listing) => {
-      const anyVisible = Array.from(listing.querySelectorAll(".list > li.project")).some(
-        (item) => !item.classList.contains("d-none")
-      );
-      listing.querySelectorAll(".listing-no-matching").forEach((msg) => {
-        msg.classList.toggle("d-none", anyVisible);
-      });
-    });
-  };
-
-  const hideViaListJs = (category) => {
-    const registry = window["quarto-listings"];
-    if (!registry || typeof registry !== "object") return false;
-    const cat = category || "";
-    Object.values(registry).forEach((list) => {
-      if (!list) return;
-      if (!cat) {
-        list.filter();
-        return;
-      }
-      list.filter((item) => {
-        const cats = parseCategoryList(item?.values()?.categories || "");
-        return cats.includes(cat);
-      });
-    });
-    return true;
-  };
-
-  const domFilter = (category) => {
-    const cat = category || "";
-    items().forEach((item) => {
-      const cats = parseCategoryList(item.dataset.categories || "");
-      const show = !cat || cats.includes(cat);
-      item.classList.toggle("d-none", !show);
-    });
-    showNoMatchMessages();
-  };
-
-  const applyCategory = (category) => {
-    const cat = category || "";
-    setActiveChip(cat);
-    // Try list.js-backed filtering first; if unavailable, fall back to DOM toggling
-    if (!hideViaListJs(cat)) {
-      domFilter(cat);
-    }
-  };
-
-  const categoryFromHash = () => {
-    const match = window.location.hash.match(/category=([^&]*)/);
-    return match ? decodeURIComponent(match[1]) : "";
-  };
-
-  const updateHash = (category) => {
-    const url = new URL(window.location);
-    url.hash = category ? `category=${encodeURIComponent(category)}` : "";
-    window.history.replaceState(null, "", url);
-  };
-
-  const handleHashChange = () => applyCategory(categoryFromHash());
-
-  const wireCategoryLinks = () => {
-    // Inline badges
-    document.querySelectorAll(".project-category a[href^='#category=']").forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        const raw = link.getAttribute("href").split("category=")[1] || "";
-        const cat = decodeURIComponent(raw);
-        updateHash(cat);
-        applyCategory(cat);
-      });
-    });
-
-    // Sidebar chips
-    document.querySelectorAll(".quarto-listing-category .category").forEach((chip) => {
-      chip.addEventListener("click", () => {
-        const cat = chip.getAttribute("data-category") || "";
-        updateHash(cat);
-        applyCategory(cat);
-      });
-    });
-  };
-
-  const init = () => {
-    if (!items().length) return;
-    wireCategoryLinks();
-    handleHashChange();
-  };
-
-  // Override Quarto hooks so any upstream calls use the resilient filter
-  window.activateCategory = applyCategory;
-  window.filterListingCategory = applyCategory;
-
-  // When Quarto finishes wiring listings, re-apply the filter
-  const originalLoaded = window["quarto-listing-loaded"];
-  window["quarto-listing-loaded"] = () => {
-    if (typeof originalLoaded === "function") {
-      originalLoaded();
-    }
-    handleHashChange();
-  };
-
-  window.addEventListener("hashchange", handleHashChange);
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
-})();
-</script>
 
 
+<meta property="og:title" content="Urban Economics – Hussain Hadah">
+<meta property="og:description" content="A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use.">
+<meta property="og:image" content="https://hussainhadah.com/teaching/logos/urban_economics_class.png">
+<meta property="og:site_name" content="Hussain Hadah">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:alt" content="Urban Economics">
+<meta property="og:image:height" content="2400">
+<meta property="og:image:width" content="2076">
+<meta name="twitter:title" content="Urban Economics – Hussain Hadah">
+<meta name="twitter:description" content="A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use.">
+<meta name="twitter:image" content="https://hussainhadah.com/teaching/logos/urban_economics_class.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="Urban Economics">
+<meta name="twitter:image-height" content="2400">
+<meta name="twitter:image-width" content="2076">
+<link rel="canonical" href="https://hussainhadah.com/teaching/class-23-24.html">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -227,11 +108,11 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../img/logo.png" alt="" class="navbar-logo light-content">
-    <img src="../img/logo.png" alt="" class="navbar-logo dark-content">
+    <img src="../img/logo.png" alt="Hussain Hadah home" class="navbar-logo light-content">
+    <img src="../img/logo.png" alt="Hussain Hadah home" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Hussain Hadah (he/him)</span>
+    <span class="navbar-title">Hussain Hadah</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -263,12 +144,12 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:hussainhadah@gmail.com"> <i class="bi bi-envelope" role="img" aria-label="email">
+    <a class="nav-link" href="mailto:hussainhadah@gmail.com"> <i class="bi bi-envelope" role="img" aria-label="Email Hussain Hadah">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/hhadah"> <i class="bi bi-github" role="img" aria-label="github">
+    <a class="nav-link" href="https://github.com/hhadah"> <i class="bi bi-github" role="img" aria-label="Hussain Hadah on GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -288,10 +169,8 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#urban-economics-course-overview" id="toc-urban-economics-course-overview" class="nav-link active" data-scroll-target="#urban-economics-course-overview"><img src="logos/urban_economics_class.png" class="img-fluid" style="height: 24px; width: auto; vertical-align: middle; margin-right: 10px;" alt="Urban Economics"> Course Overview</a>
-  <ul>
+  <li><a href="#urban-economics-course-overview" id="toc-urban-economics-course-overview" class="nav-link active" data-scroll-target="#urban-economics-course-overview"><img src="logos/urban_economics_class.png" style="vertical-align: middle; margin-right: 10px;" width="21" height="24" alt="Urban Economics"> Course overview</a></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -322,8 +201,8 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 </header>
 
 
-<section id="urban-economics-course-overview" class="level1">
-<h1><img src="logos/urban_economics_class.png" class="img-fluid" style="height: 24px; width: auto; vertical-align: middle; margin-right: 10px;" alt="Urban Economics"> Course Overview</h1>
+<section id="urban-economics-course-overview" class="level2">
+<h2 class="anchored" data-anchor-id="urban-economics-course-overview"><img src="logos/urban_economics_class.png" style="vertical-align: middle; margin-right: 10px;" width="21" height="24" alt="Urban Economics"> Course overview</h2>
 <p><strong>Course Information</strong> - <strong>Institution</strong>: Tulane University - <strong>Semester</strong>: Spring 2024 - <strong>Course Code</strong>: ECON 3320</p>
 <p>A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use.</p>
 <div class="callout callout-style-default callout-important no-icon callout-titled">
@@ -332,16 +211,17 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>📋 Course Resources
+<span class="screen-reader-only">Important</span>Course resources
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><a href="https://hhadah.github.io/urban-econ/syllabus/UrbanEcon3320SyllabusSpring2024HHadah.pdf"><strong>📄 Download Syllabus</strong></a></p>
+<p><a href="https://hhadah.github.io/urban-econ/syllabus/UrbanEcon3320SyllabusSpring2024HHadah.pdf">Download the syllabus</a>.</p>
 </div>
 </div>
 <hr>
-<section id="slides" class="level4">
-<h4 class="anchored" data-anchor-id="slides">Slides</h4>
+</section>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
 <ol type="1">
 <li><p>Class 1: Introduction [<a href="https://hhadah.github.io/urban-econ/slides/01-week1/01-class01/01-class1.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/01-week1/01-class01/01-class1.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 2: Geographical Definitions and Data [<a href="https://hhadah.github.io/urban-econ/slides/01-week1/02-class/02-class2.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/01-week1/02-class/02-class2.pdf"><strong>.pdf</strong></a>]</p></li>
@@ -354,13 +234,13 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 <li><p>Class 9: Explanation of Common Terminology in Causal Studies in (Urban) Economics [<a href="https://hhadah.github.io/urban-econ/slides/04-week4/03-class/causal-term.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/04-week4/03-class/causal-term.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 10: Effect of Police on Crime [<a href="https://hhadah.github.io/urban-econ/slides/05-week5/02-class/02-class2.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/05-week5/02-class/02-class2.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 11: Effect of Economic Circumstances on Crime [<a href="https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.pdf"><strong>.pdf</strong></a>]</p></li>
-<li><p>Class 12: Crime and Gender-Based Violence [<a href="https://hhadah.github.io/urban-econ/slides/06-week6/01-class//gender-based-violence.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/06-week6/01-class//gender-based-violence.pdf"><strong>.pdf</strong></a>]</p></li>
+<li><p>Class 12: Crime and Gender-Based Violence [<a href="https://hhadah.github.io/urban-econ/slides/06-week6/01-class/gender-based-violence.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/06-week6/01-class/gender-based-violence.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 13: Introduction to the Economics of Discrimination [<a href="https://hhadah.github.io/urban-econ/slides/06-week6/02-class/UrbanEconomicsIntrotoDiscrimination.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 14: Racial Bias in the Criminal Justice System [<a href="https://hhadah.github.io/urban-econ/slides/06-week6/03-class/racial-bias.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/06-week6/03-class/racial-bias.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 15: Racial Bias in Policing I [<a href="https://hhadah.github.io/urban-econ/slides/07-week7/02-class/racial-bias.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/07-week7/02-class/racial-bias.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 16: Racial Bias in Policing II [<a href="https://hhadah.github.io/urban-econ/slides/08-week8/01-class/racial-bias-w.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/08-week8/01-class/racial-bias-w.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 17: Criminal Justice and the Labor Market [<a href="https://hhadah.github.io/urban-econ/slides/09-week9/01-class/incarceration-ban-box.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/09-week9/01-class/incarceration-ban-box.pdf"><strong>.pdf</strong></a>]</p></li>
-<li><p>Class 18: Housing Subsidies [<a href="https://hhadah.github.io/urban-econ/slides/09-week9/03-class/01-housing.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/09-week9/03-class/01-housing.pdf"><strong>.pdf</strong></a>]</p></li>
+<li><p>Class 18: Housing Subsidies [<a href="https://hhadah.github.io/urban-econ/slides/09-week9/03-class/01-housing.html"><strong>.html</strong></a>]</p></li>
 <li><p>Class 19: Housing Policies I [<a href="https://hhadah.github.io/urban-econ/slides/10-week10/03-class/19-HousingPoliciesMetcalfSlides.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 20: Housing Policies II [<a href="https://hhadah.github.io/urban-econ/slides/11-week11/03-class/03-housing.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/11-week11/03-class/03-housing.pdf"><strong>.pdf</strong></a>]</p></li>
 <li><p>Class 21: Neighborhood Effects [<a href="https://hhadah.github.io/urban-econ/slides/12-week12/01-class/01-class.html"><strong>.html</strong></a> | <a href="https://hhadah.github.io/urban-econ/slides/12-week12/01-class/01-class.pdf"><strong>.pdf</strong></a>]</p></li>
@@ -373,9 +253,25 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 
 
 </section>
-</section>
 
 </main> <!-- /main -->
+<script>
+document.querySelectorAll(".navbar-toggler[role]").forEach((button) => {
+  button.removeAttribute("role");
+});
+
+const primaryNavigation = document.querySelector("#quarto-header .navbar");
+if (primaryNavigation) {
+  primaryNavigation.setAttribute("aria-label", "Primary");
+}
+
+document.getElementById("quarto-header")?.setAttribute("role", "none");
+
+const sidebarNavigation = document.getElementById("quarto-sidebar");
+if (sidebarNavigation) {
+  sidebarNavigation.setAttribute("aria-label", "Sidebar navigation");
+}
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -449,7 +345,7 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/hussainhadah\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -780,13 +676,13 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><span class="faux-block"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2025 Hussain Hadah</span> <span class="faux-block">All content licensed under<br><a href="https://creativecommons.org/licenses/by-sa/4.0/"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i> Creative Commons CC BY-SA 4.0</a></span></p>
+<p><span class="faux-block">© 2026 Hussain Hadah</span> <span class="faux-block"><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span></p>
 </div>   
     <div class="nav-footer-center">
-<p><span class="faux-block"><i class="fa-brands fa-orcid" aria-label="orcid"></i> <strong>ORCID</strong> <a href="https://orcid.org/0000-0002-8705-6386">0000-0002-8705-6386</a></span></p>
+<p><span class="faux-block"><a href="https://orcid.org/0000-0002-8705-6386">ORCID 0000-0002-8705-6386</a></span></p>
 </div>
     <div class="nav-footer-right">
-<p><span class="faux-block">Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a></span> <span class="faux-block"><a href="https://github.com/hhadah/hhadah-quarto">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></span></p>
+<p><span class="faux-block"><a href="https://github.com/hhadah/hhadah-quarto">Source</a></span></p>
 </div>
   </div>
 </footer>

@@ -1,27 +1,23 @@
 ---
 title: "The Effect of Anti-Asian Attitudes on Asian Identity in the U.S."
-# date: 2022-11-15
+description: "A one-standard-deviation increase in state-level bias reduces self-reported Asian identity by 9 percentage points across generations."
+order: 70
 author:
   - name: Hussain Hadah
-    url: http://www.hussainhadah.com/
+    url: https://www.hussainhadah.com/
     orcid: 0000-0002-8705-6386
-    affiliation: Tulane University
-categories: 
-  - Ethnicity
-  - Race
-  - Bias
+    affiliation: Northwestern University
+categories:
   - Discrimination
+  - Identity and Immigration
 pub-info:
-  reference: >-
-    <strong>Hussain Hadah</strong>, “The Effect of Anti-Asian Attitudes on Asian Identity in the U.S." <em>Revise and Resubmit at the Journal of Policy Analysis and Management</em>.
+  authors: <strong>Hussain Hadah</strong>
+  venue: <em>Revise and resubmit at the Journal of Policy Analysis and Management</em>.
   links:
     - name: Preprint
       url: https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
-      icon: fa-solid fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: false
-  extra: >-
-    
-# doi: 
 ---
 
 ## Important links

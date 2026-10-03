@@ -1,162 +1,58 @@
 ```{=html}
-<% const listingId = 'listing-' + Math.random().toString(36).substr(2, 9); %>
-<div class="research project-list" data-listing-id="<%= listingId %>">
+<div class="research project-list">
 <ul class="list">
     <% for (const item of items) { %>
-        <li class="project" <%=metadataAttrs(item) %> data-listing-categories="<%= item.categories ? item.categories.join(',') : '' %>">
+    <li class="project" <%= metadataAttrs(item) %> data-listing-categories="<%= item.categories ? item.categories.join(',') : '' %>">
+        <article>
+            <p class="project-title">
+                <a href="<%- item.path %>"><%= item.title %></a>
+            </p>
+
+            <% if (item['pub-info']) { %>
             <div class="project-content listing-pub-info">
-                <p><%= item['pub-info'].reference %></p>
+                <% if (item['pub-info'].authors) { %>
+                <p class="listing-authors"><%= item['pub-info'].authors %></p>
+                <% } %>
+                <% if (item['pub-info'].venue) { %>
+                <p class="listing-venue"><%= item['pub-info'].venue %></p>
+                <% } %>
             </div>
+            <% } %>
 
-            <% if(item.categories) { %>
-            <div class="project-categories">
+            <% if (item['listing-summary'] !== false && item.description && String(item.description).trim()) { %>
+            <p class="project-summary"><%= item.description %></p>
+            <% } %>
+
+            <% if (item.categories) { %>
+            <div class="project-categories" role="group" aria-label="Research topics">
                 <% for (const cat of item.categories) { %>
-                    <div class="project-category">
-                        <a href="javascript:void(0)" class="category-filter" data-category="<%= cat %>" data-listing="<%= listingId %>"><%= cat %></a>
-                    </div>
-                    <% } %>
+                <div class="project-category">
+                    <button type="button" class="category-filter" data-category="<%= cat %>" aria-pressed="false"><%= cat %></button>
+                </div>
+                <% } %>
             </div>
             <% } %>
 
-            <% // Loop through the haiku lines and prepend a / to all but the first %>
-            <% if (item.haiku) { %>
-            <div class="haiku">
-            <% for (var i=0; i <= item.haiku.length - 1; i++) { %>
-                <% if (i > 0) { %> / <% } %><%= item.haiku[i] %>
-            <% } %>
-            </div>
-            <% } %>
-            
+            <% if (item['pub-info'] && item['pub-info'].links) { %>
             <div class="project-details-listing">
                 <ul class="project-links">
-                    <li class="project-link details">
-                        <a href="<%- item.path %>" class="listing-name">
-                            <i class="fa-solid fa-circle-info"></i> Full details »
-                        </a>
-                    </li>
-                    <% if (item['pub-info'].links) { %>
-                        <% for (const link of item['pub-info'].links) { %>
+                    <% for (const link of item['pub-info'].links) { %>
                     <li class="project-link">
                         <% if (link.local) { %>
                         <a href="<%- item.path.substring(0, item.path.lastIndexOf('/')) %>/<%- link.url %>">
                         <% } else { %>
                         <a href="<%- link.url %>">
                         <% } %>
-                            <i class="<%- link.icon %>"></i> <%= link.name %>
+                            <i class="<%- link.icon %>" aria-hidden="true"></i> <%= link.name %>
                         </a>
                     </li>
-                        <% } %>
                     <% } %>
                 </ul>
             </div>
-        </li>
-        <% } %>
+            <% } %>
+        </article>
+    </li>
+    <% } %>
 </ul>
 </div>
-
-<script>
-// Initialize category filtering - runs once when first listing loads.
-// A category click filters ALL research listings on the page at once,
-// so a user can pick e.g. "Discrimination" and see matching items across
-// Publications, Working Papers, and Works in Progress simultaneously.
-(function() {
-  if (window.categoryFilterInitialized) return;
-  window.categoryFilterInitialized = true;
-
-  var activeCategory = null;
-
-  function init() {
-    document.querySelectorAll('.category-filter').forEach(function(link) {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        var category = this.getAttribute('data-category');
-        activeCategory = (activeCategory === category) ? null : category;
-        applyFilter(activeCategory);
-      });
-    });
-    populateSidebar();
-  }
-
-  // Build a unified category list in #research-category-filter, if present,
-  // so the user can filter all listings on the page from one sticky sidebar.
-  function populateSidebar() {
-    var sidebar = document.getElementById('research-category-filter');
-    if (!sidebar || sidebar.dataset.populated === 'true') return;
-
-    var counts = {};
-    var total = 0;
-    document.querySelectorAll('.research.project-list .project').forEach(function(item) {
-      total++;
-      var cats = (item.getAttribute('data-listing-categories') || '').split(',').filter(Boolean);
-      cats.forEach(function(c) { counts[c] = (counts[c] || 0) + 1; });
-    });
-
-    var sorted = Object.keys(counts).sort();
-    if (sorted.length === 0) return;
-
-    var html = '<div class="quarto-listing-category-title">Categories</div>';
-    html += '<div class="quarto-listing-category category-cloud">';
-    html += '<div class="category active" data-category="">All <span class="quarto-category-count">(' + total + ')</span></div>';
-    sorted.forEach(function(cat) {
-      html += '<div class="category" data-category="' + cat + '">' + cat + ' <span class="quarto-category-count">(' + counts[cat] + ')</span></div>';
-    });
-    html += '</div>';
-    sidebar.innerHTML = html;
-    sidebar.dataset.populated = 'true';
-
-    sidebar.querySelectorAll('.category').forEach(function(el) {
-      el.addEventListener('click', function(e) {
-        e.preventDefault();
-        var cat = this.getAttribute('data-category');
-        activeCategory = cat || null;
-        applyFilter(activeCategory);
-      });
-    });
-  }
-
-  function applyFilter(category) {
-    document.querySelectorAll('.research.project-list').forEach(function(container) {
-      container.querySelectorAll('.project').forEach(function(item) {
-        var categories = item.getAttribute('data-listing-categories') || '';
-        var match = !category || categories.split(',').indexOf(category) !== -1;
-        item.classList.toggle('d-none', !match);
-        item.style.display = match ? '' : 'none';
-      });
-      updateNoMatchingMessage(container);
-    });
-    updateCategoryLinks(category);
-  }
-
-  function updateNoMatchingMessage(listingContainer) {
-    var anyVisible = Array.from(listingContainer.querySelectorAll('.project')).some(function(item) {
-      return !item.classList.contains('d-none');
-    });
-    var noMatchMsg = listingContainer.parentElement.querySelector('.listing-no-matching');
-    if (noMatchMsg) {
-      noMatchMsg.classList.toggle('d-none', anyVisible);
-    }
-  }
-
-  function updateCategoryLinks(activeCategory) {
-    document.querySelectorAll('.category-filter').forEach(function(link) {
-      var category = link.getAttribute('data-category');
-      link.classList.toggle('active', category === activeCategory);
-    });
-    var sidebar = document.getElementById('research-category-filter');
-    if (sidebar) {
-      sidebar.querySelectorAll('.category').forEach(function(el) {
-        var category = el.getAttribute('data-category');
-        var isActive = activeCategory ? category === activeCategory : category === '';
-        el.classList.toggle('active', isActive);
-      });
-    }
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-})();
-</script>
 ```

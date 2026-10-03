@@ -1,113 +1,81 @@
 ---
 title: "Beyond the Research"
+description: "Hussain Hadah's interests outside economics, including soccer, hiking, snowboarding, and his dogs."
 title-block-banner: "#006747"
 page-layout: full
 lightbox: auto
+fig-cap-location: bottom
 toc: true
 toc-location: right
 toc-title: "Activities"
 ---
 
-::: {.hero-banner style="background: linear-gradient(135deg, #006747 0%, #20c997 100%); color: white; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;"}
-# Adventures, Achievements, and Life Balance
+::: {.hero-banner}
+## Outside economics
 
-When I'm not working, you'll find me on the soccer field, in the mountains, or on trails with my dogs.
+When I am not working, I am usually on a soccer field, in the mountains, or on a trail with my dogs.
 :::
 
 ---
 
-## 💙❤️ Barcelona
+## Mountain trips
 
 ::: {.grid}
 ::: {.g-col-12 .g-col-md-8}
-During a trip to Barcelona in May 2026, I was able to go to El Clasico (when Barca plays Real Madrid) at the Camp Nou where my favorite team Barcelona clinched the league.
+I spend as much time as I can snowboarding and hiking in Colorado.
 :::
 
 ::: {.g-col-12 .g-col-md-4}
-![Championship team celebrating](el-clasico.png){.img-fluid style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" group="sports"}
+![Snowboarding at Keystone, Colorado.](snowboarding.webp){fig-alt="Snowboarding at Keystone in Colorado" .personal-photo loading="lazy" width="900" height="1200" lightbox="mountains"}
 
-::: {.text-center style="margin-top: 0.5rem; font-size: 0.9em; color: #666;"}
-*May 10th, 2026 Barcelona---the Best team in the world---clinches La Liga title against Real Madrid*
+![Hiking at Lake Isabelle, Colorado.](hiking-lake.webp){fig-alt="Lake Isabelle and the surrounding mountains in Colorado" .personal-photo loading="lazy" width="1200" height="900" lightbox="mountains"}
 :::
 :::
-:::
-
 
 ---
 
-## 🏆 Championship Soccer
+## Trail dogs
 
 ::: {.grid}
 ::: {.g-col-12 .g-col-md-8}
-Our Sunday league team has won three consecutive championships.
+Bill and Shams are my favorite trail companions.
 :::
 
 ::: {.g-col-12 .g-col-md-4}
-![Championship team celebrating](soccer-team.png){.img-fluid style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" group="sports"}
-
-::: {.text-center style="margin-top: 0.5rem; font-size: 0.9em; color: #666;"}
-*Three-time champions*
-:::
+![Bill and Shams on a trail.](dogs-creek.webp){fig-alt="Bill and Shams standing on a wooded trail" .personal-photo loading="lazy" width="900" height="1200" lightbox="dogs"}
 :::
 :::
 
 ---
 
-## 🏔️ Mountain Adventures
+## Barcelona
 
 ::: {.grid}
 ::: {.g-col-12 .g-col-md-8}
-I enjoy snowboarding and hiking in Colorado.
+I attended El Clásico at Camp Nou in May 2026, when FC Barcelona clinched the La Liga title against Real Madrid.
 :::
 
 ::: {.g-col-12 .g-col-md-4}
-![Snowboarding at Keystone, CO](snowboarding.png){.img-fluid style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" lightbox="mountain"}
-
-::: {.text-center style="font-size: 0.8em; color: #666; margin-top: 0.3rem;"}
-*Keystone, CO*
-:::
-
-![Hiking at Lake Isabelle, CO](hiking-lake.png){.img-fluid style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" lightbox="mountain"}
-
-::: {.text-center style="font-size: 0.8em; color: #666; margin-top: 0.3rem;"}
-*Lake Isabelle, CO*
-:::
+![FC Barcelona clinches the 2026 La Liga title at Camp Nou.](el-clasico.webp){fig-alt="FC Barcelona players celebrating on the field at Camp Nou" .personal-photo loading="lazy" width="1200" height="900" lightbox="sports"}
 :::
 :::
 
 ---
 
-## 🐕 Trail Dogs
+## Championship soccer
 
 ::: {.grid}
 ::: {.g-col-12 .g-col-md-8}
-Meet Bill and Shams - my hiking companions.
+My Sunday-league team has won three straight championships.
 :::
 
 ::: {.g-col-12 .g-col-md-4}
-![Bill and Shams on the trail](dogs-creek.png){.img-fluid style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" group="dogs"}
-
-::: {.text-center style="font-size: 0.8em; color: #666; margin-top: 0.3rem;"}
-*Bill & Shams*
-:::
+![Three-time Sunday league champions.](soccer-team.webp){fig-alt="My Sunday league soccer team after winning a championship" .personal-photo loading="lazy" width="1200" height="904" lightbox="sports"}
 :::
 :::
 
 ---
 
-## 🏟️ Sports Fan
+## Sports
 
-::: {.grid}
-::: {.g-col-12 .g-col-md-8}
-Houston sports fan and FC Barcelona supporter.
-
-**Teams:** Astros ⚾ | Rockets 🏀 | Barcelona ⚽ | Texans 🏈
-:::
-
-:::
-
----
-
-::: {.callout-note icon=false style="background: #f8f9fa; border-left: 4px solid #006747; text-align: center;"}
-*Want to chat about any of these activities? Always happy to share recommendations or discuss experiences.*
-:::
+I follow the Houston Astros, Houston Rockets, Houston Texans, and FC Barcelona.

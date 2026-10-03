@@ -1,24 +1,17 @@
 ---
 title: "Assimilation of Hispanics and Arabs in America"
-date: 2025-06-01
+order: 20
+listing-summary: false
 author:
   - name: Augustine Denteh
-    affiliation: ""
   - name: Hussain Hadah
     url: https://www.hussainhadah.com/
     affiliation: Northwestern University
 categories:
-  - Identity
-  - Race
-  - Ethnicity
-  - Immigration
+  - Identity and Immigration
 pub-info:
-  reference: >-
-    Augustine Denteh and <strong>Hussain Hadah</strong>. "Assimilation of Hispanics and Arabs in America."
+  authors: Augustine Denteh and <strong>Hussain Hadah</strong>
+  venue: <em>In progress</em>.
   extra: >-
     Using restricted-access census data with the RDC.
-pub-status:
-  status: In Progress
-  class: warning
-  icon: fa-solid fa-pencil
 ---

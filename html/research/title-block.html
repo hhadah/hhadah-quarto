@@ -40,13 +40,13 @@
     $if(pub-info)$
     <div class="project-details">
         <div class="publication-content">
-            <p>$pub-info.reference$</p>
+            <p>$pub-info.venue$</p>
         </div>
         $if(pub-info.links)$
         <ul class="project-links">
             $for(pub-info.links)$
             <li class="project-link">
-                <a href="$pub-info.links.url$"><i class="$pub-info.links.icon$"></i> $pub-info.links.name$</a>
+                <a href="$pub-info.links.url$"><i class="$pub-info.links.icon$" aria-hidden="true"></i> $pub-info.links.name$</a>
             </li>
             $endfor$
         </ul>

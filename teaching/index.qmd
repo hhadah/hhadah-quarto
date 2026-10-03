@@ -1,5 +1,6 @@
 ---
 title: "Teaching"
+description: "Courses, materials, and teaching approach from economist Hussain Hadah."
 title-block-banner: "#EE6A24"
 page-layout: full
 toc: true
@@ -7,8 +8,9 @@ toc-location: right
 toc-title: Semester
 ---
 
-## Teaching Statement
-You can find my teaching statement [here](https://hhadah.github.io/statements/Hadah_Teaching.pdf)
+## Teaching statement
+
+[Read my teaching statement](/cv/Hadah_Teaching.pdf).
 
 ---
 
@@ -16,7 +18,7 @@ You can find my teaching statement [here](https://hhadah.github.io/statements/Ha
 
 ::: {.grid}
 ::: {.g-col-12 .g-col-md-2 .d-flex .align-items-center .justify-content-center}
-![](logos/urban_economics_class.png){.img-fluid style="max-width: 150px; height: auto;"}
+![Urban Economics course logo](logos/urban_economics_class.png){.img-fluid width="150" height="173"}
 :::
 
 ::: {.g-col-12 .g-col-md-10}
@@ -32,17 +34,17 @@ A review of the determinants of the location, size, growth, and form of urban ar
 
 ---
 
-## Spring 2020
+## 2021 to 2022
 
 ::: {.grid}
 ::: {.g-col-12 .g-col-md-2 .d-flex .align-items-center .justify-content-center}
-![](logos/principles_of_microeconomics.png){.img-fluid style="max-width: 150px; height: auto;"}
+![Principles of Microeconomics course logo](logos/principles_of_microeconomics.png){.img-fluid width="150" height="173"}
 :::
 
 ::: {.g-col-12 .g-col-md-10}
 ### [Principles of Microeconomics](econ-101.qmd)
 
-**University of Houston | Spring 2020**
+**University of Houston | Summer 2021, Spring 2022, and Summer 2022**
 
 This course is an introduction to microeconomics: individual consumer and firm behavior, supply and demand, and the market determination of prices, production and income. We analyze government policies of price controls, taxation, monopoly and antitrust laws, market failures and environmental policy.
 
@@ -53,12 +55,12 @@ This course is an introduction to microeconomics: individual consumer and firm b
 ---
 
 ::: {.callout-note icon=false}
-## Course Philosophy
+## Course philosophy
 
-My teaching philosophy centers on making economics accessible and relevant to students' lives. I emphasize:
+My teaching emphasizes:
 
-- **Active Learning**: Interactive exercises and real-world applications
-- **Data Literacy**: Teaching students to interpret economic research and statistics
-- **Policy Relevance**: Connecting economic theory to current policy debates
-- **Inclusive Environment**: Creating welcoming spaces for all students to engage with economic concepts
+- **Active learning.** Interactive exercises and applications to current economic questions
+- **Data literacy.** Practice reading empirical research and interpreting statistical evidence
+- **Policy relevance.** Connections between economic theory and policy choices
+- **Inclusive participation.** Course structures that give every student a way to engage
 :::

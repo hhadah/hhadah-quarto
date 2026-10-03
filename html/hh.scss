@@ -62,7 +62,7 @@ $body-color: $gray-900 !default;
 
 // Links
 $link-color: $green !default;
-$link-decoration: none !default;
+$link-decoration: underline !default;
 $link-hover-color: $red !default;
 $link-hover-decoration: underline !default;
 
@@ -87,12 +87,77 @@ $footer-bg: $gray-900 !default;
 $footer-fg: $gray-300 !default;
 
 /*-- scss:rules --*/
-@import url(https://use.fontawesome.com/releases/v6.1.1/css/all.css);
 
-$web-font-path: "https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" !default;
+@font-face {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("fonts/jost-normal-latin-ext.woff2") format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 
-@if $web-font-path {
-    @import url($web-font-path);
+@font-face {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("fonts/jost-normal-latin.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Jost";
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("fonts/jost-italic-latin-ext.woff2") format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: "Jost";
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("fonts/jost-italic-latin.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Libre Franklin";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("fonts/libre-franklin-normal-latin-ext.woff2") format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: "Libre Franklin";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("fonts/libre-franklin-normal-latin.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Libre Franklin";
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("fonts/libre-franklin-italic-latin-ext.woff2") format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: "Libre Franklin";
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("fonts/libre-franklin-italic-latin.woff2") format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 body {
@@ -395,120 +460,134 @@ pre.text, pre.sourceCode, .cell-output pre {
     .back-nav a {
         color: shift-color($green, -50%);
     }
-    
+
     .quarto-title .quarto-categories .quarto-category {
         background-color: shift-color($green, -75%);
         color: $green;
-        font-size: 0.65em;
+        font-size: 0.75em;
         opacity: 1;
     }
 
     .project-categories {
         display: flex;
         flex-wrap: wrap;
-        margin: 0.35em 0 0.35em;
-        padding-top: 0.35em;
-        padding-left: 0.5em;
-        padding-bottom: 0;
-        row-gap: 0.4em;
-        column-gap: 0.4em;
+        gap: 0.4rem;
+        margin: 0.75rem 0;
         font-family: $headings-font-family;
+    }
 
-        .project-category {
-            padding: 0.25em 0.75em 0.25em 0em;
-            font-size: 0.7em;
-            text-transform: uppercase;
+    .project-category {
+        margin: 0;
+    }
 
-            a.category-filter {
-                text-decoration: none;
-                color: inherit;
-                cursor: pointer;
-                transition: all 0.2s ease;
+    button.category-filter {
+        border: 1px solid $gray-400;
+        border-radius: 999px;
+        background: $white;
+        color: $gray-800;
+        padding: 0.2rem 0.65rem;
+        font: inherit;
+        font-size: 0.78rem;
+        line-height: 1.3;
+        cursor: pointer;
 
-                &:hover {
-                    text-decoration: underline;
-                    opacity: 0.7;
-                }
+        &:hover,
+        &:focus-visible {
+            border-color: $green;
+            color: $green;
+        }
 
-                &.active {
-                    font-weight: bold;
-                    text-decoration: underline;
-                    color: $green;
-                }
-            }
+        &.active,
+        &[aria-pressed="true"] {
+            border-color: $green;
+            background: $green;
+            color: $white;
         }
     }
 }
 
 .project-list {
-    ul {
+    > ul {
         list-style: none;
         padding: 0;
-        margin: 0 0 2em;
+        margin: 0 0 2rem;
+    }
 
-        li.project {
-            margin-bottom: 2.5em;
-            border-left: 6px solid shift-color($green, -90%);
+    li.project {
+        margin-bottom: 2.5rem;
+        padding-left: 1rem;
+        border-left: 3px solid shift-color($green, -78%);
 
-            p {
-                margin: 0;
+        p:not(.project-title) {
+            margin: 0;
+        }
+    }
+
+    .project-title {
+        margin: 0 0 0.4rem;
+        font-family: $headings-font-family;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.25;
+
+        a {
+            color: $gray-900;
+            text-decoration-color: rgba($green, 0.45);
+            text-decoration-thickness: 0.08em;
+            text-underline-offset: 0.16em;
+
+            &:hover,
+            &:focus-visible {
+                color: $green;
+                text-decoration-color: currentColor;
             }
         }
     }
 
     .project-content {
-        padding-left: 0.5em;
-
-        .status {
-            font-size: 1rem;
-            font-weight: 250;
-            padding: 0.2em;
-            margin-right: 0.5em;
-        }
+        color: $gray-700;
+        font-size: 0.96rem;
     }
 
-    .haiku {
-        margin: 0.4rem 0 0rem;
-        font-family: $headings-font-family;
-        font-weight: 300;
-        font-style: italic;
-        text-align: right;
-        color: $gray-600;
-        font-size: 1.1em;
-
-        @media (max-width: map-get($grid-breakpoints, md)) {
-            font-size: 0.95rem;
-        }
+    .listing-authors {
+        color: $gray-900;
     }
+
+    .listing-venue {
+        margin-top: 0.15rem !important;
+    }
+
+    .project-summary {
+        margin-top: 0.65rem !important;
+        max-width: 70ch;
+        line-height: 1.55;
+    }
+
 
     ul.project-links {
-        margin-bottom: 0;
+        margin: 0;
+        padding: 0;
     }
 
     .project-details-listing {
-        margin-top: 0.8em;
-        background-color: shift-color($green, -90%);
+        margin-top: 0.8rem;
+        border-top: 1px solid $gray-200;
+        padding-top: 0.55rem;
+        font-family: $headings-font-family;
         font-size: 0.9rem;
-
-        @media (max-width: map-get($grid-breakpoints, md)) {
-            font-size: 0.95rem;
-        }
 
         .project-link {
             display: inline-block;
+            margin: 0 1rem 0.35rem 0;
+            padding: 0;
             white-space: nowrap;
-            padding: 0.5em 0.5em 0.5em 1em;
-        }
-
-        .details {
-            background-color: $green;
-            padding-right: 1.5em;
-
-            a {
-                color: #FFFFFF;
-            }
         }
     }
+}
+
+.student-coauthor-note {
+    color: $gray-600;
+    font-size: 0.85rem;
 }
 
 .teaching {
@@ -657,51 +736,148 @@ pre.text, pre.sourceCode, .cell-output pre {
     }
 }
 
-// Hide the "Full details »" link in the home page's Research-in-Progress
-// listing — those entries don't have detail pages worth visiting yet.
-#listing-home-wip .project-link.details,
-#listing-works-in-progress .project-link.details {
-    display: none;
-}
-
-// Cross-section category filter sidebar on /research/. Populated by the JS
-// in html/research/listing.ejs from the unique categories across all listings
-// on the page; clicking an item filters every listing at once.
-// Reuses the same look as Quarto's native margin-sidebar category list so the
-// styling stays consistent with the rest of the site.
+// Unified topic filter for all research sections.
 .research-category-sidebar {
     position: sticky;
     top: 1rem;
 
     .quarto-listing-category-title {
-        margin-left: 0.5em;
-        font-weight: 500;
-        margin-bottom: 0.4rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
     }
 
     .quarto-listing-category {
+        display: grid;
+        gap: 0.2rem;
+        border-left: 1px solid $gray-300;
+        padding-left: 0.65rem;
         font-family: $toc-font-family;
-        font-weight: 300;
-        font-size: 1em;
-        line-height: 1.1;
-        padding-left: 0.6rem;
-        margin-left: 0.5em;
-        border-left: 1px solid $gray-200;
+        font-size: 0.95rem;
+    }
 
-        .category {
-            padding-bottom: 0.5rem;
-            cursor: pointer;
+    button.category {
+        border: 0;
+        background: transparent;
+        padding: 0.25rem 0;
+        color: $gray-700;
+        text-align: left;
+        cursor: pointer;
+
+        &:hover,
+        &:focus-visible {
+            color: $green;
+            text-decoration: underline;
         }
 
-        .active {
-            font-weight: 400;
-            color: $orange;
+        &.active,
+        &[aria-pressed="true"] {
+            color: $green;
+            font-weight: 600;
+        }
+    }
+
+    .quarto-category-count {
+        color: $gray-600;
+        font-size: 0.85em;
+        font-weight: 300;
+    }
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        position: static;
+
+        .quarto-listing-category {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            border-left: 0;
+            padding-left: 0;
+        }
+
+        button.category {
+            border: 1px solid $gray-400;
+            border-radius: 999px;
+            padding: 0.3rem 0.65rem;
+            line-height: 1.2;
+
+            &.active,
+            &[aria-pressed="true"] {
+                border-color: $green;
+                background: $green;
+                color: $white;
+            }
         }
 
         .quarto-category-count {
-            font-weight: 200;
-            font-size: 0.8em;
-            color: $gray-600;
+            color: inherit;
         }
+    }
+}
+
+// Homepage and personal-page images
+.homepage-portrait,
+.personal-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba($black, 0.16);
+}
+
+@media (max-width: map-get($grid-breakpoints, sm)) {
+    .homepage-portrait {
+        max-width: 14rem;
+        margin-inline: auto;
+    }
+}
+
+.hero-banner {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 0.625rem;
+    color: $white;
+    background: linear-gradient(135deg, $green 0%, $teal 100%);
+
+    h2 {
+        margin-top: 0;
+        color: inherit;
+    }
+}
+
+.personal-photo + figcaption,
+figure:has(.personal-photo) figcaption {
+    color: $gray-700;
+    font-size: 0.9rem;
+}
+
+.homepage-intro {
+    align-items: start;
+    margin-bottom: 2rem;
+}
+
+.homepage-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.navbar-logo {
+    width: 1.75rem;
+    height: 1.75rem;
+    object-fit: cover;
+}
+
+.embed-container {
+    position: relative;
+    height: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 129%;
+
+    object {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
     }
 }

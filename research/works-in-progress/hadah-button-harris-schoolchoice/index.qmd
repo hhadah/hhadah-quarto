@@ -1,6 +1,7 @@
 ---
 title: "Parent's Choice or School's Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools"
-date: 2025-08-01
+order: 40
+listing-summary: false
 author:
   - name: Hussain Hadah
     url: https://www.hussainhadah.com/
@@ -9,29 +10,23 @@ author:
     affiliation: Tulane University
   - name: Douglas Harris
     affiliation: Tulane University
-  - name: Barbara Lundebjerg*
-    affiliation: ""
+  - name: Barbara Lundebjerg&ast;
+  - name: Bariş Alan&ast;
 categories:
   - Discrimination
-  - Audit
   - Education
-  - School Choice
 pub-info:
-  reference: >-
-    <strong>Hussain Hadah</strong>, Patrick Button, Douglas Harris, Barbara Lundebjerg*, and Bariş Alan*. "Parent's Choice or School's Choice? Discrimination Against Students in Admission to Private, Charter, and Traditional Public Schools." Funded by a $140,747 grant from J-PAL.
+  authors: <strong>Hussain Hadah</strong>, Patrick Button, Douglas Harris, Barbara Lundebjerg&ast;, and Bariş Alan&ast;
+  venue: <em>In design</em>. Funded by a J-PAL Social Policy Research Initiative grant of $140,747.
   links:
     - name: Russell Sage LOI
       url: https://hhadah.github.io/statements/EducationAudit-LOI-RST-Final.pdf
-      icon: fa-solid fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: false
     - name: J-PAL Slides
       url: https://hhadah.github.io/jpal-presentation/hadah-jpal-presentation.html
-      icon: fa-solid fa-presentation-screen
+      icon: bi bi-easel
       local: false
   extra: >-
     Estimating discrimination based on race and ethnicity (White, Black, Hispanic), sexual orientation, gender identity, disability (IEP), and religion. Pilot study in Fall 2025.
-pub-status:
-  status: In Design
-  class: warning
-  icon: fa-solid fa-pencil
 ---

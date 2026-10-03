@@ -1,6 +1,7 @@
 ---
 title: "Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources"
-date: 2025-07-01
+order: 30
+listing-summary: false
 author:
   - name: Patrick Button
     affiliation: Tulane University
@@ -12,21 +13,14 @@ author:
   - name: Julie Hernandez
     affiliation: Tulane University
   - name: Mirya Holman
-    affiliation: ""
   - name: Anna Mahoney
     affiliation: Tulane University
 categories:
   - Discrimination
-  - Audit
   - Health
-  - Reproductive Rights
 pub-info:
-  reference: >-
-    Patrick Button, Clare Daniel, <strong>Hussain Hadah</strong>, Julie Hernandez, Mirya Holman, and Anna Mahoney. "Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources."
+  authors: Patrick Button, Clare Daniel, <strong>Hussain Hadah</strong>, Julie Hernandez, Mirya Holman, and Anna Mahoney
+  venue: <em>In design</em>.
   extra: >-
     Currently developing the experimental design; expect to run in 2026.
-pub-status:
-  status: In Design
-  class: warning
-  icon: fa-solid fa-pencil
 ---

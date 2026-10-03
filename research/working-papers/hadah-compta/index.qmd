@@ -1,38 +1,33 @@
 ---
 title: "The Effects of Waiting Periods on Firearm Suicides in the U.S."
-# date: 2022-11-15
+description: "Firearm-purchase waiting periods reduce firearm suicides by 0.92 deaths per 100,000, or 12 percent, overall, with larger reductions for men, White adults, and adults aged 55 and older."
+order: 50
 author:
   - name: Hussain Hadah
-    url: http://www.hussainhadah.com/
+    url: https://www.hussainhadah.com/
     orcid: 0000-0002-8705-6386
-    affiliation: Tulane University
+    affiliation: Northwestern University
   - name: Gael Compta
-    # orcid: 0000-0002-8705-6386
     affiliation: Tulane University
-categories: 
-  - Waiting Periods
-  - Suicides
-  - Firearm Suicides
+categories:
+  - Health
   - Policy Evaluation
-  - Mental Health
-  - Difference-in-differences
 pub-info:
-  reference: >-
-    <strong>Hussain Hadah</strong>, Gael Compta, and Ali Saffouri, "The Effects of Waiting Periods on Firearm Suicides in the U.S."</em> <em>Under Review</em>.
+  authors: <strong>Hussain Hadah</strong>, Gael Compta, and Ali Saffouri
+  venue: <em>Under review</em>.
   links:
     - name: Preprint
       url: https://dx.doi.org/10.2139/ssrn.5383500
-      icon: fa-solid fa-file-pdf
+      icon: bi bi-file-earmark-pdf
       local: false
     - name: IZA DP No. 18624
       url: https://docs.iza.org/dp18624.pdf
-      icon: fa-solid fa-pen-nib
+      icon: bi bi-file-earmark-text
       local: false
 
   extra: >-
       Presented at the Defense Resources Management Institute (DRMI) in 2025, the American Society of Health Economists Annual Conference in Nashville in 2025, the Southern Economic Association Conference in Washington, D.C. in 2024, the University of Houston's Applied Micro Lunch Seminar, the Murphy Institute Health Seminar in 2023, and the Southern Economic Association Annual Meeting in 2021.
     
-# doi: https://dx.doi.org/10.2139/ssrn.5383500
 ---
 
 ## Important links
@@ -45,15 +40,15 @@ Suicide is often an impulsive act, and in the United States, nearly one-half of 
 
 ## Important Figures
 
-![Figure 1: State-level variation in waiting period policies](193-staggarred_sample_panel_view.png)
+![Figure 1: State-level variation in waiting period policies](193-staggarred_sample_panel_view.png){loading="lazy" width="3000" height="1800"}
 
-![Figure 2: The causal effects of waiting periods on firearms suicides](1035-didimp-all-fire-noNY.png)
+![Figure 2: The causal effects of waiting periods on firearms suicides](1035-didimp-all-fire-noNY.png){loading="lazy" width="1472" height="982"}
 
-![Figure 3: The causal effects of waiting periods on firearms suicides among men](1036-didimp-men-fire-noNY.png)
+![Figure 3: The causal effects of waiting periods on firearms suicides among men](1036-didimp-men-fire-noNY.png){loading="lazy" width="1472" height="982"}
 
-![Figure 4: The causal effects of waiting periods on firearms suicides among individuals aged 55+](1037-didimp-age_55p-fire-noNY.png)
+![Figure 4: The causal effects of waiting periods on firearms suicides among individuals aged 55+](1037-didimp-age_55p-fire-noNY.png){loading="lazy" width="1472" height="982"}
 
-![Figure 5: The causal effects of waiting periods on firearms suicides among white individuals](1038-didimp-white-fire-noNY.png)
+![Figure 5: The causal effects of waiting periods on firearms suicides among white individuals](1038-didimp-white-fire-noNY.png){loading="lazy" width="1472" height="982"}
 
 ## Citation
 

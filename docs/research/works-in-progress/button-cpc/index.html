@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Hussain Hadah">
-<meta name="description" content="I am a labor, health, and education economist and lead research economist at the RISEI Lab at Northwestern University. I study discrimination, ethnic identity, immigration, and mental health using causal inference methods, field experiments, and administrative data.">
 
-<title>Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources | Hussain Hadah (he/him) – Hussain Hadah (he/him)</title>
+<title>Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources – Hussain Hadah</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +21,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
@@ -43,9 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-1b3db88def35042d172274863c1cdcf0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-e1cf0905aa38887c87b7966d67558d22.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-70c7f3babec43cc8cfd326d71a1f4c8d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,145 +82,21 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 <style>
 
       .quarto-title-block .quarto-title-banner {
-        background: #CF4446;
+        background: #006747;
       }
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<script>
-// Robust category filtering that works even if Quarto's list JS fails or isn't loaded
-(function () {
-  const parseCategoryList = (str = "") =>
-    str
-      .split(",")
-      .map((c) => c.trim())
-      .filter(Boolean);
-
-  const items = () => Array.from(document.querySelectorAll(".quarto-listing .list > li.project"));
-
-  const setActiveChip = (category) => {
-    const safeCategory =
-      typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
-    document.querySelectorAll(".quarto-listing-category .category.active").forEach((el) => {
-      el.classList.remove("active");
-    });
-    const chip = document.querySelector(
-      `.quarto-listing-category .category[data-category='${safeCategory}']`
-    );
-    if (chip) chip.classList.add("active");
-  };
-
-  const showNoMatchMessages = () => {
-    document.querySelectorAll(".quarto-listing").forEach((listing) => {
-      const anyVisible = Array.from(listing.querySelectorAll(".list > li.project")).some(
-        (item) => !item.classList.contains("d-none")
-      );
-      listing.querySelectorAll(".listing-no-matching").forEach((msg) => {
-        msg.classList.toggle("d-none", anyVisible);
-      });
-    });
-  };
-
-  const hideViaListJs = (category) => {
-    const registry = window["quarto-listings"];
-    if (!registry || typeof registry !== "object") return false;
-    const cat = category || "";
-    Object.values(registry).forEach((list) => {
-      if (!list) return;
-      if (!cat) {
-        list.filter();
-        return;
-      }
-      list.filter((item) => {
-        const cats = parseCategoryList(item?.values()?.categories || "");
-        return cats.includes(cat);
-      });
-    });
-    return true;
-  };
-
-  const domFilter = (category) => {
-    const cat = category || "";
-    items().forEach((item) => {
-      const cats = parseCategoryList(item.dataset.categories || "");
-      const show = !cat || cats.includes(cat);
-      item.classList.toggle("d-none", !show);
-    });
-    showNoMatchMessages();
-  };
-
-  const applyCategory = (category) => {
-    const cat = category || "";
-    setActiveChip(cat);
-    // Try list.js-backed filtering first; if unavailable, fall back to DOM toggling
-    if (!hideViaListJs(cat)) {
-      domFilter(cat);
-    }
-  };
-
-  const categoryFromHash = () => {
-    const match = window.location.hash.match(/category=([^&]*)/);
-    return match ? decodeURIComponent(match[1]) : "";
-  };
-
-  const updateHash = (category) => {
-    const url = new URL(window.location);
-    url.hash = category ? `category=${encodeURIComponent(category)}` : "";
-    window.history.replaceState(null, "", url);
-  };
-
-  const handleHashChange = () => applyCategory(categoryFromHash());
-
-  const wireCategoryLinks = () => {
-    // Inline badges
-    document.querySelectorAll(".project-category a[href^='#category=']").forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        const raw = link.getAttribute("href").split("category=")[1] || "";
-        const cat = decodeURIComponent(raw);
-        updateHash(cat);
-        applyCategory(cat);
-      });
-    });
-
-    // Sidebar chips
-    document.querySelectorAll(".quarto-listing-category .category").forEach((chip) => {
-      chip.addEventListener("click", () => {
-        const cat = chip.getAttribute("data-category") || "";
-        updateHash(cat);
-        applyCategory(cat);
-      });
-    });
-  };
-
-  const init = () => {
-    if (!items().length) return;
-    wireCategoryLinks();
-    handleHashChange();
-  };
-
-  // Override Quarto hooks so any upstream calls use the resilient filter
-  window.activateCategory = applyCategory;
-  window.filterListingCategory = applyCategory;
-
-  // When Quarto finishes wiring listings, re-apply the filter
-  const originalLoaded = window["quarto-listing-loaded"];
-  window["quarto-listing-loaded"] = () => {
-    if (typeof originalLoaded === "function") {
-      originalLoaded();
-    }
-    handleHashChange();
-  };
-
-  window.addEventListener("hashchange", handleHashChange);
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
-})();
-</script>
 
 
+<meta property="og:title" content="Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources – Hussain Hadah">
+<meta property="og:image" content="https://hussainhadah.com/img/social-card.jpg">
+<meta property="og:site_name" content="Hussain Hadah">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:alt" content="Hussain Hadah, labor, health, and education economist">
+<meta name="twitter:title" content="Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources – Hussain Hadah">
+<meta name="twitter:image" content="https://hussainhadah.com/img/social-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="Hussain Hadah, labor, health, and education economist">
+<link rel="canonical" href="https://hussainhadah.com/research/works-in-progress/button-cpc/">
 </head>
 
 <body class="floating nav-fixed quarto-light">
@@ -233,11 +107,11 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../img/logo.png" alt="" class="navbar-logo light-content">
-    <img src="../../../img/logo.png" alt="" class="navbar-logo dark-content">
+    <img src="../../../img/logo.png" alt="Hussain Hadah home" class="navbar-logo light-content">
+    <img src="../../../img/logo.png" alt="Hussain Hadah home" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../../../index.html">
-    <span class="navbar-title">Hussain Hadah (he/him)</span>
+    <span class="navbar-title">Hussain Hadah</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -269,12 +143,12 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:hussainhadah@gmail.com"> <i class="bi bi-envelope" role="img" aria-label="email">
+    <a class="nav-link" href="mailto:hussainhadah@gmail.com"> <i class="bi bi-envelope" role="img" aria-label="Email Hussain Hadah">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/hhadah"> <i class="bi bi-github" role="img" aria-label="github">
+    <a class="nav-link" href="https://github.com/hhadah"> <i class="bi bi-github" role="img" aria-label="Hussain Hadah on GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -297,16 +171,14 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
             
                                     <div class="quarto-categories">
                                 <div class="quarto-category">Discrimination</div>
-                                <div class="quarto-category">Audit</div>
                                 <div class="quarto-category">Health</div>
-                                <div class="quarto-category">Reproductive Rights</div>
                             </div>
                                 </div>
     </div>
     
         <div class="project-details">
         <div class="publication-content">
-            <p>Patrick Button, Clare Daniel, <strong>Hussain Hadah</strong>, Julie Hernandez, Mirya Holman, and Anna Mahoney. “Auditing Crisis Pregnancy Centers: Racial Biases, Misinformation, and the Misallocation of Government Resources.”</p>
+            <p><em>In design</em>.</p>
         </div>
             </div>
 
@@ -351,9 +223,6 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
         <p class="author">Mirya Holman </p>
       </div>
       <div class="quarto-title-meta-contents">
-            <p class="affiliation">
-                
-              </p>
           </div>
         <div class="quarto-title-meta-contents">
         <p class="author">Anna Mahoney </p>
@@ -368,12 +237,6 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
     <div class="quarto-title-meta">
 
           
-        <div>
-        <div class="quarto-title-meta-heading">Published</div>
-        <div class="quarto-title-meta-contents">
-          <p class="date">July 2025</p>
-        </div>
-      </div>
       
         
       </div>
@@ -406,6 +269,23 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 
 
 </main> <!-- /main -->
+<script>
+document.querySelectorAll(".navbar-toggler[role]").forEach((button) => {
+  button.removeAttribute("role");
+});
+
+const primaryNavigation = document.querySelector("#quarto-header .navbar");
+if (primaryNavigation) {
+  primaryNavigation.setAttribute("aria-label", "Primary");
+}
+
+document.getElementById("quarto-header")?.setAttribute("role", "none");
+
+const sidebarNavigation = document.getElementById("quarto-sidebar");
+if (sidebarNavigation) {
+  sidebarNavigation.setAttribute("aria-label", "Sidebar navigation");
+}
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -479,7 +359,7 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/hussainhadah\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -810,13 +690,13 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><span class="faux-block"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2025 Hussain Hadah</span> <span class="faux-block">All content licensed under<br><a href="https://creativecommons.org/licenses/by-sa/4.0/"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i> Creative Commons CC BY-SA 4.0</a></span></p>
+<p><span class="faux-block">© 2026 Hussain Hadah</span> <span class="faux-block"><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span></p>
 </div>   
     <div class="nav-footer-center">
-<p><span class="faux-block"><i class="fa-brands fa-orcid" aria-label="orcid"></i> <strong>ORCID</strong> <a href="https://orcid.org/0000-0002-8705-6386">0000-0002-8705-6386</a></span></p>
+<p><span class="faux-block"><a href="https://orcid.org/0000-0002-8705-6386">ORCID 0000-0002-8705-6386</a></span></p>
 </div>
     <div class="nav-footer-right">
-<p><span class="faux-block">Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a></span> <span class="faux-block"><a href="https://github.com/hhadah/hhadah-quarto">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></span></p>
+<p><span class="faux-block"><a href="https://github.com/hhadah/hhadah-quarto">Source</a></span></p>
 </div>
   </div>
 </footer>

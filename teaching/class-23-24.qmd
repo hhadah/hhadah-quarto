@@ -3,7 +3,7 @@ title: "Urban Economics"
 description: "A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use."
 ---
 
-# ![Urban Economics](logos/urban_economics_class.png){style="height: 24px; width: auto; vertical-align: middle; margin-right: 10px;"} Course Overview
+## ![Urban Economics](logos/urban_economics_class.png){width="21" height="24" style="vertical-align: middle; margin-right: 10px;"} Course overview
 
 **Course Information**
 - **Institution**: Tulane University
@@ -13,13 +13,13 @@ description: "A review of the determinants of the location, size, growth, and fo
 A review of the determinants of the location, size, growth, and form of urban areas. Study of the major issues of contemporary urban life: physical deterioration, growth of ghettos, congestion, pollution, transportation, and land use.
 
 ::: {.callout-important icon=false}
-## 📋 Course Resources
-[**📄 Download Syllabus**](https://hhadah.github.io/urban-econ/syllabus/UrbanEcon3320SyllabusSpring2024HHadah.pdf)
+### Course resources
+[Download the syllabus](https://hhadah.github.io/urban-econ/syllabus/UrbanEcon3320SyllabusSpring2024HHadah.pdf).
 :::
 
 ---
 
-#### Slides
+## Slides
 
 1. Class 1: Introduction \[[**.html**](https://hhadah.github.io/urban-econ/slides/01-week1/01-class01/01-class1.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/01-week1/01-class01/01-class1.pdf)\]
 
@@ -44,11 +44,11 @@ A review of the determinants of the location, size, growth, and form of urban ar
 (Urban) Economics  \[[**.html**](https://hhadah.github.io/urban-econ/slides/04-week4/03-class/causal-term.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/04-week4/03-class/causal-term.pdf)\]
 
 
-11. Class 10: Effect of Police on Crime \[[**.html**](https://hhadah.github.io/urban-econ/slides/05-week5/02-class/02-class2.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/05-week5/02-class/02-class2.pdf)\]
+10. Class 10: Effect of Police on Crime \[[**.html**](https://hhadah.github.io/urban-econ/slides/05-week5/02-class/02-class2.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/05-week5/02-class/02-class2.pdf)\]
 
-12. Class 11: Effect of Economic Circumstances on Crime \[[**.html**](https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.pdf)\]
+11. Class 11: Effect of Economic Circumstances on Crime \[[**.html**](https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/05-week5/03-class/03-class3.pdf)\]
 
-12. Class 12: Crime and Gender-Based Violence \[[**.html**](https://hhadah.github.io/urban-econ/slides/06-week6/01-class//gender-based-violence.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/06-week6/01-class//gender-based-violence.pdf)\]
+12. Class 12: Crime and Gender-Based Violence \[[**.html**](https://hhadah.github.io/urban-econ/slides/06-week6/01-class/gender-based-violence.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/06-week6/01-class/gender-based-violence.pdf)\]
 
 13. Class 13:  Introduction to the Economics of Discrimination \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/06-week6/02-class/UrbanEconomicsIntrotoDiscrimination.pdf)\]
 
@@ -61,7 +61,7 @@ A review of the determinants of the location, size, growth, and form of urban ar
 
 17. Class 17:  Criminal Justice and the Labor Market \[[**.html**](https://hhadah.github.io/urban-econ/slides/09-week9/01-class/incarceration-ban-box.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/09-week9/01-class/incarceration-ban-box.pdf)\]
 
-18. Class 18:  Housing Subsidies \[[**.html**](https://hhadah.github.io/urban-econ/slides/09-week9/03-class/01-housing.html) | [**.pdf**](https://hhadah.github.io/urban-econ/slides/09-week9/03-class/01-housing.pdf)\]
+18. Class 18: Housing Subsidies [[**.html**](https://hhadah.github.io/urban-econ/slides/09-week9/03-class/01-housing.html)]
 
 
 19. Class 19:  Housing Policies I \[[**.pdf**](https://hhadah.github.io/urban-econ/slides/10-week10/03-class/19-HousingPoliciesMetcalfSlides.pdf)\]

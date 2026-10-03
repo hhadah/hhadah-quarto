@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Hussain Hadah">
-<meta name="description" content="I am a labor, health, and education economist and lead research economist at the RISEI Lab at Northwestern University. I study discrimination, ethnic identity, immigration, and mental health using causal inference methods, field experiments, and administrative data.">
+<meta name="description" content="Hussain Hadah’s interests outside economics, including soccer, hiking, snowboarding, and his dogs.">
 
-<title>Beyond the Research | Hussain Hadah (he/him) – Hussain Hadah (he/him)</title>
+<title>Beyond the Research – Hussain Hadah</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
@@ -43,9 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-1b3db88def35042d172274863c1cdcf0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e1cf0905aa38887c87b7966d67558d22.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-70c7f3babec43cc8cfd326d71a1f4c8d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -90,142 +89,20 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
         background: #006747;
       }
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<script>
-// Robust category filtering that works even if Quarto's list JS fails or isn't loaded
-(function () {
-  const parseCategoryList = (str = "") =>
-    str
-      .split(",")
-      .map((c) => c.trim())
-      .filter(Boolean);
-
-  const items = () => Array.from(document.querySelectorAll(".quarto-listing .list > li.project"));
-
-  const setActiveChip = (category) => {
-    const safeCategory =
-      typeof CSS !== "undefined" && CSS.escape ? CSS.escape(category) : category.replace(/'/g, "\\'");
-    document.querySelectorAll(".quarto-listing-category .category.active").forEach((el) => {
-      el.classList.remove("active");
-    });
-    const chip = document.querySelector(
-      `.quarto-listing-category .category[data-category='${safeCategory}']`
-    );
-    if (chip) chip.classList.add("active");
-  };
-
-  const showNoMatchMessages = () => {
-    document.querySelectorAll(".quarto-listing").forEach((listing) => {
-      const anyVisible = Array.from(listing.querySelectorAll(".list > li.project")).some(
-        (item) => !item.classList.contains("d-none")
-      );
-      listing.querySelectorAll(".listing-no-matching").forEach((msg) => {
-        msg.classList.toggle("d-none", anyVisible);
-      });
-    });
-  };
-
-  const hideViaListJs = (category) => {
-    const registry = window["quarto-listings"];
-    if (!registry || typeof registry !== "object") return false;
-    const cat = category || "";
-    Object.values(registry).forEach((list) => {
-      if (!list) return;
-      if (!cat) {
-        list.filter();
-        return;
-      }
-      list.filter((item) => {
-        const cats = parseCategoryList(item?.values()?.categories || "");
-        return cats.includes(cat);
-      });
-    });
-    return true;
-  };
-
-  const domFilter = (category) => {
-    const cat = category || "";
-    items().forEach((item) => {
-      const cats = parseCategoryList(item.dataset.categories || "");
-      const show = !cat || cats.includes(cat);
-      item.classList.toggle("d-none", !show);
-    });
-    showNoMatchMessages();
-  };
-
-  const applyCategory = (category) => {
-    const cat = category || "";
-    setActiveChip(cat);
-    // Try list.js-backed filtering first; if unavailable, fall back to DOM toggling
-    if (!hideViaListJs(cat)) {
-      domFilter(cat);
-    }
-  };
-
-  const categoryFromHash = () => {
-    const match = window.location.hash.match(/category=([^&]*)/);
-    return match ? decodeURIComponent(match[1]) : "";
-  };
-
-  const updateHash = (category) => {
-    const url = new URL(window.location);
-    url.hash = category ? `category=${encodeURIComponent(category)}` : "";
-    window.history.replaceState(null, "", url);
-  };
-
-  const handleHashChange = () => applyCategory(categoryFromHash());
-
-  const wireCategoryLinks = () => {
-    // Inline badges
-    document.querySelectorAll(".project-category a[href^='#category=']").forEach((link) => {
-      link.addEventListener("click", (event) => {
-        event.preventDefault();
-        const raw = link.getAttribute("href").split("category=")[1] || "";
-        const cat = decodeURIComponent(raw);
-        updateHash(cat);
-        applyCategory(cat);
-      });
-    });
-
-    // Sidebar chips
-    document.querySelectorAll(".quarto-listing-category .category").forEach((chip) => {
-      chip.addEventListener("click", () => {
-        const cat = chip.getAttribute("data-category") || "";
-        updateHash(cat);
-        applyCategory(cat);
-      });
-    });
-  };
-
-  const init = () => {
-    if (!items().length) return;
-    wireCategoryLinks();
-    handleHashChange();
-  };
-
-  // Override Quarto hooks so any upstream calls use the resilient filter
-  window.activateCategory = applyCategory;
-  window.filterListingCategory = applyCategory;
-
-  // When Quarto finishes wiring listings, re-apply the filter
-  const originalLoaded = window["quarto-listing-loaded"];
-  window["quarto-listing-loaded"] = () => {
-    if (typeof originalLoaded === "function") {
-      originalLoaded();
-    }
-    handleHashChange();
-  };
-
-  window.addEventListener("hashchange", handleHashChange);
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
-})();
-</script>
 
 
+<meta property="og:title" content="Beyond the Research – Hussain Hadah">
+<meta property="og:description" content="Hussain Hadah’s interests outside economics, including soccer, hiking, snowboarding, and his dogs.">
+<meta property="og:image" content="https://hussainhadah.com/personal/snowboarding.webp">
+<meta property="og:site_name" content="Hussain Hadah">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:alt" content="Snowboarding at Keystone in Colorado">
+<meta name="twitter:title" content="Beyond the Research – Hussain Hadah">
+<meta name="twitter:description" content="Hussain Hadah’s interests outside economics, including soccer, hiking, snowboarding, and his dogs.">
+<meta name="twitter:image" content="https://hussainhadah.com/personal/snowboarding.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="Snowboarding at Keystone in Colorado">
+<link rel="canonical" href="https://hussainhadah.com/personal/">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -236,11 +113,11 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../img/logo.png" alt="" class="navbar-logo light-content">
-    <img src="../img/logo.png" alt="" class="navbar-logo dark-content">
+    <img src="../img/logo.png" alt="Hussain Hadah home" class="navbar-logo light-content">
+    <img src="../img/logo.png" alt="Hussain Hadah home" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Hussain Hadah (he/him)</span>
+    <span class="navbar-title">Hussain Hadah</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -272,12 +149,12 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:hussainhadah@gmail.com"> <i class="bi bi-envelope" role="img" aria-label="email">
+    <a class="nav-link" href="mailto:hussainhadah@gmail.com"> <i class="bi bi-envelope" role="img" aria-label="Email Hussain Hadah">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/hhadah"> <i class="bi bi-github" role="img" aria-label="github">
+    <a class="nav-link" href="https://github.com/hhadah"> <i class="bi bi-github" role="img" aria-label="Hussain Hadah on GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -293,7 +170,12 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
       <h1 class="title">Beyond the Research</h1>
-                      </div>
+                  <div>
+        <div class="description">
+          Hussain Hadah’s interests outside economics, including soccer, hiking, snowboarding, and his dogs.
+        </div>
+      </div>
+                </div>
   </div>
     
   
@@ -313,143 +195,126 @@ gtag('config', 'G-Y1VGD6H14M', { 'anonymize_ip': true});
     <h2 id="toc-title">Activities</h2>
    
   <ul>
-  <li><a href="#adventures-achievements-and-life-balance" id="toc-adventures-achievements-and-life-balance" class="nav-link active" data-scroll-target="#adventures-achievements-and-life-balance">Adventures, Achievements, and Life Balance</a></li>
-  <li><a href="#barcelona" id="toc-barcelona" class="nav-link" data-scroll-target="#barcelona">💙❤️ Barcelona</a></li>
-  <li><a href="#championship-soccer" id="toc-championship-soccer" class="nav-link" data-scroll-target="#championship-soccer">🏆 Championship Soccer</a></li>
-  <li><a href="#mountain-adventures" id="toc-mountain-adventures" class="nav-link" data-scroll-target="#mountain-adventures">🏔️ Mountain Adventures</a></li>
-  <li><a href="#trail-dogs" id="toc-trail-dogs" class="nav-link" data-scroll-target="#trail-dogs">🐕 Trail Dogs</a></li>
-  <li><a href="#sports-fan" id="toc-sports-fan" class="nav-link" data-scroll-target="#sports-fan">🏟️ Sports Fan</a></li>
+  <li><a href="#outside-economics" id="toc-outside-economics" class="nav-link active" data-scroll-target="#outside-economics">Outside economics</a></li>
+  <li><a href="#mountain-trips" id="toc-mountain-trips" class="nav-link" data-scroll-target="#mountain-trips">Mountain trips</a></li>
+  <li><a href="#trail-dogs" id="toc-trail-dogs" class="nav-link" data-scroll-target="#trail-dogs">Trail dogs</a></li>
+  <li><a href="#barcelona" id="toc-barcelona" class="nav-link" data-scroll-target="#barcelona">Barcelona</a></li>
+  <li><a href="#championship-soccer" id="toc-championship-soccer" class="nav-link" data-scroll-target="#championship-soccer">Championship soccer</a></li>
+  <li><a href="#sports" id="toc-sports" class="nav-link" data-scroll-target="#sports">Sports</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
 
-<section id="adventures-achievements-and-life-balance" class="level1 hero-banner" style="background: linear-gradient(135deg, #006747 0%, #20c997 100%); color: white; padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
-<h1>Adventures, Achievements, and Life Balance</h1>
-<p>When I’m not working, you’ll find me on the soccer field, in the mountains, or on trails with my dogs.</p>
+<section id="outside-economics" class="level2 hero-banner">
+<h2 class="anchored" data-anchor-id="outside-economics">Outside economics</h2>
+<p>When I am not working, I am usually on a soccer field, in the mountains, or on a trail with my dogs.</p>
 </section>
 <hr>
-<section id="barcelona" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="barcelona">💙❤️ Barcelona</h2>
-<div class="grid page-columns page-full">
-<div class="g-col-12 g-col-md-8">
-<p>During a trip to Barcelona in May 2026, I was able to go to El Clasico (when Barca plays Real Madrid) at the Camp Nou where my favorite team Barcelona clinched the league.</p>
-</div>
-<div class="g-col-12 g-col-md-4 page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><a href="el-clasico.png" class="lightbox" data-gallery="sports" title="Championship team celebrating"><img src="el-clasico.png" class="img-fluid figure-img" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" alt="Championship team celebrating"></a></p>
-<figcaption class="margin-caption">Championship team celebrating</figcaption>
-</figure>
-</div>
-<div class="text-center" style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">
-<p><em>May 10th, 2026 Barcelona—the Best team in the world—clinches La Liga title against Real Madrid</em></p>
-</div>
-</div>
-</div>
-<hr>
-</section>
-<section id="championship-soccer" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="championship-soccer">🏆 Championship Soccer</h2>
-<div class="grid page-columns page-full">
-<div class="g-col-12 g-col-md-8">
-<p>Our Sunday league team has won three consecutive championships.</p>
-</div>
-<div class="g-col-12 g-col-md-4 page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><a href="soccer-team.png" class="lightbox" data-gallery="sports" title="Championship team celebrating"><img src="soccer-team.png" class="img-fluid figure-img" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" alt="Championship team celebrating"></a></p>
-<figcaption class="margin-caption">Championship team celebrating</figcaption>
-</figure>
-</div>
-<div class="text-center" style="margin-top: 0.5rem; font-size: 0.9em; color: #666;">
-<p><em>Three-time champions</em></p>
-</div>
-</div>
-</div>
-<hr>
-</section>
-<section id="mountain-adventures" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="mountain-adventures">🏔️ Mountain Adventures</h2>
-<div class="grid page-columns page-full">
-<div class="g-col-12 g-col-md-8">
-<p>I enjoy snowboarding and hiking in Colorado.</p>
-</div>
-<div class="g-col-12 g-col-md-4 page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><a href="snowboarding.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Snowboarding at Keystone, CO"><img src="snowboarding.png" class="img-fluid figure-img" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" data-lightbox="mountain" alt="Snowboarding at Keystone, CO"></a></p>
-<figcaption class="margin-caption">Snowboarding at Keystone, CO</figcaption>
-</figure>
-</div>
-<div class="text-center" style="font-size: 0.8em; color: #666; margin-top: 0.3rem;">
-<p><em>Keystone, CO</em></p>
-</div>
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><a href="hiking-lake.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Hiking at Lake Isabelle, CO"><img src="hiking-lake.png" class="img-fluid figure-img" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" data-lightbox="mountain" alt="Hiking at Lake Isabelle, CO"></a></p>
-<figcaption class="margin-caption">Hiking at Lake Isabelle, CO</figcaption>
-</figure>
-</div>
-<div class="text-center" style="font-size: 0.8em; color: #666; margin-top: 0.3rem;">
-<p><em>Lake Isabelle, CO</em></p>
-</div>
-</div>
-</div>
-<hr>
-</section>
-<section id="trail-dogs" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="trail-dogs">🐕 Trail Dogs</h2>
-<div class="grid page-columns page-full">
-<div class="g-col-12 g-col-md-8">
-<p>Meet Bill and Shams - my hiking companions.</p>
-</div>
-<div class="g-col-12 g-col-md-4 page-columns page-full">
-<div class="quarto-figure quarto-figure-center page-columns page-full">
-<figure class="figure page-columns page-full">
-<p><a href="dogs-creek.png" class="lightbox" data-gallery="dogs" title="Bill and Shams on the trail"><img src="dogs-creek.png" class="img-fluid figure-img" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);" alt="Bill and Shams on the trail"></a></p>
-<figcaption class="margin-caption">Bill and Shams on the trail</figcaption>
-</figure>
-</div>
-<div class="text-center" style="font-size: 0.8em; color: #666; margin-top: 0.3rem;">
-<p><em>Bill &amp; Shams</em></p>
-</div>
-</div>
-</div>
-<hr>
-</section>
-<section id="sports-fan" class="level2">
-<h2 class="anchored" data-anchor-id="sports-fan">🏟️ Sports Fan</h2>
+<section id="mountain-trips" class="level2">
+<h2 class="anchored" data-anchor-id="mountain-trips">Mountain trips</h2>
 <div class="grid">
 <div class="g-col-12 g-col-md-8">
-<p>Houston sports fan and FC Barcelona supporter.</p>
-<p><strong>Teams:</strong> Astros ⚾ | Rockets 🏀 | Barcelona ⚽ | Texans 🏈</p>
+<p>I spend as much time as I can snowboarding and hiking in Colorado.</p>
+</div>
+<div class="g-col-12 g-col-md-4">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="snowboarding.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Snowboarding at Keystone, Colorado."><img src="snowboarding.webp" class="personal-photo figure-img" loading="lazy" data-lightbox="mountains" alt="Snowboarding at Keystone in Colorado" width="900" height="1200"></a></p>
+<figcaption>Snowboarding at Keystone, Colorado.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="hiking-lake.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Hiking at Lake Isabelle, Colorado."><img src="hiking-lake.webp" class="personal-photo figure-img" loading="lazy" data-lightbox="mountains" alt="Lake Isabelle and the surrounding mountains in Colorado" width="1200" height="900"></a></p>
+<figcaption>Hiking at Lake Isabelle, Colorado.</figcaption>
+</figure>
+</div>
 </div>
 </div>
 <hr>
-<div class="callout callout-style-default callout-note no-icon callout-titled" style="background: #f8f9fa; border-left: 4px solid #006747; text-align: center;">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+</section>
+<section id="trail-dogs" class="level2">
+<h2 class="anchored" data-anchor-id="trail-dogs">Trail dogs</h2>
+<div class="grid">
+<div class="g-col-12 g-col-md-8">
+<p>Bill and Shams are my favorite trail companions.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Note
+<div class="g-col-12 g-col-md-4">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="dogs-creek.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Bill and Shams on a trail."><img src="dogs-creek.webp" class="personal-photo figure-img" loading="lazy" data-lightbox="dogs" alt="Bill and Shams standing on a wooded trail" width="900" height="1200"></a></p>
+<figcaption>Bill and Shams on a trail.</figcaption>
+</figure>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p><em>Want to chat about any of these activities? Always happy to share recommendations or discuss experiences.</em></p>
+</div>
+<hr>
+</section>
+<section id="barcelona" class="level2">
+<h2 class="anchored" data-anchor-id="barcelona">Barcelona</h2>
+<div class="grid">
+<div class="g-col-12 g-col-md-8">
+<p>I attended El Clásico at Camp Nou in May 2026, when FC Barcelona clinched the La Liga title against Real Madrid.</p>
+</div>
+<div class="g-col-12 g-col-md-4">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="el-clasico.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="FC Barcelona clinches the 2026 La Liga title at Camp Nou."><img src="el-clasico.webp" class="personal-photo figure-img" loading="lazy" data-lightbox="sports" alt="FC Barcelona players celebrating on the field at Camp Nou" width="1200" height="900"></a></p>
+<figcaption>FC Barcelona clinches the 2026 La Liga title at Camp Nou.</figcaption>
+</figure>
 </div>
 </div>
+</div>
+<hr>
+</section>
+<section id="championship-soccer" class="level2">
+<h2 class="anchored" data-anchor-id="championship-soccer">Championship soccer</h2>
+<div class="grid">
+<div class="g-col-12 g-col-md-8">
+<p>My Sunday-league team has won three straight championships.</p>
+</div>
+<div class="g-col-12 g-col-md-4">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="soccer-team.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Three-time Sunday league champions."><img src="soccer-team.webp" class="personal-photo figure-img" loading="lazy" data-lightbox="sports" alt="My Sunday league soccer team after winning a championship" width="1200" height="904"></a></p>
+<figcaption>Three-time Sunday league champions.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="sports" class="level2">
+<h2 class="anchored" data-anchor-id="sports">Sports</h2>
+<p>I follow the Houston Astros, Houston Rockets, Houston Texans, and FC Barcelona.</p>
 
 
 </section>
 
 </main> <!-- /main -->
+<script>
+document.querySelectorAll(".navbar-toggler[role]").forEach((button) => {
+  button.removeAttribute("role");
+});
+
+const primaryNavigation = document.querySelector("#quarto-header .navbar");
+if (primaryNavigation) {
+  primaryNavigation.setAttribute("aria-label", "Primary");
+}
+
+document.getElementById("quarto-header")?.setAttribute("role", "none");
+
+const sidebarNavigation = document.getElementById("quarto-sidebar");
+if (sidebarNavigation) {
+  sidebarNavigation.setAttribute("aria-label", "Sidebar navigation");
+}
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -523,7 +388,7 @@ Note
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/hussainhadah\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -854,13 +719,13 @@ Note
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><span class="faux-block"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2025 Hussain Hadah</span> <span class="faux-block">All content licensed under<br><a href="https://creativecommons.org/licenses/by-sa/4.0/"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-sa" aria-label="creative-commons-sa"></i> Creative Commons CC BY-SA 4.0</a></span></p>
+<p><span class="faux-block">© 2026 Hussain Hadah</span> <span class="faux-block"><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span></p>
 </div>   
     <div class="nav-footer-center">
-<p><span class="faux-block"><i class="fa-brands fa-orcid" aria-label="orcid"></i> <strong>ORCID</strong> <a href="https://orcid.org/0000-0002-8705-6386">0000-0002-8705-6386</a></span></p>
+<p><span class="faux-block"><a href="https://orcid.org/0000-0002-8705-6386">ORCID 0000-0002-8705-6386</a></span></p>
 </div>
     <div class="nav-footer-right">
-<p><span class="faux-block">Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a></span> <span class="faux-block"><a href="https://github.com/hhadah/hhadah-quarto">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></span></p>
+<p><span class="faux-block"><a href="https://github.com/hhadah/hhadah-quarto">Source</a></span></p>
 </div>
   </div>
 </footer>

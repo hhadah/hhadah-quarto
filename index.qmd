@@ -1,14 +1,14 @@
 ---
-title: "Welcome to my website!"
+title: "Hussain Hadah"
+description-meta: "Labor, health, and education economist at Northwestern University's RISEI Lab."
+image: /img/social-card.jpg
+image-alt: "Hussain Hadah, labor, health, and education economist"
 toc: true
 toc-location: right
 toc-float: true
-toc-title: Content
+toc-title: "On this page"
 toc-depth: 3
-pagetitle: "{{< meta website.title >}}"
-main-photo: /img/Hussain_Hadah-2025-09-04-07945pp.jpg
-main-photo-square: /img/Hussain_Hadah-2025-09-04-07945pp.jpg
-title-block-banner: "#CF4446"
+title-block-banner: "#006747"
 listing:
   - id: home-articles
     contents: "research/articles/*/index.qmd"
@@ -17,21 +17,22 @@ listing:
     categories: false
   - id: home-working-papers
     contents: "research/working-papers/*/index.qmd"
-    sort: "date desc"
+    sort: "order desc"
     template: html/research/listing.ejs
     categories: false
   - id: home-wip
     contents: "research/works-in-progress/*/index.qmd"
-    sort: "date desc"
+    sort: "order desc"
     template: html/research/listing.ejs
     categories: false
 format:
   html:
+    include-in-header: html/research/filter.html
     quarto-template-params:
       banner-header-class: "home"
 ---
 
-::: {.grid}
+::: {.grid .homepage-intro}
 
 ::: {.g-col-12 .g-col-sm-4}
 
@@ -40,106 +41,75 @@ format:
   <div class="g-col-1 g-col-sm-0"></div>
   <div class="g-col-4 g-col-sm-6">
     <picture>
-      <source media="(max-width: 576px)" srcset="{{< meta main-photo-square >}}">
-      <source media="(min-width: 576px)" srcset="{{< meta main-photo >}}">
-      <img class="img-fluid" src="{{< meta main-photo >}}" alt="{{< meta author-meta >}}"
-     style="width: 100%; aspect-ratio: 2/3; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+      <source type="image/webp"
+              srcset="/img/headshot-400.webp 400w, /img/headshot-800.webp 800w"
+              sizes="(max-width: 576px) 72vw, 28vw">
+      <img class="img-fluid homepage-portrait"
+           src="/img/Hussain_Hadah-2025-09-04-07945pp.jpg"
+           alt="Hussain Hadah"
+           width="800"
+           height="1200"
+           decoding="async"
+           fetchpriority="high">
     </picture>
   </div>
-  <div class="g-col-0 g-col-sm-0"></div>
 </div>
-
 ```
 
 :::
 
 ::: {.g-col-12 .g-col-sm-8}
 
-# About Me
+## Labor, health, and education economist
 
-I am a labor, health, and education economist. I am currently a lead research economist at the [Research and Innovation for Social and Economic Inclusion (RISEI) Lab](https://riseilab.org/index.html) at Northwestern University. I was previously a postdoctoral fellow at Tulane University's [Murphy Institute](https://murphy.tulane.edu/) and the [Department of Economics](https://liberalarts.tulane.edu/departments/economics) from 2023 to 2026. My research uses causal inference methods, field experiments, and administrative data to evaluate policies and understand economic behavior in contexts such as discrimination, identity formation, peer effects, institutional effectiveness, and public health interventions.
+I am a lead research economist at Northwestern University's [Research and Innovation for Social and Economic Inclusion Lab](https://riseilab.org/). I use causal inference methods, field experiments, and administrative data to study discrimination, ethnic identity, immigration, mental health, education, and labor markets.
 
-I am also a Research Affiliate at the [IZA Institute of Labor Economics](https://www.iza.org/person/34828/hussain-hadah) and the [Murphy Institute](https://murphy.tulane.edu/).
+I am also a research affiliate at the [IZA Institute of Labor Economics](https://www.iza.org/person/34828/hussain-hadah) and Tulane University's [Murphy Institute](https://murphy.tulane.edu/). Before joining Northwestern, I was a postdoctoral fellow at Tulane from 2023 to 2026. I earned my PhD in Economics from the University of Houston in 2023.
 
-My work addresses critical policy questions with real-world impact. I have published in the *Journal of Economics, Race, and Policy* on how Hispanic surnames affect educational and labor market outcomes, and my ongoing projects examine discrimination in mortgage lending, school admissions, and the role of ethnic perceptions in Hispanic self-identification.
+::: {.homepage-actions}
+[Research](#research){.btn .btn-primary role="button"}
+[Download CV](/cv/cv.pdf){.btn .btn-outline-primary role="button"}
+[Email](mailto:hussainhadah@gmail.com){.btn .btn-outline-primary role="button"}
+:::
 
-My research on school choice and discrimination, supported by the Abdul Latif Jameel Poverty Action Lab (J-PAL) Social Policy Research Initiative, investigates discrimination in admissions across private, charter, and traditional public schools.
+[Research statement](/cv/Hadah_Research.pdf) · [Teaching statement](/cv/Hadah_Teaching.pdf) · [Diversity statement](/cv/Hadah_Diversity.pdf)
 
-I earned my PhD in Economics from the University of Houston in 2023, and graduated with a B.S. in Economics from Arizona State University. 
-
-[Outside](https://hussainhadah.com/personal/) of economics, I enjoy running with my two dogs through New Orleans, following college and professional sports, and exploring the city's incredible culinary scene.
-
-Please feel free to contact me if you have questions about my work or would like to discuss economic research.
-
-<i class="fa-solid fa-envelope"></i> Please feel free to [contact me](mailto:hussainhadah@gmail.com) via email.
-
-<i class="fa-solid fa-download"></i> Download my [curriculum vitae](https://hussainhadah.com/cv/cv.pdf), [research statement](https://hhadah.github.io/statements/Hadah_Research.pdf), [diversity statement](https://hhadah.github.io/statements/Hadah_Diversity.pdf), and [teaching statement](https://hhadah.github.io/statements/Hadah_Teaching.pdf).
+[Outside economics](/personal/), I play soccer, snowboard, hike with my dogs, and follow Houston sports and FC Barcelona.
 
 :::
 
 :::
 
-# Recent Highlights
+## Recent highlights
 
 ::: {.callout-tip icon=false}
-### Latest Publications & Achievements
+### Research news
 
-- **Revise & Resubmit** at *Economica*: "Peer Effects in Adolescent Mental Health"
-- **NBER Presentation:** I presented [_"Immigration Enforcement and Hispanic Identity"_](https://hussainhadah.com/research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf) at the [NBER Economics of Race and Stratification](https://www.youtube.com/live/9j5VG4eZet8?si=H-wQVlJr51r37lvT&t=20353) conference ([watch here](https://www.youtube.com/live/9j5VG4eZet8?si=H-wQVlJr51r37lvT&t=20353)).
-- **$140,746 Grant** from J-PAL Social Policy Research Initiative for school choice discrimination research
-- **Revise & Resubmit** at *Journal of Policy Analysis and Management*: "The Effect of Anti-Asian Attitudes on Asian Identity in the U.S."
+- **Revise and resubmit at *Economica*:** "Peer Effects in Adolescent Mental Health"
+- **Spring 2026:** Presented ["Immigration Enforcement and Hispanic Identity"](/research/working-papers/hadah-denteh/immigration_enforcement_hispanic.pdf) at the [NBER Economics of Race and Stratification conference](https://www.youtube.com/live/9j5VG4eZet8?si=H-wQVlJr51r37lvT&t=20353)
+- **$140,747 from J-PAL's Social Policy Research Initiative:** School-choice discrimination field experiment
+- **Revise and resubmit at the *Journal of Policy Analysis and Management*:** "The Effect of Anti-Asian Attitudes on Asian Identity in the U.S."
 :::
 
-# Interests & Education
+## Research {#research}
 
-:::: {.columns}
+All publications, working papers, and active projects appear below so the homepage also works as a complete research overview.
 
-::: {.column width="45%"}
-### Interests
+[Publications](#publications) · [Working papers](#working-papers) · [Works in progress](#research-in-progress)
 
-- Applied Microeconomics
-- Labor Economics
-- Education Economics
-- Health Economics
-:::
+<p class="student-coauthor-note">&ast; Student coauthor at the time of writing.</p>
 
-::: {.column width="10%"}
-<!-- empty column to create gap -->
-:::
-
-::: {.column width="45%"}
-### Education
-
-<i class="fa-solid fa-graduation-cap"></i> <span style="color:black;">Ph.D. in Economics, 2023</span><br><span style="color:gray;font-size:small;">University of Houston, Houston, TX</span>
-
-<i class="fa-solid fa-graduation-cap"></i> <span style="color:black;">M.A. in Economics, 2020</span><br><span style="color:gray;font-size:small;">University of Houston, Houston, TX</span>
-
-<i class="fa-solid fa-graduation-cap"></i> <span style="color:black;">B.S. in Economics (<em>Summa Cum Laude</em>), 2017</span><br><span style="color:gray;font-size:small;">Arizona State University, Tempe, AZ</span>
-
-:::
-
-::::
-
-# Research
-
-::: {.callout-note icon=false}
-## Quick Links
-- [Published Work](#publications) | [Working Papers](#working-papers) | [Works in Progress](#research-in-progress)
-
-**Note**: * = Student co-author at time of writing/research
-:::
-
-## Publications {#publications}
+### Publications {#publications}
 
 :::{#home-articles}
 :::
 
-## Working Papers {#working-papers}
+### Working papers {#working-papers}
 
 :::{#home-working-papers}
 :::
 
-## Works in Progress {#research-in-progress}
+### Works in progress {#research-in-progress}
 
 :::{#home-wip}
 :::
