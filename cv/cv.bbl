@@ -106,7 +106,7 @@
       \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Revise and Resubmit, \textit{Journal of Policy Analysis and Management}}
+      \field{note}{Conditionally accepted at the \textit{Journal of Policy Analysis and Management}}
       \field{title}{The Effect of Anti-{A}sian Attitudes on {A}sian Identity in the {U.S.}}
       \true{nocite}
       \verb{urlraw}
@@ -115,7 +115,7 @@
       \verb{url}
       \verb https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
       \endverb
-      \keyw{rr}
+      \keyw{published}
     \endentry
     \entry{hadah-peereffects}{unpublished}{}{}
       \name{author}{1}{}{%

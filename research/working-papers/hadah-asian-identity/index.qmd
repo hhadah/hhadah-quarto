@@ -12,7 +12,7 @@ categories:
   - Identity and Immigration
 pub-info:
   authors: <strong>Hussain Hadah</strong>
-  venue: <em>Revise and resubmit at the Journal of Policy Analysis and Management</em>.
+  venue: <em>Conditionally accepted at the Journal of Policy Analysis and Management</em>.
   links:
     - name: Preprint
       url: https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
@@ -30,11 +30,12 @@ In this paper, I study the determinants of Asian self-identification among indiv
 
 ## Citation
 
-Hadah, Hussain, The Effect of Anti-Asian Attitudes on Asian Identity in the U.S. (September 24, 2024). Available at https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
+Hadah, Hussain, The Effect of Anti-Asian Attitudes on Asian Identity in the U.S. (September 24, 2024). Conditionally accepted at the Journal of Policy Analysis and Management. Available at https://hhadah.github.io/asian-identity-attrition/my_paper/submit_preprint.pdf
 
 ```bibtex
 @article{hadah2024hispanicidentity,
     Author = {Hadah, Hussain},
     Title = {The Effect of Anti-Asian Attitudes on Asian Identity in the U.S.},
-    Year = {2024}}
+    Year = {2024},
+    Note = {Conditionally accepted at the Journal of Policy Analysis and Management}}
 ```

@@ -24,6 +24,17 @@ quarto render
 
 Check layout changes at both 390px and 1440px widths. The mobile research filters intentionally scroll horizontally.
 
+## Research status updates
+
+Paper status appears in each research page's `pub-info.venue` and citation, homepage highlights in `index.qmd`, and `cv/publications.bib`. Conditionally accepted papers appear under Publications in the CV, with their status stated in the entry's note.
+
+After changing the bibliography, rebuild both CV PDFs before rendering the website:
+
+```sh
+(cd cv && latexmk -pdf -interaction=nonstopmode -halt-on-error cv.tex hadah-cv.tex)
+quarto render
+```
+
 ## Publishing
 
 Pushing to `main` or `master` runs `.github/workflows/netlify-publish.yml`. The workflow installs Quarto 1.8.26, renders the project, and publishes the result to the Netlify site in `_publish.yml`. The repository must provide a `NETLIFY_AUTH_TOKEN` Actions secret. The workflow can also be run manually from GitHub Actions.
