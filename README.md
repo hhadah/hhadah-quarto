@@ -35,6 +35,12 @@ After changing the bibliography, rebuild both CV PDFs before rendering the websi
 quarto render
 ```
 
+## Statement updates
+
+Replace `cv/Hadah_Research.pdf`, `cv/Hadah_Teaching.pdf`, and `cv/Hadah_Diversity.pdf` with the current statements, keeping those filenames. `_quarto.yml` explicitly includes them as publishing resources.
+
+Run `quarto render` to refresh the copies in `docs/cv/`. The homepage links to all three PDFs, and the teaching page links to the teaching statement. Commit and push the updated PDFs and rendered files to deploy them. Changing files locally does not update the live site.
+
 ## Publishing
 
 Pushing to `main` or `master` runs `.github/workflows/netlify-publish.yml`. The workflow installs Quarto 1.8.26, renders the project, and publishes the result to the Netlify site in `_publish.yml`. The repository must provide a `NETLIFY_AUTH_TOKEN` Actions secret. The workflow can also be run manually from GitHub Actions.

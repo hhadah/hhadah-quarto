@@ -74,6 +74,9 @@ project:
     - "teaching/*.qmd"
   resources:
     - "img/headshot-*.webp"
+    - "cv/Hadah_Research.pdf"
+    - "cv/Hadah_Teaching.pdf"
+    - "cv/Hadah_Diversity.pdf"
 
   preview:
     port: 5555
