@@ -3,6 +3,7 @@ title: "Endogenous Hispanic Identity and Ethnic Gaps in the U.S."
 order: 10
 listing-summary: false
 author:
+  - name: Augustine Denteh
   - name: Hussain Hadah
     url: https://www.hussainhadah.com/
     orcid: 0000-0002-8705-6386

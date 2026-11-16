@@ -282,8 +282,10 @@
       \strng{authornamehash}{018a479b8b53192e95fac82eaf5132d9}
       \strng{authorfullhash}{018a479b8b53192e95fac82eaf5132d9}
       \strng{authorfullhashraw}{018a479b8b53192e95fac82eaf5132d9}
+      \field{extraname}{1}
       \field{sortinit}{9}
       \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{extradate}{1}
       \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -477,7 +479,7 @@
       \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Sexual Orientation Discrimination in Mortgage Lending: An Audit Field Experiment}
+      \field{title}{Sexual Orientation and Racial Discrimination in Mortgage Lending: Evidence from an Audit Correspondence Field Experiment}
       \true{nocite}
       \keyw{wip}
     \endentry
@@ -581,25 +583,30 @@
       \keyw{wip}
     \endentry
     \entry{hadah-endogenous}{unpublished}{}{}
-      \name{author}{1}{}{%
+      \name{author}{2}{}{%
         {{hash=091f3b21f21a72f28da7c6db491e1522}{%
            family={Hadah},
            familyi={H\bibinitperiod},
            given={Hussain},
            giveni={H\bibinitperiod}}}%
+        {{hash=8f84d434e4ea53f2933b15a800242ccc}{%
+           family={Denteh},
+           familyi={D\bibinitperiod},
+           given={Augustine},
+           giveni={A\bibinitperiod}}}%
       }
-      \strng{namehash}{091f3b21f21a72f28da7c6db491e1522}
-      \strng{fullhash}{091f3b21f21a72f28da7c6db491e1522}
-      \strng{fullhashraw}{091f3b21f21a72f28da7c6db491e1522}
-      \strng{bibnamehash}{091f3b21f21a72f28da7c6db491e1522}
-      \strng{authorbibnamehash}{091f3b21f21a72f28da7c6db491e1522}
-      \strng{authornamehash}{091f3b21f21a72f28da7c6db491e1522}
-      \strng{authorfullhash}{091f3b21f21a72f28da7c6db491e1522}
-      \strng{authorfullhashraw}{091f3b21f21a72f28da7c6db491e1522}
-      \field{extraname}{6}
+      \strng{namehash}{018a479b8b53192e95fac82eaf5132d9}
+      \strng{fullhash}{018a479b8b53192e95fac82eaf5132d9}
+      \strng{fullhashraw}{018a479b8b53192e95fac82eaf5132d9}
+      \strng{bibnamehash}{018a479b8b53192e95fac82eaf5132d9}
+      \strng{authorbibnamehash}{018a479b8b53192e95fac82eaf5132d9}
+      \strng{authornamehash}{018a479b8b53192e95fac82eaf5132d9}
+      \strng{authorfullhash}{018a479b8b53192e95fac82eaf5132d9}
+      \strng{authorfullhashraw}{018a479b8b53192e95fac82eaf5132d9}
+      \field{extraname}{2}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{extradate}{4}
+      \field{extradate}{2}
       \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
