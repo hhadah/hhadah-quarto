@@ -36,7 +36,7 @@ format:
 <p class="homepage-role">Labor, health, and education economist</p>
 
 :::: {.homepage-lede}
-I am a lead research economist at Northwestern University's [Research and Innovation for Social and Economic Inclusion Lab](https://riseilab.org/). I use causal inference methods, field experiments, and administrative data to study discrimination, ethnic identity, immigration, mental health, education, and labor markets.
+I am a lead economist at Northwestern University's [Research and Innovation for Social and Economic Inclusion Lab](https://riseilab.org/). I use causal inference methods, field experiments, and administrative data to study discrimination, ethnic identity, immigration, mental health, education, and labor markets.
 
 I am also a research affiliate at the [IZA Institute of Labor Economics](https://www.iza.org/person/34828/hussain-hadah) and Tulane University's [Murphy Institute](https://murphy.tulane.edu/). Before joining Northwestern, I was a postdoctoral fellow at Tulane from 2023 to 2026. I earned my PhD in Economics from the University of Houston in 2023.
 ::::
